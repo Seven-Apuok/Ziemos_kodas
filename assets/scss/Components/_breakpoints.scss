@@ -11,7 +11,7 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
+    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
     background-position: top -30rem center;
   }
@@ -62,7 +62,7 @@ $toggle-line: 0.25rem;
         }
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -74,7 +74,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: #{$offset - $toggle-line / 2};
           left: 0;
@@ -140,7 +140,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: 1rem;
           text-align: center;
@@ -274,7 +274,6 @@ $toggle-line: 0.25rem;
 
     height: 353px;
     text-align: center;
-    color: #000;
     margin-top: 2.56rem;
 
     .api__logo {
@@ -303,13 +302,10 @@ $toggle-line: 0.25rem;
 }
 
 /* For medium devices */
-/* @media screen and (min-width: 576px){
-
-  } */
 
 @media screen and (min-width: 768px) {
   body {
-    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
+    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
     background-position: top -30rem right -23rem;
   }
@@ -341,18 +337,67 @@ $toggle-line: 0.25rem;
         opacity: 0.7;
       }
     }
+  }
+  .footer__container {
+    width: 100%;
+    margin-left: 0;
+    background-position: left 21.19rem top -9.46rem;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 
+    .api__logo {
+      margin-left: 2.44rem;
+      margin-top: 1.94rem;
+    }
+
+    .footer__nav {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.63rem;
+      gap: 2rem;
+
+      a {
+        color: $link-water-white;
+        margin-top: 1rem;
+      }
+    }
+
+    .api__media {
+      margin-top: 2.38rem;
+
+      img {
+        margin-left: 0.97rem;
+        margin-right: 0.97rem;
+      }
+    }
+  }
+
+  /* For large devices */
+
+  @media screen and (min-width: 1440px) {
+    body {
+      background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+      background-repeat: no-repeat;
+      background-position: right -8rem top -7rem;
+    }
+
+    .header__container {
+      .nav__menu > button {
+        margin-left: 1rem;
+      }
+    }
     .footer__container {
       width: 100%;
-      margin-left: 0;
-      background-position: left 21.19rem top -9.46rem;
-      height: 6.25rem;
+      background-position: left 65.62rem top -9.46rem;
       display: flex;
       flex-direction: row;
       gap: 2rem;
+      margin: 0rem;
 
       .api__logo {
-        margin-left: 2.44rem;
+        margin-left: 10.25rem;
         margin-top: 1.94rem;
       }
 
@@ -370,63 +415,11 @@ $toggle-line: 0.25rem;
 
       .api__media {
         margin-top: 2.38rem;
+        margin-left: 34.3rem;
 
         img {
           margin-left: 0.97rem;
           margin-right: 0.97rem;
-        }
-      }
-    }
-  }
-
-  /* For large devices */
-  /* @media screen and (min-width: 992px){
-  } */
-  @media screen and (min-width: 1440px) {
-    body {
-      background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
-      background-repeat: no-repeat;
-      background-position: right -8rem top -7rem;
-    }
-
-    .header__container {
-      .nav__menu > button {
-        margin-left: 1rem;
-      }
-
-      .footer__container {
-        width: 100%;
-        background-position: left 65.62rem top -9.46rem;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        margin: 0rem;
-
-        .api__logo {
-          margin-left: 10.25rem;
-          margin-top: 1.94rem;
-        }
-
-        .footer__nav {
-          display: flex;
-          flex-direction: row;
-          margin-top: 1.63rem;
-          gap: 2rem;
-
-          a {
-            color: $link-water-white;
-            margin-top: 1rem;
-          }
-        }
-
-        .api__media {
-          margin-top: 2.38rem;
-          margin-left: 34.3rem;
-
-          img {
-            margin-left: 0.97rem;
-            margin-right: 0.97rem;
-          }
         }
       }
     }
