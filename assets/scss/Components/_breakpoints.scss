@@ -11,7 +11,7 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
     background-position: top -30rem center;
   }
@@ -29,7 +29,6 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
-
           &:before,
           &:after {
             box-shadow: none;
@@ -63,7 +62,7 @@ $toggle-line: 0.25rem;
         }
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -75,7 +74,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: #{$offset - $toggle-line / 2};
           left: 0;
@@ -108,10 +107,12 @@ $toggle-line: 0.25rem;
         padding: 5rem 1.25rem 1.25rem 0.625rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
-        background: linear-gradient(to bottom,
-            rgba($mirage-blue, 0.75),
-            rgba($mirage-blue, 0.9),
-            rgba($mirage-blue, 0.95));
+        background: linear-gradient(
+          to bottom,
+          rgba($mirage-blue, 0.75),
+          rgba($mirage-blue, 0.9),
+          rgba($mirage-blue, 0.95)
+        );
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -139,7 +140,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: 1rem;
           text-align: center;
@@ -152,9 +153,9 @@ $toggle-line: 0.25rem;
         }
       }
 
-      .nav__menu>button {
+      .nav__menu > button {
         position: absolute;
-        transform: translate(4.6rem, 16rem);
+        transform: translate(3.8rem, 16rem);
         font-family: $body-font;
       }
     }
@@ -297,7 +298,6 @@ $toggle-line: 0.25rem;
         margin-left: 0.97rem;
         margin-right: 0.97rem;
       }
-
     }
   }
 }
@@ -309,7 +309,7 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 768px) {
   body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
     background-position: top -30rem right -23rem;
   }
@@ -351,8 +351,6 @@ $toggle-line: 0.25rem;
       flex-direction: row;
       gap: 2rem;
 
-
-
       .api__logo {
         margin-left: 2.44rem;
         margin-top: 1.94rem;
@@ -377,7 +375,6 @@ $toggle-line: 0.25rem;
           margin-left: 0.97rem;
           margin-right: 0.97rem;
         }
-
       }
     }
   }
@@ -387,13 +384,13 @@ $toggle-line: 0.25rem;
   } */
   @media screen and (min-width: 1440px) {
     body {
-      background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+      background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
       background-repeat: no-repeat;
       background-position: right -8rem top -7rem;
     }
 
     .header__container {
-      .nav__menu>button {
+      .nav__menu > button {
         margin-left: 1rem;
       }
 
@@ -404,7 +401,6 @@ $toggle-line: 0.25rem;
         flex-direction: row;
         gap: 2rem;
         margin: 0rem;
-
 
         .api__logo {
           margin-left: 10.25rem;
@@ -431,13 +427,7 @@ $toggle-line: 0.25rem;
             margin-left: 0.97rem;
             margin-right: 0.97rem;
           }
-
-
         }
-
-
-
-
       }
     }
   }
