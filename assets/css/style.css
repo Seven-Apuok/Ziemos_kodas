@@ -166,11 +166,39 @@ a {
     font-size: 1.3rem;
     text-align: center;
   }
-  .main__container .implement__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
+  .main__container .implement__container .implement__image {
+    width: 20.5rem;
+    height: 13.0625rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .main__container .implement__container .implement__text {
+    display: flex;
+    width: 20.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .main__container .implement__container .implement__h2_text {
+    color: #36536b;
     text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.01731rem;
+  }
+  .main__container .implement__container .implement__p_text {
+    color: #6c8294;
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0, 9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1, 75rem;
   }
   .main__container .app__container {
     height: 200px;

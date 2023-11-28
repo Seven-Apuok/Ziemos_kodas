@@ -27,10 +27,40 @@
       text-align: center;
     }
     .implement__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
+      .implement__image{
+        width: 20.5rem;
+        height: 13.0625rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      } 
+      .implement__text{
+          display: flex;
+          width: 20.5rem;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 1.5rem;
+      }
+      .implement__h2_text{
+        color: $san-juan-blue;
+        text-align: center;
+        font-family: $body-second-font;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: $font-regular;
+        line-height: 2.25rem;
+        letter-spacing: -0.01731rem;
+      }
+        .implement__p_text{
+          color: $san-juan-blue-light;
+          text-align: center;
+          font-family: $body-font;
+          font-size: 0,9375rem;
+          font-style: normal;
+          font-weight: $font-regular;
+          line-height: 1,75rem;
+        }
     }
     .app__container {
       height: 200px;
