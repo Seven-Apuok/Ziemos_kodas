@@ -161,10 +161,31 @@ a {
     text-align: center;
   }
   .main__container .companies__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
+    background-color: #1b262f;
+    color: #fbfcfe;
+  }
+  .main__container .header {
+    font-family: "DM Serif Display", serif;
+    font-size: 2rem;
     text-align: center;
+  }
+  .main__container .paragraph {
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+  .main__container .button {
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    border: 1px solid #fbfcfe;
+    border-radius: 1.5rem;
+    width: 8.0625rem;
+    height: 3rem;
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .main__container .implement__container {
     height: 200px;

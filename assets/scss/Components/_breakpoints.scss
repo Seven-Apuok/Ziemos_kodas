@@ -9,9 +9,10 @@
     color: #000;
     background-color: #0000ff;
   }
+
   .main__container {
     border: 2px solid #000;
-   
+
     background-color: #ff00bb;
 
     .api__container {
@@ -20,36 +21,65 @@
       font-size: 1.3rem;
       text-align: center;
     }
+
     .companies__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
+      background-color: $mirage-blue;
+      color: $link-water-white;
+      // font-family: $body-second-font;
+      // font-size: $h3-big-size;
+    }
+    .header {
+      font-family: $body-second-font;
+      font-size: $h3-big-size;
       text-align: center;
     }
+    .paragraph {
+      font-family: $body-font;
+      font-size: $p-regular-size;
+      text-align: center;
+    }
+    .button {
+      font-family: $body-font;
+      font-size: $p-regular-size;
+      border: 1px solid $link-water-white;
+      border-radius: 1.5rem;
+      width: 8.0625rem;
+      height: 3rem;
+      flex-shrink: 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .implement__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     .app__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     .finances__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     .demo__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     //about.html
     .innovators__container {
       height: 200px;
@@ -57,30 +87,35 @@
       font-size: 1.3rem;
       text-align: center;
     }
+
     .vision__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     .picture__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     .statistics__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     .culture__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
+
     //contacts
     .help__container {
       height: 200px;
@@ -88,14 +123,15 @@
       font-size: 1.3rem;
       text-align: center;
     }
+
     .registration__container {
       height: 200px;
       border: 1px solid #000;
       font-size: 1.3rem;
       text-align: center;
     }
-
   }
+
   .footer__container {
     height: 353px;
     text-align: center;
