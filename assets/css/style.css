@@ -12,6 +12,7 @@
 }
 
 body {
+  font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
 }
 
@@ -20,6 +21,7 @@ h1 {
   font-size: 4.5rem;
   line-height: 4.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h2 {
@@ -27,6 +29,7 @@ h2 {
   font-size: 3rem;
   line-height: 3.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h3 {
@@ -34,6 +37,7 @@ h3 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h4 {
@@ -41,6 +45,7 @@ h4 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h1.small {
@@ -48,6 +53,7 @@ h1.small {
   font-size: 3.5rem;
   line-height: 3.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h3.small {
@@ -55,6 +61,15 @@ h3.small {
   font-size: 1.125rem;
   line-height: 1.5625rem;
   font-weight: 400;
+  color: #36536b;
+}
+
+/* Body copy 1 */
+p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.75rem;
 }
 
 ul {
@@ -137,21 +152,6 @@ a {
   border-radius: 1.5rem;
   border: 1px solid #36536b;
   pointer-events: none;
-}
-
-.footer__container {
-  text-align: center;
-  color: #fbfcfe;
-  margin-top: 2.56rem;
-  background-color: #1b262f;
-  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-  background-repeat: no-repeat;
-  font-size: 0.9375rem;
-}
-
-a {
-  color: #fbfcfe;
-  font-size: 0.9375rem;
 }
 
 .resize-animation-stopper * {
@@ -274,7 +274,7 @@ a {
     background-color: #fbfcfe;
     opacity: 0.15;
   }
-  .header__container .nav .nav__menu > button {
+  .header__container .nav .nav__menu button {
     position: absolute;
     transform: translate(3.8rem, 16rem);
     font-family: "Public Sans", sans-serif;
@@ -289,12 +289,49 @@ a {
   .main__container {
     border: 2px solid #000;
     background-color: #ff00bb;
+    /* Mobile Home api*/
   }
   .main__container .api__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
     text-align: center;
+  }
+  .main__container .api__container .api_mobile {
+    width: 76%;
+    margin-bottom: -1.5rem;
+    margin-left: 2rem;
+  }
+  .main__container .api__container .api-title {
+    margin: 0 auto;
+    width: 20.4375rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.01538rem;
+  }
+  .main__container .api__container .api_paragraph {
+    color: #6c8294;
+    margin-top: 1.5rem;
+  }
+  .main__container .api__container .primary-button-normal {
+    width: 20.4375rem;
+    height: 3rem;
+  }
+  .main__container .api__container input[type=email] {
+    width: 20.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .main__container .api__container ::placeholder {
+    color: #36536b;
+    padding-left: 1.7rem;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    opacity: 0.5;
   }
   .main__container .companies__container {
     height: 200px;
@@ -395,6 +432,7 @@ a {
 }
 /* For medium devices */
 @media screen and (min-width: 768px) {
+  /* Mobile Desktop */
   body {
     background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
@@ -422,6 +460,56 @@ a {
     font-weight: 700;
     font-size: 0.9375rem;
     opacity: 0.7;
+  }
+  /* Mobile Home api*/
+  .api__container {
+    text-align: center;
+  }
+  .api__container .api_mobile {
+    width: 40%;
+    margin-bottom: -2.5rem;
+  }
+  .api__container .api-title {
+    margin: 0 auto;
+    width: 35.8rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: -0.02306rem;
+  }
+  .api__container .api_paragraph {
+    color: #6c8294;
+  }
+  .api__container .api__inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .api__container .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(134px);
+    top: 24px;
+  }
+  .api__container input[type=email] {
+    width: 27.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .api__container ::placeholder {
+    color: #36536b;
+    padding-left: 1.7rem;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    opacity: 0.5;
   }
   .footer__container {
     width: 100%;
@@ -453,16 +541,77 @@ a {
     margin-left: 0.97rem;
     margin-right: 0.97rem;
   }
-  /* For large devices */
 }
-@media screen and (min-width: 768px) and (min-width: 1440px) {
+/* For large devices */
+@media screen and (min-width: 1440px) {
   body {
     background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
     background-position: right -8rem top -7rem;
   }
-  .header__container .nav__menu > button {
+  .header__container .nav__menu button {
     margin-left: 1rem;
+  }
+  /* Mobile Home api*/
+  .api__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+  }
+  .api__container .api_mobile {
+    width: 29%;
+  }
+  .api__container .api-title {
+    font-family: "DM Serif Display", serif;
+    width: 34.125rem;
+    text-align: start;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: -0.03463rem;
+    margin-bottom: 1.5rem;
+  }
+  .api__container .api_paragraph {
+    display: block;
+    color: #6c8294;
+    transform: translateX(22px);
+  }
+  .api__container .api__inside {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    position: relative;
+  }
+  .api__container .api__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .api__container .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(134px);
+    top: 24px;
+  }
+  .api__container input[type=email] {
+    width: 27.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .api__container ::placeholder {
+    color: #36536b;
+    padding-left: 1.7rem;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    opacity: 0.5;
   }
   .footer__container {
     width: 100%;
