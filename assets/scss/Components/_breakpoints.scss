@@ -153,10 +153,12 @@ $toggle-line: 0.25rem;
         }
       }
 
-      .nav__menu > button {
-        position: absolute;
-        transform: translate(3.8rem, 16rem);
-        font-family: $body-font;
+      .nav__menu {
+        button {
+          position: absolute;
+          transform: translate(3.8rem, 16rem);
+          font-family: $body-font;
+        }
       }
     }
 
@@ -384,8 +386,10 @@ $toggle-line: 0.25rem;
     }
 
     .header__container {
-      .nav__menu > button {
-        margin-left: 1rem;
+      .nav__menu {
+        button {
+          margin-left: 1rem;
+        }
       }
     }
     .footer__container {
