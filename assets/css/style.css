@@ -289,7 +289,7 @@ a {
   .main__container {
     border: 2px solid #000;
     background-color: #ff00bb;
-    /* Mobile Home */
+    /* Mobile Home api*/
   }
   .main__container .api__container {
     text-align: center;
@@ -461,6 +461,7 @@ a {
     font-size: 0.9375rem;
     opacity: 0.7;
   }
+  /* Mobile Home api*/
   .api__container {
     text-align: center;
   }
@@ -479,15 +480,22 @@ a {
   }
   .api__container .api_paragraph {
     color: #6c8294;
-    margin-top: 1.5rem;
+  }
+  .api__container .api__inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   .api__container .primary-button-normal {
+    position: absolute;
     width: 10.81rem;
     height: 3rem;
-    margin-left: -23%;
+    transform: translateX(134px);
+    top: 24px;
   }
   .api__container input[type=email] {
-    width: 20.4375rem;
+    width: 27.4375rem;
     height: 3rem;
     border-radius: 1.5rem;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
@@ -543,6 +551,67 @@ a {
   }
   .header__container .nav__menu button {
     margin-left: 1rem;
+  }
+  /* Mobile Home api*/
+  .api__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+  }
+  .api__container .api_mobile {
+    width: 29%;
+  }
+  .api__container .api-title {
+    font-family: "DM Serif Display", serif;
+    width: 34.125rem;
+    text-align: start;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: -0.03463rem;
+    margin-bottom: 1.5rem;
+  }
+  .api__container .api_paragraph {
+    display: block;
+    color: #6c8294;
+    transform: translateX(22px);
+  }
+  .api__container .api__inside {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    position: relative;
+  }
+  .api__container .api__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .api__container .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(134px);
+    top: 24px;
+  }
+  .api__container input[type=email] {
+    width: 27.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .api__container ::placeholder {
+    color: #36536b;
+    padding-left: 1.7rem;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    opacity: 0.5;
   }
   .footer__container {
     width: 100%;

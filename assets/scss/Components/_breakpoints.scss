@@ -177,7 +177,7 @@ $toggle-line: 0.25rem;
     // background-color: #ff00bb;
     background-color: #ff00bb;
 
-    /* Mobile Home */
+    /* Mobile Home api*/
 
     .api__container {
       text-align: center;
@@ -384,7 +384,7 @@ $toggle-line: 0.25rem;
       }
     }
   }
-
+    /* Mobile Home api*/
   .api__container {
     text-align: center;
     .api_mobile {
@@ -402,17 +402,25 @@ $toggle-line: 0.25rem;
     }
     .api_paragraph {
       color: $san-juan-blue-light;
-      margin-top: 1.5rem;
+    }
+
+    .api__inside{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;    
     }
 
     .primary-button-normal {
+      position: absolute;
       width: 10.81rem;
       height: 3rem;
-      margin-left: -23%;
-    }
+      transform: translateX(134px);
+      top: 24px;
+      }
 
     input[type="email"] {
-      width: 20.4375rem;
+      width: 27.4375rem;      
       height: 3rem;
       border-radius: 1.5rem;
       box-shadow: 10px 10px 25px -10px #36536b40;
@@ -483,6 +491,75 @@ $toggle-line: 0.25rem;
       }
     }
   }
+/* Mobile Home api*/
+.api__container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+  
+  .api_mobile{
+    width: 29%;
+  }
+  .api-title {
+    font-family: $body-second-font;
+    width: 34.125rem;
+    text-align: start;
+    font-size: $h1-large-size;
+    font-weight: $font-regular;
+    line-height: $h1-large-line-height;
+    letter-spacing: -0.03463rem;
+    margin-bottom: 1.5rem;
+  }
+  .api_paragraph {
+    display: block;
+    color: $san-juan-blue-light;
+    transform: translateX(22px);
+  }
+
+  .api__inside{
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    position: relative;   
+  }
+
+  .api__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(134px);
+    top: 24px;
+    }
+
+  input[type="email"] {
+    width: 27.4375rem;      
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px #36536b40;
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ::placeholder {
+    color: $san-juan-blue;
+    padding-left: 1.7rem;
+    font-weight: $font-bold;
+    font-family: $body-font;
+    font-size: $p-regular-size;
+    opacity: 0.5;
+  }
+}
+
+
   .footer__container {
     width: 100%;
     background-position: left 65.62rem top -9.46rem;
