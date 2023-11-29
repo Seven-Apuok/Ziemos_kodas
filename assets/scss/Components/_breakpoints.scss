@@ -10,13 +10,6 @@ $toggle-line: 0.25rem;
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  body {
-    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
-    background-repeat: no-repeat;
-    background-position: top -30rem center;
-    z-index: 10;
-  }
-
   header {
     position: fixed;
     width: 100%;
@@ -25,6 +18,13 @@ $toggle-line: 0.25rem;
   }
 
   .header__container {
+    .header__circle {
+      position: absolute;
+      top: -30rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
     .nav {
       position: fixed;
       top: 3rem;
@@ -323,14 +323,17 @@ $toggle-line: 0.25rem;
 
   } */
 
-@media screen and (min-width: 768px) {
-  body {
-    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
-    background-repeat: no-repeat;
-    background-position: top -30rem right -23rem;
-  }
-
+@media screen and (min-width: 768px) {  
   .header__container {
+    .header__circle {
+      position: absolute;
+      width: 48.75rem;
+      height: 48.75rem;
+      top: -27rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
 
 
     .nav__header {
@@ -400,14 +403,17 @@ $toggle-line: 0.25rem;
   /* For large devices */
   /* @media screen and (min-width: 992px){
   } */
-  @media screen and (min-width: 1440px) {
-    body {
-      background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
-      background-repeat: no-repeat;
-      background-position: right -8rem top -7rem;
-    }
-
+  @media screen and (min-width: 1440px) {  
     .header__container {
+      .header__circle {
+        position: absolute;
+        width: 48.75rem;
+        height: 48.75rem;
+        top: -27rem;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
       .nav__menu {
         button {
           margin-left: 1rem;

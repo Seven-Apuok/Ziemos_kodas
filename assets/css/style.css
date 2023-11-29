@@ -147,17 +147,17 @@ a {
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: top -30rem center;
-    z-index: 10;
-  }
   header {
     position: fixed;
     width: 100%;
     background-color: #edf3f8;
     background-color: transparent;
+  }
+  .header__container .header__circle {
+    position: absolute;
+    top: -30rem;
+    left: 50%;
+    transform: translate(-50%);
   }
   .header__container .nav {
     position: fixed;
@@ -391,10 +391,13 @@ a {
 
   } */
 @media screen and (min-width: 768px) {
-  body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: top -30rem right -23rem;
+  .header__container .header__circle {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    top: -27rem;
+    left: 50%;
+    transform: translate(-50%);
   }
   .header__container .nav__header {
     display: flex;
@@ -454,10 +457,13 @@ a {
   } */
 }
 @media screen and (min-width: 768px) and (min-width: 1440px) {
-  body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: right -8rem top -7rem;
+  .header__container .header__circle {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    top: -27rem;
+    left: 50%;
+    transform: translate(-50%);
   }
   .header__container .nav__menu button {
     margin-left: 1rem;
