@@ -72,7 +72,7 @@ $toggle-line: 0.25rem;
         }
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -85,7 +85,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -153,7 +153,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: 1rem;
           text-align: center;
@@ -191,11 +191,55 @@ $toggle-line: 0.25rem;
     // background-color: #ff00bb;
     // background-color: #ff00bb;
 
+    /* Mobile Home api*/
+
     .api__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
       text-align: center;
+
+      .api_mobile {
+        width: 76%;
+        margin-bottom: -1.5rem;
+        margin-left: 2rem;
+      }
+
+      .api-title {
+        margin: 0 auto;
+        width: 20.4375rem;
+        text-align: center;
+        font-size: $h3-big-size;
+        font-weight: $font-regular;
+        line-height: 2.25rem;
+        letter-spacing: -0.01538rem;
+      }
+
+      .api_paragraph {
+        color: $san-juan-blue-light;
+        margin-top: 1.5rem;
+      }
+
+      .primary-button-normal {
+        width: 20.4375rem;
+        height: 3rem;
+      }
+
+      input[type="email"] {
+        width: 20.4375rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 10px 10px 25px -10px #36536b40;
+        border: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      ::placeholder {
+        color: $san-juan-blue;
+        padding-left: 1.7rem;
+        font-weight: $font-bold;
+        font-family: $body-font;
+        font-size: $p-regular-size;
+        opacity: 0.5;
+      }
     }
 
     .companies__container {
@@ -290,7 +334,6 @@ $toggle-line: 0.25rem;
 
     height: 353px;
     text-align: center;
-    color: #000;
     margin-top: 2.56rem;
 
     .api__logo {
@@ -319,11 +362,8 @@ $toggle-line: 0.25rem;
 }
 
 /* For medium devices */
-/* @media screen and (min-width: 576px){
 
-  } */
-
-@media screen and (min-width: 768px) {  
+@media screen and (min-width: 768px) {
   .header__container {
     .header__circle {
       position: absolute;
@@ -362,18 +402,176 @@ $toggle-line: 0.25rem;
         opacity: 0.7;
       }
     }
+  }
+
+  /* Mobile Home api*/
+  .api__container {
+    text-align: center;
+
+    .api_mobile {
+      width: 40%;
+      margin-bottom: -2.5rem;
+    }
+
+    .api-title {
+      margin: 0 auto;
+      width: 35.8rem;
+      text-align: center;
+      font-size: $h2-regular-size;
+      font-weight: $font-regular;
+      line-height: $h2-regular-line-height;
+      letter-spacing: -0.02306rem;
+    }
+
+    .api_paragraph {
+      color: $san-juan-blue-light;
+    }
+
+    .api__inside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .primary-button-normal {
+      position: absolute;
+      width: 10.81rem;
+      height: 3rem;
+      transform: translateX(134px);
+      top: 24px;
+    }
+
+    input[type="email"] {
+      width: 27.4375rem;
+      height: 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 10px 10px 25px -10px #36536b40;
+      border: none;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ::placeholder {
+      color: $san-juan-blue;
+      padding-left: 1.7rem;
+      font-weight: $font-bold;
+      font-family: $body-font;
+      font-size: $p-regular-size;
+      opacity: 0.5;
+    }
+  }
+
+  .footer__container {
+    width: 100%;
+    margin-left: 0;
+    background-position: left 21.19rem top -9.46rem;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  /* For large devices */
+  @media screen and (min-width: 1440px) {
+    .header__container {
+      .header__circle {
+        position: absolute;
+        width: 48.75rem;
+        height: 48.75rem;
+        top: -27rem;
+        left: 50%;
+        transform: translate(-50%);
+      }
+
+      .nav__menu {
+        button {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    /* Mobile Home api*/
+    .api__container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 12rem;
+
+      .api_mobile {
+        width: 29%;
+      }
+
+      .api-title {
+        font-family: $body-second-font;
+        width: 34.125rem;
+        text-align: start;
+        font-size: $h1-large-size;
+        font-weight: $font-regular;
+        line-height: $h1-large-line-height;
+        letter-spacing: -0.03463rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .api_paragraph {
+        display: block;
+        color: $san-juan-blue-light;
+        transform: translateX(22px);
+      }
+
+      .api__inside {
+        display: flex;
+        justify-self: start;
+        align-items: center;
+        position: relative;
+      }
+
+      .api__flex {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .primary-button-normal {
+        position: absolute;
+        width: 10.81rem;
+        height: 3rem;
+        transform: translateX(134px);
+        top: 24px;
+      }
+
+      input[type="email"] {
+        width: 27.4375rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 10px 10px 25px -10px #36536b40;
+        border: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      ::placeholder {
+        color: $san-juan-blue;
+        padding-left: 1.7rem;
+        font-weight: $font-bold;
+        font-family: $body-font;
+        font-size: $p-regular-size;
+        opacity: 0.5;
+      }
+    }
+
 
     .footer__container {
       width: 100%;
-      margin-left: 0;
-      background-position: left 21.19rem top -9.46rem;
-      height: 6.25rem;
+      background-position: left 65.62rem top -9.46rem;
       display: flex;
       flex-direction: row;
       gap: 2rem;
+      margin: 0rem;
 
       .api__logo {
-        margin-left: 2.44rem;
+        margin-left: 10.25rem;
         margin-top: 1.94rem;
       }
 
@@ -391,68 +589,11 @@ $toggle-line: 0.25rem;
 
       .api__media {
         margin-top: 2.38rem;
+        margin-left: 34.3rem;
 
         img {
           margin-left: 0.97rem;
           margin-right: 0.97rem;
-        }
-      }
-    }
-  }
-
-  /* For large devices */
-  /* @media screen and (min-width: 992px){
-  } */
-  @media screen and (min-width: 1440px) {  
-    .header__container {
-      .header__circle {
-        position: absolute;
-        width: 48.75rem;
-        height: 48.75rem;
-        top: -27rem;
-        left: 50%;
-        transform: translate(-50%);
-      }
-
-      .nav__menu {
-        button {
-          margin-left: 1rem;
-        }
-      }
-
-      .footer__container {
-        width: 100%;
-        background-position: left 65.62rem top -9.46rem;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        margin: 0rem;
-
-        .api__logo {
-          margin-left: 10.25rem;
-          margin-top: 1.94rem;
-        }
-
-        .footer__nav {
-          display: flex;
-          flex-direction: row;
-          margin-top: 1.63rem;
-          gap: 2rem;
-
-          a {
-            color: $link-water-white;
-            margin-top: 1rem;
-          }
-        }
-
-        .api__media {
-          margin-top: 2.38rem;
-          margin-left: 34.3rem;
-
-          img {
-            margin-left: 0.97rem;
-            margin-right: 0.97rem;
-          }
         }
       }
     }

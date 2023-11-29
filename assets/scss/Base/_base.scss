@@ -1,63 +1,76 @@
-
 /*---------------- BASE -----------------*/
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: $body-font;
-    font-size: $p-regular-size;
+  font-family: $body-font;
+  font-size: $p-regular-size;
 }
 
 h1 {
-    font-family: $body-second-font;
-    font-size: $h1-large-size;
-    line-height: $h1-large-line-height;
-    font-weight: $font-regular;
+  font-family: $body-second-font;
+  font-size: $h1-large-size;
+  line-height: $h1-large-line-height;
+  font-weight: $font-regular;
+  color: $san-juan-blue;
 }
 
 h2 {
-    font-family: $body-second-font;
-    font-size: $h2-regular-size;
-    line-height: $h2-regular-line-height;
-    font-weight: $font-regular;
+  font-family: $body-second-font;
+  font-size: $h2-regular-size;
+  line-height: $h2-regular-line-height;
+  font-weight: $font-regular;
+  color: $san-juan-blue;
 }
 
 h3 {
-    font-family: $body-second-font;
-    font-size: $h3-big-size;
-    line-height: $h3-big-line-height;
-    font-weight: $font-regular;
+  font-family: $body-second-font;
+  font-size: $h3-big-size;
+  line-height: $h3-big-line-height;
+  font-weight: $font-regular;
+  color: $san-juan-blue;
 }
 
 h4 {
-    font-family: $body-second-font;
-    font-size: $h4-regular-size;
-    line-height: $h4-regular-line-height;
-    font-weight: $font-regular;
+  font-family: $body-second-font;
+  font-size: $h4-regular-size;
+  line-height: $h4-regular-line-height;
+  font-weight: $font-regular;
+  color: $san-juan-blue;
 }
 
 h1.small {
-    font-family: $body-second-font;
-    font-size: $h1-small-size;
-    line-height: $h1-small-line-height;
-    font-weight: $font-regular;
+  font-family: $body-second-font;
+  font-size: $h1-small-size;
+  line-height: $h1-small-line-height;
+  font-weight: $font-regular;
+  color: $san-juan-blue;
 }
 
 h3.small {
-    font-family: $body-second-font;
-    font-size: $h3-small-size;
-    line-height: $h3-small-line-height;
-    font-weight: $font-regular;
+  font-family: $body-second-font;
+  font-size: $h3-small-size;
+  line-height: $h3-small-line-height;
+  font-weight: $font-regular;
+  color: $san-juan-blue;
+}
+/* Body copy 1 */
+p {
+  font-family: $body-font;
+  font-size: $p-regular-size;
+  font-weight: $font-regular;
+  line-height: 1.75rem; 
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
+
 
