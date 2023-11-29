@@ -161,17 +161,18 @@ a {
 
 /* For small devices */
 @media screen and (max-width: 767px) {
+  body {
+    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: -10rem -32rem;
+  }
   header {
     position: fixed;
     width: 100%;
-    background-color: #edf3f8;
     background-color: transparent;
   }
   .header__container .header__circle {
-    position: absolute;
-    top: -30rem;
-    left: 50%;
-    transform: translate(-50%);
+    display: none;
   }
   .header__container .nav {
     position: fixed;
@@ -295,11 +296,7 @@ a {
   }
   .main__container {
     border: 2px solid #000;
-<<<<<<< HEAD
-=======
-    background-color: #ff00bb;
     /* Mobile Home api*/
->>>>>>> dev
   }
   .main__container .api__container {
     text-align: center;
@@ -442,7 +439,6 @@ a {
 }
 /* For medium devices */
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
   .header__container .header__circle {
     position: absolute;
     width: 48.75rem;
@@ -450,13 +446,7 @@ a {
     top: -27rem;
     left: 50%;
     transform: translate(-50%);
-=======
-  /* Mobile Desktop */
-  body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: top -30rem right -23rem;
->>>>>>> dev
+    z-index: -1;
   }
   .header__container .nav__header {
     display: flex;
@@ -540,29 +530,8 @@ a {
     flex-direction: row;
     gap: 2rem;
   }
-  .footer__container .api__logo {
-    margin-left: 2.44rem;
-    margin-top: 1.94rem;
-  }
-  .footer__container .footer__nav {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1.63rem;
-    gap: 2rem;
-  }
-  .footer__container .footer__nav a {
-    color: #fbfcfe;
-    margin-top: 1rem;
-  }
-  .footer__container .api__media {
-    margin-top: 2.38rem;
-  }
-  .footer__container .api__media img {
-    margin-left: 0.97rem;
-    margin-right: 0.97rem;
-  }
+  /* For large devices */
 }
-<<<<<<< HEAD
 @media screen and (min-width: 768px) and (min-width: 1440px) {
   .header__container .header__circle {
     position: absolute;
@@ -571,14 +540,6 @@ a {
     top: -27rem;
     left: 50%;
     transform: translate(-50%);
-=======
-/* For large devices */
-@media screen and (min-width: 1440px) {
-  body {
-    background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: right -8rem top -7rem;
->>>>>>> dev
   }
   .header__container .nav__menu button {
     margin-left: 1rem;
@@ -680,7 +641,6 @@ body {
   background-color: #edf3f8;
 }
 
-<<<<<<< HEAD
 .footer__container {
   text-align: center;
   color: #fbfcfe;
@@ -688,8 +648,12 @@ body {
   background-color: #1b262f;
   background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
+  font-size: 0.9375rem;
 }
 
-=======
->>>>>>> dev
+a {
+  color: #fbfcfe;
+  font-size: 0.9375rem;
+}
+
 /*# sourceMappingURL=style.css.map */
