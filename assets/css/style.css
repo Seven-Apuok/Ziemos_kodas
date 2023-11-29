@@ -21,6 +21,7 @@ h1 {
   font-size: 4.5rem;
   line-height: 4.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h2 {
@@ -28,6 +29,7 @@ h2 {
   font-size: 3rem;
   line-height: 3.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h3 {
@@ -35,6 +37,7 @@ h3 {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h4 {
@@ -42,6 +45,7 @@ h4 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h1.small {
@@ -49,6 +53,7 @@ h1.small {
   font-size: 3.5rem;
   line-height: 3.5rem;
   font-weight: 400;
+  color: #36536b;
 }
 
 h3.small {
@@ -56,6 +61,15 @@ h3.small {
   font-size: 1.125rem;
   line-height: 1.5625rem;
   font-weight: 400;
+  color: #36536b;
+}
+
+/* Body copy 1 */
+p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.75rem;
 }
 
 ul {
@@ -67,7 +81,7 @@ a {
 }
 
 /*---------------BUTTONS------------------*/
-.primmary-button-normal {
+.primary-button-normal {
   width: 10.8125rem;
   height: 3rem;
   border-radius: 1.5rem;
@@ -81,10 +95,10 @@ a {
   font-size: 0.9375rem;
   letter-spacing: -0.00719rem;
 }
-.primmary-button-normal:hover {
+.primary-button-normal:hover {
   background-color: #da6d97;
 }
-.primmary-button-normal:disabled {
+.primary-button-normal:disabled {
   background-color: #ba4270;
   opacity: 0.5;
   pointer-events: none;
@@ -142,23 +156,52 @@ a {
 
 /*===============  BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 375px) {
-  .header__container {
-    height: 740px;
-    text-align: center;
-    border: 2px solid #000;
-    color: #000;
-    background-color: #0000ff;
-  }
+@media screen and (max-width: 767px) {
   .main__container {
-    border: 2px solid #000;
-    background-color: #ff00bb;
+    background-color: #b4a3a3;
+    /* Mobile Home */
   }
   .main__container .api__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
     text-align: center;
+  }
+  .main__container .api__container .api_mobile {
+    width: 76%;
+    margin-bottom: -1.5rem;
+    margin-left: 2rem;
+  }
+  .main__container .api__container .api-title {
+    margin: 0 auto;
+    width: 20.4375rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.01538rem;
+  }
+  .main__container .api__container .api_paragraph {
+    color: #6c8294;
+    margin-top: 1.5rem;
+  }
+  .main__container .api__container .primary-button-normal {
+    width: 20.4375rem;
+    height: 3rem;
+  }
+  .main__container .api__container input[type=email] {
+    width: 20.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .main__container .api__container ::placeholder {
+    color: #36536b;
+    padding-left: 1.7rem;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    opacity: 0.5;
   }
   .main__container .companies__container {
     height: 200px;
@@ -245,6 +288,50 @@ a {
 /* @media screen and (min-width: 576px){
 
   } */
+/* Mobile Desktop */
+.api__container {
+  text-align: center;
+}
+.api__container .api_mobile {
+  width: 40%;
+  margin-bottom: -2.5rem;
+}
+.api__container .api-title {
+  margin: 0 auto;
+  width: 35.8rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  letter-spacing: -0.02306rem;
+}
+.api__container .api_paragraph {
+  color: #6c8294;
+  margin-top: 1.5rem;
+}
+.api__container .primary-button-normal {
+  width: 10.81rem;
+  height: 3rem;
+  margin-left: -23%;
+}
+.api__container input[type=email] {
+  width: 20.4375rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+  border: none;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.api__container ::placeholder {
+  color: #36536b;
+  padding-left: 1.7rem;
+  font-weight: 700;
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
+  opacity: 0.5;
+}
+
 /* For large devices */
 /* @media screen and (min-width: 992px){
   } */
