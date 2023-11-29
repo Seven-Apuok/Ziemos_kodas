@@ -14,6 +14,14 @@ $toggle-line: 0.25rem;
     background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
     background-repeat: no-repeat;
     background-position: top -30rem center;
+    z-index: 10;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: $body-color;
+    background-color: transparent;
   }
 
   .header__container {
@@ -29,6 +37,7 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
+
           &:before,
           &:after {
             box-shadow: none;
@@ -57,6 +66,7 @@ $toggle-line: 0.25rem;
         z-index: 2;
         transform: translateY(-1.5rem);
 
+
         &:hover {
           cursor: pointer;
         }
@@ -70,27 +80,31 @@ $toggle-line: 0.25rem;
           width: 50%;
           height: 0.01rem;
           background-color: $white-color;
+
         }
 
         &:before,
         &:after {
           content: '';
           position: absolute;
-          top: #{$offset - $toggle-line / 2};
+          top: #{$offset - calc($toggle-line / 2)};
           left: 0;
           transform: translate(0, 0);
           width: 100%;
           height: $toggle-line;
           background: $black-color;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+
         }
 
         &:before {
-          box-shadow: 0 #{$offset / 1.5} 0 0 $black-color;
+          box-shadow: 0 #{calc(1 * $offset / 1.5)} 0 0 $black-color;
+
         }
 
         &:after {
-          box-shadow: 0 #{-$offset / 1.5} 0 0 $black-color;
+          box-shadow: 0 #{calc(-1 * $offset / 1.5)} 0 0 $black-color;
+
         }
       }
 
@@ -107,12 +121,10 @@ $toggle-line: 0.25rem;
         padding: 5rem 1.25rem 1.25rem 0.625rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
-        background: linear-gradient(
-          to bottom,
-          rgba($mirage-blue, 0.75),
-          rgba($mirage-blue, 0.9),
-          rgba($mirage-blue, 0.95)
-        );
+        background: linear-gradient(to bottom,
+            rgba($mirage-blue, 0.75),
+            rgba($mirage-blue, 0.9),
+            rgba($mirage-blue, 0.95));
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -135,6 +147,7 @@ $toggle-line: 0.25rem;
         &:hover {
           cursor: pointer;
           color: darken(#efefef, 10%);
+
         }
       }
 
@@ -169,13 +182,14 @@ $toggle-line: 0.25rem;
 
     .nav__header {
       margin: 1rem 2rem 2rem 1rem;
+
     }
   }
 
   .main__container {
     border: 2px solid #000;
     // background-color: #ff00bb;
-    background-color: #ff00bb;
+    // background-color: #ff00bb;
 
     .api__container {
       height: 200px;
@@ -317,6 +331,8 @@ $toggle-line: 0.25rem;
   }
 
   .header__container {
+
+
     .nav__header {
       display: flex;
       align-items: center;
