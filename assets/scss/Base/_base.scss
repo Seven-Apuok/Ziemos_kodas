@@ -8,6 +8,7 @@
 body {
   font-family: $body-font;
   font-size: $p-regular-size;
+  min-width: 375px;
 }
 
 h1 {
@@ -57,12 +58,13 @@ h3.small {
   font-weight: $font-regular;
   color: $san-juan-blue;
 }
+
 /* Body copy 1 */
 p {
   font-family: $body-font;
   font-size: $p-regular-size;
   font-weight: $font-regular;
-  line-height: 1.75rem; 
+  line-height: 1.75rem;
 }
 
 ul {
@@ -72,5 +74,3 @@ ul {
 a {
   text-decoration: none;
 }
-
-

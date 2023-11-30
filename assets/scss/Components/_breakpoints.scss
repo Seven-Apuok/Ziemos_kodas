@@ -8,13 +8,12 @@ $toggle-line: 0.25rem;
   transition: none !important;
 }
 
+
 /* For small devices */
 @media screen and (max-width: 767px) {
-
   body {
-    background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
-    background-repeat: no-repeat;
-    background-position: -10rem -32rem;
+    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -12rem -32rem;
+
   }
 
   header {
@@ -69,13 +68,13 @@ $toggle-line: 0.25rem;
         width: $toggle-size;
         height: $toggle-size;
         z-index: 2;
-        transform: translateY(-1.5rem);
+        transform: translateY(0.1rem);
         // transform: translate(-11.5rem, 0rem);
 
 
-        &:hover {
-          cursor: pointer;
-        }
+        // &:hover {
+        //   cursor: pointer;
+        // }
 
         &:after {
           content: "";
@@ -104,12 +103,14 @@ $toggle-line: 0.25rem;
         }
 
         &:before {
-          box-shadow: 0 #{calc(1 * $offset / 1.5)} 0 0 $black-color;
+          // box-shadow: 0 #{calc(1 * $offset / 1.5)} 0 0 $black-color;
+          box-shadow: 0 0.633rem 0 0 $black-color;
 
         }
 
         &:after {
-          box-shadow: 0 #{calc(-1 * $offset / 1.5)} 0 0 $black-color;
+          // box-shadow: 0 #{calc(-1 * $offset / 1.5)} 0 0 $black-color;
+          box-shadow: 0 -0.633rem 0 0 $black-color;
 
         }
       }
@@ -142,19 +143,19 @@ $toggle-line: 0.25rem;
       }
 
       .nav__link {
+        text-align: center;
         color: $link-water-white;
-        font-family: $body-font;
-        text-decoration: none;
+        width: 15.5625rem;
         padding: 0.625rem;
         transition: background-color 0.3s ease;
         transform: translateY(3rem);
-        opacity: 0.7;
+        // opacity: 0.7;
 
-        &:hover {
-          cursor: pointer;
-          color: darken(#efefef, 10%);
+        // &:hover {
+        //   cursor: pointer;
+        //   color: darken(#efefef, 10%);
 
-        }
+        // }
       }
 
       .nav__link:first-child {
@@ -175,19 +176,22 @@ $toggle-line: 0.25rem;
       .nav__menu {
         button {
           position: absolute;
-          transform: translate(3.8rem, 16rem);
+          transform: translate(1rem, 16rem);
+          width: 15.75rem;
+          height: 3rem;
           font-family: $body-font;
+          box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.25);
         }
       }
     }
 
     .nav__logo {
-      margin-top: 1.5rem;
-      margin-left: 1rem;
+      margin-top: 3rem;
+      margin-left: 1.5rem;
     }
 
     .nav__header {
-      margin: 1rem 2rem 2rem 1rem;
+      margin: 1rem 1.5rem 1.5rem 1rem;
 
     }
   }
@@ -204,6 +208,7 @@ $toggle-line: 0.25rem;
 
       .api_mobile {
         width: 76%;
+        margin-top: 3rem;
         margin-bottom: -1.5rem;
         margin-left: 2rem;
       }
@@ -400,11 +405,6 @@ $toggle-line: 0.25rem;
       .nav__link {
         display: grid;
         align-self: center;
-        font-family: $body-font;
-        color: $san-juan-blue;
-        font-weight: $font-bold;
-        font-size: $p-regular-size;
-        opacity: 0.7;
       }
     }
   }
