@@ -8,7 +8,6 @@ $toggle-line: 0.25rem;
   transition: none !important;
 }
 
-
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
@@ -65,16 +64,12 @@ $toggle-line: 0.25rem;
       .nav__toggle {
         $offset: $toggle-size * 0.5;
         position: relative;
-        width: $toggle-size;
-        height: $toggle-size;
+        width: 1.75rem;
+        height: 1.4375rem;
+        flex-shrink: 0;
         z-index: 2;
-        transform: translateY(0.1rem);
-        // transform: translate(-11.5rem, 0rem);
+        transform: translate(1rem, 0rem);
 
-
-        // &:hover {
-        //   cursor: pointer;
-        // }
 
         &:after {
           content: "";
@@ -83,7 +78,7 @@ $toggle-line: 0.25rem;
           top: 5rem;
           bottom: 0rem;
           width: 50%;
-          height: 0.01rem;
+          height: 0.18rem;
           background-color: $white-color;
 
         }
@@ -96,21 +91,19 @@ $toggle-line: 0.25rem;
           left: 0;
           transform: translate(0, 0);
           width: 100%;
-          height: $toggle-line;
-          background: $black-color;
+          height: 0.2rem;
+          background: $san-juan-blue;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         }
 
         &:before {
-          // box-shadow: 0 #{calc(1 * $offset / 1.5)} 0 0 $black-color;
-          box-shadow: 0 0.633rem 0 0 $black-color;
+          box-shadow: 0 0.5rem 0 0 $san-juan-blue;
 
         }
 
         &:after {
-          // box-shadow: 0 #{calc(-1 * $offset / 1.5)} 0 0 $black-color;
-          box-shadow: 0 -0.633rem 0 0 $black-color;
+          box-shadow: 0 -0.5rem 0 0 $san-juan-blue;
 
         }
       }
@@ -149,13 +142,6 @@ $toggle-line: 0.25rem;
         padding: 0.625rem;
         transition: background-color 0.3s ease;
         transform: translateY(3rem);
-        // opacity: 0.7;
-
-        // &:hover {
-        //   cursor: pointer;
-        //   color: darken(#efefef, 10%);
-
-        // }
       }
 
       .nav__link:first-child {
