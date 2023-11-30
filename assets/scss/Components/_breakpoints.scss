@@ -183,9 +183,8 @@ $toggle-line: 0.25rem;
       text-align: center;
 
       .api_mobile {
-        width: 76%;
-        margin-bottom: -1.5rem;
-        margin-left: 2rem;
+        width: 35%;
+        margin-bottom: 1.5rem;
       }
 
       .api-title {
@@ -247,19 +246,21 @@ $toggle-line: 0.25rem;
       text-align: center;
       margin: 0 auto;
       .app__mobile {
-        width: 100%;
-        margin-left: 1.1rem;
+        width: 42%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 2.5rem;
       }
 
-      .api__title{
+      .api__title {
         // width: 20.44rem;
         font-size: 2.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01731rem;
-
+        margin-bottom: 1.2rem;
       }
 
-      .api__paragraph{
+      .api__paragraph {
         width: 20.5rem;
         color: $san-juan-blue-light;
         margin: 0 auto;
@@ -406,8 +407,9 @@ $toggle-line: 0.25rem;
   .api__container {
     text-align: center;
     .api_mobile {
-      width: 40%;
-      margin-bottom: -2.5rem;
+      width: 27%;
+      margin-bottom: 3.8rem;
+      margin-top: 3.5rem;
     }
     .api-title {
       margin: 0 auto;
@@ -454,6 +456,30 @@ $toggle-line: 0.25rem;
       font-family: $body-font;
       font-size: $p-regular-size;
       opacity: 0.5;
+    }
+  }
+  /*--------app----------*/
+  .app__container {
+    text-align: center;
+    margin: 0 auto;
+    .app__mobile {
+      width: 30%;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .api__title {
+      // width: 20.44rem;
+      font-size: $h2-regular-size;
+      line-height: $h2-regular-line-height;
+      letter-spacing: -0.02306rem;
+    }
+
+    .api__paragraph {
+      width: 20.5rem;
+      color: $san-juan-blue-light;
+      margin: 0 auto;
     }
   }
   .footer__container {
@@ -518,7 +544,8 @@ $toggle-line: 0.25rem;
     gap: 12rem;
 
     .api_mobile {
-      width: 29%;
+      width: 21.5%;
+      margin-left: 3.2rem;
     }
     .api-title {
       font-family: $body-second-font;
@@ -558,6 +585,7 @@ $toggle-line: 0.25rem;
     }
 
     input[type="email"] {
+      outline: 0 !important;
       width: 27.4375rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -576,7 +604,38 @@ $toggle-line: 0.25rem;
       opacity: 0.5;
     }
   }
+  /*--------app----------*/
+  .app__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    .app__mobile {
+      width: 47%;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
 
+    .api__start{
+      text-align: start;
+    }
+
+    .api__title {
+      // width: 20.44rem;
+      font-size: $h2-regular-size;
+      line-height: $h2-regular-line-height;
+      letter-spacing: -0.02306rem;
+    }
+
+    .api__paragraph {
+      width: 27.81rem;
+      color: $san-juan-blue-light;
+    }
+  }
   .footer__container {
     width: 100%;
     background-position: left 65.62rem top -9.46rem;

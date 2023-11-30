@@ -294,9 +294,8 @@ a {
     text-align: center;
   }
   .main__container .api__container .api_mobile {
-    width: 76%;
-    margin-bottom: -1.5rem;
-    margin-left: 2rem;
+    width: 35%;
+    margin-bottom: 1.5rem;
   }
   .main__container .api__container .api-title {
     margin: 0 auto;
@@ -349,13 +348,16 @@ a {
     margin: 0 auto;
   }
   .main__container .app__container .app__mobile {
-    width: 100%;
-    margin-left: 1.1rem;
+    width: 42%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2.5rem;
   }
   .main__container .app__container .api__title {
     font-size: 2.25rem;
     line-height: 2.25rem;
     letter-spacing: -0.01731rem;
+    margin-bottom: 1.2rem;
   }
   .main__container .app__container .api__paragraph {
     width: 20.5rem;
@@ -477,8 +479,9 @@ a {
     text-align: center;
   }
   .api__container .api_mobile {
-    width: 40%;
-    margin-bottom: -2.5rem;
+    width: 27%;
+    margin-bottom: 3.8rem;
+    margin-top: 3.5rem;
   }
   .api__container .api-title {
     margin: 0 auto;
@@ -521,6 +524,27 @@ a {
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
     opacity: 0.5;
+  }
+  /*--------app----------*/
+  .app__container {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .app__container .app__mobile {
+    width: 30%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .app__container .api__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.02306rem;
+  }
+  .app__container .api__paragraph {
+    width: 20.5rem;
+    color: #6c8294;
+    margin: 0 auto;
   }
   .footer__container {
     width: 100%;
@@ -572,7 +596,8 @@ a {
     gap: 12rem;
   }
   .api__container .api_mobile {
-    width: 29%;
+    width: 21.5%;
+    margin-left: 3.2rem;
   }
   .api__container .api-title {
     font-family: "DM Serif Display", serif;
@@ -608,6 +633,7 @@ a {
     top: 24px;
   }
   .api__container input[type=email] {
+    outline: 0 !important;
     width: 27.4375rem;
     height: 3rem;
     border-radius: 1.5rem;
@@ -623,6 +649,34 @@ a {
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
     opacity: 0.5;
+  }
+  /*--------app----------*/
+  .app__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .app__container .app__mobile {
+    width: 47%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .app__container .api__start {
+    text-align: start;
+  }
+  .app__container .api__title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.02306rem;
+  }
+  .app__container .api__paragraph {
+    width: 27.81rem;
+    color: #6c8294;
   }
   .footer__container {
     width: 100%;
