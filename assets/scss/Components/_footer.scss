@@ -1,18 +1,20 @@
-.footer__container {
-  
-  text-align: center;
 
+.footer__container {  
+  text-align: center;
   color:$link-water-white;
+
   margin-top: 2.56rem;
   background-color: $mirage-blue;
   background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
   font-size: $p-regular-size;
-
 }
-a{
-  color: $link-water-white;
-  font-size: $p-regular-size;
-  
+.footer__nav {
+  a {
+    color: $link-water-white;
+    font-size: $p-regular-size;
+    &:hover {
+      opacity: 1;  //header links opacity hover
+    }
+  }
 }
-
