@@ -10,11 +10,14 @@
   </head>
   <body>
     <header class="header__container">
+      <img
+        class="header__circle"
+        src="/assets/images/shared/desktop/bg-pattern-circle.svg"
+        alt="circle"
+      />
       <div class="nav__header">
         <div class="nav__logo">
-          <a href="#"
-            ><img src="/assets/images/shared/desktop/logo.svg" alt="logo"
-          /></a>
+          <a href="#"><img src="/assets/images/shared/desktop/logo.svg" alt="logo" /></a>
         </div>
         <div class="nav">
           <div class="nav__toggle"></div>
@@ -23,18 +26,30 @@
             <a class="nav__link" href="#">Pricing</a>
             <a class="nav__link" href="#">About</a>
             <a class="nav__link" href="#">Contact</a>
-            <button class="primary-button-normal" href="#">
-              Schedule a demo
-            </button>
+            <button class="primary-button-normal" href="#">Schedule a Demo</button>
           </nav>
         </div>
       </div>
     </header>
+
     <main class="main__container">
-      <section class="api__container">api</section>
+      <section class="api__container">
+        <img
+          class="api_mobile"
+          src="/assets/images/home/desktop/illustration-phone-mockup.svg"
+          alt="phone-mockup"
+        />
+        <div class="api__flex">
+          <h1 class="api-title">Start building with our APIs for absolutely free.</h1>
+          <div class="api__inside">
+            <input type="email" placeholder="Enter email adress" required="required" />
+            <button class="primary-button-normal">Schedule a Demo</button>
+          </div>
+          <p class="api_paragraph">Have any questions? <b>Contact Us</b></p>
+        </div>
+      </section>
       <section class="companies__container">companies</section>
       <section class="implement__container">implement</section>
-      <section class="app__container">app</section>
       <section class="finances__container">
         <div class="finances__box">
           <svg
@@ -125,6 +140,21 @@
           </div>
         </div>
       </section>
+
+      <section class="app__container">
+        <img
+          class="app__mobile"
+          src="/assets/images/home/desktop/illustration-simple-ui.svg"
+          alt="illustration-simple-ui"
+        />
+        <h2 class="api__title">Simple UI & UX</h2>
+        <p class="api__paragraph">
+          Our pre-built form is easy to integrate in your app or website’s checkout flow and
+          designed to optimize conversion.
+        </p>
+      </section>
+      <section class="finances__container">finances</section>
+
       <section class="demo__container">demo</section>
     </main>
     <footer class="footer__container">
@@ -143,22 +173,13 @@
       </div>
       <div class="api__media">
         <a href="https://www.facebook.com/" target="_blank"
-          ><img
-            src="/assets/images/shared/desktop/facebook.svg"
-            alt="facebook logo"
+          ><img src="/assets/images/shared/desktop/facebook.svg" alt="facebook logo"
         /></a>
         <a href="https://twitter.com/" target="_blank"
-          ><img
-            src="/assets/images/shared/desktop/twitter.svg"
-            alt="twitter logo"
+          ><img src="/assets/images/shared/desktop/twitter.svg" alt="twitter logo"
         /></a>
-        <a
-          href="https://www.linkedin.com/in/darius-mle%C4%8Dka-34419295/"
-          target="_blank"
-          ><img
-            src="/assets/images/shared/desktop/linkedin.svg"
-            alt="linkedin logo"
-          />
+        <a href="https://www.linkedin.com/in/darius-mle%C4%8Dka-34419295/" target="_blank"
+          ><img src="/assets/images/shared/desktop/linkedin.svg" alt="linkedin logo" />
         </a>
       </div>
     </footer>
