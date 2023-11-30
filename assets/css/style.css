@@ -163,7 +163,7 @@ a {
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -12rem -32rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -13rem -34rem;
   }
   header {
     position: fixed;
@@ -202,7 +202,7 @@ a {
     height: 1.4375rem;
     flex-shrink: 0;
     z-index: 2;
-    transform: translate(1rem, 0rem);
+    transform: translate(1.5rem, -0.44rem);
   }
   .header__container .nav .nav__toggle:after {
     content: "";
@@ -234,7 +234,7 @@ a {
   .header__container .nav .nav__menu {
     position: absolute;
     top: -3rem;
-    right: -4rem;
+    right: -3rem;
     left: auto;
     min-width: 18.75rem;
     max-width: 40vw;
@@ -244,7 +244,7 @@ a {
     padding: 5rem 1.25rem 1.25rem 0.625rem;
     transition: transform 0.3s ease;
     transform: translate(calc(100% + 3.125rem), 0);
-    background: linear-gradient(to bottom, rgba(27, 38, 47, 0.75), rgba(27, 38, 47, 0.9), rgba(27, 38, 47, 0.95));
+    background: linear-gradient(to bottom, rgba(27, 38, 47, 0.9), rgba(27, 38, 47, 0.95), #1b262f, #1b262f);
     display: grid;
     grid-template-columns: 1fr;
     align-self: center;
@@ -258,47 +258,48 @@ a {
     text-align: center;
     color: #fbfcfe;
     width: 15.5625rem;
-    padding: 0.625rem;
+    padding: 0.8rem;
+    font-size: 1.25rem;
     transition: background-color 0.3s ease;
-    transform: translateY(3rem);
+    transform: translate(0.75rem, 3rem);
   }
   .header__container .nav .nav__link:first-child:before {
     content: "";
     position: absolute;
     left: 1rem;
     text-align: center;
-    top: -0.5rem;
+    top: -2rem;
     bottom: 0rem;
-    width: 90%;
+    width: 98%;
     height: 0.0625rem;
     background-color: #fbfcfe;
     opacity: 0.15;
   }
   .header__container .nav .nav__menu button {
     position: absolute;
-    transform: translate(1rem, 16rem);
+    transform: translate(1.2rem, 19.215rem);
     width: 15.75rem;
     height: 3rem;
     font-family: "Public Sans", sans-serif;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   }
   .header__container .nav__logo {
-    margin-top: 3rem;
-    margin-left: 1.5rem;
+    margin-top: 2.5rem;
+    margin-left: 0.64rem;
   }
   .header__container .nav__header {
     margin: 1rem 1.5rem 1.5rem 1rem;
   }
   .main__container {
-    border: 2px solid #000;
     /* Mobile Home api*/
+    /*--------app----------*/
   }
   .main__container .api__container {
     text-align: center;
   }
   .main__container .api__container .api_mobile {
     width: 76%;
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: -1.5rem;
     margin-left: 2rem;
   }
@@ -349,10 +350,22 @@ a {
     text-align: center;
   }
   .main__container .app__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
     text-align: center;
+    margin: 0 auto;
+  }
+  .main__container .app__container .app__mobile {
+    width: 100%;
+    margin-left: 1.1rem;
+  }
+  .main__container .app__container .api__title {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.01731rem;
+  }
+  .main__container .app__container .api__paragraph {
+    width: 20.5rem;
+    color: #6c8294;
+    margin: 0 auto;
   }
   .main__container .finances__container {
     height: 200px;
@@ -627,6 +640,103 @@ a {
     margin-right: 0.97rem;
   }
 }
+/* For large devices */
+@media screen and (min-width: 1440px) {
+  .header__container .nav__menu button {
+    margin-left: 1rem;
+  }
+  /* Mobile Home api*/
+  .api__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+  }
+  .api__container .api_mobile {
+    width: 29%;
+  }
+  .api__container .api-title {
+    font-family: "DM Serif Display", serif;
+    width: 34.125rem;
+    text-align: start;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: -0.03463rem;
+    margin-bottom: 1.5rem;
+  }
+  .api__container .api_paragraph {
+    display: block;
+    color: #6c8294;
+    transform: translateX(22px);
+  }
+  .api__container .api__inside {
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    position: relative;
+  }
+  .api__container .api__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .api__container .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(134px);
+    top: 24px;
+  }
+  .api__container input[type=email] {
+    width: 27.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .api__container ::placeholder {
+    color: #36536b;
+    padding-left: 1.7rem;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    opacity: 0.5;
+  }
+  .footer__container {
+    width: 100%;
+    background-position: left 65.62rem top -9.46rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0rem;
+  }
+  .footer__container .api__logo {
+    margin-left: 10.25rem;
+    margin-top: 1.94rem;
+  }
+  .footer__container .footer__nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.63rem;
+    gap: 2rem;
+  }
+  .footer__container .footer__nav a {
+    color: #fbfcfe;
+    margin-top: 1rem;
+  }
+  .footer__container .api__media {
+    margin-top: 2.38rem;
+    margin-left: 34.3rem;
+  }
+  .footer__container .api__media img {
+    margin-left: 0.97rem;
+    margin-right: 0.97rem;
+  }
+}
 body {
   font-family: "Public Sans", sans-serif;
   background-color: #edf3f8;
@@ -647,7 +757,7 @@ div.nav__toggle,
   font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9375rem;
   line-height: normal;
   opacity: 0.7;

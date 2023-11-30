@@ -11,8 +11,7 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -12rem -32rem;
-
+    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -13rem -34rem;
   }
 
   header {
@@ -68,7 +67,7 @@ $toggle-line: 0.25rem;
         height: 1.4375rem;
         flex-shrink: 0;
         z-index: 2;
-        transform: translate(1rem, 0rem);
+        transform: translate(1.5rem, -0.44rem);
 
 
         &:after {
@@ -111,7 +110,7 @@ $toggle-line: 0.25rem;
       .nav__menu {
         position: absolute;
         top: -3rem;
-        right: -4rem;
+        right: -3rem;
         left: auto;
         min-width: 18.75rem;
         max-width: 40vw;
@@ -122,9 +121,10 @@ $toggle-line: 0.25rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
         background: linear-gradient(to bottom,
-            rgba($mirage-blue, 0.75),
             rgba($mirage-blue, 0.9),
-            rgba($mirage-blue, 0.95));
+            rgba($mirage-blue, 0.95),
+            rgba($mirage-blue, 1),
+            rgba($mirage-blue, 1));
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -139,9 +139,10 @@ $toggle-line: 0.25rem;
         text-align: center;
         color: $link-water-white;
         width: 15.5625rem;
-        padding: 0.625rem;
+        padding: 0.8rem;
+        font-size: 1.25rem;
         transition: background-color 0.3s ease;
-        transform: translateY(3rem);
+        transform: translate(0.75rem, 3rem);
       }
 
       .nav__link:first-child {
@@ -150,9 +151,9 @@ $toggle-line: 0.25rem;
           position: absolute;
           left: 1rem;
           text-align: center;
-          top: -0.5rem;
+          top: -2rem;
           bottom: 0rem;
-          width: 90%;
+          width: 98%;
           height: 0.0625rem;
           background-color: $link-water-white;
           opacity: 0.15;
@@ -162,7 +163,7 @@ $toggle-line: 0.25rem;
       .nav__menu {
         button {
           position: absolute;
-          transform: translate(1rem, 16rem);
+          transform: translate(1.2rem, 19.215rem);
           width: 15.75rem;
           height: 3rem;
           font-family: $body-font;
@@ -172,8 +173,8 @@ $toggle-line: 0.25rem;
     }
 
     .nav__logo {
-      margin-top: 3rem;
-      margin-left: 1.5rem;
+      margin-top: 2.5rem;
+      margin-left: 0.64rem;
     }
 
     .nav__header {
@@ -183,7 +184,7 @@ $toggle-line: 0.25rem;
   }
 
   .main__container {
-    border: 2px solid #000;
+    // border: 2px solid #000;
     // background-color: #ff00bb;
     // background-color: #ff00bb;
 
@@ -194,7 +195,7 @@ $toggle-line: 0.25rem;
 
       .api_mobile {
         width: 76%;
-        margin-top: 3rem;
+        margin-top: 5rem;
         margin-bottom: -1.5rem;
         margin-left: 2rem;
       }
@@ -253,11 +254,30 @@ $toggle-line: 0.25rem;
       text-align: center;
     }
 
+    /*--------app----------*/
+
     .app__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
       text-align: center;
+      margin: 0 auto;
+
+      .app__mobile {
+        width: 100%;
+        margin-left: 1.1rem;
+      }
+
+      .api__title {
+        // width: 20.44rem;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.01731rem;
+
+      }
+
+      .api__paragraph {
+        width: 20.5rem;
+        color: $san-juan-blue-light;
+        margin: 0 auto;
+      }
     }
 
     .finances__container {
@@ -586,6 +606,129 @@ $toggle-line: 0.25rem;
           margin-left: 0.97rem;
           margin-right: 0.97rem;
         }
+      }
+    }
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1440px) {
+  // body {
+  //   background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: right -8rem top -7rem;
+  // }
+
+  .header__container {
+    .nav__menu {
+      button {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  /* Mobile Home api*/
+  .api__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+
+    .api_mobile {
+      width: 29%;
+    }
+
+    .api-title {
+      font-family: $body-second-font;
+      width: 34.125rem;
+      text-align: start;
+      font-size: $h1-large-size;
+      font-weight: $font-regular;
+      line-height: $h1-large-line-height;
+      letter-spacing: -0.03463rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .api_paragraph {
+      display: block;
+      color: $san-juan-blue-light;
+      transform: translateX(22px);
+    }
+
+    .api__inside {
+      display: flex;
+      justify-self: start;
+      align-items: center;
+      position: relative;
+    }
+
+    .api__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .primary-button-normal {
+      position: absolute;
+      width: 10.81rem;
+      height: 3rem;
+      transform: translateX(134px);
+      top: 24px;
+    }
+
+    input[type="email"] {
+      width: 27.4375rem;
+      height: 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 10px 10px 25px -10px #36536b40;
+      border: none;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    ::placeholder {
+      color: $san-juan-blue;
+      padding-left: 1.7rem;
+      font-weight: $font-bold;
+      font-family: $body-font;
+      font-size: $p-regular-size;
+      opacity: 0.5;
+    }
+  }
+
+  .footer__container {
+    width: 100%;
+    background-position: left 65.62rem top -9.46rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0rem;
+
+    .api__logo {
+      margin-left: 10.25rem;
+      margin-top: 1.94rem;
+    }
+
+    .footer__nav {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.63rem;
+      gap: 2rem;
+
+      a {
+        color: $link-water-white;
+        margin-top: 1rem;
+      }
+    }
+
+    .api__media {
+      margin-top: 2.38rem;
+      margin-left: 34.3rem;
+
+      img {
+        margin-left: 0.97rem;
+        margin-right: 0.97rem;
       }
     }
   }
