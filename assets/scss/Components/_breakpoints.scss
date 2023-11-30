@@ -11,8 +11,7 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
-      no-repeat -13rem -34rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -13rem -34rem;
   }
 
   header {
@@ -38,6 +37,7 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
+
           &:before,
           &:after {
             box-shadow: none;
@@ -113,13 +113,11 @@ $toggle-line: 0.25rem;
         padding: 5rem 1.25rem 1.25rem 0.625rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
-        background: linear-gradient(
-          to bottom,
-          rgba($mirage-blue, 0.9),
-          rgba($mirage-blue, 0.95),
-          rgba($mirage-blue, 1),
-          rgba($mirage-blue, 1)
-        );
+        background: linear-gradient(to bottom,
+            rgba($mirage-blue, 0.9),
+            rgba($mirage-blue, 0.95),
+            rgba($mirage-blue, 1),
+            rgba($mirage-blue, 1));
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -189,10 +187,8 @@ $toggle-line: 0.25rem;
       text-align: center;
 
       .api_mobile {
-        width: 76%;
-        margin-top: 5rem;
-        margin-bottom: -1.5rem;
-        margin-left: 2rem;
+        width: 35%;
+        margin-bottom: 1.5rem;
       }
 
       .api-title {
@@ -256,8 +252,10 @@ $toggle-line: 0.25rem;
       margin: 0 auto;
 
       .app__mobile {
-        width: 100%;
-        margin-left: 1.1rem;
+        width: 42%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 2.5rem;
       }
 
       .api__title {
@@ -265,6 +263,7 @@ $toggle-line: 0.25rem;
         font-size: 2.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01731rem;
+        margin-bottom: 1.2rem;
       }
 
       .api__paragraph {
@@ -282,6 +281,7 @@ $toggle-line: 0.25rem;
       svg {
         margin-bottom: 2.06rem;
       }
+
       .finances__box__text {
         p {
           margin-bottom: 3rem;
@@ -420,6 +420,7 @@ $toggle-line: 0.25rem;
       }
     }
   }
+
   .main__container {
     //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
@@ -431,6 +432,7 @@ $toggle-line: 0.25rem;
       gap: 0.62rem;
       display: flex;
       flex-direction: row;
+
       svg {
         margin-bottom: 2rem;
       }
@@ -442,8 +444,9 @@ $toggle-line: 0.25rem;
     text-align: center;
 
     .api_mobile {
-      width: 40%;
-      margin-bottom: -2.5rem;
+      width: 27%;
+      margin-bottom: 3.8rem;
+      margin-top: 3.5rem;
     }
 
     .api-title {
@@ -495,6 +498,32 @@ $toggle-line: 0.25rem;
     }
   }
 
+  /*--------app----------*/
+  .app__container {
+    text-align: center;
+    margin: 0 auto;
+
+    .app__mobile {
+      width: 30%;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .api__title {
+      // width: 20.44rem;
+      font-size: $h2-regular-size;
+      line-height: $h2-regular-line-height;
+      letter-spacing: -0.02306rem;
+    }
+
+    .api__paragraph {
+      width: 20.5rem;
+      color: $san-juan-blue-light;
+      margin: 0 auto;
+    }
+  }
+
   .footer__container {
     width: 100%;
     margin-left: 0;
@@ -503,6 +532,7 @@ $toggle-line: 0.25rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
+
     .api__logo {
       margin-left: 2.44rem;
       margin-top: 1.94rem;
@@ -637,6 +667,7 @@ $toggle-line: 0.25rem;
         }
       }
     }
+
     .footer__container {
       width: 100%;
       background-position: left 65.62rem top -9.46rem;
@@ -700,7 +731,8 @@ $toggle-line: 0.25rem;
     gap: 12rem;
 
     .api_mobile {
-      width: 29%;
+      width: 21.5%;
+      margin-left: 3.2rem;
     }
 
     .api-title {
@@ -742,6 +774,7 @@ $toggle-line: 0.25rem;
     }
 
     input[type="email"] {
+      outline: 0 !important;
       width: 27.4375rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -758,6 +791,40 @@ $toggle-line: 0.25rem;
       font-family: $body-font;
       font-size: $p-regular-size;
       opacity: 0.5;
+    }
+  }
+
+  /*--------app----------*/
+  .app__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin: 0 auto;
+
+    .app__mobile {
+      width: 47%;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .api__start {
+      text-align: start;
+    }
+
+    .api__title {
+      // width: 20.44rem;
+      font-size: $h2-regular-size;
+      line-height: $h2-regular-line-height;
+      letter-spacing: -0.02306rem;
+    }
+
+    .api__paragraph {
+      width: 27.81rem;
+      color: $san-juan-blue-light;
     }
   }
 
