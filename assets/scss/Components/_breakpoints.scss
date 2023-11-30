@@ -173,9 +173,10 @@ $toggle-line: 0.25rem;
   }
 
   .main__container {
-    border: 2px solid #000;
-    // background-color: #ff00bb;
-    background-color: #ff00bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
 
     .api__container {
       height: 200px;
@@ -205,11 +206,19 @@ $toggle-line: 0.25rem;
       text-align: center;
     }
 
+    //nuo cia finances dalis maziems ekranams
+
     .finances__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
+      width: 328px;
+
+      svg {
+        margin-bottom: 2.06rem;
+      }
+      .finances__box__text {
+        p {
+          margin-bottom: 3rem;
+        }
+      }
     }
 
     .demo__container {
@@ -289,6 +298,10 @@ $toggle-line: 0.25rem;
       a {
         color: $link-water-white;
         margin-top: 1.94rem;
+        opacity: 0.7;
+        // &:hover {
+        //   opacity: 1;  //header links opacity hover
+        // }
       }
     }
 
@@ -340,6 +353,27 @@ $toggle-line: 0.25rem;
       }
     }
   }
+  .main__container {
+    //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
+    //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
+
+    //nuo cia finances dalis tabletams
+    .finances__container {
+      margin-right: 2.5rem;
+      margin-left: 2.44rem;
+      gap: 0.62rem;
+      display: flex;
+      flex-direction: row;
+
+
+
+      svg {
+        margin-bottom: 2rem;
+      }
+
+
+    }
+  }
   .footer__container {
     width: 100%;
     margin-left: 0;
@@ -359,19 +393,22 @@ $toggle-line: 0.25rem;
       flex-direction: row;
       margin-top: 1.63rem;
       gap: 2rem;
+      margin-left: 2.5rem;
 
       a {
         color: $link-water-white;
         margin-top: 1rem;
+        opacity: 0.7;
       }
     }
 
     .api__media {
       margin-top: 2.38rem;
+      margin-left: 7.3rem;
 
       img {
-        margin-left: 0.97rem;
-        margin-right: 0.97rem;
+        margin-left: 0.7rem;
+        margin-right: 0.5rem;
       }
     }
   }
@@ -392,6 +429,22 @@ $toggle-line: 0.25rem;
         }
       }
     }
+
+    .main__container {
+      //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
+      //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
+
+      // //finances start here
+      .finances__container {
+        margin-right: 10.31rem;
+        margin-left: 10.31rem;
+        gap: 1.88rem;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    //end
+
     .footer__container {
       width: 100%;
       background-position: left 65.62rem top -9.46rem;
@@ -422,8 +475,8 @@ $toggle-line: 0.25rem;
         margin-left: 34.3rem;
 
         img {
-          margin-left: 0.97rem;
-          margin-right: 0.97rem;
+          margin-left: 0.9rem;
+          margin-right: 0.9rem;
         }
       }
     }
