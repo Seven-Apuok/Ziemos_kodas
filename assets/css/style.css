@@ -660,4 +660,19 @@ body {
   background-color: #edf3f8;
 }
 
+.footer__container {
+  text-align: center;
+  color: #fbfcfe;
+  margin-top: 2.56rem;
+  background-color: #1b262f;
+  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+  font-size: 0.9375rem;
+}
+
+a {
+  color: #fbfcfe;
+  font-size: 0.9375rem;
+}
+
 /*# sourceMappingURL=style.css.map */
