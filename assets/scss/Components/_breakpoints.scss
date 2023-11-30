@@ -11,7 +11,8 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -13rem -34rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
+      no-repeat -13rem -34rem;
   }
 
   header {
@@ -35,11 +36,8 @@ $toggle-line: 0.25rem;
       overflow: visible;
       outline: none;
 
-
-
       &.is-active {
         .nav__toggle {
-
           &:before,
           &:after {
             box-shadow: none;
@@ -69,7 +67,6 @@ $toggle-line: 0.25rem;
         z-index: 2;
         transform: translate(1.5rem, -0.44rem);
 
-
         &:after {
           content: "";
           position: absolute;
@@ -79,7 +76,6 @@ $toggle-line: 0.25rem;
           width: 50%;
           height: 0.18rem;
           background-color: $white-color;
-
         }
 
         &:before,
@@ -93,17 +89,14 @@ $toggle-line: 0.25rem;
           height: 0.2rem;
           background: $san-juan-blue;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
-
         }
 
         &:before {
           box-shadow: 0 0.5rem 0 0 $san-juan-blue;
-
         }
 
         &:after {
           box-shadow: 0 -0.5rem 0 0 $san-juan-blue;
-
         }
       }
 
@@ -120,11 +113,13 @@ $toggle-line: 0.25rem;
         padding: 5rem 1.25rem 1.25rem 0.625rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
-        background: linear-gradient(to bottom,
-            rgba($mirage-blue, 0.9),
-            rgba($mirage-blue, 0.95),
-            rgba($mirage-blue, 1),
-            rgba($mirage-blue, 1));
+        background: linear-gradient(
+          to bottom,
+          rgba($mirage-blue, 0.9),
+          rgba($mirage-blue, 0.95),
+          rgba($mirage-blue, 1),
+          rgba($mirage-blue, 1)
+        );
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -179,14 +174,14 @@ $toggle-line: 0.25rem;
 
     .nav__header {
       margin: 1rem 1.5rem 1.5rem 1rem;
-
     }
   }
 
   .main__container {
-    // border: 2px solid #000;
-    // background-color: #ff00bb;
-    // background-color: #ff00bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
 
     /* Mobile Home api*/
 
@@ -270,7 +265,6 @@ $toggle-line: 0.25rem;
         font-size: 2.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01731rem;
-
       }
 
       .api__paragraph {
@@ -280,11 +274,19 @@ $toggle-line: 0.25rem;
       }
     }
 
+    //nuo cia finances dalis maziems ekranams
+
     .finances__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
+      width: 328px;
+
+      svg {
+        margin-bottom: 2.06rem;
+      }
+      .finances__box__text {
+        p {
+          margin-bottom: 3rem;
+        }
+      }
     }
 
     .demo__container {
@@ -364,6 +366,10 @@ $toggle-line: 0.25rem;
       a {
         color: $link-water-white;
         margin-top: 1.94rem;
+        opacity: 0.7;
+        // &:hover {
+        //   opacity: 1;  //header links opacity hover
+        // }
       }
     }
 
@@ -411,6 +417,22 @@ $toggle-line: 0.25rem;
       .nav__link {
         display: grid;
         align-self: center;
+      }
+    }
+  }
+  .main__container {
+    //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
+    //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
+
+    //nuo cia finances dalis tabletams
+    .finances__container {
+      margin-right: 2.5rem;
+      margin-left: 2.44rem;
+      gap: 0.62rem;
+      display: flex;
+      flex-direction: row;
+      svg {
+        margin-bottom: 2rem;
       }
     }
   }
@@ -481,6 +503,34 @@ $toggle-line: 0.25rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    .api__logo {
+      margin-left: 2.44rem;
+      margin-top: 1.94rem;
+    }
+
+    .footer__nav {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.63rem;
+      gap: 2rem;
+      margin-left: 2.5rem;
+
+      a {
+        color: $link-water-white;
+        margin-top: 1rem;
+        opacity: 0.7;
+      }
+    }
+
+    .api__media {
+      margin-top: 2.38rem;
+      margin-left: 7.3rem;
+
+      img {
+        margin-left: 0.7rem;
+        margin-right: 0.5rem;
+      }
+    }
   }
 
   /* For large devices */
@@ -502,77 +552,91 @@ $toggle-line: 0.25rem;
       }
     }
 
-    /* Mobile Home api*/
-    .api__container {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
-      gap: 12rem;
+    .main__container {
+      //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
+      //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
-      .api_mobile {
-        width: 29%;
-      }
-
-      .api-title {
-        font-family: $body-second-font;
-        width: 34.125rem;
-        text-align: start;
-        font-size: $h1-large-size;
-        font-weight: $font-regular;
-        line-height: $h1-large-line-height;
-        letter-spacing: -0.03463rem;
-        margin-bottom: 1.5rem;
-      }
-
-      .api_paragraph {
-        display: block;
-        color: $san-juan-blue-light;
-        transform: translateX(22px);
-      }
-
-      .api__inside {
+      // //finances start here
+      .finances__container {
+        margin-right: 10.31rem;
+        margin-left: 10.31rem;
+        gap: 1.88rem;
         display: flex;
-        justify-self: start;
+        flex-direction: row;
+      }
+
+      //end
+
+      /* Mobile Home api*/
+      .api__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
         align-items: center;
-        position: relative;
-      }
+        gap: 12rem;
 
-      .api__flex {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-      }
+        .api_mobile {
+          width: 29%;
+        }
 
-      .primary-button-normal {
-        position: absolute;
-        width: 10.81rem;
-        height: 3rem;
-        transform: translateX(134px);
-        top: 24px;
-      }
+        .api-title {
+          font-family: $body-second-font;
+          width: 34.125rem;
+          text-align: start;
+          font-size: $h1-large-size;
+          font-weight: $font-regular;
+          line-height: $h1-large-line-height;
+          letter-spacing: -0.03463rem;
+          margin-bottom: 1.5rem;
+        }
 
-      input[type="email"] {
-        width: 27.4375rem;
-        height: 3rem;
-        border-radius: 1.5rem;
-        box-shadow: 10px 10px 25px -10px #36536b40;
-        border: none;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-      }
+        .api_paragraph {
+          display: block;
+          color: $san-juan-blue-light;
+          transform: translateX(22px);
+        }
 
-      ::placeholder {
-        color: $san-juan-blue;
-        padding-left: 1.7rem;
-        font-weight: $font-bold;
-        font-family: $body-font;
-        font-size: $p-regular-size;
-        opacity: 0.5;
+        .api__inside {
+          display: flex;
+          justify-self: start;
+          align-items: center;
+          position: relative;
+        }
+
+        .api__flex {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+
+        .primary-button-normal {
+          position: absolute;
+          width: 10.81rem;
+          height: 3rem;
+          transform: translateX(134px);
+          top: 24px;
+        }
+
+        input[type="email"] {
+          width: 27.4375rem;
+          height: 3rem;
+          border-radius: 1.5rem;
+          box-shadow: 10px 10px 25px -10px #36536b40;
+          border: none;
+          margin-top: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        ::placeholder {
+          color: $san-juan-blue;
+          padding-left: 1.7rem;
+          font-weight: $font-bold;
+          font-family: $body-font;
+          font-size: $p-regular-size;
+          opacity: 0.5;
+        }
       }
     }
-
-
     .footer__container {
       width: 100%;
       background-position: left 65.62rem top -9.46rem;
@@ -603,8 +667,8 @@ $toggle-line: 0.25rem;
         margin-left: 34.3rem;
 
         img {
-          margin-left: 0.97rem;
-          margin-right: 0.97rem;
+          margin-left: 0.9rem;
+          margin-right: 0.9rem;
         }
       }
     }
