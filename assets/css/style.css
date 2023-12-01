@@ -87,7 +87,7 @@ a {
   height: 3rem;
   border-radius: 1.5rem;
   background: #ba4270;
-  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
   border: none;
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -331,10 +331,10 @@ a {
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    text-indent: 2rem;
   }
-  .main__container .api__container ::placeholder {
+  .main__container .api__container input[type=email]::placeholder {
     color: #36536b;
-    padding-left: 1.7rem;
     font-weight: 700;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
@@ -385,11 +385,37 @@ a {
   .main__container .finances__container .finances__box__text p {
     margin-bottom: 3rem;
   }
-  .main__container .demo__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
+  .main__container .demo__container .demo__title {
     text-align: center;
+    line-height: 2.25rem;
+    letter-spacing: -0.01538rem;
+    font-style: normal;
+  }
+  .main__container .demo__container .demo__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__container .demo__container input[type=email] {
+    width: 20.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+  }
+  .main__container .demo__container input[type=email]::placeholder {
+    color: #36536b;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .main__container .demo__container .primary-button-normal {
+    width: 20.4375rem;
+    height: 3rem;
   }
   .main__container .innovators__container {
     height: 200px;
@@ -538,21 +564,21 @@ a {
     position: absolute;
     width: 10.81rem;
     height: 3rem;
-    transform: translateX(134px);
+    transform: translateX(8.375rem);
     top: 24px;
   }
   .api__container input[type=email] {
-    width: 27.4375rem;
+    width: 27.8125rem;
     height: 3rem;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    text-indent: 2rem;
   }
-  .api__container ::placeholder {
+  .api__container input[type=email]::placeholder {
     color: #36536b;
-    padding-left: 1.7rem;
     font-weight: 700;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
@@ -579,6 +605,49 @@ a {
     color: #6c8294;
     margin: 0 auto;
   }
+  .demo__container .demo__title {
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.02306rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+  .demo__container .demo__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .demo__container input[type=email] {
+    width: 27.8125rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+  }
+  .demo__container input[type=email]::placeholder {
+    color: #36536b;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .demo__container .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(8.375rem);
+    top: 1.5rem;
+  }
   .footer__container {
     width: 100%;
     margin-left: 0;
@@ -587,6 +656,7 @@ a {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin-top: 5rem;
   }
   .footer__container .api__logo {
     margin-left: 2.44rem;
@@ -680,18 +750,64 @@ a {
     width: 27.4375rem;
     height: 3rem;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    text-indent: 2rem;
   }
-  .main__container .api__container ::placeholder {
+  .main__container .api__container input[type=email]::placeholder {
     color: #36536b;
-    padding-left: 1.7rem;
     font-weight: 700;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
     opacity: 0.5;
+  }
+  .demo__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 3.5rem auto;
+  }
+  .demo__container .demo__title {
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: -0.02306rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.3rem;
+  }
+  .demo__container .demo__form {
+    margin-bottom: 2rem;
+  }
+  .demo__container input[type=email] {
+    width: 27.8125rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+    margin-right: 1.6rem;
+  }
+  .demo__container input[type=email]::placeholder {
+    color: #36536b;
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .demo__container .primary-button-normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(8.375rem);
+    top: 1.5rem;
   }
   .footer__container {
     width: 100%;
@@ -764,6 +880,7 @@ body {
 
 a,
 button,
+input[type=email],
 div.nav__toggle,
 .nav__toggle,
 .nav__toggle::before,

@@ -220,15 +220,15 @@ $toggle-line: 0.25rem;
         border: none;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-      }
+        text-indent: 2rem;
 
-      ::placeholder {
-        color: $san-juan-blue;
-        padding-left: 1.7rem;
-        font-weight: $font-bold;
-        font-family: $body-font;
-        font-size: $p-regular-size;
-        opacity: 0.5;
+        &::placeholder {
+          color: $san-juan-blue;
+          font-weight: $font-bold;
+          font-family: $body-font;
+          font-size: $p-regular-size;
+          opacity: 0.5;
+        }
       }
     }
 
@@ -275,6 +275,8 @@ $toggle-line: 0.25rem;
       }
     }
 
+
+
     .finances__container {
       width: 328px;
       margin-top: 80px;
@@ -292,10 +294,42 @@ $toggle-line: 0.25rem;
     }
 
     .demo__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
+      .demo__title {
+        text-align: center;
+        line-height: 2.25rem;
+        letter-spacing: -0.01538rem;
+        font-style: normal;
+      }
+
+      .demo__form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type='email'] {
+        width: 20.4375rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
+        border: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        text-indent: 2rem;
+
+        &::placeholder {
+          color: $san-juan-blue;
+          font-weight: $font-bold;
+          font-family: $body-font;
+          font-size: $p-regular-size;
+          line-height: normal;
+          opacity: 0.5;
+        }
+      }
+
+      .primary-button-normal {
+        width: 20.4375rem;
+        height: 3rem;
+      }
     }
 
     //about.html
@@ -490,27 +524,27 @@ $toggle-line: 0.25rem;
       position: absolute;
       width: 10.81rem;
       height: 3rem;
-      transform: translateX(134px);
+      transform: translateX(8.375rem);
       top: 24px;
     }
 
     input[type='email'] {
-      width: 27.4375rem;
+      width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
-      box-shadow: 10px 10px 25px -10px #36536b40;
+      box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
       border: none;
       margin-top: 1.5rem;
       margin-bottom: 1rem;
-    }
+      text-indent: 2rem;
 
-    ::placeholder {
-      color: $san-juan-blue;
-      padding-left: 1.7rem;
-      font-weight: $font-bold;
-      font-family: $body-font;
-      font-size: $p-regular-size;
-      opacity: 0.5;
+      &::placeholder {
+        color: $san-juan-blue;
+        font-weight: $font-bold;
+        font-family: $body-font;
+        font-size: $p-regular-size;
+        opacity: 0.5;
+      }
     }
   }
 
@@ -540,6 +574,56 @@ $toggle-line: 0.25rem;
     }
   }
 
+  .demo__container {
+    .demo__title {
+      text-align: center;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: $font-regular;
+      line-height: 2.25rem;
+      letter-spacing: -0.02306rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+    }
+
+    .demo__form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    input[type='email'] {
+      width: 27.8125rem;
+      height: 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
+      border: none;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      text-indent: 2rem;
+
+      &::placeholder {
+        color: $san-juan-blue;
+        font-weight: $font-bold;
+        font-family: $body-font;
+        font-size: $p-regular-size;
+        line-height: normal;
+        opacity: 0.5;
+      }
+    }
+
+    .primary-button-normal {
+      position: absolute;
+      width: 10.81rem;
+      height: 3rem;
+      transform: translateX(8.375rem);
+      top: 1.5rem;
+    }
+  }
+
   //medium
   .footer__container {
     width: 100%;
@@ -549,6 +633,7 @@ $toggle-line: 0.25rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin-top: 5rem;
 
     .api__logo {
       margin-left: 2.44rem;
@@ -664,20 +749,75 @@ $toggle-line: 0.25rem;
           width: 27.4375rem;
           height: 3rem;
           border-radius: 1.5rem;
-          box-shadow: 10px 10px 25px -10px #36536b40;
+          box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
           border: none;
           margin-top: 1.5rem;
           margin-bottom: 1rem;
-        }
+          text-indent: 2rem;
 
-        ::placeholder {
+
+          &::placeholder {
+            color: $san-juan-blue;
+            font-weight: $font-bold;
+            font-family: $body-font;
+            font-size: $p-regular-size;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .demo__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 3.5rem auto;
+
+
+
+      .demo__title {
+        text-align: center;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: $font-regular;
+        line-height: 3.5rem;
+        letter-spacing: -0.02306rem;
+        margin-bottom: 1.5rem;
+        margin-left: 1.3rem;
+      }
+
+      .demo__form {
+        margin-bottom: 2rem;
+      }
+
+      input[type='email'] {
+        width: 27.8125rem;
+        height: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
+        border: none;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        text-indent: 2rem;
+        margin-right: 1.6rem;
+
+        &::placeholder {
           color: $san-juan-blue;
-          padding-left: 1.7rem;
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
+          line-height: normal;
           opacity: 0.5;
         }
+      }
+
+      .primary-button-normal {
+        position: absolute;
+        width: 10.81rem;
+        height: 3rem;
+        transform: translateX(8.375rem);
+        top: 1.5rem;
       }
     }
 
@@ -713,6 +853,4 @@ $toggle-line: 0.25rem;
       }
     }
   }
-
 }
-
