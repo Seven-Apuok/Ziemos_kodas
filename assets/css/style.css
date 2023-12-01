@@ -296,7 +296,7 @@ a {
   .header__container .nav .nav__menu button > a {
     text-align: center;
     color: #fbfcfe;
-    padding: 0.8rem;
+    padding: 0.8rem 3.8rem;
     font-size: 0.9375rem;
     transition: background-color 0.3s ease;
     transform: translate(0.75rem, 3rem);
@@ -543,6 +543,7 @@ a {
     text-align: center;
     color: #fbfcfe;
     font-size: 0.9375rem;
+    padding: 1rem 1.5rem;
   }
   .header__container .nav__header .nav__link {
     display: grid;
