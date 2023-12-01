@@ -171,9 +171,8 @@ $toggle-line: 0.25rem;
           > a {
             text-align: center;
             color: $link-water-white;
-            width: 15.5625rem;
             padding: 0.8rem;
-            font-size: 1.25rem;
+            font-size: $p-regular-size;
             transition: background-color 0.3s ease;
             transform: translate(0.75rem, 3rem);
           }

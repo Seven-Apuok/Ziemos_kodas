@@ -293,9 +293,8 @@ a {
   .header__container .nav .nav__menu button > a {
     text-align: center;
     color: #fbfcfe;
-    width: 15.5625rem;
     padding: 0.8rem;
-    font-size: 1.25rem;
+    font-size: 0.9375rem;
     transition: background-color 0.3s ease;
     transform: translate(0.75rem, 3rem);
   }
