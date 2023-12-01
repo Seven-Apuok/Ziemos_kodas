@@ -302,8 +302,9 @@ a {
     text-align: center;
   }
   .main__container .api__container .api_mobile {
-    width: 35%;
+    width: 34%;
     margin-bottom: 1.5rem;
+    margin-top: 6.75rem;
   }
   .main__container .api__container .api-title {
     margin: 0 auto;
@@ -316,7 +317,7 @@ a {
   }
   .main__container .api__container .api_paragraph {
     color: #6c8294;
-    margin-top: 1.5rem;
+    margin-top: 1.19rem;
   }
   .main__container .api__container .primary-button-normal {
     width: 20.4375rem;
@@ -356,21 +357,22 @@ a {
     margin: 0 auto;
   }
   .main__container .app__container .app__mobile {
-    width: 42%;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-bottom: 2.5rem;
+    width: 40.9%;
+    margin-left: 0.7rem;
+    margin-right: 0.48rem;
+    margin-bottom: 2.7rem;
   }
-  .main__container .app__container .api__title {
+  .main__container .app__container .app__title {
     font-size: 2.25rem;
     line-height: 2.25rem;
     letter-spacing: -0.01731rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
   }
-  .main__container .app__container .api__paragraph {
+  .main__container .app__container .app__paragraph {
     width: 20.5rem;
     color: #6c8294;
     margin: 0 auto;
+    margin-bottom: 5rem;
   }
   .main__container .finances__container {
     width: 328px;

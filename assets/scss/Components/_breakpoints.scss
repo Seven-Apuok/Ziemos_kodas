@@ -189,8 +189,9 @@ $toggle-line: 0.25rem;
       text-align: center;
 
       .api_mobile {
-        width: 35%;
+        width: 34%;
         margin-bottom: 1.5rem;
+        margin-top: 6.75rem;
       }
 
       .api-title {
@@ -205,7 +206,7 @@ $toggle-line: 0.25rem;
 
       .api_paragraph {
         color: $san-juan-blue-light;
-        margin-top: 1.5rem;
+        margin-top: 1.19rem;
       }
 
       .primary-button-normal {
@@ -254,24 +255,25 @@ $toggle-line: 0.25rem;
       margin: 0 auto;
 
       .app__mobile {
-        width: 42%;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-bottom: 2.5rem;
+        width: 40.9%;
+        margin-left: 0.7rem;
+        margin-right: 0.48rem;
+        margin-bottom: 2.7rem;
       }
 
-      .api__title {
+      .app__title {
         // width: 20.44rem;
         font-size: 2.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01731rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.6rem;
       }
 
-      .api__paragraph {
+      .app__paragraph {
         width: 20.5rem;
         color: $san-juan-blue-light;
         margin: 0 auto;
+        margin-bottom: 5rem;
       }
     }
     .finances__container {
@@ -688,4 +690,6 @@ $toggle-line: 0.25rem;
       }
     }
   }
+
 }
+
