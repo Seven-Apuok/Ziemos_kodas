@@ -21,6 +21,12 @@ $toggle-line: 0.25rem;
   }
 
   .header__container {
+    &.is-scrolling {
+      background-color: $body-color;
+      box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
+      z-index: 1;
+      margin-top: 0;
+    }
     .header__circle {
       display: none;
     }
@@ -166,6 +172,14 @@ $toggle-line: 0.25rem;
           height: 3rem;
           font-family: $body-font;
           box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.25);
+          > a {
+            text-align: center;
+            color: $link-water-white;
+            padding: 0.8rem;
+            font-size: $p-regular-size;
+            transition: background-color 0.3s ease;
+            transform: translate(0.75rem, 3rem);
+          }
         }
       }
     }
@@ -496,6 +510,11 @@ $toggle-line: 0.25rem;
 
         > :last-child {
           margin-left: 3.1rem;
+        }
+        > button > a {
+          text-align: center;
+          color: $link-water-white;
+          font-size: $p-regular-size;
         }
       }
 
