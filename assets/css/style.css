@@ -163,7 +163,7 @@ a {
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -13rem -34rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat center -34rem;
   }
   header {
     position: fixed;
@@ -459,9 +459,9 @@ a {
 @media screen and (min-width: 768px) {
   .header__container .header__circle {
     position: absolute;
-    width: 48.75rem;
-    height: 48.75rem;
-    top: -27rem;
+    width: 59.3125rem;
+    height: 59.3125rem;
+    top: -41.5rem;
     left: 50%;
     transform: translate(-50%);
     z-index: -1;
@@ -470,15 +470,24 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.7rem;
-    margin-top: 1.3rem;
+    gap: 3.4rem;
+    margin-top: 2.7rem;
   }
   .header__container .nav__header .nav__toggle {
     display: none;
   }
+  .header__container .nav__header .nav__logo {
+    margin-right: 1rem;
+  }
   .header__container .nav__header .nav__menu {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 2fr 1fr;
+    display: flex;
+    gap: 2.5rem;
+  }
+  .header__container .nav__header .nav__menu > :first-child {
+    margin-left: -0.6rem;
+  }
+  .header__container .nav__header .nav__menu > :last-child {
+    margin-left: 3.1rem;
   }
   .header__container .nav__header .nav__link {
     display: grid;
@@ -606,12 +615,12 @@ a {
     position: absolute;
     width: 48.75rem;
     height: 48.75rem;
-    top: -27rem;
-    left: 50%;
+    top: -11rem;
+    left: 83%;
     transform: translate(-50%);
   }
-  .header__container .nav__menu button {
-    margin-left: 1rem;
+  .header__container .nav__menu > :last-child {
+    margin-left: 29rem !important;
   }
   .main__container {
     /* Mobile Home api*/
