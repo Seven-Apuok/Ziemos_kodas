@@ -277,6 +277,8 @@ $toggle-line: 0.25rem;
 
     .finances__container {
       width: 328px;
+      margin-top: 80px;
+      margin-bottom: 80px;
 
       svg {
         margin-bottom: 2.06rem;
@@ -438,6 +440,9 @@ $toggle-line: 0.25rem;
 
     //nuo cia finances dalis tabletams
     .finances__container {
+      margin-top: 100px;
+      margin-bottom: 100px;
+
       margin-right: 2.5rem;
       margin-left: 2.44rem;
       gap: 0.62rem;
@@ -606,6 +611,7 @@ $toggle-line: 0.25rem;
 
       /* Mobile Home api*/
       .api__container {
+        margin-top: 146.57px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -707,4 +713,6 @@ $toggle-line: 0.25rem;
       }
     }
   }
+
 }
+

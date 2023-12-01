@@ -376,6 +376,8 @@ a {
   }
   .main__container .finances__container {
     width: 328px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   .main__container .finances__container svg {
     margin-bottom: 2.06rem;
@@ -494,6 +496,8 @@ a {
     align-self: center;
   }
   .main__container .finances__container {
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-right: 2.5rem;
     margin-left: 2.44rem;
     gap: 0.62rem;
@@ -629,6 +633,7 @@ a {
     flex-direction: row;
   }
   .main__container .api__container {
+    margin-top: 146.57px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -746,8 +751,8 @@ body {
 }
 @media (max-width: 768px) {
   .responsive-svg {
-    width: 58px;
-    height: 58px;
+    width: 88px;
+    height: 88px;
   }
 }
 @media (max-width: 375px) {
