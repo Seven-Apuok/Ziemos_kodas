@@ -74,3 +74,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+/*---------mobile shadow----------*/
+.app__mobile,
+.api_mobile{
+  filter: drop-shadow(25px 25px 80px #36536b4d);
+}
