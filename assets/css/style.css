@@ -435,10 +435,12 @@ a {
     background-position: top 11.06rem center;
     height: 353px;
     text-align: center;
-    margin-top: 2.56rem;
+    margin-top: 5rem;
+    gap: 1.94rem;
   }
   .footer__container .api__logo {
     margin-top: 2.56rem;
+    margin-bottom: 0.56rem;
   }
   .footer__container .footer__nav {
     display: flex;
@@ -450,11 +452,7 @@ a {
     opacity: 0.7;
   }
   .footer__container .api__media {
-    margin-top: 1.94rem;
-  }
-  .footer__container .api__media img {
-    margin-left: 0.97rem;
-    margin-right: 0.97rem;
+    margin-top: 2.58rem;
   }
 }
 /* For medium devices */
@@ -575,7 +573,6 @@ a {
     height: 6.25rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
   }
   .footer__container .api__logo {
     margin-left: 2.44rem;
@@ -585,8 +582,8 @@ a {
     display: flex;
     flex-direction: row;
     margin-top: 1.63rem;
-    gap: 2rem;
-    margin-left: 2.5rem;
+    gap: 2.5rem;
+    margin-left: 3.25rem;
   }
   .footer__container .footer__nav a {
     color: #fbfcfe;
@@ -595,11 +592,7 @@ a {
   }
   .footer__container .api__media {
     margin-top: 2.38rem;
-    margin-left: 7.3rem;
-  }
-  .footer__container .api__media img {
-    margin-left: 0.7rem;
-    margin-right: 0.5rem;
+    margin-left: 8.625rem;
   }
   /* For large devices */
 }
@@ -690,7 +683,6 @@ a {
     background-position: left 65.62rem top -9.46rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     margin: 0rem;
   }
   .footer__container .api__logo {
@@ -701,19 +693,21 @@ a {
     display: flex;
     flex-direction: row;
     margin-top: 1.63rem;
-    gap: 2rem;
   }
   .footer__container .footer__nav a {
     color: #fbfcfe;
-    margin-top: 1rem;
   }
   .footer__container .api__media {
     margin-top: 2.38rem;
+<<<<<<< HEAD
     margin-left: 34.3rem;
   }
   .footer__container .api__media img {
     margin-left: 0.9rem;
     margin-right: 0.9rem;
+=======
+    margin-left: 35rem;
+>>>>>>> dev
   }
 }
 body {
@@ -788,11 +782,17 @@ div.nav__toggle,
 .footer__container {
   text-align: center;
   color: #fbfcfe;
-  margin-top: 2.56rem;
   background-color: #1b262f;
   background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
   font-size: 0.9375rem;
+}
+.footer__container svg {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.footer__container svg:hover path {
+  fill: #DA6D97;
 }
 
 .footer__nav a {

@@ -276,12 +276,8 @@ $toggle-line: 0.25rem;
         margin-bottom: 5rem;
       }
     }
-
-    //nuo cia finances dalis maziems ekranams
-
     .finances__container {
       width: 328px;
-
       svg {
         margin-bottom: 2.06rem;
       }
@@ -335,7 +331,7 @@ $toggle-line: 0.25rem;
       text-align: center;
     }
 
-    //contacts
+    //contacts.html
     .help__container {
       height: 200px;
       border: 1px solid #000;
@@ -350,16 +346,17 @@ $toggle-line: 0.25rem;
       text-align: center;
     }
   }
-
+  //small devices
   .footer__container {
     background-position: top 11.06rem center;
 
     height: 353px;
     text-align: center;
-    margin-top: 2.56rem;
+    margin-top: 5rem; //iki mygtuko mobile ekrane
 
     .api__logo {
       margin-top: 2.56rem;
+      margin-bottom: 0.56rem;
     }
 
     .footer__nav {
@@ -375,14 +372,9 @@ $toggle-line: 0.25rem;
         // }
       }
     }
-
+    gap: 1.94rem;
     .api__media {
-      margin-top: 1.94rem;
-
-      img {
-        margin-left: 0.97rem;
-        margin-right: 0.97rem;
-      }
+      margin-top: 2.58rem;
     }
   }
 }
@@ -522,6 +514,7 @@ $toggle-line: 0.25rem;
       margin: 0 auto;
     }
   }
+  //medium
   .footer__container {
     width: 100%;
     margin-left: 0;
@@ -529,7 +522,7 @@ $toggle-line: 0.25rem;
     height: 6.25rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    //gap: 2rem;
     .api__logo {
       margin-left: 2.44rem;
       margin-top: 1.94rem;
@@ -539,8 +532,8 @@ $toggle-line: 0.25rem;
       display: flex;
       flex-direction: row;
       margin-top: 1.63rem;
-      gap: 2rem;
-      margin-left: 2.5rem;
+      gap: 2.5rem;
+      margin-left: 3.25rem;
 
       a {
         color: $link-water-white;
@@ -551,12 +544,7 @@ $toggle-line: 0.25rem;
 
     .api__media {
       margin-top: 2.38rem;
-      margin-left: 7.3rem;
-
-      img {
-        margin-left: 0.7rem;
-        margin-right: 0.5rem;
-      }
+      margin-left: 8.625rem;
     }
   }
 
@@ -664,12 +652,13 @@ $toggle-line: 0.25rem;
         }
       }
     }
+    //large
     .footer__container {
       width: 100%;
       background-position: left 65.62rem top -9.46rem;
       display: flex;
       flex-direction: row;
-      gap: 2rem;
+      //gap: 2.5rem;
       margin: 0rem;
 
       .api__logo {
@@ -681,25 +670,19 @@ $toggle-line: 0.25rem;
         display: flex;
         flex-direction: row;
         margin-top: 1.63rem;
-        gap: 2rem;
+        //gap: 2rem;
 
         a {
           color: $link-water-white;
-          margin-top: 1rem;
+          //margin-top: 1rem;
         }
       }
 
       .api__media {
         margin-top: 2.38rem;
-        margin-left: 34.3rem;
-
-        img {
-          margin-left: 0.9rem;
-          margin-right: 0.9rem;
-        }
+        margin-left: 35rem;
       }
     }
   }
 }
-
 
