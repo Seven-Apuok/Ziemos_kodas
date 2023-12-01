@@ -489,14 +489,11 @@ a {
 }
 /* For medium devices */
 @media screen and (min-width: 768px) {
-  .header__container .header__circle {
-    position: absolute;
-    width: 59.3125rem;
-    height: 59.3125rem;
-    top: -41.5rem;
-    left: 50%;
-    transform: translate(-50%);
+  .header__container .circle {
     z-index: -1;
+  }
+  .header__container .header__circle {
+    display: none;
   }
   .header__container .nav__header {
     display: flex;
