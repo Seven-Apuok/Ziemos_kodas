@@ -11,7 +11,7 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat center -34rem;
+    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
   }
 
   header {
@@ -22,6 +22,10 @@ $toggle-line: 0.25rem;
 
   .header__container {
     .header__circle {
+      display: none;
+    }
+
+    .circle {
       display: none;
     }
 
@@ -37,7 +41,6 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
-
           &:before,
           &:after {
             box-shadow: none;
@@ -68,7 +71,7 @@ $toggle-line: 0.25rem;
         transform: translate(1.5rem, -0.44rem);
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -80,7 +83,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -113,11 +116,13 @@ $toggle-line: 0.25rem;
         padding: 5rem 1.25rem 1.25rem 0.625rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
-        background: linear-gradient(to bottom,
-            rgba($mirage-blue, 0.9),
-            rgba($mirage-blue, 0.95),
-            rgba($mirage-blue, 1),
-            rgba($mirage-blue, 1));
+        background: linear-gradient(
+          to bottom,
+          rgba($mirage-blue, 0.9),
+          rgba($mirage-blue, 0.95),
+          rgba($mirage-blue, 1),
+          rgba($mirage-blue, 1)
+        );
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -140,7 +145,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: 1rem;
           text-align: center;
@@ -212,7 +217,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -418,25 +423,51 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  .header__container {
-    .circle {
-      // position: absolute;
-      // width: 59.3125rem;
-      // height: 59.3125rem;
-      // border-radius: 59.3125rem;
-      // transform: translate(-10%, -74%);
-      z-index: -1;
-    }
-
+  body {
+    overflow-x: hidden;
     // .header__circle {
     //   position: absolute;
-    //   width: 59.3125rem;
-    //   height: 59.3125rem;
+    //   // width: 59.3125rem;
+    //   // height: 59.3125rem;
+    //   width: 47rem;
+    //   height: 32rem;
+    //   left: 50%;
+    //   top: 3%;
     //   border-radius: 59.3125rem;
-    //   transform: translate(-10%, -74%);
+    //   transform: translate(-50%, -50%);
     //   z-index: -1;
+    //   overflow: hidden;
     // }
+
     .header__circle {
+      position: absolute;
+      width: 56rem;
+      height: 55rem;
+      // left: 50%;
+      // top: -35rem;
+      border-radius: 50%;
+      transform: translate(-6%, -71%);
+      z-index: -1;
+      overflow: hidden;
+    }
+  }
+
+  .header__container {
+    // .header__circle {
+    //   position: absolute;
+    //   // width: 59.3125rem;
+    //   // height: 59.3125rem;
+    //   width: 47rem;
+    //   height: 32rem;
+    //   left: 50%;
+    //   top: 3%;
+    //   border-radius: 59.3125rem;
+    //   transform: translate(-50%, -50%);
+    //   z-index: -1;
+    //   overflow: hidden;
+    // }
+
+    .circle {
       display: none;
     }
 
@@ -534,7 +565,7 @@ $toggle-line: 0.25rem;
       top: 2.13rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.4375rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -752,7 +783,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type="email"] {
+        input[type='email'] {
           width: 27.4375rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -779,7 +810,6 @@ $toggle-line: 0.25rem;
         justify-content: center;
         align-items: center;
         margin-bottom: 6rem;
-
 
         .app__mobile {
           width: 42%;
@@ -815,8 +845,6 @@ $toggle-line: 0.25rem;
       align-items: center;
       width: 80%;
       margin: 3.5rem auto;
-
-
 
       .demo__title {
         text-align: center;
