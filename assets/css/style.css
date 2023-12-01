@@ -82,11 +82,6 @@ a {
 }
 
 /*---------mobile shadow----------*/
-.app__mobile,
-.api_mobile {
-  filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3019607843));
-}
-
 /*---------------BUTTONS------------------*/
 .primary-button-normal {
   width: 10.8125rem;
@@ -175,6 +170,12 @@ a {
     position: fixed;
     width: 100%;
     background-color: transparent;
+  }
+  .header__container.is-scrolling {
+    background-color: #edf3f8;
+    box-shadow: 0 0.2rem 0.5rem rgba(54, 83, 107, 0.1);
+    z-index: 1;
+    margin-top: 0;
   }
   .header__container .header__circle {
     display: none;
@@ -288,6 +289,15 @@ a {
     height: 3rem;
     font-family: "Public Sans", sans-serif;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+  .header__container .nav .nav__menu button > a {
+    text-align: center;
+    color: #fbfcfe;
+    width: 15.5625rem;
+    padding: 0.8rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+    transform: translate(0.75rem, 3rem);
   }
   .header__container .nav__logo {
     margin-top: 2.5rem;
@@ -520,6 +530,11 @@ a {
   }
   .header__container .nav__header .nav__menu > :last-child {
     margin-left: 3.1rem;
+  }
+  .header__container .nav__header .nav__menu > button > a {
+    text-align: center;
+    color: #fbfcfe;
+    font-size: 0.9375rem;
   }
   .header__container .nav__header .nav__link {
     display: grid;
@@ -928,7 +943,7 @@ div.nav__toggle,
   font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 0.9375rem;
   line-height: normal;
   opacity: 0.7;
