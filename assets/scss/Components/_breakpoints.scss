@@ -31,6 +31,10 @@ $toggle-line: 0.25rem;
       display: none;
     }
 
+    .circle {
+      display: none;
+    }
+
     .nav {
       position: fixed;
       top: 3rem;
@@ -71,6 +75,7 @@ $toggle-line: 0.25rem;
         flex-shrink: 0;
         z-index: 2;
         transform: translate(1.5rem, -0.44rem);
+        padding-bottom: 2rem;
 
         &:after {
           content: '';
@@ -118,13 +123,7 @@ $toggle-line: 0.25rem;
         padding: 5rem 1.25rem 1.25rem 0.625rem;
         transition: transform 0.3s ease;
         transform: translate(calc(100% + 3.125rem), 0);
-        background: linear-gradient(
-          to bottom,
-          rgba($mirage-blue, 0.9),
-          rgba($mirage-blue, 0.95),
-          rgba($mirage-blue, 1),
-          rgba($mirage-blue, 1)
-        );
+        background-color: rgba($mirage-blue, 1);
         display: grid;
         grid-template-columns: 1fr;
         align-self: center;
@@ -133,6 +132,17 @@ $toggle-line: 0.25rem;
         box-shadow: 0 0 3.125rem #0000004d;
         text-align: center;
         overflow: hidden;
+
+        &::before {
+          content: '';
+          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 48.75rem;
+          height: 48.75rem;
+          z-index: -1;
+        }
       }
 
       .nav__link {
@@ -163,19 +173,11 @@ $toggle-line: 0.25rem;
       .nav__menu {
         button {
           position: absolute;
-          transform: translate(1.2rem, 19.215rem);
+          transform: translate(1.6rem, 19.215rem);
           width: 15.75rem;
           height: 3rem;
           font-family: $body-font;
           box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.25);
-          > a {
-            text-align: center;
-            color: $link-water-white;
-            padding: 0.8rem;
-            font-size: $p-regular-size;
-            transition: background-color 0.3s ease;
-            transform: translate(0.75rem, 3rem);
-          }
         }
       }
     }
@@ -231,19 +233,20 @@ $toggle-line: 0.25rem;
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
-        box-shadow: 10px 10px 25px -10px #36536b40;
+        box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
         border: none;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-      }
+        text-indent: 1.69rem;
 
-      ::placeholder {
-        color: $san-juan-blue;
-        padding-left: 1.7rem;
-        font-weight: $font-bold;
-        font-family: $body-font;
-        font-size: $p-regular-size;
-        opacity: 0.5;
+        &::placeholder {
+          color: $san-juan-blue;
+          font-weight: $font-bold;
+          font-family: $body-font;
+          font-size: $p-regular-size;
+          line-height: normal;
+          opacity: 0.5;
+        }
       }
     }
 
@@ -310,11 +313,13 @@ $toggle-line: 0.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01538rem;
         font-style: normal;
+        margin-top: -0.5rem;
       }
 
       .demo__form {
         display: flex;
         flex-direction: column;
+        margin-top: 0.5rem;
       }
 
       input[type='email'] {
@@ -325,7 +330,7 @@ $toggle-line: 0.25rem;
         border: none;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-        text-indent: 2rem;
+        text-indent: 1.69rem;
 
         &::placeholder {
           color: $san-juan-blue;
@@ -394,6 +399,7 @@ $toggle-line: 0.25rem;
       text-align: center;
     }
   }
+
   //small devices
   .footer__container {
     background-position: top 11.06rem center;
@@ -432,15 +438,52 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  .header__container {
+  body {
+    overflow-x: hidden;
+    // .header__circle {
+    //   position: absolute;
+    //   // width: 59.3125rem;
+    //   // height: 59.3125rem;
+    //   width: 47rem;
+    //   height: 32rem;
+    //   left: 50%;
+    //   top: 3%;
+    //   border-radius: 59.3125rem;
+    //   transform: translate(-50%, -50%);
+    //   z-index: -1;
+    //   overflow: hidden;
+    // }
+
     .header__circle {
       position: absolute;
-      width: 59.3125rem;
-      height: 59.3125rem;
-      top: -41.5rem;
-      left: 50%;
-      transform: translate(-50%);
+      width: 56rem;
+      height: 55rem;
+      // left: 50%;
+      // top: -35rem;
+      border-radius: 50%;
+      transform: translate(-6%, -71%);
       z-index: -1;
+      overflow: hidden;
+    }
+  }
+
+  .header__container {
+    // .header__circle {
+    //   position: absolute;
+    //   // width: 59.3125rem;
+    //   // height: 59.3125rem;
+    //   width: 47rem;
+    //   height: 32rem;
+    //   left: 50%;
+    //   top: 3%;
+    //   border-radius: 59.3125rem;
+    //   transform: translate(-50%, -50%);
+    //   z-index: -1;
+    //   overflow: hidden;
+    // }
+
+    .circle {
+      display: none;
     }
 
     .nav__header {
@@ -469,13 +512,7 @@ $toggle-line: 0.25rem;
         > :last-child {
           margin-left: 3.1rem;
         }
-        > button > a {
-          text-align: center;
-          color: $link-water-white;
-          font-size: $p-regular-size;
-        }
       }
-
       .nav__link {
         display: grid;
         align-self: center;
@@ -538,27 +575,28 @@ $toggle-line: 0.25rem;
       position: absolute;
       width: 10.81rem;
       height: 3rem;
-      transform: translateX(8.375rem);
-      top: 2.13rem;
+      transform: translateX(8.5rem);
+      top: 2.1rem;
     }
 
     input[type='email'] {
-      width: 27.4375rem;
+      width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
-      box-shadow: 10px 10px 25px -10px #36536b40;
+      box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
       border: none;
       margin-top: 2.12rem;
       margin-bottom: 1rem;
-    }
+      text-indent: 1.69rem;
 
-    ::placeholder {
-      color: $san-juan-blue;
-      padding-left: 1.7rem;
-      font-weight: $font-bold;
-      font-family: $body-font;
-      font-size: $p-regular-size;
-      opacity: 0.5;
+      &::placeholder {
+        color: $san-juan-blue;
+        font-weight: $font-bold;
+        font-family: $body-font;
+        font-size: $p-regular-size;
+        line-height: normal;
+        opacity: 0.5;
+      }
     }
   }
 
@@ -600,6 +638,7 @@ $toggle-line: 0.25rem;
       letter-spacing: -0.02306rem;
       margin-bottom: 2rem;
       margin-left: 1rem;
+      margin-top: 7rem;
     }
 
     .demo__form {
@@ -608,7 +647,7 @@ $toggle-line: 0.25rem;
       justify-content: center;
       flex-direction: row;
       position: relative;
-      margin-bottom: 1rem;
+      margin-bottom: 5.2rem;
     }
 
     input[type='email'] {
@@ -617,9 +656,10 @@ $toggle-line: 0.25rem;
       border-radius: 1.5rem;
       box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
       border: none;
-      margin-top: 1.5rem;
+      margin-top: 1.3rem;
+      margin-right: -0.9rem;
       margin-bottom: 1rem;
-      text-indent: 2rem;
+      text-indent: 1.69rem;
 
       &::placeholder {
         color: $san-juan-blue;
@@ -635,8 +675,8 @@ $toggle-line: 0.25rem;
       position: absolute;
       width: 10.81rem;
       height: 3rem;
-      transform: translateX(8.375rem);
-      top: 1.5rem;
+      transform: translateX(9.1rem);
+      top: 1.3rem;
     }
   }
 
@@ -682,9 +722,7 @@ $toggle-line: 0.25rem;
         position: absolute;
         width: 48.75rem;
         height: 48.75rem;
-        top: -11rem;
-        left: 83%;
-        transform: translate(-50%);
+        transform: translate(102%, -28%);
       }
 
       .nav__menu {
@@ -761,22 +799,24 @@ $toggle-line: 0.25rem;
         }
 
         input[type='email'] {
-          width: 27.4375rem;
+          width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
-          box-shadow: 10px 10px 25px -10px #36536b40;
+          box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
           border: none;
           margin-top: 1.5rem;
           margin-bottom: 1rem;
-        }
+          text-indent: 2rem;
+          margin-right: 0.2rem;
 
-        ::placeholder {
-          color: $san-juan-blue;
-          padding-left: 1.7rem;
-          font-weight: $font-bold;
-          font-family: $body-font;
-          font-size: $p-regular-size;
-          opacity: 0.5;
+          &::placeholder {
+            color: $san-juan-blue;
+            font-weight: $font-bold;
+            font-family: $body-font;
+            font-size: $p-regular-size;
+            line-height: normal;
+            opacity: 0.5;
+          }
         }
       }
 
@@ -815,12 +855,13 @@ $toggle-line: 0.25rem;
         }
       }
     }
+
     .demo__container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      margin: 3.5rem auto;
+      margin: -1rem auto 3.5rem auto;
 
       .demo__title {
         text-align: center;
@@ -829,12 +870,12 @@ $toggle-line: 0.25rem;
         font-weight: $font-regular;
         line-height: 3.5rem;
         letter-spacing: -0.02306rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
         margin-left: 1.3rem;
       }
 
       .demo__form {
-        margin-bottom: 2rem;
+        margin-bottom: -4rem;
       }
 
       input[type='email'] {
@@ -845,8 +886,8 @@ $toggle-line: 0.25rem;
         border: none;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-        text-indent: 2rem;
-        margin-right: 1.6rem;
+        text-indent: 1.69rem;
+        margin-right: 0.4rem;
 
         &::placeholder {
           color: $san-juan-blue;
@@ -866,6 +907,7 @@ $toggle-line: 0.25rem;
         top: 1.5rem;
       }
     }
+
     //large
     .footer__container {
       width: 100%;

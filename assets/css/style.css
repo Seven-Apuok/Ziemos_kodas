@@ -11,6 +11,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
@@ -180,6 +184,9 @@ a {
   .header__container .header__circle {
     display: none;
   }
+  .header__container .circle {
+    display: none;
+  }
   .header__container .nav {
     position: fixed;
     top: 3rem;
@@ -210,6 +217,7 @@ a {
     flex-shrink: 0;
     z-index: 2;
     transform: translate(1.5rem, -0.44rem);
+    padding-bottom: 2rem;
   }
   .header__container .nav .nav__toggle:after {
     content: "";
@@ -251,7 +259,7 @@ a {
     padding: 5rem 1.25rem 1.25rem 0.625rem;
     transition: transform 0.3s ease;
     transform: translate(calc(100% + 3.125rem), 0);
-    background: linear-gradient(to bottom, rgba(27, 38, 47, 0.9), rgba(27, 38, 47, 0.95), #1b262f, #1b262f);
+    background-color: #1b262f;
     display: grid;
     grid-template-columns: 1fr;
     align-self: center;
@@ -260,6 +268,16 @@ a {
     box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.3019607843);
     text-align: center;
     overflow: hidden;
+  }
+  .header__container .nav .nav__menu::before {
+    content: "";
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48.75rem;
+    height: 48.75rem;
+    z-index: -1;
   }
   .header__container .nav .nav__link {
     text-align: center;
@@ -284,19 +302,11 @@ a {
   }
   .header__container .nav .nav__menu button {
     position: absolute;
-    transform: translate(1.2rem, 19.215rem);
+    transform: translate(1.6rem, 19.215rem);
     width: 15.75rem;
     height: 3rem;
     font-family: "Public Sans", sans-serif;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  }
-  .header__container .nav .nav__menu button > a {
-    text-align: center;
-    color: #fbfcfe;
-    padding: 0.8rem;
-    font-size: 0.9375rem;
-    transition: background-color 0.3s ease;
-    transform: translate(0.75rem, 3rem);
   }
   .header__container .nav__logo {
     margin-top: 2.5rem;
@@ -342,17 +352,18 @@ a {
     width: 20.4375rem;
     height: 3rem;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    text-indent: 1.69rem;
   }
-  .main__container .api__container ::placeholder {
+  .main__container .api__container input[type=email]::placeholder {
     color: #36536b;
-    padding-left: 1.7rem;
     font-weight: 700;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
+    line-height: normal;
     opacity: 0.5;
   }
   .main__container .companies__container {
@@ -403,10 +414,12 @@ a {
     line-height: 2.25rem;
     letter-spacing: -0.01538rem;
     font-style: normal;
+    margin-top: -0.5rem;
   }
   .main__container .demo__container .demo__form {
     display: flex;
     flex-direction: column;
+    margin-top: 0.5rem;
   }
   .main__container .demo__container input[type=email] {
     width: 20.4375rem;
@@ -416,7 +429,7 @@ a {
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    text-indent: 2rem;
+    text-indent: 1.69rem;
   }
   .main__container .demo__container input[type=email]::placeholder {
     color: #36536b;
@@ -498,14 +511,20 @@ a {
 }
 /* For medium devices */
 @media screen and (min-width: 768px) {
-  .header__container .header__circle {
+  body {
+    overflow-x: hidden;
+  }
+  body .header__circle {
     position: absolute;
-    width: 59.3125rem;
-    height: 59.3125rem;
-    top: -41.5rem;
-    left: 50%;
-    transform: translate(-50%);
+    width: 56rem;
+    height: 55rem;
+    border-radius: 50%;
+    transform: translate(-6%, -71%);
     z-index: -1;
+    overflow: hidden;
+  }
+  .header__container .circle {
+    display: none;
   }
   .header__container .nav__header {
     display: flex;
@@ -529,11 +548,6 @@ a {
   }
   .header__container .nav__header .nav__menu > :last-child {
     margin-left: 3.1rem;
-  }
-  .header__container .nav__header .nav__menu > button > a {
-    text-align: center;
-    color: #fbfcfe;
-    font-size: 0.9375rem;
   }
   .header__container .nav__header .nav__link {
     display: grid;
@@ -582,24 +596,25 @@ a {
     position: absolute;
     width: 10.81rem;
     height: 3rem;
-    transform: translateX(8.375rem);
-    top: 2.13rem;
+    transform: translateX(8.5rem);
+    top: 2.1rem;
   }
   .api__container input[type=email] {
-    width: 27.4375rem;
+    width: 27.8125rem;
     height: 3rem;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
     margin-top: 2.12rem;
     margin-bottom: 1rem;
+    text-indent: 1.69rem;
   }
-  .api__container ::placeholder {
+  .api__container input[type=email]::placeholder {
     color: #36536b;
-    padding-left: 1.7rem;
     font-weight: 700;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
+    line-height: normal;
     opacity: 0.5;
   }
   /*--------app----------*/
@@ -634,6 +649,7 @@ a {
     letter-spacing: -0.02306rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
+    margin-top: 7rem;
   }
   .demo__container .demo__form {
     display: flex;
@@ -641,7 +657,7 @@ a {
     justify-content: center;
     flex-direction: row;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 5.2rem;
   }
   .demo__container input[type=email] {
     width: 27.8125rem;
@@ -649,9 +665,10 @@ a {
     border-radius: 1.5rem;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
+    margin-right: -0.9rem;
     margin-bottom: 1rem;
-    text-indent: 2rem;
+    text-indent: 1.69rem;
   }
   .demo__container input[type=email]::placeholder {
     color: #36536b;
@@ -665,8 +682,8 @@ a {
     position: absolute;
     width: 10.81rem;
     height: 3rem;
-    transform: translateX(8.375rem);
-    top: 1.5rem;
+    transform: translateX(9.1rem);
+    top: 1.3rem;
   }
   .footer__container {
     width: 100%;
@@ -704,9 +721,7 @@ a {
     position: absolute;
     width: 48.75rem;
     height: 48.75rem;
-    top: -11rem;
-    left: 83%;
-    transform: translate(-50%);
+    transform: translate(102%, -28%);
   }
   .header__container .nav__menu > :last-child {
     margin-left: 29rem !important;
@@ -767,20 +782,22 @@ a {
     top: 24px;
   }
   .main__container .api__container input[type=email] {
-    width: 27.4375rem;
+    width: 27.8125rem;
     height: 3rem;
     border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.2509803922);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
+    text-indent: 2rem;
+    margin-right: 0.2rem;
   }
-  .main__container .api__container ::placeholder {
+  .main__container .api__container input[type=email]::placeholder {
     color: #36536b;
-    padding-left: 1.7rem;
     font-weight: 700;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
+    line-height: normal;
     opacity: 0.5;
   }
   .main__container .app__container {
@@ -816,7 +833,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 3.5rem auto;
+    margin: -1rem auto 3.5rem auto;
   }
   .demo__container .demo__title {
     text-align: center;
@@ -825,11 +842,11 @@ a {
     font-weight: 400;
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     margin-left: 1.3rem;
   }
   .demo__container .demo__form {
-    margin-bottom: 2rem;
+    margin-bottom: -4rem;
   }
   .demo__container input[type=email] {
     width: 27.8125rem;
@@ -839,8 +856,8 @@ a {
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    text-indent: 2rem;
-    margin-right: 1.6rem;
+    text-indent: 1.69rem;
+    margin-right: 0.4rem;
   }
   .demo__container input[type=email]::placeholder {
     color: #36536b;

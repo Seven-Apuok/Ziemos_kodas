@@ -17,7 +17,7 @@
       />
       <div class="nav__header">
         <div class="nav__logo">
-          <a href="/about.html"><img src="/assets/images/shared/desktop/logo.svg" alt="logo" /></a>
+          <a href="/index.html"><img src="/assets/images/shared/desktop/logo.svg" alt="logo" /></a>
         </div>
         <div class="nav">
           <div class="nav__toggle"></div>
@@ -26,8 +26,8 @@
             <a class="nav__link" href="/pricing.html">Pricing</a>
             <a class="nav__link" href="/about.html">About</a>
             <a class="nav__link" href="/contacts.html">Contact</a>
-            <button class="primary-button-normal">
-              <a href="#schedule">Schedule a Demo</a>
+            <button class="primary-button-normal nav__button" data-section="schedule">
+              Schedule a Demo
             </button>
           </nav>
         </div>
@@ -39,15 +39,20 @@
         <img class="api_mobile" src="/assets/images/home/desktop/phone_api.svg" alt="phone api" />
         <div class="api__flex">
           <h1 class="api-title">Start building with our APIs for absolutely free.</h1>
-          <div class="api__inside">
+          <form
+            class="api__inside"
+            action="mailto:recipient@example.com"
+            method="post"
+            enctype="text/plain"
+          >
             <input
               id="schedule"
               type="email"
-              placeholder="Enter email adress"
+              placeholder="Enter email address"
               required="required"
             />
             <button class="primary-button-normal">Schedule a Demo</button>
-          </div>
+          </form>
           <p class="api_paragraph">
             Have any questions?
             <a class="api_paragraph" href="#" target="_blank"><b>Contact Us</b></a>
@@ -167,7 +172,18 @@
 
       <!-- nutrinti, nes jau viskas parasyta i si konteineri auksciau. Paziureti ar teisingoj vietoj, nes kazkas buvo apkeites su api__container -->
 
-      <section class="demo__container">demo</section>
+      <section class="demo__container">
+        <h3 class="demo__title">Ready to start?</h3>
+        <form
+          class="demo__form"
+          action="mailto:recipient@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <input type="email" placeholder="Enter email address" required="required" />
+          <button type="submit" class="primary-button-normal">Schedule a Demo</button>
+        </form>
+      </section>
     </main>
     <footer class="footer__container">
       <div>
