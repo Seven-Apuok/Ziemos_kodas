@@ -563,7 +563,8 @@ a {
 /* For medium devices */
 @media screen and (min-width: 768px) {
   body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 0rem -30rem;
+    overflow-x: hidden;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle-tablet.svg") no-repeat -10rem -36rem;
   }
   .header__container .header__circle {
     display: none;
@@ -816,12 +817,11 @@ a {
   /* For large devices */
 }
 @media screen and (min-width: 768px) and (min-width: 1440px) {
+  body {
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
+  }
   .header__container .header__circle {
-    position: absolute;
-    width: 48.75rem;
-    height: 48.75rem;
-    transform: translate(104.2%, -27%);
-    z-index: -1;
+    display: none;
   }
   .header__container .nav__menu > :last-child {
     margin-left: 29rem !important;

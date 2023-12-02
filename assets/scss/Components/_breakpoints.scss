@@ -11,8 +11,7 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
-      no-repeat center -34rem;
+    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
   }
 
   header {
@@ -79,7 +78,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -91,7 +90,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -135,9 +134,8 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: "";
-          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
-            no-repeat -17.8rem -34.1rem;
+          content: '';
+          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -159,7 +157,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: 0.2rem;
           text-align: center;
@@ -231,7 +229,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -387,7 +385,7 @@ $toggle-line: 0.25rem;
         margin-top: 0.5rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -501,8 +499,9 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 768px) {
   body {
-    // overflow-x: hidden;
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 0rem -30rem;
+    overflow-x: hidden;
+    // background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 0rem -30rem;
+    background: url('/assets/images/shared/desktop/bg-pattern-circle-tablet.svg') no-repeat -10rem -36rem;
   }
 
   .header__container {
@@ -654,7 +653,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -749,7 +748,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -815,13 +814,22 @@ $toggle-line: 0.25rem;
 
   /* For large devices */
   @media screen and (min-width: 1440px) {
+    body {
+      // overflow-x: hidden;
+      background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
+    }
+
     .header__container {
+      // .header__circle {
+      //   position: absolute;
+      //   width: 48.75rem;
+      //   height: 48.75rem;
+      //   transform: translate(104.2%, -27%);
+      //   z-index: -1;
+      // }
+
       .header__circle {
-        position: absolute;
-        width: 48.75rem;
-        height: 48.75rem;
-        transform: translate(104.2%, -27%);
-        z-index: -1;
+        display: none;
       }
 
       .nav__menu {
@@ -862,7 +870,7 @@ $toggle-line: 0.25rem;
           //margin-bottom: 20px;
 
           // &:nth-child(n + 3) {
-          //   //margin-left: 39px; 
+          //   //margin-left: 39px;
           // }
 
           &:nth-child(even) {
@@ -961,7 +969,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type="email"] {
+        input[type='email'] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -1069,7 +1077,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;
