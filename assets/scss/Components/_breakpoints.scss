@@ -159,11 +159,11 @@ $toggle-line: 0.25rem;
         &:before {
           content: '';
           position: absolute;
-          left: 1rem;
+          left: 0.2rem;
           text-align: center;
-          top: -2rem;
+          top: -2.05rem;
           bottom: 0rem;
-          width: 98%;
+          width: 100%;
           height: 0.0625rem;
           background-color: $link-water-white;
           opacity: 0.15;
@@ -258,10 +258,41 @@ $toggle-line: 0.25rem;
     }
 
     .implement__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.8rem;
+      .implement__image {
+        width: 20.5rem;
+        height: 13.0625rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        filter: drop-shadow(25px 25px 40px #36536b4d);
+      }
+      .implement__text {
+        text-align: center;
+        font-style: normal;
+        width: 20.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+        margin-top: 2.856rem;
+        font-weight: $font-regular;
+      }
+      .implement__h2_text {
+        color: $san-juan-blue;
+        font-family: $body-second-font;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.01731rem;
+        margin-bottom: 1.5rem;
+      }
+      .implement__p_text {
+        color: $san-juan-blue-light;
+        font-family: $body-font;
+        font-size: $p-regular-size;
+        line-height: 1.75rem;
+      }
     }
 
     /*--------app----------*/
@@ -269,6 +300,7 @@ $toggle-line: 0.25rem;
     .app__container {
       text-align: center;
       margin: 0 auto;
+      // margin: 0 auto 4rem auto;
 
       .app__mobile {
         width: 40.9%;
@@ -440,47 +472,18 @@ $toggle-line: 0.25rem;
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;
-    // .header__circle {
-    //   position: absolute;
-    //   // width: 59.3125rem;
-    //   // height: 59.3125rem;
-    //   width: 47rem;
-    //   height: 32rem;
-    //   left: 50%;
-    //   top: 3%;
-    //   border-radius: 59.3125rem;
-    //   transform: translate(-50%, -50%);
-    //   z-index: -1;
-    //   overflow: hidden;
-    // }
-
-    .header__circle {
-      position: absolute;
-      width: 56rem;
-      height: 55rem;
-      // left: 50%;
-      // top: -35rem;
-      border-radius: 50%;
-      transform: translate(-6%, -71%);
-      z-index: -1;
-      overflow: hidden;
-    }
   }
 
   .header__container {
-    // .header__circle {
-    //   position: absolute;
-    //   // width: 59.3125rem;
-    //   // height: 59.3125rem;
-    //   width: 47rem;
-    //   height: 32rem;
-    //   left: 50%;
-    //   top: 3%;
-    //   border-radius: 59.3125rem;
-    //   transform: translate(-50%, -50%);
-    //   z-index: -1;
-    //   overflow: hidden;
-    // }
+    .header__circle {
+      position: absolute;
+      width: 59.3125rem;
+      height: 59.3125rem;
+      border-radius: 59.3125rem;
+      transform: translate(-9%, -73%);
+      z-index: -1;
+      overflow: hidden;
+    }
 
     .circle {
       display: none;
@@ -599,11 +602,35 @@ $toggle-line: 0.25rem;
       }
     }
   }
+  .implement__container {
+    .implement__image {
+      width: 24.48281rem;
+      height: 15.625rem;
+      margin: 6.25rem 11.77rem 3rem 11.75rem;
+      filter: drop-shadow(25px 25px 40px rgba($san-juan-blue, 0.302));
+    }
+    .implement__text {
+      text-align: center;
+      width: 35.8125rem;
+      margin: -0.18rem 6.12rem 6.27rem 6.06rem;
+    }
+    .implement__h2_text {
+      font-size: $h2-regular-size;
+      margin-bottom: 1.5rem;
+      line-height: 3.5rem;
+      letter-spacing: -0.02306rem;
+    }
+    .implement__p_text {
+      font-size: $p-regular-size;
+      margin-bottom: 1.5rem;
+      line-height: 1.75rem;
+    }
+  }
 
   /*--------app----------*/
   .app__container {
     text-align: center;
-    margin: 0 auto;
+    margin: 0rem auto 5.5rem auto;
 
     .app__mobile {
       width: 22%;
@@ -722,7 +749,8 @@ $toggle-line: 0.25rem;
         position: absolute;
         width: 48.75rem;
         height: 48.75rem;
-        transform: translate(102%, -28%);
+        transform: translate(104.2%, -27%);
+        z-index: -1;
       }
 
       .nav__menu {
@@ -817,6 +845,34 @@ $toggle-line: 0.25rem;
             line-height: normal;
             opacity: 0.5;
           }
+        }
+      }
+
+      .implement__container {
+        display: flex;
+        margin-bottom: 7.62rem;
+        .implement__image {
+          width: 27.8125rem;
+          height: 17.75rem;
+          margin: 9.37rem 0rem 0rem 10.31rem;
+          filter: drop-shadow(25px 25px 40px rgba($san-juan-blue, 0.302));
+        }
+        .implement__text {
+          text-align: left;
+          width: 27.8125rem;
+          height: 10.25rem;
+          margin-top: 13.12rem;
+          margin-left: 7.73rem;
+        }
+        .implement__h2_text {
+          font-size: $h2-regular-size;
+          margin-bottom: 1.5rem;
+          line-height: 3.5rem;
+          letter-spacing: -0.02306rem;
+        }
+        .implement__p_text {
+          font-size: $p-regular-size;
+          line-height: 1.75rem;
         }
       }
 
