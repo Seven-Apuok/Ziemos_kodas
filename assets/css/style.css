@@ -543,18 +543,9 @@ a {
 /* For medium devices */
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 0rem -30rem;
   }
   .header__container .header__circle {
-    position: absolute;
-    width: 59.3125rem;
-    height: 59.3125rem;
-    border-radius: 59.3125rem;
-    transform: translate(-9%, -73%);
-    z-index: -1;
-    overflow: hidden;
-  }
-  .header__container .circle {
     display: none;
   }
   .header__container .nav__header {
