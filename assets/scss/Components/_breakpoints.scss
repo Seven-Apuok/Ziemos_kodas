@@ -313,11 +313,13 @@ $toggle-line: 0.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01538rem;
         font-style: normal;
+        margin-top: -0.5rem;
       }
 
       .demo__form {
         display: flex;
         flex-direction: column;
+        margin-top: 0.5rem;
       }
 
       input[type='email'] {
@@ -636,6 +638,7 @@ $toggle-line: 0.25rem;
       letter-spacing: -0.02306rem;
       margin-bottom: 2rem;
       margin-left: 1rem;
+      margin-top: 7rem;
     }
 
     .demo__form {
@@ -644,7 +647,7 @@ $toggle-line: 0.25rem;
       justify-content: center;
       flex-direction: row;
       position: relative;
-      margin-bottom: 1rem;
+      margin-bottom: 5.2rem;
     }
 
     input[type='email'] {
@@ -653,7 +656,8 @@ $toggle-line: 0.25rem;
       border-radius: 1.5rem;
       box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
       border: none;
-      margin-top: 1.5rem;
+      margin-top: 1.3rem;
+      margin-right: -0.9rem;
       margin-bottom: 1rem;
       text-indent: 1.69rem;
 
@@ -671,8 +675,8 @@ $toggle-line: 0.25rem;
       position: absolute;
       width: 10.81rem;
       height: 3rem;
-      transform: translateX(8.5rem);
-      top: 1.5rem;
+      transform: translateX(9.1rem);
+      top: 1.3rem;
     }
   }
 
@@ -718,9 +722,7 @@ $toggle-line: 0.25rem;
         position: absolute;
         width: 48.75rem;
         height: 48.75rem;
-        top: -11rem;
-        left: 83%;
-        transform: translate(-50%);
+        transform: translate(102%, -28%);
       }
 
       .nav__menu {
@@ -859,7 +861,7 @@ $toggle-line: 0.25rem;
       justify-content: space-between;
       align-items: center;
       width: 80%;
-      margin: 3.5rem auto;
+      margin: -1rem auto 3.5rem auto;
 
       .demo__title {
         text-align: center;
@@ -868,12 +870,12 @@ $toggle-line: 0.25rem;
         font-weight: $font-regular;
         line-height: 3.5rem;
         letter-spacing: -0.02306rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
         margin-left: 1.3rem;
       }
 
       .demo__form {
-        margin-bottom: 2rem;
+        margin-bottom: -4rem;
       }
 
       input[type='email'] {
@@ -884,8 +886,8 @@ $toggle-line: 0.25rem;
         border: none;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-        text-indent: 2rem;
-        margin-right: 0.2rem;
+        text-indent: 1.69rem;
+        margin-right: 0.4rem;
 
         &::placeholder {
           color: $san-juan-blue;

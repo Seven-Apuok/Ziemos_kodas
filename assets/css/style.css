@@ -414,10 +414,12 @@ a {
     line-height: 2.25rem;
     letter-spacing: -0.01538rem;
     font-style: normal;
+    margin-top: -0.5rem;
   }
   .main__container .demo__container .demo__form {
     display: flex;
     flex-direction: column;
+    margin-top: 0.5rem;
   }
   .main__container .demo__container input[type=email] {
     width: 20.4375rem;
@@ -647,6 +649,7 @@ a {
     letter-spacing: -0.02306rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
+    margin-top: 7rem;
   }
   .demo__container .demo__form {
     display: flex;
@@ -654,7 +657,7 @@ a {
     justify-content: center;
     flex-direction: row;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 5.2rem;
   }
   .demo__container input[type=email] {
     width: 27.8125rem;
@@ -662,7 +665,8 @@ a {
     border-radius: 1.5rem;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
     border: none;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
+    margin-right: -0.9rem;
     margin-bottom: 1rem;
     text-indent: 1.69rem;
   }
@@ -678,8 +682,8 @@ a {
     position: absolute;
     width: 10.81rem;
     height: 3rem;
-    transform: translateX(8.5rem);
-    top: 1.5rem;
+    transform: translateX(9.1rem);
+    top: 1.3rem;
   }
   .footer__container {
     width: 100%;
@@ -717,9 +721,7 @@ a {
     position: absolute;
     width: 48.75rem;
     height: 48.75rem;
-    top: -11rem;
-    left: 83%;
-    transform: translate(-50%);
+    transform: translate(102%, -28%);
   }
   .header__container .nav__menu > :last-child {
     margin-left: 29rem !important;
@@ -831,7 +833,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin: 3.5rem auto;
+    margin: -1rem auto 3.5rem auto;
   }
   .demo__container .demo__title {
     text-align: center;
@@ -840,11 +842,11 @@ a {
     font-weight: 400;
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     margin-left: 1.3rem;
   }
   .demo__container .demo__form {
-    margin-bottom: 2rem;
+    margin-bottom: -4rem;
   }
   .demo__container input[type=email] {
     width: 27.8125rem;
@@ -854,8 +856,8 @@ a {
     border: none;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    text-indent: 2rem;
-    margin-right: 0.2rem;
+    text-indent: 1.69rem;
+    margin-right: 0.4rem;
   }
   .demo__container input[type=email]::placeholder {
     color: #36536b;
