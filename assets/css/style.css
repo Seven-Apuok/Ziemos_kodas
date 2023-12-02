@@ -259,7 +259,7 @@ a {
     padding: 5rem 1.25rem 1.25rem 0.625rem;
     transition: transform 0.3s ease;
     transform: translate(calc(100% + 3.125rem), 0);
-    background: linear-gradient(to bottom, rgba(27, 38, 47, 0.9), rgba(27, 38, 47, 0.95), #1b262f, #1b262f);
+    background-color: #1b262f;
     display: grid;
     grid-template-columns: 1fr;
     align-self: center;
@@ -268,6 +268,16 @@ a {
     box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.3019607843);
     text-align: center;
     overflow: hidden;
+  }
+  .header__container .nav .nav__menu::before {
+    content: "";
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48.75rem;
+    height: 48.75rem;
+    z-index: -1;
   }
   .header__container .nav .nav__link {
     text-align: center;
