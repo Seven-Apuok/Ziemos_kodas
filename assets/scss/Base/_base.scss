@@ -9,11 +9,12 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: $body-font;
-  font-size: $p-regular-size;
-  min-width: 375px;
-}
+//jei aprasom _body.scss tai nebedubliuokim cia
+// body {
+//   font-family: $body-font;
+//   font-size: $p-regular-size;
+//   min-width: 375px;
+// }
 
 h1 {
   font-family: $body-second-font;
