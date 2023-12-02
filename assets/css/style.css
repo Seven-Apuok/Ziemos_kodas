@@ -683,8 +683,8 @@ a {
     top: 1.3rem;
   }
   .footer__container {
-    width: 100%;
-    margin-left: 0;
+    width: 103%;
+    margin-left: 0px;
     background-position: left 21.19rem top -9.46rem;
     height: 6.25rem;
     display: flex;
@@ -709,7 +709,7 @@ a {
   }
   .footer__container .api__media {
     margin-top: 2.38rem;
-    margin-left: 8.625rem;
+    margin-left: 6.63rem;
   }
   /* For large devices */
 }
