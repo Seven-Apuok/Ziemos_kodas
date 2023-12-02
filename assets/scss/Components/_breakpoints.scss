@@ -254,18 +254,40 @@ $toggle-line: 0.25rem;
 
     //companies small screens
 
-    // .companies__container {
-    //   .companies__logos {
-    //     svg {
-    //     }
-    //   }
-    //   .companies__texts {
-    //     h3 {
-    //     }
-    //     p {
-    //     }
-    //   }
-    // }
+    .companies__container {
+      margin-top: 79px; //tarpai iki kito box elementu
+      margin-bottom: 80px; //tarpai iki kito box elementu
+
+      background-position: top -37rem center;
+
+      width: 103%;
+      padding-bottom: 80px;
+
+      .companies__logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* reikia patikrinti nes tiksliai nematau is figmos arba jis skirtingas prie kiekvieno logo */
+        align-items: center;
+        justify-items: center;
+        margin-top: 80px;
+        margin-left: 48px;
+        margin-right: 47px;
+        svg {
+          margin-bottom: 39px;
+        }
+      }
+      .companies__texts {
+        width: 327px;
+        h3 {
+          margin-top: 18.73px;
+          margin-bottom: 16px;
+        }
+        p {
+          margin-bottom: 60px;
+          font-size: 14.9px; // cia kazkokia nesamone, bet 15px cia netelpa kaip pagal figma
+        }
+      }
+    }
 
     .implement__container {
       height: 200px;
@@ -534,18 +556,43 @@ $toggle-line: 0.25rem;
 
     //companies medium screens
 
-    // .companies__container {
-    //   .companies__logos {
-    //     svg {
-    //     }
-    //   }
-    //   .companies__texts {
-    //     h3 {
-    //     }
-    //     p {
-    //     }
-    //   }
-    // }
+    .companies__container {
+      margin-top: 100px; //tarpai iki kito box elementu
+      margin-bottom: 100px; //tarpai iki kito box elementu
+
+      background-position: bottom 383px center;
+      width: 103%;
+      padding-left: 155px;
+      padding-right: 155px;
+      padding-bottom: 88px;
+      .companies__logos {
+        padding-top: 88px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        //grid-template-rows: repeat(2, 1fr);
+        gap: 45px; //reiks pasikoreguot
+        svg {
+          transform: scale(1.21);
+        }
+      }
+      .companies__texts {
+        margin-top: 23px;
+        h3 {
+          margin-top: 67px;
+          margin-bottom: 24px;
+
+          font-size: $h2-regular-size;
+          line-height: $h1-small-line-height; /* 116.667% */
+          letter-spacing: -0.369px;
+        }
+        p {
+          margin-bottom: 32px;
+
+          opacity: 0.7;
+          font-size: 15.1px;
+        }
+      }
+    }
 
     .finances__container {
       margin-top: 100px;
@@ -711,10 +758,10 @@ $toggle-line: 0.25rem;
     height: 6.25rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 31.7px;
 
     .api__logo {
-      margin-left: 2.44rem;
+      margin-left: 39px;
       margin-top: 1.94rem;
     }
 
@@ -722,8 +769,8 @@ $toggle-line: 0.25rem;
       display: flex;
       flex-direction: row;
       margin-top: 1.63rem;
-      gap: 2.5rem;
-      margin-left: 3.25rem;
+      gap: 40px;
+      margin-left: 32px;
 
       a {
         color: $link-water-white;
@@ -761,18 +808,67 @@ $toggle-line: 0.25rem;
 
       //companies big screens
 
-      // .companies__container {
-      //   .companies__logos {
-      //     svg {
-      //     }
-      //   }
-      //   .companies__texts {
-      //     h3 {
-      //     }
-      //     p {
-      //     }
-      //   }
-      // }
+      .companies__container {
+        margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
+        //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
+        margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
+
+        padding: 0;
+        background-position: bottom 51px right 895px;
+
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // column-gap: 131px; /* Tarpas tarp stulpelių */
+        // align-items: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .companies__logos {
+          width: calc(50% - 10px);
+          //margin-bottom: 20px;
+
+          // &:nth-child(n + 3) {
+          //   //margin-left: 39px; 
+          // }
+
+          &:nth-child(even) {
+            margin-left: 131px;
+          }
+
+          gap: 0;
+          padding: 0;
+          svg {
+            margin-bottom: 62px;
+          }
+        }
+        .companies__texts {
+          margin-top: 6.25rem;
+          margin-bottom: 6.25rem;
+          margin-left: 10.31rem;
+
+          h3 {
+            margin-top: 0;
+
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -0.02306rem;
+          }
+          p {
+            font-size: $p-regular-size;
+            font-style: normal;
+            font-weight: $font-regular;
+            line-height: 1.75rem; /* 186.667% */
+            opacity: 0.7;
+
+            width: 445px;
+          }
+        }
+      }
 
       .finances__container {
         width: 100%;
@@ -945,7 +1041,6 @@ $toggle-line: 0.25rem;
         top: 1.5rem;
       }
     }
-
 
     .footer__container {
       width: 100%;

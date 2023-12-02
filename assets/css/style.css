@@ -360,6 +360,37 @@ a {
     line-height: normal;
     opacity: 0.5;
   }
+  .main__container .companies__container {
+    margin-top: 79px;
+    margin-bottom: 80px;
+    background-position: top -37rem center;
+    width: 103%;
+    padding-bottom: 80px;
+  }
+  .main__container .companies__container .companies__logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* reikia patikrinti nes tiksliai nematau is figmos arba jis skirtingas prie kiekvieno logo */
+    align-items: center;
+    justify-items: center;
+    margin-top: 80px;
+    margin-left: 48px;
+    margin-right: 47px;
+  }
+  .main__container .companies__container .companies__logos svg {
+    margin-bottom: 39px;
+  }
+  .main__container .companies__container .companies__texts {
+    width: 327px;
+  }
+  .main__container .companies__container .companies__texts h3 {
+    margin-top: 18.73px;
+    margin-bottom: 16px;
+  }
+  .main__container .companies__container .companies__texts p {
+    margin-bottom: 60px;
+    font-size: 14.9px;
+  }
   .main__container .implement__container {
     height: 200px;
     border: 1px solid #000;
@@ -542,6 +573,39 @@ a {
     display: grid;
     align-self: center;
   }
+  .main__container .companies__container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-position: bottom 383px center;
+    width: 103%;
+    padding-left: 155px;
+    padding-right: 155px;
+    padding-bottom: 88px;
+  }
+  .main__container .companies__container .companies__logos {
+    padding-top: 88px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+  }
+  .main__container .companies__container .companies__logos svg {
+    transform: scale(1.21);
+  }
+  .main__container .companies__container .companies__texts {
+    margin-top: 23px;
+  }
+  .main__container .companies__container .companies__texts h3 {
+    margin-top: 67px;
+    margin-bottom: 24px;
+    font-size: 3rem;
+    line-height: 3.5rem; /* 116.667% */
+    letter-spacing: -0.369px;
+  }
+  .main__container .companies__container .companies__texts p {
+    margin-bottom: 32px;
+    opacity: 0.7;
+    font-size: 15.1px;
+  }
   .main__container .finances__container {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -683,18 +747,18 @@ a {
     height: 6.25rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 31.7px;
   }
   .footer__container .api__logo {
-    margin-left: 2.44rem;
+    margin-left: 39px;
     margin-top: 1.94rem;
   }
   .footer__container .footer__nav {
     display: flex;
     flex-direction: row;
     margin-top: 1.63rem;
-    gap: 2.5rem;
-    margin-left: 3.25rem;
+    gap: 40px;
+    margin-left: 32px;
   }
   .footer__container .footer__nav a {
     color: #fbfcfe;
@@ -720,6 +784,48 @@ a {
   .main__container {
     /* Mobile Home api*/
     /*--------app----------*/
+  }
+  .main__container .companies__container {
+    margin-top: 75.57px;
+    margin-bottom: 150px;
+    padding: 0;
+    background-position: bottom 51px right 895px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .main__container .companies__container .companies__logos {
+    width: calc(50% - 10px);
+    gap: 0;
+    padding: 0;
+  }
+  .main__container .companies__container .companies__logos:nth-child(even) {
+    margin-left: 131px;
+  }
+  .main__container .companies__container .companies__logos svg {
+    margin-bottom: 62px;
+  }
+  .main__container .companies__container .companies__texts {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    margin-left: 10.31rem;
+  }
+  .main__container .companies__container .companies__texts h3 {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.02306rem;
+  }
+  .main__container .companies__container .companies__texts p {
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem; /* 186.667% */
+    opacity: 0.7;
+    width: 445px;
   }
   .main__container .finances__container {
     width: 100%;
@@ -987,8 +1093,37 @@ div.nav__toggle,
 }
 
 .companies__container {
-  background-color: #36536b;
+  background-color: #1b262f;
   text-align: center;
+  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+}
+.companies__container .companies__logos svg path {
+  fill: #fbfcfe;
+}
+.companies__container .companies__texts {
+  margin: 0 auto;
+  color: #fbfcfe;
+}
+.companies__container .companies__texts h3 {
+  color: #fbfcfe;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.246px;
+}
+.companies__container .companies__texts p {
+  color: #fbfcfe;
+  opacity: 0.7;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 186.667% */
 }
 
 /*# sourceMappingURL=style.css.map */
