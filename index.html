@@ -26,8 +26,8 @@
             <a class="nav__link" href="/pricing.html">Pricing</a>
             <a class="nav__link" href="/about.html">About</a>
             <a class="nav__link" href="/contacts.html">Contact</a>
-            <button class="primary-button-normal">
-              <a href="#schedule">Schedule a Demo</a>
+            <button class="primary-button-normal nav__button" data-section="schedule">
+              <a href="#">Schedule a Demo</a>
             </button>
           </nav>
         </div>
@@ -40,7 +40,12 @@
         <div class="api__flex">
           <h1 class="api-title">Start building with our APIs for absolutely free.</h1>
           <div class="api__inside">
-            <input type="email" placeholder="Enter email adress" required="required" />
+            <input
+              id="schedule"
+              type="email"
+              placeholder="Enter email adress"
+              required="required"
+            />
             <button class="primary-button-normal">Schedule a Demo</button>
           </div>
           <p class="api_paragraph">
@@ -152,7 +157,7 @@
           </svg>
           <div class="finances__box__text">
             <h3>Consumer Payments</h3>
-            <p id="schedule">
+            <p>
               It`s easier to set up secure bank payments with us through a flow designed with the
               user experience in mind. Customers could instantly authenticate their account.
             </p>
