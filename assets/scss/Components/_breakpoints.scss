@@ -260,7 +260,8 @@ $toggle-line: 0.25rem;
 
       background-position: top -37rem center;
 
-      width: 103%;
+      width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
+
       padding-bottom: 80px;
 
       .companies__logos {
@@ -561,7 +562,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 100px; //tarpai iki kito box elementu
 
       background-position: bottom 383px center;
-      width: 103%;
+      width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
       padding-left: 155px;
       padding-right: 155px;
       padding-bottom: 88px;
@@ -569,8 +570,8 @@ $toggle-line: 0.25rem;
         padding-top: 88px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        //grid-template-rows: repeat(2, 1fr);
-        gap: 45px; //reiks pasikoreguot
+
+        gap: 45px; 
         svg {
           transform: scale(1.21);
         }
@@ -752,7 +753,7 @@ $toggle-line: 0.25rem;
   }
 
   .footer__container {
-    width: 103%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
+    width: 107%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
     margin-left: 0px;
     background-position: left 21.19rem top -9.46rem;
     height: 6.25rem;
@@ -812,15 +813,11 @@ $toggle-line: 0.25rem;
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
         margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
+        
+        width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
 
         padding: 0;
         background-position: bottom 51px right 895px;
-
-        // display: grid;
-        // grid-template-columns: repeat(2, 1fr);
-        // column-gap: 131px; /* Tarpas tarp stulpelių */
-        // align-items: center;
-
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
@@ -828,9 +825,8 @@ $toggle-line: 0.25rem;
         flex-direction: row-reverse;
         align-items: center;
 
-        .companies__logos {
+        .footer__logos {
           width: calc(50% - 10px);
-          //margin-bottom: 20px;
 
           // &:nth-child(n + 3) {
           //   //margin-left: 39px; 
