@@ -11,7 +11,8 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
+      no-repeat center -34rem;
   }
 
   header {
@@ -78,7 +79,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -90,7 +91,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -134,8 +135,9 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: '';
-          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
+          content: "";
+          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
+            no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -157,7 +159,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: 1rem;
           text-align: center;
@@ -229,7 +231,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -250,12 +252,20 @@ $toggle-line: 0.25rem;
       }
     }
 
-    .companies__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
-    }
+    //companies small screens
+
+    // .companies__container {
+    //   .companies__logos {
+    //     svg {
+    //     }
+    //   }
+    //   .companies__texts {
+    //     h3 {
+    //     }
+    //     p {
+    //     }
+    //   }
+    // }
 
     .implement__container {
       height: 200px;
@@ -323,7 +333,7 @@ $toggle-line: 0.25rem;
         margin-top: 0.5rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -522,7 +532,21 @@ $toggle-line: 0.25rem;
     //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
-    //nuo cia finances dalis tabletams
+    //companies medium screens
+
+    // .companies__container {
+    //   .companies__logos {
+    //     svg {
+    //     }
+    //   }
+    //   .companies__texts {
+    //     h3 {
+    //     }
+    //     p {
+    //     }
+    //   }
+    // }
+
     .finances__container {
       margin-top: 100px;
       margin-bottom: 100px;
@@ -579,7 +603,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -650,7 +674,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -680,12 +704,10 @@ $toggle-line: 0.25rem;
     }
   }
 
-  //medium
   .footer__container {
- 
-  width: 103%;//laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
-   margin-left: 0px;
-   background-position: left 21.19rem top -9.46rem;
+    width: 103%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
+    margin-left: 0px;
+    background-position: left 21.19rem top -9.46rem;
     height: 6.25rem;
     display: flex;
     flex-direction: row;
@@ -737,8 +759,23 @@ $toggle-line: 0.25rem;
       //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
-      // //finances start here
+      //companies big screens
+
+      // .companies__container {
+      //   .companies__logos {
+      //     svg {
+      //     }
+      //   }
+      //   .companies__texts {
+      //     h3 {
+      //     }
+      //     p {
+      //     }
+      //   }
+      // }
+
       .finances__container {
+        width: 100%;
         margin-top: 146.57px;
         margin-bottom: 100px;
         margin-right: 10.31rem;
@@ -747,8 +784,6 @@ $toggle-line: 0.25rem;
         display: flex;
         flex-direction: row;
       }
-
-      //end
 
       /* Mobile Home api*/
       .api__container {
@@ -801,7 +836,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type='email'] {
+        input[type="email"] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -881,7 +916,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -911,7 +946,7 @@ $toggle-line: 0.25rem;
       }
     }
 
-    //large
+
     .footer__container {
       width: 100%;
       background-position: left 65.62rem top -9.46rem;

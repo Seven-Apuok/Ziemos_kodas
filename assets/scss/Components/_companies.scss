@@ -1,0 +1,25 @@
+.companies__container {
+    background-color: $san-juan-blue;
+    text-align: center;
+  .companies__logos {
+    svg {
+    }
+  }
+  .companies__texts {
+    h3 {
+    }
+    p {
+    }
+  }
+}
+
+// Struktura:
+// .companies__container{
+//     .companies__logos{
+//         svg{}
+//     }
+//     .companies__texts{
+//         h3{}
+//         p{}
+//     }
+//  }

@@ -360,12 +360,6 @@ a {
     line-height: normal;
     opacity: 0.5;
   }
-  .main__container .companies__container {
-    height: 200px;
-    border: 1px solid #000;
-    font-size: 1.3rem;
-    text-align: center;
-  }
   .main__container .implement__container {
     height: 200px;
     border: 1px solid #000;
@@ -728,6 +722,7 @@ a {
     /*--------app----------*/
   }
   .main__container .finances__container {
+    width: 100%;
     margin-top: 146.57px;
     margin-bottom: 100px;
     margin-right: 10.31rem;
@@ -989,6 +984,11 @@ div.nav__toggle,
 }
 .footer__nav a:hover {
   opacity: 1;
+}
+
+.companies__container {
+  background-color: #36536b;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
