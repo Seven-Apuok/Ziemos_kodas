@@ -295,6 +295,7 @@ $toggle-line: 0.25rem;
 
     .finances__container {
       width: 328px;
+      margin-bottom: 32px;
 
       svg {
         margin-bottom: 2.06rem;
@@ -421,9 +422,6 @@ $toggle-line: 0.25rem;
         color: $link-water-white;
         margin-top: 1.94rem;
         opacity: 0.7;
-        // &:hover {
-        //   opacity: 1;  //header links opacity hover
-        // }
       }
     }
 
@@ -526,6 +524,8 @@ $toggle-line: 0.25rem;
 
     //nuo cia finances dalis tabletams
     .finances__container {
+      margin-top: 100px;
+      margin-bottom: 100px;
       margin-right: 2.5rem;
       margin-left: 2.44rem;
       gap: 0.62rem;
@@ -738,6 +738,8 @@ $toggle-line: 0.25rem;
 
       // //finances start here
       .finances__container {
+        margin-top: 146.57px;
+        margin-bottom: 100px;
         margin-right: 10.31rem;
         margin-left: 10.31rem;
         gap: 1.88rem;

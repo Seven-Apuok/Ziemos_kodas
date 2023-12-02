@@ -15,12 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Public Sans", sans-serif;
-  font-size: 0.9375rem;
-  min-width: 375px;
-}
-
 h1 {
   font-family: "DM Serif Display", serif;
   font-size: 4.5rem;
@@ -402,6 +396,7 @@ a {
   }
   .main__container .finances__container {
     width: 328px;
+    margin-bottom: 32px;
   }
   .main__container .finances__container svg {
     margin-bottom: 2.06rem;
@@ -554,6 +549,8 @@ a {
     align-self: center;
   }
   .main__container .finances__container {
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-right: 2.5rem;
     margin-left: 2.44rem;
     gap: 0.62rem;
@@ -731,6 +728,8 @@ a {
     /*--------app----------*/
   }
   .main__container .finances__container {
+    margin-top: 146.57px;
+    margin-bottom: 100px;
     margin-right: 10.31rem;
     margin-left: 10.31rem;
     gap: 1.88rem;
