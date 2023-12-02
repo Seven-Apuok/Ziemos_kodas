@@ -11,7 +11,8 @@ $toggle-line: 0.25rem;
 /* For small devices */
 @media screen and (max-width: 767px) {
   body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
+      no-repeat center -34rem;
   }
 
   header {
@@ -78,7 +79,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -90,7 +91,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -134,8 +135,9 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: '';
-          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
+          content: "";
+          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg")
+            no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -157,7 +159,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: 0.2rem;
           text-align: center;
@@ -229,7 +231,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -250,11 +252,41 @@ $toggle-line: 0.25rem;
       }
     }
 
+    //companies small screens
+
     .companies__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
+      margin-top: 79px; //tarpai iki kito box elementu
+      margin-bottom: 80px; //tarpai iki kito box elementu
+
+      background-position: top -37rem center;
+
+      width: 103%;
+      padding-bottom: 80px;
+
+      .companies__logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* reikia patikrinti nes tiksliai nematau is figmos arba jis skirtingas prie kiekvieno logo */
+        align-items: center;
+        justify-items: center;
+        margin-top: 80px;
+        margin-left: 48px;
+        margin-right: 47px;
+        svg {
+          margin-bottom: 39px;
+        }
+      }
+      .companies__texts {
+        width: 327px;
+        h3 {
+          margin-top: 18.73px;
+          margin-bottom: 16px;
+        }
+        p {
+          margin-bottom: 60px;
+          font-size: 14.9px; // cia kazkokia nesamone, bet 15px cia netelpa kaip pagal figma
+        }
+      }
     }
 
     .implement__container {
@@ -327,6 +359,7 @@ $toggle-line: 0.25rem;
 
     .finances__container {
       width: 328px;
+      margin-bottom: 32px;
 
       svg {
         margin-bottom: 2.06rem;
@@ -354,7 +387,7 @@ $toggle-line: 0.25rem;
         margin-top: 0.5rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -453,9 +486,6 @@ $toggle-line: 0.25rem;
         color: $link-water-white;
         margin-top: 1.94rem;
         opacity: 0.7;
-        // &:hover {
-        //   opacity: 1;  //header links opacity hover
-        // }
       }
     }
 
@@ -528,8 +558,49 @@ $toggle-line: 0.25rem;
     //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
-    //nuo cia finances dalis tabletams
+    //companies medium screens
+
+    .companies__container {
+      margin-top: 100px; //tarpai iki kito box elementu
+      margin-bottom: 100px; //tarpai iki kito box elementu
+
+      background-position: bottom 383px center;
+      width: 103%;
+      padding-left: 155px;
+      padding-right: 155px;
+      padding-bottom: 88px;
+      .companies__logos {
+        padding-top: 88px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        //grid-template-rows: repeat(2, 1fr);
+        gap: 45px; //reiks pasikoreguot
+        svg {
+          transform: scale(1.21);
+        }
+      }
+      .companies__texts {
+        margin-top: 23px;
+        h3 {
+          margin-top: 67px;
+          margin-bottom: 24px;
+
+          font-size: $h2-regular-size;
+          line-height: $h1-small-line-height; /* 116.667% */
+          letter-spacing: -0.369px;
+        }
+        p {
+          margin-bottom: 32px;
+
+          opacity: 0.7;
+          font-size: 15.1px;
+        }
+      }
+    }
+
     .finances__container {
+      margin-top: 100px;
+      margin-bottom: 100px;
       margin-right: 2.5rem;
       margin-left: 2.44rem;
       gap: 0.62rem;
@@ -583,7 +654,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -678,7 +749,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -708,18 +779,17 @@ $toggle-line: 0.25rem;
     }
   }
 
-  //medium
   .footer__container {
-    width: 100%;
-    margin-left: 0;
+    width: 103%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
+    margin-left: 0px;
     background-position: left 21.19rem top -9.46rem;
     height: 6.25rem;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 31.7px;
 
     .api__logo {
-      margin-left: 2.44rem;
+      margin-left: 39px;
       margin-top: 1.94rem;
     }
 
@@ -727,8 +797,8 @@ $toggle-line: 0.25rem;
       display: flex;
       flex-direction: row;
       margin-top: 1.63rem;
-      gap: 2.5rem;
-      margin-left: 3.25rem;
+      gap: 40px;
+      margin-left: 32px;
 
       a {
         color: $link-water-white;
@@ -739,7 +809,7 @@ $toggle-line: 0.25rem;
 
     .api__media {
       margin-top: 2.38rem;
-      margin-left: 8.625rem;
+      margin-left: 6.63rem;
     }
   }
 
@@ -765,16 +835,80 @@ $toggle-line: 0.25rem;
       //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
-      // //finances start here
+      //companies big screens
+
+      .companies__container {
+        margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
+        //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
+        margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
+
+        padding: 0;
+        background-position: bottom 51px right 895px;
+
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // column-gap: 131px; /* Tarpas tarp stulpelių */
+        // align-items: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        .companies__logos {
+          width: calc(50% - 10px);
+          //margin-bottom: 20px;
+
+          // &:nth-child(n + 3) {
+          //   //margin-left: 39px; 
+          // }
+
+          &:nth-child(even) {
+            margin-left: 131px;
+          }
+
+          gap: 0;
+          padding: 0;
+          svg {
+            margin-bottom: 62px;
+          }
+        }
+        .companies__texts {
+          margin-top: 6.25rem;
+          margin-bottom: 6.25rem;
+          margin-left: 10.31rem;
+
+          h3 {
+            margin-top: 0;
+
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: -0.02306rem;
+          }
+          p {
+            font-size: $p-regular-size;
+            font-style: normal;
+            font-weight: $font-regular;
+            line-height: 1.75rem; /* 186.667% */
+            opacity: 0.7;
+
+            width: 445px;
+          }
+        }
+      }
+
       .finances__container {
+        width: 100%;
+        margin-top: 146.57px;
+        margin-bottom: 100px;
         margin-right: 10.31rem;
         margin-left: 10.31rem;
         gap: 1.88rem;
         display: flex;
         flex-direction: row;
       }
-
-      //end
 
       /* Mobile Home api*/
       .api__container {
@@ -827,7 +961,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type='email'] {
+        input[type="email"] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -935,7 +1069,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -965,7 +1099,6 @@ $toggle-line: 0.25rem;
       }
     }
 
-    //large
     .footer__container {
       width: 100%;
       background-position: left 65.62rem top -9.46rem;
