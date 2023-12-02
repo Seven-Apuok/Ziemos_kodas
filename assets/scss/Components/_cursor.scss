@@ -1,0 +1,9 @@
+a,
+button,
+input[type='email'],
+div.nav__toggle,
+.nav__toggle,
+.nav__toggle::before,
+.nav__toggle::after {
+    cursor: url('/assets/images/shared/desktop/pointer.svg'), pointer;
+}

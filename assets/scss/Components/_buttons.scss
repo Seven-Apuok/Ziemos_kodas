@@ -1,11 +1,11 @@
 /*---------------BUTTONS------------------*/
 
-.primmary-button-normal {
+.primary-button-normal {
   width: 10.8125rem;
   height: 3rem;
   border-radius: 1.5rem;
   background: $dark-pink;
-  box-shadow: 10px 10px 25px -10px #36536b40;
+  box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.251);
   border: none;
   text-align: center;
   font-family: $body-font;
@@ -17,6 +17,7 @@
   &:hover {
     background-color: $charm-pink-active;
   }
+
   &:disabled {
     background-color: $charm-pink-inactive;
     opacity: 0.5;
@@ -42,6 +43,7 @@
     border-radius: 1.5rem;
     color: $mirage-blue;
   }
+
   &:disabled {
     background-color: transparent;
     opacity: 0.5;
@@ -67,6 +69,7 @@
     background-color: $san-juan-blue;
     color: $white-color;
   }
+
   &:disabled {
     background-color: transparent;
     opacity: 0.5;
@@ -75,4 +78,3 @@
     pointer-events: none;
   }
 }
-
