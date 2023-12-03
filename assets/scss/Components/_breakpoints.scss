@@ -254,7 +254,7 @@ $toggle-line: 0.25rem;
 
     //companies small screens
     .companies__container {
-      margin-top: 79px; //tarpai iki kito box elementu
+      margin-top: 73px; //tarpai iki kito box elementu
       //margin-bottom: 80px; //tarpai iki kito box elementu
 
       background-position: top -37rem center;
@@ -266,12 +266,22 @@ $toggle-line: 0.25rem;
       .companies__logos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px; /* reikia patikrinti nes tiksliai nematau is figmos arba jis skirtingas prie kiekvieno logo */
+        grid-column-gap: 2.7rem;
+        // gap: 10px; /* reikia patikrinti nes tiksliai nematau is figmos arba jis skirtingas prie kiekvieno logo */
         align-items: center;
         justify-items: center;
         margin-top: 80px;
         margin-left: 48px;
         margin-right: 47px;
+        > :nth-of-type(4) {
+          margin-right: -0.6rem;
+        }
+        > :nth-of-type(5) {
+          margin-right: 1rem;
+        }
+        > :nth-of-type(6) {
+          margin-right: 0.4rem;
+        }
         svg {
           margin-bottom: 39px;
         }
@@ -292,7 +302,7 @@ $toggle-line: 0.25rem;
     .implement__container {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1.8rem;
+      // margin-bottom: 1.8rem;
       .implement__image {
         width: 20.5rem;
         height: 13.0625rem;
@@ -308,7 +318,7 @@ $toggle-line: 0.25rem;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5rem;
-        margin-top: 2.856rem;
+        margin-top: 2.656rem;
         font-weight: $font-regular;
       }
       .implement__h2__text {
@@ -363,19 +373,31 @@ $toggle-line: 0.25rem;
 
       // width: 328px;
       //margin-bottom: 32px;
-
+      > .finances__box:nth-of-type(1) {
+        margin-top: -0.2rem;
+        h3 {
+          margin-top: -0.2rem;
+        }
+      }
+      > .finances__box:nth-of-type(2) {
+        h3 {
+          margin-top: -0.2rem;
+        }
+      }
       svg {
         margin-bottom: 2.06rem;
       }
 
       .finances__box__text {
         p {
-          margin-bottom: 3rem;
+          margin-bottom: 2.8rem;
+          letter-spacing: -0.138px;
         }
       }
     }
 
     .demo__container {
+      margin-top: 0.7rem;
       .demo__title {
         text-align: center;
         line-height: 2.25rem;
@@ -494,7 +516,10 @@ $toggle-line: 0.25rem;
     gap: 1.94rem;
 
     .api__media {
-      margin-top: 2.58rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2.38rem;
     }
   }
 }
