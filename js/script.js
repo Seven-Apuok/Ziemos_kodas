@@ -17,7 +17,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// scroll Y axis adjustment after clicking nav button
+// scroll Y axis adjustment after clicking nav menu button
 document.querySelectorAll('.nav__button').forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();

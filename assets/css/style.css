@@ -130,7 +130,7 @@ a {
   pointer-events: none;
 }
 
-.secondary-submit-normal {
+.secondary__submit--normal {
   width: 9.5rem;
   height: 3rem;
   color: #36536b;
@@ -142,11 +142,11 @@ a {
   border: 1px solid #36536b;
   background-color: transparent;
 }
-.secondary-submit-normal:hover {
+.secondary__submit--normal:hover {
   background-color: #36536b;
   color: #fff;
 }
-.secondary-submit-normal:disabled {
+.secondary__submit--normal:disabled {
   background-color: transparent;
   opacity: 0.5;
   border-radius: 1.5rem;
@@ -163,7 +163,6 @@ a {
 @media screen and (max-width: 767px) {
   body {
     background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat center -34rem;
-    overflow-y: scroll;
   }
   header {
     position: fixed;
@@ -364,7 +363,7 @@ a {
     line-height: normal;
   }
   .main__container .companies__container {
-    margin-top: 79px;
+    margin-top: 73px;
     background-position: top -37rem center;
     width: 100%;
     padding-bottom: 80px;
@@ -372,12 +371,21 @@ a {
   .main__container .companies__container .companies__logos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px; /* reikia patikrinti nes tiksliai nematau is figmos arba jis skirtingas prie kiekvieno logo */
+    grid-column-gap: 2.7rem;
     align-items: center;
     justify-items: center;
     margin-top: 80px;
     margin-left: 48px;
     margin-right: 47px;
+  }
+  .main__container .companies__container .companies__logos > :nth-of-type(4) {
+    margin-right: -0.6rem;
+  }
+  .main__container .companies__container .companies__logos > :nth-of-type(5) {
+    margin-right: 1rem;
+  }
+  .main__container .companies__container .companies__logos > :nth-of-type(6) {
+    margin-right: 0.4rem;
   }
   .main__container .companies__container .companies__logos svg {
     margin-bottom: 39px;
@@ -396,7 +404,6 @@ a {
   .main__container .implement__container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.8rem;
   }
   .main__container .implement__container .implement__image {
     width: 20.5rem;
@@ -413,10 +420,10 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
-    margin-top: 2.856rem;
+    margin-top: 2.656rem;
     font-weight: 400;
   }
-  .main__container .implement__container .implement__h2_text {
+  .main__container .implement__container .implement__h2__text {
     color: #36536b;
     font-family: "DM Serif Display", serif;
     font-size: 2.25rem;
@@ -424,7 +431,7 @@ a {
     letter-spacing: -0.01731rem;
     margin-bottom: 1.5rem;
   }
-  .main__container .implement__container .implement__p_text {
+  .main__container .implement__container .implement__p__text {
     color: #6c8294;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
@@ -456,11 +463,24 @@ a {
     width: 328px;
     margin-bottom: 32px;
   }
+  .main__container .finances__container > .finances__box:nth-of-type(1) {
+    margin-top: -0.2rem;
+  }
+  .main__container .finances__container > .finances__box:nth-of-type(1) h3 {
+    margin-top: -0.2rem;
+  }
+  .main__container .finances__container > .finances__box:nth-of-type(2) h3 {
+    margin-top: -0.2rem;
+  }
   .main__container .finances__container svg {
     margin-bottom: 2.06rem;
   }
   .main__container .finances__container .finances__box__text p {
-    margin-bottom: 3rem;
+    margin-bottom: 2.8rem;
+    letter-spacing: -0.138px;
+  }
+  .main__container .demo__container {
+    margin-top: 0.7rem;
   }
   .main__container .demo__container .demo__title {
     text-align: center;
@@ -558,7 +578,10 @@ a {
     opacity: 0.7;
   }
   .footer__container .api__media {
-    margin-top: 2.58rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.38rem;
   }
 }
 /* For medium devices */
@@ -614,7 +637,7 @@ a {
     flex-wrap: nowrap;
   }
   .main__container .companies__container {
-    margin-top: 100px;
+    margin-top: 79.6px;
     background-position: bottom 383px center;
     width: 100%;
     padding-left: 155px;
@@ -624,11 +647,33 @@ a {
   .main__container .companies__container .companies__logos {
     padding-top: 88px;
     display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
   }
   .main__container .companies__container .companies__logos svg {
     transform: scale(1.21);
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(1) {
+    margin-top: 0.5rem;
+    margin-left: -4.3rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(2) {
+    margin-top: 0.2rem;
+    margin-left: -0.4rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(3) {
+    margin-top: 0.2rem;
+    margin-right: -3.8rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(4) {
+    margin-left: -4rem;
+    margin-top: -0.2rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(6) {
+    margin-top: -0.2rem;
+    margin-right: -4rem;
   }
   .main__container .companies__container .companies__texts {
     margin-top: 23px;
@@ -646,8 +691,9 @@ a {
     font-size: 15.1px;
   }
   .main__container .finances__container {
+    margin-top: 1rem;
     margin-right: 2.5rem;
-    margin-left: 2.44rem;
+    margin-left: 2.64rem;
     gap: 0.62rem;
     display: flex;
     flex-direction: row;
@@ -655,12 +701,15 @@ a {
   .main__container .finances__container svg {
     margin-bottom: 2rem;
   }
+  .main__container .finances__container .finances__box__text {
+    margin-top: -0.4rem;
+  }
   /* Mobile Home api*/
   .api__container {
     text-align: center;
   }
   .api__container .api__mobile {
-    width: 21%;
+    width: 27.5%;
     margin-bottom: 2.93rem;
     margin-top: 3.1rem;
   }
@@ -719,13 +768,13 @@ a {
     width: 35.8125rem;
     margin: -0.18rem 6.12rem 6.27rem 6.06rem;
   }
-  .implement__container .implement__h2_text {
+  .implement__container .implement__h2__text {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
   }
-  .implement__container .implement__p_text {
+  .implement__container .implement__p__text {
     font-size: 0.9375rem;
     margin-bottom: 1.5rem;
     line-height: 1.75rem;
@@ -736,10 +785,10 @@ a {
     margin: 0rem auto 5.5rem auto;
   }
   .app__container .app__mobile {
-    width: 22%;
-    margin-left: 0.5rem;
-    margin-right: 0.7rem;
-    margin-bottom: 0.8rem;
+    width: 25.8%;
+    margin-left: 0.8rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.4rem;
   }
   .app__container .app__title {
     font-size: 3rem;
@@ -752,6 +801,9 @@ a {
     color: #6c8294;
     margin: 0 auto;
     margin-top: 1.6rem;
+  }
+  .demo__container {
+    margin-left: -0.8rem;
   }
   .demo__container .demo__title {
     text-align: center;
@@ -823,8 +875,8 @@ a {
     opacity: 0.7;
   }
   .footer__container .api__media {
-    margin-top: 2.38rem;
-    margin-left: 6.63rem;
+    margin-top: 2.18rem;
+    margin-left: 6.33rem;
   }
   /* For large devices */
 }
@@ -978,13 +1030,13 @@ a {
     margin-top: 13.12rem;
     margin-left: 7.73rem;
   }
-  .main__container .implement__container .implement__h2_text {
+  .main__container .implement__container .implement__h2__text {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
   }
-  .main__container .implement__container .implement__p_text {
+  .main__container .implement__container .implement__p__text {
     font-size: 0.9375rem;
     line-height: 1.75rem;
   }
