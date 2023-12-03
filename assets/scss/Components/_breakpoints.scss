@@ -257,7 +257,7 @@ $toggle-line: 0.25rem;
 
       background-position: top -37rem center;
 
-      width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
+      width: 100%;
 
       padding-bottom: 80px;
 
@@ -564,7 +564,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 100px; //tarpai iki kito box elementu
 
       background-position: bottom 383px center;
-      width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
+      width: 100%; //laikinas sprendimas, nes narsykle sumazina sita box
       padding-left: 155px;
       padding-right: 155px;
       padding-bottom: 88px;
@@ -779,7 +779,7 @@ $toggle-line: 0.25rem;
   }
 
   .footer__container {
-    width: 107%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
+    width: 100%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
     margin-left: 0px;
     background-position: left 21.19rem top -9.46rem;
     height: 6.25rem;
@@ -850,7 +850,7 @@ $toggle-line: 0.25rem;
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
         margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
 
-        width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
+        width: 100%;
 
         padding: 0;
         background-position: bottom 51px right 895px;
