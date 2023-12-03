@@ -130,7 +130,7 @@ a {
   pointer-events: none;
 }
 
-.secondary-submit-normal {
+.secondary__submit--normal {
   width: 9.5rem;
   height: 3rem;
   color: #36536b;
@@ -142,11 +142,11 @@ a {
   border: 1px solid #36536b;
   background-color: transparent;
 }
-.secondary-submit-normal:hover {
+.secondary__submit--normal:hover {
   background-color: #36536b;
   color: #fff;
 }
-.secondary-submit-normal:disabled {
+.secondary__submit--normal:disabled {
   background-color: transparent;
   opacity: 0.5;
   border-radius: 1.5rem;
@@ -341,12 +341,7 @@ a {
     color: #6c8294;
     margin-top: 1.19rem;
   }
-<<<<<<< HEAD
-  .main__container .api__container .primary-button-normal {
-    margin-bottom: 1rem;
-=======
   .main__container .api__container .primary__button--normal {
->>>>>>> dev
     width: 20.4375rem;
     height: 3rem;
   }
