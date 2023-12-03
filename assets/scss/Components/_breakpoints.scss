@@ -12,6 +12,7 @@ $toggle-line: 0.25rem;
 @media screen and (max-width: 767px) {
   body {
     background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+    overflow-y: scroll;
   }
 
   header {
@@ -243,12 +244,11 @@ $toggle-line: 0.25rem;
         text-indent: 1.69rem;
 
         &::placeholder {
-          color: $san-juan-blue;
+          color: rgba($san-juan-blue, 0.5);
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
           line-height: normal;
-          opacity: 0.5;
         }
       }
     }
@@ -402,12 +402,11 @@ $toggle-line: 0.25rem;
         text-indent: 1.69rem;
 
         &::placeholder {
-          color: $san-juan-blue;
+          color: rgba($san-juan-blue, 0.5);
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
           line-height: normal;
-          opacity: 0.5;
         }
       }
 
@@ -673,12 +672,11 @@ $toggle-line: 0.25rem;
       text-indent: 1.69rem;
 
       &::placeholder {
-        color: $san-juan-blue;
+        color: rgba($san-juan-blue, 0.5);
         font-weight: $font-bold;
         font-family: $body-font;
         font-size: $p-regular-size;
         line-height: normal;
-        opacity: 0.5;
       }
     }
   }
@@ -769,12 +767,11 @@ $toggle-line: 0.25rem;
       text-indent: 1.69rem;
 
       &::placeholder {
-        color: $san-juan-blue;
+        color: rgba($san-juan-blue, 0.5);
         font-weight: $font-bold;
         font-family: $body-font;
         font-size: $p-regular-size;
         line-height: normal;
-        opacity: 0.5;
       }
     }
 
@@ -987,12 +984,11 @@ $toggle-line: 0.25rem;
           margin-right: 0.2rem;
 
           &::placeholder {
-            color: $san-juan-blue;
+            color: rgba($san-juan-blue, 0.5);
             font-weight: $font-bold;
             font-family: $body-font;
             font-size: $p-regular-size;
             line-height: normal;
-            opacity: 0.5;
           }
         }
       }
@@ -1117,12 +1113,11 @@ $toggle-line: 0.25rem;
         margin-right: 0.4rem;
 
         &::placeholder {
-          color: $san-juan-blue;
+          color: rgba($san-juan-blue, 0.5);
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
           line-height: normal;
-          opacity: 0.5;
         }
       }
 
