@@ -517,6 +517,13 @@ $toggle-line: 0.25rem;
     // }
 
     .header__circle {
+      position: absolute;
+      width: 59.3125rem;
+      height: 59.3125rem;
+      top: -41.5rem;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: -1;
       display: none;
     }
 
@@ -749,7 +756,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -1021,17 +1028,37 @@ $toggle-line: 0.25rem;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        margin-bottom: 6rem;
+        gap: 5.2rem;
+        margin-bottom: 8.3rem;
+        position: relative;
+
+        .app__circle {
+          position: absolute;
+          width: 49rem;
+          height: 49rem;
+          shape-outside: circle(50% at 30%);
+          clip-path: circle(50% at 100%);
+          background-color: $san-juan-blue-light;
+          right: 0;
+        }
+
+        .app__mobile-flex {
+          display: flex;
+          justify-content: flex-end;
+        }
 
         .app__mobile {
-          width: 42%;
-          margin-left: 0.5rem;
-          margin-right: 0.7rem;
-          margin-bottom: 0.8rem;
+          width: 40.4%;
+        }
+
+        .phone-left {
+          transform: translateX(-1.4rem);
         }
 
         .app__start {
           text-align: start;
+          width: 27%;
+          margin-bottom: 2.4rem;
         }
 
         .app__title {
@@ -1043,7 +1070,7 @@ $toggle-line: 0.25rem;
         }
 
         .app__paragraph {
-          width: 35.81rem;
+          width: 27rem;
           color: $san-juan-blue-light;
           margin: 0 auto;
           margin-top: 1.6rem;
@@ -1073,7 +1100,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;
