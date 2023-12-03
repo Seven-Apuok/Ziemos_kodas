@@ -1008,8 +1008,9 @@ a {
     height: 49rem;
     shape-outside: circle(50% at 30%);
     clip-path: circle(50% at 100%);
-    background-color: #6c8294;
+    background-color: #d2dbe3;
     right: 0;
+    z-index: -1;
   }
   .main__container .app__container .app__mobile-flex {
     display: flex;

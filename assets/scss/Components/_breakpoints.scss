@@ -749,7 +749,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -1022,8 +1022,9 @@ $toggle-line: 0.25rem;
           height: 49rem;
           shape-outside: circle(50% at 30%);
           clip-path: circle(50% at 100%);
-          background-color: $san-juan-blue-light;
+          background-color: #d2dbe3;
           right: 0;
+          z-index: -1;
         }
 
         .app__mobile-flex {
@@ -1084,7 +1085,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;
