@@ -334,12 +334,12 @@ a {
   .main__container .api__container {
     text-align: center;
   }
-  .main__container .api__container .api_mobile {
+  .main__container .api__container .api__mobile {
     width: 34%;
     margin-bottom: 1.5rem;
     margin-top: 6.75rem;
   }
-  .main__container .api__container .api-title {
+  .main__container .api__container .api__title {
     margin: 0 auto;
     width: 20.4375rem;
     text-align: center;
@@ -669,12 +669,12 @@ a {
   .api__container {
     text-align: center;
   }
-  .api__container .api_mobile {
+  .api__container .api__mobile {
     width: 21%;
     margin-bottom: 2.93rem;
     margin-top: 3.1rem;
   }
-  .api__container .api-title {
+  .api__container .api__title {
     margin: 0 auto;
     width: 35.8rem;
     text-align: center;
@@ -683,7 +683,7 @@ a {
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
   }
-  .api__container .api_paragraph {
+  .api__container .api__paragraph {
     color: #6c8294;
     transform: translateY(-0.84rem);
   }
@@ -916,11 +916,11 @@ a {
     gap: 17.3rem;
     margin-top: 1.59rem;
   }
-  .main__container .api__container .api_mobile {
+  .main__container .api__container .api__mobile {
     width: 19%;
     transform: translate(-4.9rem, -0.5rem);
   }
-  .main__container .api__container .api-title {
+  .main__container .api__container .api__title {
     font-family: "DM Serif Display", serif;
     width: 34.125rem;
     text-align: start;
@@ -930,7 +930,7 @@ a {
     letter-spacing: -0.03463rem;
     margin-bottom: 1.4rem;
   }
-  .main__container .api__container .api_paragraph {
+  .main__container .api__container .api__paragraph {
     color: #6c8294;
     transform: translate(1.5rem, -0.6rem);
   }

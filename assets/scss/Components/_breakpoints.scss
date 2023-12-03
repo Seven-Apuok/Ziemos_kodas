@@ -207,13 +207,13 @@ $toggle-line: 0.25rem;
     .api__container {
       text-align: center;
 
-      .api_mobile {
+      .api__mobile {
         width: 34%;
         margin-bottom: 1.5rem;
         margin-top: 6.75rem;
       }
 
-      .api-title {
+      .api__title {
         margin: 0 auto;
         width: 20.4375rem;
         text-align: center;
@@ -624,13 +624,13 @@ $toggle-line: 0.25rem;
   .api__container {
     text-align: center;
 
-    .api_mobile {
+    .api__mobile {
       width: 21%;
       margin-bottom: 2.93rem;
       margin-top: 3.1rem;
     }
 
-    .api-title {
+    .api__title {
       margin: 0 auto;
       width: 35.8rem;
       text-align: center;
@@ -640,7 +640,7 @@ $toggle-line: 0.25rem;
       letter-spacing: -0.02306rem;
     }
 
-    .api_paragraph {
+    .api__paragraph {
       color: $san-juan-blue-light;
       transform: translateY(-0.84rem);
     }
@@ -930,12 +930,12 @@ $toggle-line: 0.25rem;
         gap: 17.3rem;
         margin-top: 1.59rem;
 
-        .api_mobile {
+        .api__mobile {
           width: 19%;
           transform: translate(-4.9rem, -0.5rem);
         }
 
-        .api-title {
+        .api__title {
           font-family: $body-second-font;
           width: 34.125rem;
           text-align: start;
@@ -946,7 +946,7 @@ $toggle-line: 0.25rem;
           margin-bottom: 1.4rem;
         }
 
-        .api_paragraph {
+        .api__paragraph {
           color: $san-juan-blue-light;
           transform: translate(1.5rem, -0.6rem);
         }
