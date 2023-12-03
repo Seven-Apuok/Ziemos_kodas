@@ -80,6 +80,16 @@ a {
 }
 
 /*---------mobile shadow----------*/
+.api_bold {
+  color: #6c8294;
+  font-weight: 700;
+}
+.api_bold:hover {
+  opacity: 0.7;
+  color: #36536b;
+  text-decoration-line: underline;
+}
+
 /*---------------BUTTONS------------------*/
 .primary-button-normal {
   width: 10.8125rem;
@@ -568,6 +578,13 @@ a {
     background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
   }
   .header__container .header__circle {
+    position: absolute;
+    width: 59.3125rem;
+    height: 59.3125rem;
+    top: -41.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
     display: none;
   }
   .header__container .header__half__circle {
@@ -981,16 +998,33 @@ a {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6rem;
+    gap: 5.2rem;
+    margin-bottom: 8.3rem;
+    position: relative;
+  }
+  .main__container .app__container .app__circle {
+    position: absolute;
+    width: 49rem;
+    height: 49rem;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 100%);
+    background-color: #6c8294;
+    right: 0;
+  }
+  .main__container .app__container .app__mobile-flex {
+    display: flex;
+    justify-content: flex-end;
   }
   .main__container .app__container .app__mobile {
-    width: 42%;
-    margin-left: 0.5rem;
-    margin-right: 0.7rem;
-    margin-bottom: 0.8rem;
+    width: 40.4%;
+  }
+  .main__container .app__container .phone-left {
+    transform: translateX(-1.4rem);
   }
   .main__container .app__container .app__start {
     text-align: start;
+    width: 27%;
+    margin-bottom: 2.4rem;
   }
   .main__container .app__container .app__title {
     font-size: 3rem;
@@ -999,7 +1033,7 @@ a {
     margin-top: 2rem;
   }
   .main__container .app__container .app__paragraph {
-    width: 35.81rem;
+    width: 27rem;
     color: #6c8294;
     margin: 0 auto;
     margin-top: 1.6rem;
