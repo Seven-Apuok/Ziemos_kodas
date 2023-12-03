@@ -903,12 +903,13 @@ a {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 17.3rem;
+    gap: 18.3rem;
     margin-top: 1.59rem;
+    margin-bottom: -3.5rem;
   }
   .main__container .api__container .api__mobile {
-    width: 19%;
-    transform: translate(-4.9rem, -0.5rem);
+    width: 23.5%;
+    transform: translate(-5.7rem, -0.5rem);
   }
   .main__container .api__container .api__title {
     font-family: "DM Serif Display", serif;
@@ -922,7 +923,7 @@ a {
   }
   .main__container .api__container .api__paragraph {
     color: #6c8294;
-    transform: translate(1.5rem, -0.6rem);
+    transform: translate(-0.5rem, -0.4rem);
   }
   .main__container .api__container .api__inside {
     display: flex;

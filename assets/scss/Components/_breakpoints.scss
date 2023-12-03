@@ -927,12 +927,13 @@ $toggle-line: 0.25rem;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        gap: 17.3rem;
+        gap: 18.3rem;
         margin-top: 1.59rem;
+        margin-bottom: -3.5rem;
 
         .api__mobile {
-          width: 19%;
-          transform: translate(-4.9rem, -0.5rem);
+          width: 23.5%;
+          transform: translate(-5.7rem, -0.5rem);
         }
 
         .api__title {
@@ -948,7 +949,7 @@ $toggle-line: 0.25rem;
 
         .api__paragraph {
           color: $san-juan-blue-light;
-          transform: translate(1.5rem, -0.6rem);
+          transform: translate(-0.5rem, -0.4rem);
         }
 
         .api__inside {
