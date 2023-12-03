@@ -9,6 +9,9 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     headerEl.classList.add('is-scrolling');
     navEl.classList.remove('is-active');
+    if (window.innerWidth > 767) {
+      headerEl.classList.remove('is-scrolling');
+    }
   } else {
     headerEl.classList.remove('is-scrolling');
   }
