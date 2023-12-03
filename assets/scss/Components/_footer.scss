@@ -3,14 +3,18 @@
   color: $link-water-white;
 
   background-color: $mirage-blue;
-  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  background-image: url('/assets/images/shared/desktop/bg-pattern-circle.svg');
   background-repeat: no-repeat;
   font-size: $p-regular-size;
 
   svg {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-    &:hover{path{fill:$charm-pink-active;}}
+    &:hover {
+      path {
+        fill: $charm-pink-active;
+      }
+    }
   }
 }
 .footer__nav {

@@ -85,3 +85,13 @@ a {
 // .api_mobile{
 //   filter: drop-shadow(25px 25px 80px #36536b4d);
 // }
+
+.api_bold {
+  color: $san-juan-blue-light;
+  font-weight: $font-bold;
+  &:hover {
+    opacity: 0.7;
+    color: $san-juan-blue;
+    text-decoration-line: underline;
+  }
+}

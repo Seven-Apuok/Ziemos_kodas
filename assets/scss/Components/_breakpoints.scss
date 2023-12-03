@@ -21,6 +21,9 @@ $toggle-line: 0.25rem;
   }
 
   .header__container {
+    .header__half__circle {
+      display: none;
+    }
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
@@ -251,14 +254,13 @@ $toggle-line: 0.25rem;
     }
 
     //companies small screens
-
     .companies__container {
       margin-top: 79px; //tarpai iki kito box elementu
       //margin-bottom: 80px; //tarpai iki kito box elementu
 
       background-position: top -37rem center;
 
-      width: 100%; 
+      width: 100%;
 
       padding-bottom: 80px;
 
@@ -357,8 +359,13 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
+
       width: 328px;
       margin-bottom: 32px;//iki ready to start texto
+
+      // width: 328px;
+      //margin-bottom: 32px;
+
 
       svg {
         margin-bottom: 2.06rem;
@@ -500,23 +507,22 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
-    // background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 0rem -30rem;
-    background: url('/assets/images/shared/desktop/bg-pattern-circle-tablet.svg') no-repeat -10rem -36rem;
+    // background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -23rem;
+    background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
   }
 
   .header__container {
-    // .header__circle {
-    //   position: absolute;
-    //   width: 59.3125rem;
-    //   height: 59.3125rem;
-    //   border-radius: 59.3125rem;
-    //   transform: translate(-9%, -73%);
-    //   z-index: -1;
-    //   overflow: hidden;
-    // }
-
     .header__circle {
+      position: absolute;
+      width: 59.3125rem;
+      height: 59.3125rem;
+      top: -41.5rem;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: -1;
+      display: none;
+    }
+    .header__half__circle {
       display: none;
     }
 
@@ -564,7 +570,6 @@ $toggle-line: 0.25rem;
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
     //companies medium screens
-
     .companies__container {
       margin-top: 100px; //tarpai iki kito box elementu
       //margin-bottom: 100px; //tarpai iki kito box elementu
@@ -579,7 +584,7 @@ $toggle-line: 0.25rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        gap: 45px; 
+        gap: 45px;
         svg {
           transform: scale(1.21);
         }
@@ -821,21 +826,14 @@ $toggle-line: 0.25rem;
   /* For large devices */
   @media screen and (min-width: 1440px) {
     body {
+
       width: 100%;
-      // overflow-x: hidden;
+
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
     }
 
     .header__container {
-      // .header__circle {
-      //   position: absolute;
-      //   width: 48.75rem;
-      //   height: 48.75rem;
-      //   transform: translate(104.2%, -27%);
-      //   z-index: -1;
-      // }
-
-      .header__circle {
+      .header__half__circle {
         display: none;
       }
 
@@ -856,12 +854,14 @@ $toggle-line: 0.25rem;
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
       //companies big screens
-
+      // <---Dariaus--->
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
+
         //margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
         
+
         width: 100%;
 
         padding: 0;
@@ -922,6 +922,7 @@ $toggle-line: 0.25rem;
         //margin-bottom: 100px;
         padding-right: 10.31rem;
         padding-left: 10.31rem;
+        
         gap: 1.88rem;
         display: flex;
         flex-direction: row;
@@ -1034,17 +1035,38 @@ $toggle-line: 0.25rem;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        margin-bottom: 6rem;
+        gap: 5.2rem;
+        margin-bottom: 8.3rem;
+        position: relative;
+
+        .app__circle {
+          position: absolute;
+          width: 49rem;
+          height: 49rem;
+          shape-outside: circle(50% at 30%);
+          clip-path: circle(50% at 100%);
+          background-color: #d2dbe3;
+          right: 0;
+          z-index: -1;
+        }
+
+        .app__mobile-flex {
+          display: flex;
+          justify-content: flex-end;
+        }
 
         .app__mobile {
-          width: 42%;
-          margin-left: 0.5rem;
-          margin-right: 0.7rem;
-          margin-bottom: 0.8rem;
+          width: 40.4%;
+        }
+
+        .phone-left {
+          transform: translateX(-1.4rem);
         }
 
         .app__start {
           text-align: start;
+          width: 27%;
+          margin-bottom: 2.4rem;
         }
 
         .app__title {
@@ -1056,7 +1078,7 @@ $toggle-line: 0.25rem;
         }
 
         .app__paragraph {
-          width: 35.81rem;
+          width: 27rem;
           color: $san-juan-blue-light;
           margin: 0 auto;
           margin-top: 1.6rem;
