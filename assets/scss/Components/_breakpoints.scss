@@ -359,13 +359,11 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
-
       width: 328px;
-      margin-bottom: 32px;//iki ready to start texto
+      margin-bottom: 32px; //iki ready to start texto
 
       // width: 328px;
       //margin-bottom: 32px;
-
 
       svg {
         margin-bottom: 2.06rem;
@@ -826,7 +824,6 @@ $toggle-line: 0.25rem;
   /* For large devices */
   @media screen and (min-width: 1440px) {
     body {
-
       width: 100%;
 
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
@@ -860,13 +857,12 @@ $toggle-line: 0.25rem;
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
 
         //margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
-        
 
         width: 100%;
 
         padding: 0;
         //padding-right: 163px;
-        
+
         background-position: bottom 51px right 895px;
         display: flex;
         flex-wrap: wrap;
@@ -922,7 +918,7 @@ $toggle-line: 0.25rem;
         //margin-bottom: 100px;
         padding-right: 10.31rem;
         padding-left: 10.31rem;
-        
+
         gap: 1.88rem;
         display: flex;
         flex-direction: row;
