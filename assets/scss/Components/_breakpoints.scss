@@ -251,7 +251,6 @@ $toggle-line: 0.25rem;
     }
 
     //companies small screens
-
     .companies__container {
       margin-top: 79px; //tarpai iki kito box elementu
       margin-bottom: 80px; //tarpai iki kito box elementu
@@ -357,7 +356,7 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
-      width: 328px;
+      // width: 328px;
       margin-bottom: 32px;
 
       svg {
@@ -559,7 +558,7 @@ $toggle-line: 0.25rem;
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
     //companies medium screens
-
+    // <---Dariaus---->
     .companies__container {
       margin-top: 100px; //tarpai iki kito box elementu
       margin-bottom: 100px; //tarpai iki kito box elementu
@@ -574,7 +573,7 @@ $toggle-line: 0.25rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        gap: 45px; 
+        gap: 45px;
         svg {
           transform: scale(1.21);
         }
@@ -845,12 +844,12 @@ $toggle-line: 0.25rem;
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
       //companies big screens
-
+      // <---Dariaus--->
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
         margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
-        
+
         width: 107%; //laikinas sprendimas, nes narsykle sumazina sita box
 
         padding: 0;
@@ -904,7 +903,7 @@ $toggle-line: 0.25rem;
       }
 
       .finances__container {
-        width: 100%;
+        // width: 100%;
         margin-top: 146.57px;
         margin-bottom: 100px;
         margin-right: 10.31rem;
