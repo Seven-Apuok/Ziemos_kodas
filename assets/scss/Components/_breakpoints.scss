@@ -256,7 +256,7 @@ $toggle-line: 0.25rem;
     //companies small screens
     .companies__container {
       margin-top: 79px; //tarpai iki kito box elementu
-      margin-bottom: 80px; //tarpai iki kito box elementu
+      //margin-bottom: 80px; //tarpai iki kito box elementu
 
       background-position: top -37rem center;
 
@@ -359,8 +359,13 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
+
+      width: 328px;
+      margin-bottom: 32px;//iki ready to start texto
+
       // width: 328px;
-      margin-bottom: 32px;
+      //margin-bottom: 32px;
+
 
       svg {
         margin-bottom: 2.06rem;
@@ -556,13 +561,18 @@ $toggle-line: 0.25rem;
   }
 
   .main__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
     //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
     //companies medium screens
     .companies__container {
       margin-top: 100px; //tarpai iki kito box elementu
-      margin-bottom: 100px; //tarpai iki kito box elementu
+      //margin-bottom: 100px; //tarpai iki kito box elementu
 
       background-position: bottom 383px center;
       width: 100%; //laikinas sprendimas, nes narsykle sumazina sita box
@@ -599,8 +609,8 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
-      margin-top: 100px;
-      margin-bottom: 100px;
+      //margin-top: 100px;
+      //margin-bottom: 100px;
       margin-right: 2.5rem;
       margin-left: 2.44rem;
       gap: 0.62rem;
@@ -816,6 +826,9 @@ $toggle-line: 0.25rem;
   /* For large devices */
   @media screen and (min-width: 1440px) {
     body {
+
+      width: 100%;
+
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
     }
 
@@ -832,6 +845,11 @@ $toggle-line: 0.25rem;
     }
 
     .main__container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
       //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
@@ -840,11 +858,15 @@ $toggle-line: 0.25rem;
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
-        margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
+
+        //margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
+        
 
         width: 100%;
 
         padding: 0;
+        //padding-right: 163px;
+        
         background-position: bottom 51px right 895px;
         display: flex;
         flex-wrap: wrap;
@@ -853,7 +875,7 @@ $toggle-line: 0.25rem;
         flex-direction: row-reverse;
         align-items: center;
 
-        .footer__logos {
+        .companies__logos {
           width: calc(50% - 10px);
 
           // &:nth-child(n + 3) {
@@ -895,11 +917,12 @@ $toggle-line: 0.25rem;
       }
 
       .finances__container {
-        // width: 100%;
-        margin-top: 146.57px;
-        margin-bottom: 100px;
-        margin-right: 10.31rem;
-        margin-left: 10.31rem;
+        width: 100%;
+        //margin-top: 146.57px;
+        //margin-bottom: 100px;
+        padding-right: 10.31rem;
+        padding-left: 10.31rem;
+        
         gap: 1.88rem;
         display: flex;
         flex-direction: row;
