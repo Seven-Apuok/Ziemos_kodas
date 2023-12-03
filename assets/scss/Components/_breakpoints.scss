@@ -223,12 +223,12 @@ $toggle-line: 0.25rem;
         letter-spacing: -0.01538rem;
       }
 
-      .api_paragraph {
+      .api__paragraph {
         color: $san-juan-blue-light;
         margin-top: 1.19rem;
       }
 
-      .primary-button-normal {
+      .primary__button--normal {
         width: 20.4375rem;
         height: 3rem;
       }
@@ -410,7 +410,7 @@ $toggle-line: 0.25rem;
         }
       }
 
-      .primary-button-normal {
+      .primary__button--normal {
         width: 20.4375rem;
         height: 3rem;
       }
@@ -653,7 +653,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 0.2rem;
     }
 
-    .primary-button-normal {
+    .primary__button--normal {
       position: absolute;
       width: 10.81rem;
       height: 3rem;
@@ -775,7 +775,7 @@ $toggle-line: 0.25rem;
       }
     }
 
-    .primary-button-normal {
+    .primary__button--normal {
       position: absolute;
       width: 10.81rem;
       height: 3rem;
@@ -964,7 +964,7 @@ $toggle-line: 0.25rem;
           align-items: start;
         }
 
-        .primary-button-normal {
+        .primary__button--normal {
           position: absolute;
           width: 10.81rem;
           height: 3rem;
@@ -1052,7 +1052,7 @@ $toggle-line: 0.25rem;
           width: 40.4%;
         }
 
-        .phone-left {
+        .phone__left {
           transform: translateX(-1.4rem);
         }
 
@@ -1121,7 +1121,7 @@ $toggle-line: 0.25rem;
         }
       }
 
-      .primary-button-normal {
+      .primary__button--normal {
         position: absolute;
         width: 10.81rem;
         height: 3rem;
