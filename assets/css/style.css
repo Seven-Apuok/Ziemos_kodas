@@ -888,8 +888,14 @@ a {
   .header__container .header__half__circle {
     display: none;
   }
+  .header__container .nav__header {
+    margin-right: 0.3rem !important;
+  }
+  .header__container .nav__menu {
+    margin-right: -0.7rem;
+  }
   .header__container .nav__menu > :last-child {
-    margin-left: 29rem !important;
+    margin-left: 29.3rem !important;
   }
   .main__container {
     width: 100%;
@@ -899,6 +905,9 @@ a {
     flex-wrap: nowrap;
     /* Mobile Home api*/
     /*--------app----------*/
+  }
+  .main__container .api__container .api__paragraph {
+    margin-left: 2rem;
   }
   .main__container .companies__container {
     margin-top: 75.57px;
@@ -913,28 +922,42 @@ a {
     align-items: center;
   }
   .main__container .companies__container .companies__logos {
-    width: calc(50% - 10px);
-    gap: 0;
+    display: grid;
+    justify-items: start;
+    margin-right: 10.5rem;
+    width: calc(32% - 10px);
+    gap: 2.6rem;
     padding: 0;
   }
   .main__container .companies__container .companies__logos:nth-child(even) {
     margin-left: 131px;
   }
-  .main__container .companies__container .companies__logos svg {
-    margin-bottom: 62px;
+  .main__container .companies__container .companies__logos svg:nth-child(2) {
+    margin-right: 2.7rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(3) {
+    margin-right: 0.5rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(5) {
+    margin-left: 1rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(6) {
+    margin-left: 0.1rem;
   }
   .main__container .companies__container .companies__texts {
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
-    margin-left: 10.31rem;
+    margin-left: 9.71rem;
   }
   .main__container .companies__container .companies__texts h3 {
+    margin-right: 2.1rem;
     margin-top: 0;
     font-style: normal;
     font-weight: 400;
     letter-spacing: -0.02306rem;
   }
   .main__container .companies__container .companies__texts p {
+    text-align: left;
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
@@ -942,8 +965,12 @@ a {
     opacity: 0.7;
     width: 445px;
   }
+  .main__container .companies__container .companies__texts .secondary__button--normal {
+    margin-right: 18.7rem;
+  }
   .main__container .finances__container {
     width: 100%;
+    margin-top: -0.6rem;
     padding-right: 10.31rem;
     padding-left: 10.31rem;
     gap: 1.88rem;
@@ -1020,7 +1047,7 @@ a {
   .main__container .implement__container .implement__image {
     width: 27.8125rem;
     height: 17.75rem;
-    margin: 9.37rem 0rem 0rem 10.31rem;
+    margin: 9.37rem 0rem 0rem -0.29rem;
     filter: drop-shadow(25px 25px 40px rgba(54, 83, 107, 0.302));
   }
   .main__container .implement__container .implement__text {
@@ -1059,21 +1086,24 @@ a {
     background-color: #d2dbe3;
     right: 0;
     z-index: -1;
+    transform: translate(0.2rem, -1.5rem);
   }
   .main__container .app__container .app__mobile-flex {
     display: flex;
     justify-content: flex-end;
   }
   .main__container .app__container .app__mobile {
+    transform: translate(2rem, -1rem);
     width: 40.4%;
   }
   .main__container .app__container .phone__left {
-    transform: translateX(-1.4rem);
+    transform: translate(1.4rem, -1rem);
   }
   .main__container .app__container .app__start {
     text-align: start;
     width: 27%;
-    margin-bottom: 2.4rem;
+    margin-bottom: 4.2rem;
+    margin-left: 0.3rem;
   }
   .main__container .app__container .app__title {
     font-size: 3rem;
@@ -1091,7 +1121,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 77.7%;
     margin: -1rem auto 3.5rem auto;
   }
   .demo__container .demo__title {
@@ -1102,7 +1132,7 @@ a {
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
     margin-bottom: 2.5rem;
-    margin-left: 1.3rem;
+    margin-left: 0.2rem;
   }
   .demo__container .demo__form {
     margin-bottom: -4rem;
@@ -1153,7 +1183,7 @@ a {
   }
   .footer__container .api__media {
     margin-top: 2.38rem;
-    margin-left: 35rem;
+    margin-left: 32.5rem;
   }
 }
 body {

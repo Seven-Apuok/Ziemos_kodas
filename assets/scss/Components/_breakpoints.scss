@@ -872,7 +872,6 @@ $toggle-line: 0.25rem;
   @media screen and (min-width: 1440px) {
     body {
       width: 100%;
-
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
     }
 
@@ -880,10 +879,14 @@ $toggle-line: 0.25rem;
       .header__half__circle {
         display: none;
       }
+      .nav__header {
+        margin-right: 0.3rem !important;
+      }
 
       .nav__menu {
+        margin-right: -0.7rem;
         > :last-child {
-          margin-left: 29rem !important;
+          margin-left: 29.3rem !important;
         }
       }
     }
@@ -896,9 +899,12 @@ $toggle-line: 0.25rem;
       flex-wrap: nowrap;
       //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
-
+      .api__container {
+        .api__paragraph {
+          margin-left: 2rem;
+        }
+      }
       //companies big screens
-      // <---Dariaus--->
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
@@ -919,7 +925,12 @@ $toggle-line: 0.25rem;
         align-items: center;
 
         .companies__logos {
-          width: calc(50% - 10px);
+          display: grid;
+          justify-items: start;
+          margin-right: 10.5rem;
+          // margin: 0 auto;
+          width: calc(32% - 10px);
+          gap: 2.6rem;
 
           // &:nth-child(n + 3) {
           //   //margin-left: 39px;
@@ -929,25 +940,47 @@ $toggle-line: 0.25rem;
             margin-left: 131px;
           }
 
-          gap: 0;
+          // gap: 0;
           padding: 0;
-          svg {
-            margin-bottom: 62px;
+
+          // svg {
+          //   // margin-top: 2rem;
+          //   margin-left: -5rem;
+          //   margin-bottom: 5px;
+          // }
+
+          svg:nth-child(2) {
+            margin-right: 2.7rem;
+          }
+          svg:nth-child(3) {
+            margin-right: 0.5rem;
+          }
+          svg:nth-child(5) {
+            // margin-right: 2.3rem;
+            margin-left: 1rem;
+          }
+          svg:nth-child(6) {
+            margin-left: 0.1rem;
           }
         }
+
         .companies__texts {
           margin-top: 6.25rem;
           margin-bottom: 6.25rem;
-          margin-left: 10.31rem;
+          // margin-left: 8.71rem;
+          margin-left: 9.71rem;
 
           h3 {
+            margin-right: 2.1rem;
             margin-top: 0;
 
             font-style: normal;
             font-weight: 400;
             letter-spacing: -0.02306rem;
           }
+
           p {
+            text-align: left;
             font-size: $p-regular-size;
             font-style: normal;
             font-weight: $font-regular;
@@ -956,6 +989,10 @@ $toggle-line: 0.25rem;
 
             width: 445px;
           }
+
+          .secondary__button--normal {
+            margin-right: 18.7rem;
+          }
         }
       }
 
@@ -963,6 +1000,7 @@ $toggle-line: 0.25rem;
         width: 100%;
         //margin-top: 146.57px;
         //margin-bottom: 100px;
+        margin-top: -0.6rem;
         padding-right: 10.31rem;
         padding-left: 10.31rem;
 
@@ -1050,7 +1088,7 @@ $toggle-line: 0.25rem;
         .implement__image {
           width: 27.8125rem;
           height: 17.75rem;
-          margin: 9.37rem 0rem 0rem 10.31rem;
+          margin: 9.37rem 0rem 0rem -0.29rem;
           filter: drop-shadow(25px 25px 40px rgba($san-juan-blue, 0.302));
         }
         .implement__text {
@@ -1092,6 +1130,7 @@ $toggle-line: 0.25rem;
           background-color: #d2dbe3;
           right: 0;
           z-index: -1;
+          transform: translate(0.2rem, -1.5rem);
         }
 
         .app__mobile-flex {
@@ -1100,17 +1139,19 @@ $toggle-line: 0.25rem;
         }
 
         .app__mobile {
+          transform: translate(2rem, -1rem);
           width: 40.4%;
         }
 
         .phone__left {
-          transform: translateX(-1.4rem);
+          transform: translate(1.4rem, -1rem);
         }
 
         .app__start {
           text-align: start;
           width: 27%;
-          margin-bottom: 2.4rem;
+          margin-bottom: 4.2rem;
+          margin-left: 0.3rem;
         }
 
         .app__title {
@@ -1134,7 +1175,7 @@ $toggle-line: 0.25rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
+      width: 77.7%;
       margin: -1rem auto 3.5rem auto;
 
       .demo__title {
@@ -1145,7 +1186,7 @@ $toggle-line: 0.25rem;
         line-height: 3.5rem;
         letter-spacing: -0.02306rem;
         margin-bottom: 2.5rem;
-        margin-left: 1.3rem;
+        margin-left: 0.2rem;
       }
 
       .demo__form {
@@ -1208,7 +1249,7 @@ $toggle-line: 0.25rem;
 
       .api__media {
         margin-top: 2.38rem;
-        margin-left: 35rem;
+        margin-left: 32.5rem;
       }
     }
   }
