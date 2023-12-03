@@ -463,6 +463,7 @@ a {
     margin-bottom: 5rem;
   }
   .main__container .finances__container {
+    width: 328px;
     margin-bottom: 32px;
   }
   .main__container .finances__container svg {
@@ -903,16 +904,9 @@ a {
     width: 445px;
   }
   .main__container .finances__container {
-
     width: 100%;
     padding-right: 10.31rem;
     padding-left: 10.31rem;
-
-    //margin-top: 146.57px;
-    //margin-bottom: 100px;
-    //margin-right: 10.31rem;
-    //margin-left: 10.31rem;
-
     gap: 1.88rem;
     display: flex;
     flex-direction: row;
@@ -1008,6 +1002,7 @@ a {
     line-height: 1.75rem;
   }
   .main__container .app__container {
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
