@@ -21,6 +21,9 @@ $toggle-line: 0.25rem;
   }
 
   .header__container {
+    .header__half__circle {
+      display: none;
+    }
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
@@ -251,14 +254,13 @@ $toggle-line: 0.25rem;
     }
 
     //companies small screens
-
     .companies__container {
       margin-top: 79px; //tarpai iki kito box elementu
       margin-bottom: 80px; //tarpai iki kito box elementu
 
       background-position: top -37rem center;
 
-      width: 100%; 
+      width: 100%;
 
       padding-bottom: 80px;
 
@@ -357,7 +359,7 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
-      width: 328px;
+      // width: 328px;
       margin-bottom: 32px;
 
       svg {
@@ -500,22 +502,11 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
-    // background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 0rem -30rem;
-    background: url('/assets/images/shared/desktop/bg-pattern-circle-tablet.svg') no-repeat -10rem -36rem;
+    // background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -23rem;
+    background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
   }
 
   .header__container {
-    // .header__circle {
-    //   position: absolute;
-    //   width: 59.3125rem;
-    //   height: 59.3125rem;
-    //   border-radius: 59.3125rem;
-    //   transform: translate(-9%, -73%);
-    //   z-index: -1;
-    //   overflow: hidden;
-    // }
-
     .header__circle {
       position: absolute;
       width: 59.3125rem;
@@ -524,6 +515,9 @@ $toggle-line: 0.25rem;
       left: 50%;
       transform: translate(-50%);
       z-index: -1;
+      display: none;
+    }
+    .header__half__circle {
       display: none;
     }
 
@@ -566,7 +560,6 @@ $toggle-line: 0.25rem;
     //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
     //companies medium screens
-
     .companies__container {
       margin-top: 100px; //tarpai iki kito box elementu
       margin-bottom: 100px; //tarpai iki kito box elementu
@@ -581,7 +574,7 @@ $toggle-line: 0.25rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
-        gap: 45px; 
+        gap: 45px;
         svg {
           transform: scale(1.21);
         }
@@ -756,7 +749,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -823,20 +816,11 @@ $toggle-line: 0.25rem;
   /* For large devices */
   @media screen and (min-width: 1440px) {
     body {
-      // overflow-x: hidden;
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
     }
 
     .header__container {
-      // .header__circle {
-      //   position: absolute;
-      //   width: 48.75rem;
-      //   height: 48.75rem;
-      //   transform: translate(104.2%, -27%);
-      //   z-index: -1;
-      // }
-
-      .header__circle {
+      .header__half__circle {
         display: none;
       }
 
@@ -852,12 +836,12 @@ $toggle-line: 0.25rem;
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
 
       //companies big screens
-
+      // <---Dariaus--->
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
         margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
-        
+
         width: 100%;
 
         padding: 0;
@@ -911,7 +895,7 @@ $toggle-line: 0.25rem;
       }
 
       .finances__container {
-        width: 100%;
+        // width: 100%;
         margin-top: 146.57px;
         margin-bottom: 100px;
         margin-right: 10.31rem;
@@ -1038,8 +1022,9 @@ $toggle-line: 0.25rem;
           height: 49rem;
           shape-outside: circle(50% at 30%);
           clip-path: circle(50% at 100%);
-          background-color: $san-juan-blue-light;
+          background-color: #d2dbe3;
           right: 0;
+          z-index: -1;
         }
 
         .app__mobile-flex {
@@ -1100,7 +1085,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;

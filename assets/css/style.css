@@ -179,6 +179,9 @@ a {
     width: 100%;
     background-color: transparent;
   }
+  .header__container .header__half__circle {
+    display: none;
+  }
   .header__container.is-scrolling {
     background-color: #edf3f8;
     box-shadow: 0 0.2rem 0.5rem rgba(54, 83, 107, 0.1);
@@ -461,7 +464,6 @@ a {
     margin-bottom: 5rem;
   }
   .main__container .finances__container {
-    width: 328px;
     margin-bottom: 32px;
   }
   .main__container .finances__container svg {
@@ -573,8 +575,7 @@ a {
 /* For medium devices */
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
-    background: url("/assets/images/shared/desktop/bg-pattern-circle-tablet.svg") no-repeat -10rem -36rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
   }
   .header__container .header__circle {
     position: absolute;
@@ -584,6 +585,9 @@ a {
     left: 50%;
     transform: translate(-50%);
     z-index: -1;
+    display: none;
+  }
+  .header__container .header__half__circle {
     display: none;
   }
   .header__container .nav__header {
@@ -837,7 +841,7 @@ a {
   body {
     background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
   }
-  .header__container .header__circle {
+  .header__container .header__half__circle {
     display: none;
   }
   .header__container .nav__menu > :last-child {
@@ -891,7 +895,6 @@ a {
     width: 445px;
   }
   .main__container .finances__container {
-    width: 100%;
     margin-top: 146.57px;
     margin-bottom: 100px;
     margin-right: 10.31rem;
@@ -1005,8 +1008,9 @@ a {
     height: 49rem;
     shape-outside: circle(50% at 30%);
     clip-path: circle(50% at 100%);
-    background-color: #6c8294;
+    background-color: #d2dbe3;
     right: 0;
+    z-index: -1;
   }
   .main__container .app__container .app__mobile-flex {
     display: flex;
@@ -1160,6 +1164,40 @@ div.nav__toggle,
   cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer;
 }
 
+.companies__container {
+  background-color: #1b262f;
+  text-align: center;
+  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+}
+.companies__container .companies__logos svg path {
+  fill: #fbfcfe;
+}
+.companies__container .companies__texts {
+  margin: 0 auto;
+  color: #fbfcfe;
+}
+.companies__container .companies__texts h3 {
+  color: #fbfcfe;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.246px;
+}
+.companies__container .companies__texts p {
+  color: #fbfcfe;
+  opacity: 0.7;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 186.667% */
+}
+
 .nav__link {
   text-decoration: none;
   color: #36536b;
@@ -1197,40 +1235,6 @@ div.nav__toggle,
 }
 .footer__nav a:hover {
   opacity: 1;
-}
-
-.companies__container {
-  background-color: #1b262f;
-  text-align: center;
-  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-  background-repeat: no-repeat;
-}
-.companies__container .companies__logos svg path {
-  fill: #fbfcfe;
-}
-.companies__container .companies__texts {
-  margin: 0 auto;
-  color: #fbfcfe;
-}
-.companies__container .companies__texts h3 {
-  color: #fbfcfe;
-  text-align: center;
-  font-family: "DM Serif Display", serif;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px; /* 112.5% */
-  letter-spacing: -0.246px;
-}
-.companies__container .companies__texts p {
-  color: #fbfcfe;
-  opacity: 0.7;
-  text-align: center;
-  font-family: "Public Sans", sans-serif;
-  font-size: 0.9375rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 186.667% */
 }
 
 /*# sourceMappingURL=style.css.map */
