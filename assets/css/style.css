@@ -173,7 +173,6 @@ a {
 @media screen and (max-width: 767px) {
   body {
     background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat center -34rem;
-    overflow-y: scroll;
   }
   header {
     position: fixed;
@@ -353,6 +352,7 @@ a {
     margin-top: 1.19rem;
   }
   .main__container .api__container .primary-button-normal {
+    margin-bottom: 1rem;
     width: 20.4375rem;
     height: 3rem;
   }
@@ -426,7 +426,7 @@ a {
     margin-top: 2.856rem;
     font-weight: 400;
   }
-  .main__container .implement__container .implement__h2_text {
+  .main__container .implement__container .implement__h2__text {
     color: #36536b;
     font-family: "DM Serif Display", serif;
     font-size: 2.25rem;
@@ -434,7 +434,7 @@ a {
     letter-spacing: -0.01731rem;
     margin-bottom: 1.5rem;
   }
-  .main__container .implement__container .implement__p_text {
+  .main__container .implement__container .implement__p__text {
     color: #6c8294;
     font-family: "Public Sans", sans-serif;
     font-size: 0.9375rem;
@@ -729,13 +729,13 @@ a {
     width: 35.8125rem;
     margin: -0.18rem 6.12rem 6.27rem 6.06rem;
   }
-  .implement__container .implement__h2_text {
+  .implement__container .implement__h2__text {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
   }
-  .implement__container .implement__p_text {
+  .implement__container .implement__p__text {
     font-size: 0.9375rem;
     margin-bottom: 1.5rem;
     line-height: 1.75rem;
@@ -987,13 +987,13 @@ a {
     margin-top: 13.12rem;
     margin-left: 7.73rem;
   }
-  .main__container .implement__container .implement__h2_text {
+  .main__container .implement__container .implement__h2__text {
     font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 3.5rem;
     letter-spacing: -0.02306rem;
   }
-  .main__container .implement__container .implement__p_text {
+  .main__container .implement__container .implement__p__text {
     font-size: 0.9375rem;
     line-height: 1.75rem;
   }

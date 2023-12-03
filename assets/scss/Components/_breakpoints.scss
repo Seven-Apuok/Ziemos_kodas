@@ -12,7 +12,6 @@ $toggle-line: 0.25rem;
 @media screen and (max-width: 767px) {
   body {
     background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
-    overflow-y: scroll;
   }
 
   header {
@@ -229,6 +228,7 @@ $toggle-line: 0.25rem;
       }
 
       .primary-button-normal {
+        margin-bottom: 1rem;
         width: 20.4375rem;
         height: 3rem;
       }
@@ -312,7 +312,7 @@ $toggle-line: 0.25rem;
         margin-top: 2.856rem;
         font-weight: $font-regular;
       }
-      .implement__h2_text {
+      .implement__h2__text {
         color: $san-juan-blue;
         font-family: $body-second-font;
         font-size: 2.25rem;
@@ -320,7 +320,7 @@ $toggle-line: 0.25rem;
         letter-spacing: -0.01731rem;
         margin-bottom: 1.5rem;
       }
-      .implement__p_text {
+      .implement__p__text {
         color: $san-juan-blue-light;
         font-family: $body-font;
         font-size: $p-regular-size;
@@ -692,13 +692,13 @@ $toggle-line: 0.25rem;
       width: 35.8125rem;
       margin: -0.18rem 6.12rem 6.27rem 6.06rem;
     }
-    .implement__h2_text {
+    .implement__h2__text {
       font-size: $h2-regular-size;
       margin-bottom: 1.5rem;
       line-height: 3.5rem;
       letter-spacing: -0.02306rem;
     }
-    .implement__p_text {
+    .implement__p__text {
       font-size: $p-regular-size;
       margin-bottom: 1.5rem;
       line-height: 1.75rem;
@@ -1009,13 +1009,13 @@ $toggle-line: 0.25rem;
           margin-top: 13.12rem;
           margin-left: 7.73rem;
         }
-        .implement__h2_text {
+        .implement__h2__text {
           font-size: $h2-regular-size;
           margin-bottom: 1.5rem;
           line-height: 3.5rem;
           letter-spacing: -0.02306rem;
         }
-        .implement__p_text {
+        .implement__p__text {
           font-size: $p-regular-size;
           line-height: 1.75rem;
         }
