@@ -12,6 +12,7 @@ $toggle-line: 0.25rem;
 @media screen and (max-width: 767px) {
   body {
     background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+    overflow-y: scroll;
   }
 
   header {
@@ -206,13 +207,13 @@ $toggle-line: 0.25rem;
     .api__container {
       text-align: center;
 
-      .api_mobile {
+      .api__mobile {
         width: 34%;
         margin-bottom: 1.5rem;
         margin-top: 6.75rem;
       }
 
-      .api-title {
+      .api__title {
         margin: 0 auto;
         width: 20.4375rem;
         text-align: center;
@@ -243,12 +244,11 @@ $toggle-line: 0.25rem;
         text-indent: 1.69rem;
 
         &::placeholder {
-          color: $san-juan-blue;
+          color: rgba($san-juan-blue, 0.5);
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
           line-height: normal;
-          opacity: 0.5;
         }
       }
     }
@@ -359,13 +359,11 @@ $toggle-line: 0.25rem;
     }
 
     .finances__container {
-
       width: 328px;
-      margin-bottom: 32px;//iki ready to start texto
+      margin-bottom: 32px; //iki ready to start texto
 
       // width: 328px;
       //margin-bottom: 32px;
-
 
       svg {
         margin-bottom: 2.06rem;
@@ -404,12 +402,11 @@ $toggle-line: 0.25rem;
         text-indent: 1.69rem;
 
         &::placeholder {
-          color: $san-juan-blue;
+          color: rgba($san-juan-blue, 0.5);
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
           line-height: normal;
-          opacity: 0.5;
         }
       }
 
@@ -627,13 +624,13 @@ $toggle-line: 0.25rem;
   .api__container {
     text-align: center;
 
-    .api_mobile {
+    .api__mobile {
       width: 21%;
       margin-bottom: 2.93rem;
       margin-top: 3.1rem;
     }
 
-    .api-title {
+    .api__title {
       margin: 0 auto;
       width: 35.8rem;
       text-align: center;
@@ -643,7 +640,7 @@ $toggle-line: 0.25rem;
       letter-spacing: -0.02306rem;
     }
 
-    .api_paragraph {
+    .api__paragraph {
       color: $san-juan-blue-light;
       transform: translateY(-0.84rem);
     }
@@ -675,12 +672,11 @@ $toggle-line: 0.25rem;
       text-indent: 1.69rem;
 
       &::placeholder {
-        color: $san-juan-blue;
+        color: rgba($san-juan-blue, 0.5);
         font-weight: $font-bold;
         font-family: $body-font;
         font-size: $p-regular-size;
         line-height: normal;
-        opacity: 0.5;
       }
     }
   }
@@ -771,12 +767,11 @@ $toggle-line: 0.25rem;
       text-indent: 1.69rem;
 
       &::placeholder {
-        color: $san-juan-blue;
+        color: rgba($san-juan-blue, 0.5);
         font-weight: $font-bold;
         font-family: $body-font;
         font-size: $p-regular-size;
         line-height: normal;
-        opacity: 0.5;
       }
     }
 
@@ -826,7 +821,6 @@ $toggle-line: 0.25rem;
   /* For large devices */
   @media screen and (min-width: 1440px) {
     body {
-
       width: 100%;
 
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
@@ -860,13 +854,12 @@ $toggle-line: 0.25rem;
         //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
 
         //margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
-        
 
         width: 100%;
 
         padding: 0;
         //padding-right: 163px;
-        
+
         background-position: bottom 51px right 895px;
         display: flex;
         flex-wrap: wrap;
@@ -922,7 +915,7 @@ $toggle-line: 0.25rem;
         //margin-bottom: 100px;
         padding-right: 10.31rem;
         padding-left: 10.31rem;
-        
+
         gap: 1.88rem;
         display: flex;
         flex-direction: row;
@@ -937,12 +930,12 @@ $toggle-line: 0.25rem;
         gap: 17.3rem;
         margin-top: 1.59rem;
 
-        .api_mobile {
+        .api__mobile {
           width: 19%;
           transform: translate(-4.9rem, -0.5rem);
         }
 
-        .api-title {
+        .api__title {
           font-family: $body-second-font;
           width: 34.125rem;
           text-align: start;
@@ -953,7 +946,7 @@ $toggle-line: 0.25rem;
           margin-bottom: 1.4rem;
         }
 
-        .api_paragraph {
+        .api__paragraph {
           color: $san-juan-blue-light;
           transform: translate(1.5rem, -0.6rem);
         }
@@ -991,12 +984,11 @@ $toggle-line: 0.25rem;
           margin-right: 0.2rem;
 
           &::placeholder {
-            color: $san-juan-blue;
+            color: rgba($san-juan-blue, 0.5);
             font-weight: $font-bold;
             font-family: $body-font;
             font-size: $p-regular-size;
             line-height: normal;
-            opacity: 0.5;
           }
         }
       }
@@ -1121,12 +1113,11 @@ $toggle-line: 0.25rem;
         margin-right: 0.4rem;
 
         &::placeholder {
-          color: $san-juan-blue;
+          color: rgba($san-juan-blue, 0.5);
           font-weight: $font-bold;
           font-family: $body-font;
           font-size: $p-regular-size;
           line-height: normal;
-          opacity: 0.5;
         }
       }
 
