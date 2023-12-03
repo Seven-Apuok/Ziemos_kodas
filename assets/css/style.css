@@ -80,6 +80,11 @@ a {
 }
 
 /*---------mobile shadow----------*/
+.app__mobile,
+.api__mobile {
+  filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3019607843));
+}
+
 /*---------------BUTTONS------------------*/
 .primary__button--normal {
   width: 10.8125rem;
@@ -322,6 +327,7 @@ a {
   }
   .main__container .api__container {
     text-align: center;
+    z-index: -1;
   }
   .main__container .api__container .api__mobile {
     width: 34%;
