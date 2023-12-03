@@ -169,6 +169,9 @@ a {
     width: 100%;
     background-color: transparent;
   }
+  .header__container .header__half__circle {
+    display: none;
+  }
   .header__container.is-scrolling {
     background-color: #edf3f8;
     box-shadow: 0 0.2rem 0.5rem rgba(54, 83, 107, 0.1);
@@ -562,10 +565,12 @@ a {
 /* For medium devices */
 @media screen and (min-width: 768px) {
   body {
-    overflow-x: hidden;
-    background: url("/assets/images/shared/desktop/bg-pattern-circle-tablet.svg") no-repeat -10rem -36rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
   }
   .header__container .header__circle {
+    display: none;
+  }
+  .header__container .header__half__circle {
     display: none;
   }
   .header__container .nav__header {
@@ -819,7 +824,7 @@ a {
   body {
     background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
   }
-  .header__container .header__circle {
+  .header__container .header__half__circle {
     display: none;
   }
   .header__container .nav__menu > :last-child {
