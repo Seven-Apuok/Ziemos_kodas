@@ -5,11 +5,16 @@
   margin: 0;
 }
 
-body {
-  font-family: $body-font;
-  font-size: $p-regular-size;
-  min-width: 375px;
+html {
+  scroll-behavior: smooth;
 }
+
+//jei aprasom _body.scss tai nebedubliuokim cia
+// body {
+//   font-family: $body-font;
+//   font-size: $p-regular-size;
+//   min-width: 375px;
+// }
 
 h1 {
   font-family: $body-second-font;
@@ -76,10 +81,10 @@ a {
 }
 
 /*---------mobile shadow----------*/
-.app__mobile,
-.api_mobile{
-  filter: drop-shadow(25px 25px 80px #36536b4d);
-}
+// .app__mobile,
+// .api_mobile{
+//   filter: drop-shadow(25px 25px 80px #36536b4d);
+// }
 
 .api_bold {
   color: $san-juan-blue-light;
