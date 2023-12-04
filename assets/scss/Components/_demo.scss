@@ -1,0 +1,23 @@
+#demo__contacts {
+  @media screen and (min-width: 767px) {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+#demo__form__contacts{
+    @media screen and (min-width: 767px) {
+      margin-bottom: 84px;
+    }
+  }
+  #input__contacts{
+    @media screen and (min-width: 1439px) {
+        margin-top:155px;
+        //padding-bottom: 16px;
+      }
+  }
+  #input__contacts__button{
+    @media screen and (min-width: 1439px) {
+        margin-top:130.5px;
+        //padding-bottom: 16px;
+      }
+  }
