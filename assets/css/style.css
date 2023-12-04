@@ -80,6 +80,11 @@ a {
 }
 
 /*---------mobile shadow----------*/
+.app__mobile,
+.api__mobile {
+  filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3019607843));
+}
+
 /*---------------BUTTONS------------------*/
 .primary__button--normal {
   width: 10.8125rem;
@@ -322,6 +327,7 @@ a {
   }
   .main__container .api__container {
     text-align: center;
+    z-index: -1;
   }
   .main__container .api__container .api__mobile {
     width: 34%;
@@ -1275,6 +1281,29 @@ div.nav__toggle,
   line-height: 28px; /* 186.667% */
 }
 
+#contacts__color__light {
+  background-color: #edf3f8;
+  background-image: none;
+  padding-bottom: 41px;
+}
+@media screen and (min-width: 767px) {
+  #contacts__color__light {
+    padding-bottom: 0px;
+  }
+}
+
+#svg__color__changer {
+  transform: scale(1);
+}
+#svg__color__changer path {
+  fill: #36536b;
+}
+@media screen and (min-width: 767px) {
+  #svg__color__changer {
+    transform: scale(1.23);
+  }
+}
+
 .nav__link {
   text-decoration: none;
   color: #36536b;
@@ -1312,6 +1341,46 @@ div.nav__toggle,
 }
 .footer__nav a:hover {
   opacity: 1;
+}
+
+@media screen and (min-width: 767px) {
+  #demo__contacts {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #demo__form__contacts {
+    margin-bottom: 84px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  #input__contacts {
+    margin-top: 155px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  #input__contacts__button {
+    margin-top: 130.5px;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .subcontainer__contacts {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  .registration__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

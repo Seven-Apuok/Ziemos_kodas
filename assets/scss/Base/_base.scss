@@ -74,10 +74,10 @@ a {
 }
 
 /*---------mobile shadow----------*/
-// .app__mobile,
-// .api_mobile{
-//   filter: drop-shadow(25px 25px 80px #36536b4d);
-// }
+.app__mobile,
+.api__mobile{
+  filter: drop-shadow(25px 25px 80px #36536b4d);
+}
 
 // .api__bold {
 //   color: $san-juan-blue-light;

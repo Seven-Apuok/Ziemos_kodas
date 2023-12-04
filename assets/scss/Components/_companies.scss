@@ -3,7 +3,7 @@
   text-align: center;
   background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
-  
+
   .companies__logos {
     svg {
       path {
@@ -12,8 +12,8 @@
     }
   }
   .companies__texts {
-    margin:0 auto;
-        color: $link-water-white;
+    margin: 0 auto;
+    color: $link-water-white;
 
     h3 {
       color: $link-water-white;
@@ -36,10 +36,27 @@
       font-style: normal;
       font-weight: $font-regular;
       line-height: 28px; /* 186.667% */
-
-
     }
   }
+}
+
+//for contacts
+#contacts__color__light {
+  background-color: $body-color;
+  background-image: none;
+  padding-bottom: 41px;
+  @media screen and (min-width: 767px) {padding-bottom: 0px;}
+}
+
+#svg__color__changer {
+  path {
+    fill: $san-juan-blue;
+  }
+  transform: scale(1);
+
+    @media screen and (min-width: 767px) {
+      transform: scale(1.23); // Mastelis, kai ekranas yra 768px
+    }
 }
 
 // Struktura:
