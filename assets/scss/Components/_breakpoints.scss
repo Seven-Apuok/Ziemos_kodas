@@ -24,12 +24,14 @@ $toggle-line: 0.25rem;
     .header__half__circle {
       display: none;
     }
+
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
       z-index: 1;
       margin-top: 0;
     }
+
     .header__circle {
       display: none;
     }
@@ -50,6 +52,7 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
+
           &:before,
           &:after {
             box-shadow: none;
@@ -274,25 +277,32 @@ $toggle-line: 0.25rem;
         margin-top: 80px;
         margin-left: 48px;
         margin-right: 47px;
+
         > :nth-of-type(4) {
           margin-right: -0.6rem;
         }
+
         > :nth-of-type(5) {
           margin-right: 1rem;
         }
+
         > :nth-of-type(6) {
           margin-right: 0.4rem;
         }
+
         svg {
           margin-bottom: 39px;
         }
       }
+
       .companies__texts {
         width: 327px;
+
         h3 {
           margin-top: 18.73px;
           margin-bottom: 16px;
         }
+
         p {
           margin-bottom: 60px;
           font-size: 14.9px; // cia kazkokia nesamone, bet 15px cia netelpa kaip pagal figma
@@ -303,6 +313,7 @@ $toggle-line: 0.25rem;
     .implement__container {
       display: flex;
       flex-direction: column;
+
       // margin-bottom: 1.8rem;
       .implement__image {
         width: 20.5rem;
@@ -312,6 +323,7 @@ $toggle-line: 0.25rem;
         margin-top: 5rem;
         filter: drop-shadow(25px 25px 40px #36536b4d);
       }
+
       .implement__text {
         text-align: center;
         font-style: normal;
@@ -322,6 +334,7 @@ $toggle-line: 0.25rem;
         margin-top: 2.656rem;
         font-weight: $font-regular;
       }
+
       .implement__h2__text {
         color: $san-juan-blue;
         font-family: $body-second-font;
@@ -330,8 +343,9 @@ $toggle-line: 0.25rem;
         letter-spacing: -0.01731rem;
         margin-bottom: 1.5rem;
       }
+
       .implement__p__text {
-        color: $san-juan-blue-light;
+        color: #6c8294;
         font-family: $body-font;
         font-size: $p-regular-size;
         line-height: 1.75rem;
@@ -374,17 +388,20 @@ $toggle-line: 0.25rem;
 
       // width: 328px;
       //margin-bottom: 32px;
-      > .finances__box:nth-of-type(1) {
+      >.finances__box:nth-of-type(1) {
         margin-top: -0.2rem;
+
         h3 {
           margin-top: -0.2rem;
         }
       }
-      > .finances__box:nth-of-type(2) {
+
+      >.finances__box:nth-of-type(2) {
         h3 {
           margin-top: -0.2rem;
         }
       }
+
       svg {
         margin-bottom: 2.06rem;
       }
@@ -399,6 +416,7 @@ $toggle-line: 0.25rem;
 
     .demo__container {
       margin-top: 0.7rem;
+
       .demo__title {
         text-align: center;
         line-height: 2.25rem;
@@ -543,6 +561,7 @@ $toggle-line: 0.25rem;
       z-index: -1;
       display: none;
     }
+
     .header__half__circle {
       display: none;
     }
@@ -574,6 +593,7 @@ $toggle-line: 0.25rem;
           margin-left: 3.1rem;
         }
       }
+
       .nav__link {
         display: grid;
         align-self: center;
@@ -600,6 +620,7 @@ $toggle-line: 0.25rem;
       padding-left: 155px;
       padding-right: 155px;
       padding-bottom: 88px;
+
       .companies__logos {
         padding-top: 88px;
         display: grid;
@@ -608,40 +629,50 @@ $toggle-line: 0.25rem;
         grid-template-columns: repeat(3, 1fr);
 
         gap: 45px;
+
         svg {
           transform: scale(1.21);
         }
+
         svg:nth-child(1) {
           margin-top: 0.5rem;
           margin-left: -4.3rem;
         }
+
         svg:nth-child(2) {
           margin-top: 0.2rem;
           margin-left: -0.4rem;
         }
+
         svg:nth-child(3) {
           margin-top: 0.2rem;
           margin-right: -3.8rem;
         }
+
         svg:nth-child(4) {
           margin-left: -4rem;
           margin-top: -0.2rem;
         }
+
         svg:nth-child(6) {
           margin-top: -0.2rem;
           margin-right: -4rem;
         }
       }
+
       .companies__texts {
         margin-top: 23px;
+
         h3 {
           margin-top: 67px;
           margin-bottom: 24px;
 
           font-size: $h2-regular-size;
-          line-height: $h1-small-line-height; /* 116.667% */
+          line-height: $h1-small-line-height;
+          /* 116.667% */
           letter-spacing: -0.369px;
         }
+
         p {
           margin-bottom: 32px;
 
@@ -664,6 +695,7 @@ $toggle-line: 0.25rem;
       svg {
         margin-bottom: 2rem;
       }
+
       .finances__box__text {
         margin-top: -0.4rem;
       }
@@ -730,6 +762,7 @@ $toggle-line: 0.25rem;
       }
     }
   }
+
   .implement__container {
     .implement__image {
       width: 24.48281rem;
@@ -737,18 +770,22 @@ $toggle-line: 0.25rem;
       margin: 6.25rem 11.77rem 3rem 11.75rem;
       filter: drop-shadow(25px 25px 40px rgba($san-juan-blue, 0.302));
     }
+
     .implement__text {
       text-align: center;
       width: 35.8125rem;
       margin: -0.18rem 6.12rem 6.27rem 6.06rem;
     }
+
     .implement__h2__text {
       font-size: $h2-regular-size;
       margin-bottom: 1.5rem;
       line-height: 3.5rem;
       letter-spacing: -0.02306rem;
     }
+
     .implement__p__text {
+      color: #6c8294;
       font-size: $p-regular-size;
       margin-bottom: 1.5rem;
       line-height: 1.75rem;
@@ -785,6 +822,7 @@ $toggle-line: 0.25rem;
 
   .demo__container {
     margin-left: -0.8rem;
+
     .demo__title {
       text-align: center;
       font-size: 3rem;
@@ -880,12 +918,14 @@ $toggle-line: 0.25rem;
       .header__half__circle {
         display: none;
       }
+
       .nav__header {
         margin-right: 0.3rem !important;
       }
 
       .nav__menu {
         margin-right: -0.7rem;
+
         > :last-child {
           margin-left: 29.3rem !important;
         }
@@ -898,6 +938,7 @@ $toggle-line: 0.25rem;
       flex-direction: column;
       align-items: center;
       flex-wrap: nowrap;
+
       //NEPAMIRSKIT, KAD CIA TURITE RASYTI SAVO CSS KODA, JIS TURI PATEKTI I MAIN__CONTAINER
       //PABAIGUS PROJEKTA SIUOS KOMENTARUS ISTRINTI
       .api__container {
@@ -905,6 +946,7 @@ $toggle-line: 0.25rem;
           margin-left: 2rem;
         }
       }
+
       //companies big screens
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
@@ -953,13 +995,16 @@ $toggle-line: 0.25rem;
           svg:nth-child(2) {
             margin-right: 2.7rem;
           }
+
           svg:nth-child(3) {
             margin-right: 0.5rem;
           }
+
           svg:nth-child(5) {
             // margin-right: 2.3rem;
             margin-left: 1rem;
           }
+
           svg:nth-child(6) {
             margin-left: 0.1rem;
           }
@@ -985,7 +1030,8 @@ $toggle-line: 0.25rem;
             font-size: $p-regular-size;
             font-style: normal;
             font-weight: $font-regular;
-            line-height: 1.75rem; /* 186.667% */
+            line-height: 1.75rem;
+            /* 186.667% */
             opacity: 0.7;
 
             width: 445px;
@@ -1086,12 +1132,14 @@ $toggle-line: 0.25rem;
       .implement__container {
         display: flex;
         margin-bottom: 7.62rem;
+
         .implement__image {
           width: 27.8125rem;
           height: 17.75rem;
           margin: 9.37rem 0rem 0rem -0.29rem;
           filter: drop-shadow(25px 25px 40px rgba($san-juan-blue, 0.302));
         }
+
         .implement__text {
           text-align: left;
           width: 27.8125rem;
@@ -1099,13 +1147,16 @@ $toggle-line: 0.25rem;
           margin-top: 13.12rem;
           margin-left: 7.73rem;
         }
+
         .implement__h2__text {
           font-size: $h2-regular-size;
           margin-bottom: 1.5rem;
           line-height: 3.5rem;
           letter-spacing: -0.02306rem;
         }
+
         .implement__p__text {
+          color: #6c8294;
           font-size: $p-regular-size;
           line-height: 1.75rem;
         }
