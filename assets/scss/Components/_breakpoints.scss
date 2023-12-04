@@ -10,20 +10,49 @@ $toggle-line: 0.25rem;
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+  .header__circle {
+    display: none;
   }
+
+  .header__half__circle {
+    // display: none;
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    // transform: translate(-12rem, -34.3rem);
+    z-index: -1;
+  }
+
+  // .header__circle {
+  //   position: absolute;
+  //   width: 48.75rem;
+  //   height: 48.75rem;
+  //   transform: translate(-12rem, -34.3rem);
+  //   z-index: -1;
+  // }
+
+  // body {
+
+  //   // background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+
+  // }
 
   header {
     position: fixed;
     width: 100%;
     background-color: transparent;
+    z-index: 1;
   }
 
   .header__container {
-    .header__half__circle {
-      display: none;
-    }
+    // .header__half__circle {
+    //   // display: none;
+    //   position: absolute;
+    //   width: 48.75rem;
+    //   height: 48.75rem;
+    //   transform: translate(-12rem, -34.3rem);
+    //   z-index: -1;
+    // }
 
     &.is-scrolling {
       background-color: $body-color;
@@ -32,9 +61,9 @@ $toggle-line: 0.25rem;
       margin-top: 0;
     }
 
-    .header__circle {
-      display: none;
-    }
+    // .header__circle {
+    //   display: none;
+    // }
 
     .circle {
       display: none;
@@ -546,21 +575,23 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  body {
-    background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+
+  // body {
+  //   background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+  // }
+  .header__circle {
+    position: absolute;
+    width: 59.3125rem;
+    height: 59.3125rem;
+    top: -41.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    // display: none;
   }
 
   .header__container {
-    .header__circle {
-      position: absolute;
-      width: 59.3125rem;
-      height: 59.3125rem;
-      top: -41.5rem;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: -1;
-      display: none;
-    }
+
 
     .header__half__circle {
       display: none;
@@ -909,9 +940,18 @@ $toggle-line: 0.25rem;
 
   /* For large devices */
   @media screen and (min-width: 1440px) {
-    body {
-      width: 100%;
-      background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
+
+    // body {
+    //   width: 100%;
+    //   background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
+    // }
+    .header__circle {
+      position: absolute;
+      width: 48.75rem;
+      height: 48.75rem;
+      border-radius: 48.75rem;
+      transform: translate(5rem, 31rem);
+      z-index: -1;
     }
 
     .header__container {
