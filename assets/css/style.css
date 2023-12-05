@@ -1336,7 +1336,7 @@ div.nav__toggle,
 }
 
 #contacts__companies__logos {
-  margin-top: 32px;
+  margin-top: 31px;
 }
 @media screen and (min-width: 767px) {
   #contacts__companies__logos {
@@ -1345,9 +1345,9 @@ div.nav__toggle,
   }
 }
 
-h4 {
+.h4__contacts {
   text-align: center;
-  width: 327px;
+  width: 300px;
   margin-top: 80px;
 }
 @media screen and (min-width: 767px) {
@@ -1364,7 +1364,7 @@ h4 {
 }
 
 #input__contacts {
-  background-color: #FBFCFE;
+  background-color: #fbfcfe;
 }
 @media screen and (min-width: 1439px) {
   #input__contacts {
@@ -1382,27 +1382,27 @@ h4 {
 #contacts__color__light {
   background-color: #edf3f8;
   background-image: none;
-  padding-bottom: 41px;
+  padding-bottom: 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
 }
-#contacts__color__light h4 {
+#contacts__color__light .h4__contacts {
   opacity: 0.75;
 }
 @media screen and (min-width: 767px) {
   #contacts__color__light {
     padding-bottom: 0px;
   }
-  #contacts__color__light h4 {
+  #contacts__color__light .h4__contacts {
     margin-top: 0px;
     margin-top: 64px;
     width: 445px;
   }
 }
 @media screen and (min-width: 1440px) {
-  #contacts__color__light h4 {
+  #contacts__color__light .h4__contacts {
     text-align: left;
   }
 }
@@ -1419,28 +1419,27 @@ h4 {
   }
 }
 
-form {
+.subcontainer__contacts form {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
+  padding-left: 24.5px;
 }
-form button {
-  margin-top: 25px;
+.subcontainer__contacts form button {
+  margin-top: 16px;
 }
-
-input,
-textarea {
+.subcontainer__contacts input,
+.subcontainer__contacts textarea {
   border: none;
   border-bottom: 1px solid #36536b;
   width: 327px;
   padding-top: 13px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 20px;
   background-color: #edf3f8;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
-input::placeholder,
-textarea::placeholder {
+.subcontainer__contacts input::placeholder,
+.subcontainer__contacts textarea::placeholder {
   color: #36536b;
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
@@ -1451,32 +1450,32 @@ textarea::placeholder {
   opacity: 0.5;
 }
 @media screen and (min-width: 767px) {
-  input,
-  textarea {
+  .subcontainer__contacts input,
+  .subcontainer__contacts textarea {
     width: 445px;
   }
 }
 @media screen and (min-width: 1440px) {
-  input,
-  textarea {
+  .subcontainer__contacts input,
+  .subcontainer__contacts textarea {
     margin-left: 65px;
   }
 }
-
-textarea {
-  height: 109px;
+.subcontainer__contacts textarea {
+  height: 96px;
   resize: none;
+  padding-top: 7px;
+  margin-bottom: 24px;
 }
-
-.form__checkbox {
+.subcontainer__contacts .form__checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.form__checkbox input[type=checkbox] {
+.subcontainer__contacts .form__checkbox input[type=checkbox] {
   display: none;
 }
-.form__checkbox label {
+.subcontainer__contacts .form__checkbox label {
   position: relative;
   padding-left: 35px;
   color: #36536b;
@@ -1487,7 +1486,7 @@ textarea {
   line-height: 25px;
   letter-spacing: -0.115px;
 }
-.form__checkbox .checkbox-custom {
+.subcontainer__contacts .form__checkbox .checkbox-custom {
   position: absolute;
   top: 0;
   left: 0;
@@ -1498,12 +1497,12 @@ textarea {
   opacity: 0.25;
   margin-top: 13px;
 }
-.form__checkbox .contact__checkbox__text {
+.subcontainer__contacts .form__checkbox .contact__checkbox__text {
   position: relative;
   left: 16px;
 }
 @media screen and (min-width: 767px) {
-  .form__checkbox .contact__checkbox__text {
+  .subcontainer__contacts .form__checkbox .contact__checkbox__text {
     width: 395px;
     display: block;
   }
