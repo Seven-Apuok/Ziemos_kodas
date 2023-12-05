@@ -40,25 +40,6 @@
   }
 }
 
-//for contacts
-#contacts__color__light {
-  background-color: $body-color;
-  background-image: none;
-  padding-bottom: 41px;
-  @media screen and (min-width: 767px) {padding-bottom: 0px;}
-}
-
-#svg__color__changer {
-  path {
-    fill: $san-juan-blue;
-  }
-  transform: scale(1);
-
-    @media screen and (min-width: 767px) {
-      transform: scale(1.23); // Mastelis, kai ekranas yra 768px
-    }
-}
-
 // Struktura:
 // .companies__container{
 //     .companies__logos{
