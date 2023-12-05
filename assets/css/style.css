@@ -1225,6 +1225,8 @@ body {
 a,
 button,
 input[type=email],
+input[type=text],
+textarea,
 div.nav__toggle,
 .nav__toggle,
 .nav__toggle::before,
@@ -1439,6 +1441,10 @@ div.nav__toggle,
   letter-spacing: -0.115px;
   opacity: 0.5;
 }
+.subcontainer__contacts input:hover::placeholder,
+.subcontainer__contacts textarea:hover::placeholder {
+  color: #F00;
+}
 @media screen and (min-width: 767px) {
   .subcontainer__contacts input,
   .subcontainer__contacts textarea {
@@ -1486,6 +1492,7 @@ div.nav__toggle,
   border: 1px solid #36536b;
   opacity: 0.25;
   margin-top: 13px;
+  cursor: pointer;
 }
 .subcontainer__contacts .form__checkbox .contact__checkbox__text {
   position: relative;

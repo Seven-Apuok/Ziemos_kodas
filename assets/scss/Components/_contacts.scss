@@ -128,12 +128,18 @@
       letter-spacing: -0.115px;
       opacity: 0.5;
     }
+    &:hover {
+      &::placeholder {
+          color: #F00; // Texto spalva uzvedus zymekli
+      }
+  }
     @media screen and (min-width: 767px) {
       width: 445px;
     }
     @media screen and (min-width: 1440px) {
       margin-left: 65px;
     }
+    
   }
   textarea {
     height: 96px;
@@ -142,8 +148,6 @@
     margin-bottom:24px;
 
   }
-
-  //testai su formos checkbox
 
   .form__checkbox {
     display: flex;
@@ -175,6 +179,8 @@
       border: 1px solid $san-juan-blue;
       opacity: 0.25;
       margin-top: 13px;
+      cursor: pointer;
+
     }
 
     .contact__checkbox__text {
@@ -187,6 +193,8 @@
     }
   }
 }
+
+
 .help__container {
   color: $san-juan-blue;
   text-align: center;
