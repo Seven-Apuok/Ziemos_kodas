@@ -52,7 +52,54 @@
       <!-- papildoma sekcija, kad sudelioti vaizda 1440px ekrane -->
       <section class="subcontainer__contacts">
         <section class="registration__container">
-          <button class="secondary__submit--normal">Submit</button>
+          <!-- formos pradzia -->
+          <form action="/submit" method="post">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Company Name"
+            />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+              required
+            />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <div class="form__checkbox">
+              <input type="checkbox" id="subscribe" name="subscribe" />
+              <label for="subscribe">
+                <span class="checkbox-custom"></span>
+                <span class="contact__checkbox__text"
+                  >Stay up-to-date with company announcements and updates to our
+                  API</span
+                >
+              </label>
+            </div>
+            <button class="secondary__submit--normal">Submit</button>
+          </form>
+          <!-- formos pabaiga -->
         </section>
         <section class="companies__container" id="contacts__color__light">
           <div class="companies__logos">
