@@ -1,8 +1,14 @@
+$toggle-size: 2.5rem;
+$toggle-margin: 0.625rem;
+$toggle-line: 0.25rem;
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 @media screen and (max-width: 767px) {
-  // body {
-  //     background: url('/assets/images/shared/desktop/bg-pattern-tablet-circle.svg') no-repeat center center;
-  //     background-color: #fbfcfe;
-  // }
+ 
 
   header {
     position: fixed;
@@ -42,6 +48,7 @@
 
       &.is-active {
         .nav__toggle {
+
           &:before,
           &:after {
             box-shadow: none;
@@ -187,8 +194,7 @@
     }
   }
 
-  .main__container {
-  }
+  .main__container {}
 }
 
 @media screen and (min-width: 768px) {
@@ -248,8 +254,7 @@
   }
 }
 
-.main__container {
-}
+.main__container {}
 
 @media screen and (min-width: 1440px) {
   // body {
@@ -275,6 +280,5 @@
     }
   }
 
-  .main__container {
-  }
+  .main__container {}
 }

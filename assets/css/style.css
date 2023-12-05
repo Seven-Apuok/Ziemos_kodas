@@ -1394,6 +1394,11 @@ div.nav__toggle,
   }
 }
 
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 @media screen and (max-width: 767px) {
   header {
     position: fixed;
