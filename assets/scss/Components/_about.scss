@@ -1,0 +1,44 @@
+.vision__subtitle{
+    color: $san-juan-blue-light;
+}
+
+  .statistics__border{
+    width: 21.85rem;
+    height: 0.0625rem;
+    background: $san-juan-blue;
+    opacity: 0.25;
+  }
+
+  /* For small devices */
+@media screen and (max-width: 767px) {
+
+}
+
+
+/* For medium devices */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/* For large devices */
+
+@media screen and (min-width: 1440px) {
+
+    .app__circle {
+        position: absolute;
+        width: 49rem;
+        height: 49rem;
+        shape-outside: circle(50% at 30%);
+        clip-path: circle(50% at 0%);
+        background-color: #d2dbe3;
+        top: 0;
+        z-index: -1;
+        transform: translateY(-5.5rem);
+      }
+
+      .picture__container{
+        margin-top: 3rem;
+        position: relative;
+    }
+}
