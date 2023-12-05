@@ -1,48 +1,82 @@
-.statictics__title{
-  color: red;
+.statictics__title {
+    text-align: center;
+    margin-top: 0;
+    opacity: 0.7;
 }
 
-.vision__subtitle{
-    color: $san-juan-blue-light;
+.statistics__number{
+  color: $dark-pink;
 }
 
-  .statistics__border{
-    width: 21.85rem;
-    height: 0.0625rem;
-    background: $san-juan-blue;
-    opacity: 0.25;
+.vision__subtitle {
+  color: $san-juan-blue-light;
+}
+
+.statistics__border {
+  width: 21.85rem;
+  height: 0.0625rem;
+  background: $san-juan-blue;
+  opacity: 0.25;
+}
+
+/* For small devices */
+@media screen and (max-width: 767px) {
+  .innovators__container{
+    margin-top: 5rem;
+    .inovators__title {
+      width: 20.4375rem;
+      text-align: center;
+      font-size: $h3-big-size;
+      font-weight: $font-regular;
+      line-height: 2.25rem;
+      letter-spacing: -0.01538rem;
+    }
   }
 
-  /* For small devices */
-@media screen and (max-width: 767px) {
+  .vision__title {
+    font-size: $h4-regular-size;
+    line-height: $h4-regular-line-height;
+    letter-spacing: -0.01156rem;
+  }
 
+  .vision__subtitle{
+    width: 20.4375rem;
+  }
+  
+  .statictics__title{
+    font-size: 1rem;
+    line-height: 1.75rem;
+    opacity: 0.7;
+  }
+
+  .statistics__number{
+    font-size: $h1-small-size;
+    letter-spacing: -0.02694rem;
+  }
 }
-
 
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-
 }
 
 /* For large devices */
 
 @media screen and (min-width: 1440px) {
+  .app__circle {
+    position: absolute;
+    width: 49rem;
+    height: 49rem;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    background-color: #d2dbe3;
+    top: 0;
+    z-index: -1;
+    transform: translateY(-5.5rem);
+  }
 
-    .app__circle {
-        position: absolute;
-        width: 49rem;
-        height: 49rem;
-        shape-outside: circle(50% at 30%);
-        clip-path: circle(50% at 0%);
-        background-color: #d2dbe3;
-        top: 0;
-        z-index: -1;
-        transform: translateY(-5.5rem);
-      }
-
-      .picture__container{
-        margin-top: 3rem;
-        position: relative;
-    }
+  .picture__container {
+    margin-top: 3rem;
+    position: relative;
+  }
 }

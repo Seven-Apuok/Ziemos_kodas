@@ -522,8 +522,7 @@ a {
     height: 3rem;
   }
   .main__container .innovators__container {
-    height: 500px;
-    border: 1px solid #000;
+    height: 200px;
     font-size: 1.3rem;
     text-align: center;
   }
@@ -540,8 +539,7 @@ a {
     text-align: center;
   }
   .main__container .statistics__container {
-    height: 500px;
-    border: 1px solid #000;
+    height: 350px;
     font-size: 1.3rem;
     text-align: center;
   }
@@ -1542,7 +1540,13 @@ textarea {
 }
 
 .statictics__title {
-  color: red;
+  text-align: center;
+  margin-top: 0;
+  opacity: 0.7;
+}
+
+.statistics__number {
+  color: #ba4270;
 }
 
 .vision__subtitle {
@@ -1557,6 +1561,36 @@ textarea {
 }
 
 /* For small devices */
+@media screen and (max-width: 767px) {
+  .innovators__container {
+    margin-top: 5rem;
+  }
+  .innovators__container .inovators__title {
+    width: 20.4375rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.01538rem;
+  }
+  .vision__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.01156rem;
+  }
+  .vision__subtitle {
+    width: 20.4375rem;
+  }
+  .statictics__title {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    opacity: 0.7;
+  }
+  .statistics__number {
+    font-size: 3.5rem;
+    letter-spacing: -0.02694rem;
+  }
+}
 /* For medium devices */
 /* For large devices */
 @media screen and (min-width: 1440px) {
