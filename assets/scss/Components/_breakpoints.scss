@@ -10,20 +10,59 @@ $toggle-line: 0.25rem;
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+  .header__circle__home__tablet {
+    display: none;
   }
+
+  .header__circle {
+    display: none;
+    // position: absolute;
+    // width: 48rem;
+    // height: 48rem;
+    // transform: translate(-20%, -50%);
+    // // transform: translate(-23%, -63%);
+    // z-index: -1;
+  }
+
+  .header__half__circle {
+    // display: none;
+    position: absolute;
+    width: 24rem;
+    height: 42.75rem;
+    transform: translate(-0.7rem, -19.8rem);
+    z-index: -1;
+  }
+
+  // .header__circle {
+  //   position: absolute;
+  //   width: 48.75rem;
+  //   height: 48.75rem;
+  //   transform: translate(-12rem, -34.3rem);
+  //   z-index: -1;
+  // }
+
+  // body {
+
+  //   // background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+
+  // }
 
   header {
     position: fixed;
     width: 100%;
     background-color: transparent;
+    z-index: 1;
   }
 
   .header__container {
-    .header__half__circle {
-      display: none;
-    }
+    // .header__half__circle {
+    //   // display: none;
+    //   position: absolute;
+    //   width: 48.75rem;
+    //   height: 48.75rem;
+    //   transform: translate(-12rem, -34.3rem);
+    //   z-index: -1;
+    // }
 
     &.is-scrolling {
       background-color: $body-color;
@@ -32,9 +71,9 @@ $toggle-line: 0.25rem;
       margin-top: 0;
     }
 
-    .header__circle {
-      display: none;
-    }
+    // .header__circle {
+    //   display: none;
+    // }
 
     .circle {
       display: none;
@@ -52,7 +91,6 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
-
           &:before,
           &:after {
             box-shadow: none;
@@ -388,7 +426,7 @@ $toggle-line: 0.25rem;
 
       // width: 328px;
       //margin-bottom: 32px;
-      >.finances__box:nth-of-type(1) {
+      > .finances__box:nth-of-type(1) {
         margin-top: -0.2rem;
 
         h3 {
@@ -396,7 +434,7 @@ $toggle-line: 0.25rem;
         }
       }
 
-      >.finances__box:nth-of-type(2) {
+      > .finances__box:nth-of-type(2) {
         h3 {
           margin-top: -0.2rem;
         }
@@ -538,25 +576,37 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  body {
-    background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+  // body {
+  //   background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+  // }
+  .header__circle__home__tablet {
+    position: absolute;
+    width: 49em;
+    // width: 48rem;
+    height: 50rem;
+    transform: translate(0%, -35%);
+    z-index: -1;
+  }
+
+  .header__half__circle {
+    display: none;
+  }
+
+  .header__circle {
+    // position: absolute;
+    // width: 59.3125rem;
+    // height: 59.3125rem;
+    // top: -41.5rem;
+    // left: 50%;
+    // transform: translate(-50%);
+    // z-index: -1;
+    display: none;
   }
 
   .header__container {
-    .header__circle {
-      position: absolute;
-      width: 59.3125rem;
-      height: 59.3125rem;
-      top: -41.5rem;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: -1;
-      display: none;
-    }
-
-    .header__half__circle {
-      display: none;
-    }
+    // .header__half__circle {
+    //   display: none;
+    // }
 
     .nav__header {
       display: flex;
@@ -866,7 +916,7 @@ $toggle-line: 0.25rem;
   }
 
   .footer__container {
-    width: 100%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
+    width: 102%; //laikinas sprendimas, kol issiaiskinsim, kas apriboja sito box dydi
     margin-left: 0px;
     background-position: left 21.19rem top -9.46rem;
     height: 6.25rem;
@@ -905,11 +955,27 @@ $toggle-line: 0.25rem;
       width: 100%;
       background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
     }
+    .header__circle__home__tablet {
+      display: none;
+    }
+
+    .header__half__circle {
+      display: none;
+    }
+    // .header__circle {
+    //   display: block;
+    //   position: absolute;
+    //   width: 48.75rem;
+    //   height: 48.75rem;
+    //   border-radius: 48.75rem;
+    //   transform: translate(103%, -27%);
+    //   z-index: -1;
+    // }
 
     .header__container {
-      .header__half__circle {
-        display: none;
-      }
+      // .header__half__circle {
+      //   display: none;
+      // }
 
       .nav__header {
         margin-right: 0.3rem !important;
