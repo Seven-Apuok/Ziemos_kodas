@@ -10,7 +10,6 @@
   svg {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-
     &:hover {
       path {
         fill: $charm-pink-active;
@@ -18,12 +17,10 @@
     }
   }
 }
-
 .footer__nav {
   a {
     color: $link-water-white;
     font-size: $p-regular-size;
-
     &:hover {
       opacity: 1; //header links opacity hover
     }
