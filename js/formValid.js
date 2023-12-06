@@ -8,6 +8,7 @@ const demoForm = document.getElementById("demo__form__contacts");
 const demotextfield =document.getElementById("input__contact")
 
 
+
 // const testValidity = (element, pattern) => {
 //   let errorMsg = element.nextElementSibling.innerHTML;
 //   if (!pattern.test(elem.value)) {
