@@ -1776,5 +1776,70 @@ div.nav__toggle,
     margin-left: 29.3rem !important;
   }
 }
+.inovation__container {
+  width: 730px;
+  height: 189px;
+  padding-top: 80px;
+}
+
+.inovation__title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  letter-spacing: -0.43px;
+}
+
+@media screen and (max-width: 767px) {
+  .inovation__container {
+    width: 327px;
+    height: 152px;
+    flex-shrink: 0;
+    padding-top: 130px;
+    padding-bottom: 200px;
+  }
+  .inovation__title {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.246px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .inovation__container {
+    width: 573px;
+    height: 178px;
+    flex-shrink: 0;
+  }
+  .inovation__title {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem; /* 116.667% */
+    letter-spacing: -0.369px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .inovation__container {
+    margin-right: 190px;
+    width: 730px;
+    height: 189px;
+    flex-shrink: 0;
+  }
+  .inovation__title {
+    text-align: left;
+    font-family: "DM Serif Display", serif;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem; /* 100% */
+    letter-spacing: -0.431px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
