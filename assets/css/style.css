@@ -174,30 +174,20 @@ a {
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  .overflow {
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-  }
-  .header__image {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-  }
-  .header__circle {
-    position: absolute;
-    width: 48.75rem;
-    height: 48.75rem;
-    border-radius: 48.75rem;
-    transform: translate(12rem, -33rem);
-    z-index: -99;
-    background-color: #d2dbe3;
+  .header__container {
+    position: fixed;
   }
   .header__container.is-scrolling {
     background-color: #edf3f8;
     box-shadow: 0 0.2rem 0.5rem rgba(54, 83, 107, 0.1);
     z-index: 1;
     margin-top: 0;
+  }
+  .header__container .header__circle {
+    display: none;
+  }
+  .header__container .circle {
+    display: none;
   }
   .header__container .nav {
     position: fixed;
@@ -874,6 +864,10 @@ a {
   /* For large devices */
 }
 @media screen and (min-width: 768px) and (min-width: 1440px) {
+  body {
+    width: 100%;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
+  }
   .header__container .nav__header {
     margin-right: 0.3rem !important;
   }
@@ -1551,7 +1545,6 @@ div.nav__toggle,
 }
 
 header {
-  position: fixed;
   width: 100%;
   background-color: transparent;
 }
@@ -1709,6 +1702,7 @@ header {
 }
 .main__container .pricing__container .pricing__container__title {
   margin-bottom: 3rem;
+  font-size: 3.5rem;
 }
 .main__container .pricing__container .pricing__text__price {
   display: flex;
@@ -1860,16 +1854,13 @@ header {
 }
 .main__container .pricing__container .pricing__plans__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 .main__container .demo__container .demo__title {
   margin-top: 2rem;
 }
 
 @media screen and (min-width: 1440px) {
-  .header__container__pricing .header__half__circle {
-    display: none;
-  }
   .header__container__pricing .nav__header {
     margin-right: 0.3rem !important;
   }

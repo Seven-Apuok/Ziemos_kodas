@@ -28,7 +28,7 @@ $toggle-line: 0.25rem;
 }
 
 header {
-  position: fixed;
+  // position: fixed;
   width: 100%;
   background-color: transparent;
 }
@@ -220,6 +220,7 @@ header {
 
     .pricing__container__title {
       margin-bottom: 3rem;
+      font-size: $h1-small-size;
     }
 
     .pricing__text__price {
@@ -279,7 +280,7 @@ header {
       > hr {
         margin-right: 1rem;
       }
-      
+
       // ul {
       //   &::before {
       //     content: "";
@@ -434,7 +435,7 @@ header {
   .pricing__container {
     .pricing__plans__container {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr) !important;
     }
   }
   .demo__container {
@@ -451,9 +452,21 @@ header {
   // }
 
   .header__container__pricing {
-    .header__half__circle {
-      display: none;
-    }
+    // .header__half__circle {
+    //   display: none;
+    // }
+    // .pricing__plan__title {
+    //   width: 20.4375rem;
+    //   color: rgba($dark-pink, 1);
+    //   text-align: left;
+    //   font-family: $body-second-font;
+    //   font-size: $h4-regular-size;
+    //   font-style: normal;
+    //   font-weight: $font-regular;
+    //   line-height: $h4-regular-line-height;
+    //   letter-spacing: -0.01156rem;
+    //   margin-bottom: 1rem;
+    // }
 
     .nav__header {
       margin-right: 0.3rem !important;

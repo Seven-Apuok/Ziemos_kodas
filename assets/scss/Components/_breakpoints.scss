@@ -10,30 +10,30 @@ $toggle-line: 0.25rem;
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  .overflow {
-    position: absolute;
-    overflow: hidden;
-    z-index: -1;
-  }
+  // body {
+  //   background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -12rem -33rem;
+  // }
+  // .header__image {
+  //   display: flex;
+  //   justify-content: center;
+  //   position: absolute;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   overflow: hidden;
+  // }
 
-  .header__image {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    // overflow: hidden;
-  }
-
-  .header__circle {
-    position: absolute;
-    width: 48.75rem;
-    height: 48.75rem;
-    border-radius: 48.75rem;
-    transform: translate(12rem, -33rem);
-    z-index: -99;
-    background-color: #d2dbe3;
-  }
+  // .header__circle {
+  //   position: absolute;
+  //   width: 48.75rem;
+  //   height: 48.75rem;
+  //   border-radius: 48.75rem;
+  //   top: -34rem;
+  //   z-index: -99;
+  //   background-color: #d2dbe3;
+  // }
 
   .header__container {
+    position: fixed;
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
@@ -41,13 +41,13 @@ $toggle-line: 0.25rem;
       margin-top: 0;
     }
 
-    // .header__circle {
-    //   display: none;
-    // }
+    .header__circle {
+      display: none;
+    }
 
-    // .circle {
-    //   display: none;
-    // }
+    .circle {
+      display: none;
+    }
 
     .nav {
       position: fixed;
@@ -547,28 +547,6 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  // body {
-  //   background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
-  // }
-  // .header__image {
-  //   display: flex;
-  //   justify-content: center;
-  //   position: absolute;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   overflow: hidden;
-  // }
-
-  // .header__circle {
-  //   position: absolute;
-  //   width: 48.75rem;
-  //   height: 48.75rem;
-  //   border-radius: 48.75rem;
-  //   top: -34rem;
-  //   z-index: -99;
-  //   background-color: #d2dbe3;
-  // }
-
   .header__container {
     // .header__circle {
     //   position: absolute;
@@ -924,10 +902,10 @@ $toggle-line: 0.25rem;
 
   /* For large devices */
   @media screen and (min-width: 1440px) {
-    // body {
-    //   width: 100%;
-    //   background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
-    // }
+    body {
+      width: 100%;
+      background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
+    }
 
     .header__container {
       .nav__header {
