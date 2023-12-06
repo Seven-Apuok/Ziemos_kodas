@@ -1530,18 +1530,6 @@ div.nav__toggle,
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  .innovators__container {
-    margin-top: 8rem;
-  }
-  .innovators__container .inovators__title {
-    width: 20.4375rem;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.25rem;
-    letter-spacing: -0.01538rem;
-    margin-bottom: 2.8rem;
-  }
   .vision__container {
     text-align: center;
     margin-bottom: 1.6rem;
@@ -1550,7 +1538,7 @@ div.nav__toggle,
     font-size: 1.5rem;
     line-height: 2rem;
     letter-spacing: -0.01156rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.9rem;
   }
   .vision__subtitle, .culture__subtitle {
     width: 20.4375rem;
@@ -1594,25 +1582,14 @@ div.nav__toggle,
 }
 /* For medium devices */
 @media screen and (min-width: 768px) {
-  .innovators__container {
-    margin-top: 4.5rem;
-    margin-bottom: 3.4rem;
-  }
-  .inovators__title {
-    text-align: center;
-    font-size: 3rem;
-    line-height: 3.5rem;
-    letter-spacing: -0.02306rem;
-    width: 35.8125rem;
-    height: 11.125rem;
-  }
-  .vision__content {
+  .vision__content, .culture__content {
     text-align: center;
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
+    margin-bottom: 5.7rem;
   }
-  .vision__title {
+  .vision__title, .culture__title {
     margin-left: 2.4rem;
   }
   .vision__content--flex, .culture__content--flex {
@@ -1624,35 +1601,41 @@ div.nav__toggle,
   .vision__subtitle {
     width: 91.1%;
   }
-  .statictics__title, .statictics__line, .statictics__bottom {
+  .culture__subtitle {
+    width: 92.2%;
+  }
+  .picture__container {
+    margin-bottom: 4.9rem;
+  }
+  .statictics__line, .statictics__bottom {
     display: none;
   }
   .statistics__number {
     font-size: 3.5rem;
     letter-spacing: -0.02694rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .statistics__border {
     width: 13.9375rem;
     height: 0.0625rem;
   }
+  .statictics__top {
+    margin-top: 0.4rem;
+    margin-bottom: 2.2rem;
+  }
+  .statictics__title {
+    margin-top: -2.2rem;
+  }
   .statistics__info {
     display: flex;
     flex-direction: row;
+    gap: 0.6rem;
+    margin-top: -1.5rem;
   }
 }
 /* For large devices */
 @media screen and (min-width: 1440px) {
-  .innovators__container {
-    width: 100%;
-    margin: 0;
-  }
-  .inovators__title {
-    width: 40.625rem;
-    text-align: start;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    letter-spacing: -0.02694rem;
-  }
   .vision__title, .culture__title {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -1979,9 +1962,8 @@ div.nav__toggle,
   .inovation__container {
     width: 327px;
     height: 152px;
-    flex-shrink: 0;
-    padding-top: 130px;
-    padding-bottom: 200px;
+    padding-top: 127px;
+    padding-bottom: 191.2px;
   }
   .inovation__title {
     text-align: center;
@@ -1997,7 +1979,8 @@ div.nav__toggle,
   .inovation__container {
     width: 573px;
     height: 178px;
-    flex-shrink: 0;
+    margin-bottom: 8.4rem;
+    margin-top: -0.5rem;
   }
   .inovation__title {
     text-align: center;
