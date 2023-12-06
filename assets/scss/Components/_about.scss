@@ -1,14 +1,16 @@
 .statictics__title {
-    text-align: center;
-    margin-top: 0;
+    text-align: start;
+    // margin-top: 80px;
     opacity: 0.7;
+    font-size: 1rem;
+    line-height: 1.75rem;
 }
 
 .statistics__number{
   color: $dark-pink;
 }
 
-.vision__subtitle {
+.vision__subtitle, .culture__subtitle {
   color: $san-juan-blue-light;
 }
 
@@ -21,8 +23,9 @@
 
 /* For small devices */
 @media screen and (max-width: 767px) {
+  
   .innovators__container{
-    margin-top: 5rem;
+    margin-top: 8rem;
     .inovators__title {
       width: 20.4375rem;
       text-align: center;
@@ -30,39 +33,134 @@
       font-weight: $font-regular;
       line-height: 2.25rem;
       letter-spacing: -0.01538rem;
+      margin-bottom: 2.8rem;
     }
   }
+  .vision__container{
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
 
-  .vision__title {
+  .vision__title, .culture__title {
     font-size: $h4-regular-size;
     line-height: $h4-regular-line-height;
     letter-spacing: -0.01156rem;
+    margin-bottom: 1rem;
+    // margin-top: 1rem;
   }
 
-  .vision__subtitle{
+  .vision__subtitle, .culture__subtitle{
     width: 20.4375rem;
-  }
-  
-  .statictics__title{
-    font-size: 1rem;
-    line-height: 1.75rem;
-    opacity: 0.7;
+    margin-bottom: 3.1rem;
   }
 
-  .statistics__number{
-    font-size: $h1-small-size;
-    letter-spacing: -0.02694rem;
+  .picture__container{
+    margin-bottom: 1rem;
+  }
+
+  .statistics__container {
+    text-align: center;
+    margin-bottom: 1rem;
+    h4 {
+      font-size: 1rem;
+      line-height: 1.75rem;
+      opacity: 0.7;
+      text-align: center;
+    }
+  
+    .statistics__number{
+      font-size: $h1-small-size;
+      letter-spacing: -0.02694rem;
+      margin-top: 2rem;
+    }
+  
+    .statistics__border{
+      display: none;
+    }
+  }
+
+  hr{
+    // width: 21.85rem;
+    height: 0.0625rem;
+    background: $san-juan-blue;
+    opacity: 0.25;
   }
 }
 
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
+
+
+  .inovators__title{
+    text-align: center;
+    font-size: $h2-regular-size;
+    line-height: $h2-regular-line-height;
+    letter-spacing: -0.02306rem;
+    width: 35.8125rem;
+    height: 11.125rem;
+  }
+
+  .vision__content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vision__content--flex, .culture__content--flex{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .statictics__line, .statictics__title{
+    display: none;
+  }
+
+  .statistics__number{
+    font-size: $h1-small-size;
+    letter-spacing: -0.02694rem;
+  }
+
+  .statistics__border{
+    width: 13.9375rem;
+    height: 0.0625rem;
+  }
+
+  .statistics__info{
+    display: flex;
+    flex-direction: row;
+  }
+
 }
 
 /* For large devices */
 
 @media screen and (min-width: 1440px) {
+       
+    .innovators__container{
+      width: 100%;
+      margin: 0;
+    }
+   .inovators__title{
+    width: 40.625rem;
+    text-align: start;
+    font-size: $h1-small-size;
+    line-height: $h1-small-line-height;
+    letter-spacing: -0.02694rem;
+   }
+
+ .vision__title, .culture__title {
+  font-size: $h3-big-size;
+  line-height: $h3-big-line-height;
+  letter-spacing: -0.01538rem;  
+}
+
+.vision__subtitle, .culture__subtitle{
+  width: 39.6875rem;
+}
+.statictics__title{
+  display: block;
+}   
+
   .app__circle {
     position: absolute;
     width: 49rem;
