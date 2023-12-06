@@ -37,13 +37,13 @@ $toggle-line: 0.25rem;
       margin-top: 0;
     }
 
-    .header__circle {
-      display: none;
-    }
+    // .header__circle {
+    //   display: none;
+    // }
 
-    .circle {
-      display: none;
-    }
+    // .circle {
+    //   display: none;
+    // }
 
     .nav {
       position: fixed;
@@ -88,7 +88,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -100,7 +100,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -144,8 +144,8 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: "";
-          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+          content: '';
+          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -167,7 +167,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: 0.2rem;
           text-align: center;
@@ -240,7 +240,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -435,7 +435,7 @@ $toggle-line: 0.25rem;
         margin-top: 0.5rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -543,9 +543,9 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  body {
-    background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
-  }
+  // body {
+  //   background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+  // }
 
   .header__container {
     // .header__circle {
@@ -736,7 +736,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -837,7 +837,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -902,10 +902,10 @@ $toggle-line: 0.25rem;
 
   /* For large devices */
   @media screen and (min-width: 1440px) {
-    body {
-      width: 100%;
-      background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
-    }
+    // body {
+    //   width: 100%;
+    //   background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
+    // }
 
     .header__container {
       .nav__header {
@@ -1097,7 +1097,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type="email"] {
+        input[type='email'] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -1234,7 +1234,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;

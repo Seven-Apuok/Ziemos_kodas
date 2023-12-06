@@ -41,30 +41,3 @@ document.querySelectorAll('.nav__button').forEach((button) => {
     }
   });
 });
-
-// const navMenuEl = document.querySelector('.nav__menu');
-
-// const handleDocumentClick = (event) => {
-//   if (!navMenuEl.contains(event.target)) {
-//     navMenuEl.classList.remove('is-active');
-//   }
-// };
-
-// document.addEventListener('click', handleDocumentClick);
-// document.addEventListener('DOMContentLoaded', () => {
-//   const navMenuEl = document.querySelector('.nav__menu');
-//   const handleDocumentClick = (event) => {
-//     if (!navMenuEl.contains(event.target)) {
-//       navMenuEl.classList.remove('is-active');
-//     }
-//   };
-
-//   document.addEventListener('click', handleDocumentClick);
-// });
-
-// const handleDocumentClick = (event) => {
-//   console.log('Document Clicked');
-//   if (!navMenuEl.contains(event.target)) {
-//     navMenuEl.classList.remove('is-active');
-//   }
-// };
