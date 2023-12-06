@@ -5,32 +5,29 @@
   }
 }
 .registration__container {
-  @media screen and (min-width: 767px){
+  @media screen and (min-width: 767px) {
     padding-left: 127px;
-
   }
   @media screen and (min-width: 1439px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
   }
 }
 
 #contacts__companies__logos {
-  margin-top: 32px;
+  margin-top: 31px;
 
   @media screen and (min-width: 767px) {
     margin-top: 40px;
     padding-top: 0px;
   }
 }
-h4 {
+.h4__contacts {
   text-align: center;
-  width: 327px;
+  width: 300px;
   margin-top: 80px;
-  @media screen and (min-width:767px) {
-    
+  @media screen and (min-width: 767px) {
   }
 }
 #demo__contacts {
@@ -41,22 +38,20 @@ h4 {
 }
 #demo__form__contacts {
   @media screen and (min-width: 767px) {
-    
     margin-bottom: 84px;
   }
 }
 #input__contacts {
-  background-color: #FBFCFE;
+  background-color: #fbfcfe;
   @media screen and (min-width: 1439px) {
     margin-top: 155px;
     //padding-bottom: 16px;
   }
 }
 #input__contacts__button {
-  
   @media screen and (min-width: 1439px) {
     margin-top: 130.5px;
-    margin-left:60px;
+    margin-left: 60px;
     //padding-bottom: 16px;
   }
 }
@@ -64,30 +59,29 @@ h4 {
 #contacts__color__light {
   background-color: #edf3f8;
   background-image: none;
-  padding-bottom: 41px;
+  padding-bottom: 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
-  h4 {
+  .h4__contacts {
     opacity: 0.75;
   }
   @media screen and (min-width: 767px) {
     padding-bottom: 0px;
     //margin-top: 78px;
-    h4 {
-      margin-top:0px;
+    .h4__contacts {
+      margin-top: 0px;
       margin-top: 64px;
       width: 445px;
     }
   }
   @media screen and (min-width: 1440px) {
-   
- 
-    h4 {
-text-align: left;
+    .h4__contacts {
+      text-align: left;
     }
-}}
+  }
+}
 
 #svg__color__changer {
   path {
@@ -101,101 +95,98 @@ text-align: left;
 }
 
 //forma
-form {
-  display:flex;
-  flex-direction: column;
-  //padding-bottom: 80px;
-  padding-left: 24px;
+.subcontainer__contacts {
+  form {
+    display: flex;
+    flex-direction: column;
+    //padding-bottom: 80px;
+    padding-left: 24.5px;
+    button {
+      margin-top: 16px;
+      //margin-left: 18.5px;
+    }
+  }
 
-  //max-width: 400px;
-  button {
-    
-    margin-top: 25px;
-    //margin-left: 24px;
-    // margin-bottom: 80px;
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid $san-juan-blue;
+    width: 327px;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: #edf3f8;
+    margin-bottom: 17px;
+ 
+    &::placeholder {
+      color: $san-juan-blue;
+      font-family: "Public Sans", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 166.667% */
+      letter-spacing: -0.115px;
+      opacity: 0.5;
+    }
+    @media screen and (min-width: 767px) {
+      width: 445px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-left: 65px;
+    }
+  }
+  textarea {
+    height: 96px;
+    resize: none; // Kad nebūtų galima keisti teksto lauko dydžio
+    padding-top: 7px;
+    margin-bottom:24px;
 
-    // position: absolute;
-    // left: 24px;
+  }
+
+  //testai su formos checkbox
+
+  .form__checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    label {
+      position: relative;
+      padding-left: 35px;
+
+      color: $san-juan-blue;
+      font-family: "Public Sans", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: -0.115px;
+    }
+    .checkbox-custom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: $san-juan-blue;
+      border: 1px solid $san-juan-blue;
+      opacity: 0.25;
+      margin-top: 13px;
+    }
+
+    .contact__checkbox__text {
+      position: relative;
+      left: 16px; //pareguliuoti nuo checkbox
+      @media screen and (min-width: 767px) {
+        width: 395px;
+        display: block;
+      }
+    }
   }
 }
-
-input,
-textarea {
-  border: none;
-  border-bottom: 1px solid #36536b;
-  width: 327px;
-  padding-top: 13px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  background-color: #edf3f8;
-  margin-bottom: 24px;
-
-  &::placeholder {
-    color: #36536b;
-    font-family: "Public Sans", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px; /* 166.667% */
-    letter-spacing: -0.115px;
-    opacity: 0.5;
-  }
-  @media screen and (min-width: 767px) {
-    width: 445px;
-  }
-  @media screen and (min-width: 1440px) {
-    margin-left:65px;
-  }
-}
-textarea {
-  height: 109px;
-  resize: none; // Kad nebūtų galima keisti teksto lauko dydžio
-}
-
-//testai su formos checkbox
-
-.form__checkbox {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  label {
-    position: relative;
-    padding-left: 35px;
-
-    color: #36536b;
-    font-family: "Public Sans", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: -0.115px;
-  }
-  .checkbox-custom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    background-color: #36536b;
-    border: 1px solid #36536b;
-    opacity: 0.25;
-    margin-top: 13px;
-  }
-
-  .contact__checkbox__text {
-
-position: relative;
-left: 16px;//pareguliuoti nuo checkbox
-@media screen and (min-width: 767px) {
-width: 395px;
-display: block;}
-  }
-}
-
 .help__container {
   color: $san-juan-blue;
   text-align: center;
@@ -209,7 +200,7 @@ display: block;}
   padding-left: 24px;
   padding-right: 24px;
 
-  margin-top: 48px;
+  margin-top: 125px;
   margin-bottom: 40px;
 
   @media screen and (min-width: 767px) {
@@ -228,6 +219,3 @@ display: block;}
     margin-right: 545px;
   }
 }
-
-// body{
-// background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat center -40rem;}

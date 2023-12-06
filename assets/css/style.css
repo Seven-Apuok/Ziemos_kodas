@@ -166,16 +166,22 @@ a {
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  body {
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat center -34rem;
+  .header__image {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
-  header {
-    position: fixed;
-    width: 100%;
-    background-color: transparent;
-  }
-  .header__container .header__half__circle {
-    display: none;
+  .header__circle {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    top: -34rem;
+    z-index: -99;
+    background-color: #d2dbe3;
   }
   .header__container.is-scrolling {
     background-color: #edf3f8;
@@ -565,19 +571,6 @@ a {
   body {
     background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
   }
-  .header__container .header__circle {
-    position: absolute;
-    width: 59.3125rem;
-    height: 59.3125rem;
-    top: -41.5rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: -1;
-    display: none;
-  }
-  .header__container .header__half__circle {
-    display: none;
-  }
   .header__container .nav__header {
     display: flex;
     align-items: center;
@@ -862,9 +855,6 @@ a {
   body {
     width: 100%;
     background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
-  }
-  .header__container .header__half__circle {
-    display: none;
   }
   .header__container .nav__header {
     margin-right: 0.3rem !important;
@@ -1315,7 +1305,7 @@ div.nav__toggle,
 }
 
 #contacts__companies__logos {
-  margin-top: 32px;
+  margin-top: 31px;
 }
 @media screen and (min-width: 767px) {
   #contacts__companies__logos {
@@ -1324,9 +1314,9 @@ div.nav__toggle,
   }
 }
 
-h4 {
+.h4__contacts {
   text-align: center;
-  width: 327px;
+  width: 300px;
   margin-top: 80px;
 }
 @media screen and (min-width: 767px) {
@@ -1343,7 +1333,7 @@ h4 {
 }
 
 #input__contacts {
-  background-color: #FBFCFE;
+  background-color: #fbfcfe;
 }
 @media screen and (min-width: 1439px) {
   #input__contacts {
@@ -1361,27 +1351,27 @@ h4 {
 #contacts__color__light {
   background-color: #edf3f8;
   background-image: none;
-  padding-bottom: 41px;
+  padding-bottom: 38px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 0px;
 }
-#contacts__color__light h4 {
+#contacts__color__light .h4__contacts {
   opacity: 0.75;
 }
 @media screen and (min-width: 767px) {
   #contacts__color__light {
     padding-bottom: 0px;
   }
-  #contacts__color__light h4 {
+  #contacts__color__light .h4__contacts {
     margin-top: 0px;
     margin-top: 64px;
     width: 445px;
   }
 }
 @media screen and (min-width: 1440px) {
-  #contacts__color__light h4 {
+  #contacts__color__light .h4__contacts {
     text-align: left;
   }
 }
@@ -1398,28 +1388,27 @@ h4 {
   }
 }
 
-form {
+.subcontainer__contacts form {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
+  padding-left: 24.5px;
 }
-form button {
-  margin-top: 25px;
+.subcontainer__contacts form button {
+  margin-top: 16px;
 }
-
-input,
-textarea {
+.subcontainer__contacts input,
+.subcontainer__contacts textarea {
   border: none;
   border-bottom: 1px solid #36536b;
   width: 327px;
   padding-top: 13px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 20px;
   background-color: #edf3f8;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
 }
-input::placeholder,
-textarea::placeholder {
+.subcontainer__contacts input::placeholder,
+.subcontainer__contacts textarea::placeholder {
   color: #36536b;
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
@@ -1430,32 +1419,32 @@ textarea::placeholder {
   opacity: 0.5;
 }
 @media screen and (min-width: 767px) {
-  input,
-  textarea {
+  .subcontainer__contacts input,
+  .subcontainer__contacts textarea {
     width: 445px;
   }
 }
 @media screen and (min-width: 1440px) {
-  input,
-  textarea {
+  .subcontainer__contacts input,
+  .subcontainer__contacts textarea {
     margin-left: 65px;
   }
 }
-
-textarea {
-  height: 109px;
+.subcontainer__contacts textarea {
+  height: 96px;
   resize: none;
+  padding-top: 7px;
+  margin-bottom: 24px;
 }
-
-.form__checkbox {
+.subcontainer__contacts .form__checkbox {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-.form__checkbox input[type=checkbox] {
+.subcontainer__contacts .form__checkbox input[type=checkbox] {
   display: none;
 }
-.form__checkbox label {
+.subcontainer__contacts .form__checkbox label {
   position: relative;
   padding-left: 35px;
   color: #36536b;
@@ -1466,7 +1455,7 @@ textarea {
   line-height: 25px;
   letter-spacing: -0.115px;
 }
-.form__checkbox .checkbox-custom {
+.subcontainer__contacts .form__checkbox .checkbox-custom {
   position: absolute;
   top: 0;
   left: 0;
@@ -1477,12 +1466,12 @@ textarea {
   opacity: 0.25;
   margin-top: 13px;
 }
-.form__checkbox .contact__checkbox__text {
+.subcontainer__contacts .form__checkbox .contact__checkbox__text {
   position: relative;
   left: 16px;
 }
 @media screen and (min-width: 767px) {
-  .form__checkbox .contact__checkbox__text {
+  .subcontainer__contacts .form__checkbox .contact__checkbox__text {
     width: 395px;
     display: block;
   }
@@ -1499,7 +1488,7 @@ textarea {
   letter-spacing: -0.246px;
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 48px;
+  margin-top: 125px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 767px) {
@@ -1669,6 +1658,252 @@ textarea {
   .picture__container {
     margin-top: 3rem;
     position: relative;
+  }
+}
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+  }
+  .header__container__pricing .header__half__circle {
+    display: none;
+  }
+  .header__container__pricing.is-scrolling {
+    background-color: #edf3f8;
+    box-shadow: 0 0.2rem 0.5rem rgba(54, 83, 107, 0.1);
+    z-index: 1;
+    margin-top: 0;
+  }
+  .header__container__pricing .header__circle {
+    display: none;
+  }
+  .header__container__pricing .circle {
+    display: none;
+  }
+  .header__container__pricing .nav {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    display: inline-block;
+    max-width: 3.125rem;
+    max-height: 3.125rem;
+    overflow: visible;
+    outline: none;
+  }
+  .header__container__pricing .nav.is-active .nav__toggle:before, .header__container__pricing .nav.is-active .nav__toggle:after {
+    box-shadow: none;
+    background-color: #fff;
+  }
+  .header__container__pricing .nav.is-active .nav__toggle:before {
+    transform: rotate(-45deg);
+  }
+  .header__container__pricing .nav.is-active .nav__toggle:after {
+    transform: rotate(45deg);
+  }
+  .header__container__pricing .nav.is-active .nav__menu {
+    transform: translate(0, 0);
+  }
+  .header__container__pricing .nav .nav__toggle {
+    position: relative;
+    width: 1.75rem;
+    height: 1.4375rem;
+    flex-shrink: 0;
+    z-index: 2;
+    transform: translate(1.5rem, -0.44rem);
+    padding-bottom: 2rem;
+  }
+  .header__container__pricing .nav .nav__toggle:after {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    top: 5rem;
+    bottom: 0rem;
+    width: 50%;
+    height: 0.18rem;
+    background-color: #fff;
+  }
+  .header__container__pricing .nav .nav__toggle:before, .header__container__pricing .nav .nav__toggle:after {
+    content: "";
+    position: absolute;
+    top: 1.125rem;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 0.2rem;
+    background: #36536b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .header__container__pricing .nav .nav__toggle:before {
+    box-shadow: 0 0.5rem 0 0 #36536b;
+  }
+  .header__container__pricing .nav .nav__toggle:after {
+    box-shadow: 0 -0.5rem 0 0 #36536b;
+  }
+  .header__container__pricing .nav .nav__menu {
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+    left: auto;
+    min-width: 18.75rem;
+    max-width: 40vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    padding: 5rem 1.25rem 1.25rem 0.625rem;
+    transition: transform 0.3s ease;
+    transform: translate(calc(100% + 3.125rem), 0);
+    background-color: #1b262f;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+    grid-gap: 0.3125rem 0;
+    align-content: start;
+    box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.3019607843);
+    text-align: center;
+    overflow: hidden;
+  }
+  .header__container__pricing .nav .nav__menu::before {
+    content: "";
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48.75rem;
+    height: 48.75rem;
+    z-index: -1;
+  }
+  .header__container__pricing .nav .nav__link {
+    text-align: center;
+    color: #fbfcfe;
+    width: 15.5625rem;
+    padding: 0.8rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease;
+    transform: translate(0.75rem, 3rem);
+  }
+  .header__container__pricing .nav .nav__link:first-child:before {
+    content: "";
+    position: absolute;
+    left: 0.2rem;
+    text-align: center;
+    top: -2.05rem;
+    bottom: 0rem;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #fbfcfe;
+    opacity: 0.15;
+  }
+  .header__container__pricing .nav .nav__menu button {
+    position: absolute;
+    transform: translate(1.6rem, 19.215rem);
+    width: 15.75rem;
+    height: 3rem;
+    font-family: "Public Sans", sans-serif;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+  .header__container__pricing .nav__logo {
+    margin-top: 2.5rem;
+    margin-left: 0.64rem;
+  }
+  .header__container__pricing .nav__header {
+    margin: 1rem 1.5rem 1.5rem 1rem;
+  }
+  .main__container .pricing__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .main__container .pricing__container .pricing__text__price {
+    text-align: center;
+  }
+  .main__container .pricing__container .pricing__plan__title {
+    margin-left: 1rem;
+    color: #ba4270;
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: 400;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: -0.01156rem;
+  }
+  .main__container .pricing__container .pricing__plans__container {
+    text-align: center;
+  }
+  .main__container .pricing__container .pricing__options {
+    list-style: none;
+  }
+  .main__container .pricing__container .pricing__options li.options__active:before {
+    content: "";
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.5rem;
+    background: url("/assets/images/shared/desktop/icon-check.svg") no-repeat center center/contain;
+    fill: #ba4270;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__container__pricing .header__circle {
+    position: absolute;
+    width: 59.3125rem;
+    height: 59.3125rem;
+    top: -41.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    display: none;
+  }
+  .header__container__pricing .header__half__circle {
+    display: none;
+  }
+  .header__container__pricing .nav__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.4rem;
+    margin-top: 2.7rem;
+  }
+  .header__container__pricing .nav__header .nav__toggle {
+    display: none;
+  }
+  .header__container__pricing .nav__header .nav__logo {
+    margin-right: 1rem;
+  }
+  .header__container__pricing .nav__header .nav__menu {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .header__container__pricing .nav__header .nav__menu > :first-child {
+    margin-left: -0.6rem;
+  }
+  .header__container__pricing .nav__header .nav__menu > :last-child {
+    margin-left: 3.1rem;
+  }
+  .header__container__pricing .nav__header .nav__link {
+    display: grid;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__container__pricing .header__half__circle {
+    display: none;
+  }
+  .header__container__pricing .nav__header {
+    margin-right: 0.3rem !important;
+  }
+  .header__container__pricing .nav__menu {
+    margin-right: -0.7rem;
+  }
+  .header__container__pricing .nav__menu > :last-child {
+    margin-left: 29.3rem !important;
   }
 }
 

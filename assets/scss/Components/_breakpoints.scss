@@ -10,21 +10,26 @@ $toggle-line: 0.25rem;
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  body {
-    background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat center -34rem;
+  .header__image {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
 
-  header {
-    position: fixed;
-    width: 100%;
-    background-color: transparent;
+  .header__circle {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    top: -34rem;
+    z-index: -99;
+    background-color: #d2dbe3;
   }
 
   .header__container {
-    .header__half__circle {
-      display: none;
-    }
-
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
@@ -52,7 +57,6 @@ $toggle-line: 0.25rem;
 
       &.is-active {
         .nav__toggle {
-
           &:before,
           &:after {
             box-shadow: none;
@@ -84,7 +88,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -96,7 +100,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -140,8 +144,8 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: '';
-          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
+          content: "";
+          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -163,7 +167,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: 0.2rem;
           text-align: center;
@@ -236,7 +240,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -388,7 +392,7 @@ $toggle-line: 0.25rem;
 
       // width: 328px;
       //margin-bottom: 32px;
-      >.finances__box:nth-of-type(1) {
+      > .finances__box:nth-of-type(1) {
         margin-top: -0.2rem;
 
         h3 {
@@ -396,7 +400,7 @@ $toggle-line: 0.25rem;
         }
       }
 
-      >.finances__box:nth-of-type(2) {
+      > .finances__box:nth-of-type(2) {
         h3 {
           margin-top: -0.2rem;
         }
@@ -431,7 +435,7 @@ $toggle-line: 0.25rem;
         margin-top: 0.5rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -484,9 +488,10 @@ $toggle-line: 0.25rem;
     .help__container {
       text-align: center;
     }
-    .registration__container {
-      //text-align: center;
-    }
+
+    // .registration__container {
+    //   //text-align: center;
+    // }
   }
 
   .footer__container {
@@ -527,24 +532,20 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 768px) {
   body {
-    background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
   }
 
   .header__container {
-    .header__circle {
-      position: absolute;
-      width: 59.3125rem;
-      height: 59.3125rem;
-      top: -41.5rem;
-      left: 50%;
-      transform: translate(-50%);
-      z-index: -1;
-      display: none;
-    }
-
-    .header__half__circle {
-      display: none;
-    }
+    // .header__circle {
+    //   position: absolute;
+    //   width: 59.3125rem;
+    //   height: 59.3125rem;
+    //   top: -41.5rem;
+    //   left: 50%;
+    //   transform: translate(-50%);
+    //   z-index: -1;
+    //   display: none;
+    // }
 
     .nav__header {
       display: flex;
@@ -723,7 +724,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -824,7 +825,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -891,14 +892,10 @@ $toggle-line: 0.25rem;
   @media screen and (min-width: 1440px) {
     body {
       width: 100%;
-      background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
+      background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;
     }
 
     .header__container {
-      .header__half__circle {
-        display: none;
-      }
-
       .nav__header {
         margin-right: 0.3rem !important;
       }
@@ -1088,7 +1085,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type='email'] {
+        input[type="email"] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -1225,7 +1222,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;
