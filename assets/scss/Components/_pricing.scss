@@ -39,7 +39,7 @@
 
       .pricing__plan__title {
         width: 20.4375rem;
-        color: $dark-pink;
+        color: rgba($dark-pink, 1);
         text-align: center;
         font-family: $body-second-font;
         font-size: $h4-regular-size;
@@ -84,12 +84,32 @@
             stroke-width: 2px;
           }
 
+          // checkmark color
           &.benefits__active:before {
             fill: $dark-pink;
           }
-
+          // checkmark color
           &:not(.benefits__active):before {
             opacity: 0.01;
+          }
+          // text color
+          &.benefits__active {
+            color: #36536b;
+            font-family: Public Sans;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.75rem;
+          }
+          // text color
+          &:not(.benefits__active) {
+            color: #36536b;
+            font-family: Public Sans;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.75rem; /* 175% */
+            opacity: 0.5;
           }
         }
       }
