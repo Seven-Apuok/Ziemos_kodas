@@ -1,118 +1,374 @@
-// $toggle-size: 2.5rem;
-// $toggle-margin: 0.625rem;
-// $toggle-line: 0.25rem;
+$toggle-size: 2.5rem;
+$toggle-margin: 0.625rem;
+$toggle-line: 0.25rem;
 
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
 }
 
-@media screen and (max-width: 767px) {
-  // .header__container__pricing {
-  // }
+// @media screen and (max-width: 767px) {
+.header__image__pricing {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
 
-  .main__container {
-    .pricing__container {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
-      align-items: center;
+.header__circle__pricing {
+  position: absolute;
+  width: 48.75rem;
+  height: 48.75rem;
+  border-radius: 48.75rem;
+  // top: -34rem;
+  transform: translate(22rem, -38rem);
+  z-index: -1;
+  background-color: #d2dbe3;
+}
 
-      .pricing__text__price {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        // border-bottom: 2px solid red;
-      }
+header {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+}
 
-      .pricing__text__price::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        width: 20.4375rem;
-        height: 0.0625rem;
-        background-color: $san-juan-blue;
-        opacity: 0.25;
-      }
+.header__container__pricing {
+  .header__half__circle {
+    display: none;
+  }
 
-      .pricing__plan__title {
-        width: 20.4375rem;
-        color: rgba($dark-pink, 1);
-        text-align: center;
-        font-family: $body-second-font;
-        font-size: $h4-regular-size;
-        font-style: normal;
-        font-weight: $font-regular;
-        line-height: $h4-regular-line-height;
-        letter-spacing: -0.01156rem;
-      }
+  &.is-scrolling {
+    background-color: $body-color;
+    box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
+    z-index: 1;
+    margin-top: 0;
+  }
 
-      .pricing__plans__container {
-        text-align: center;
-      }
+  .header__circle {
+    display: none;
+  }
 
-      .pricing__value {
-        width: 20.4375rem;
-        color: $san-juan-blue;
-        text-align: center;
-        font-family: $body-second-font;
-        font-size: $h1-small-size;
-        font-style: normal;
-        font-weight: $font-regular;
-        line-height: $h1-large-line-height;
-        letter-spacing: -0.02694rem;
-      }
+  .circle {
+    display: none;
+  }
 
-      .pricing__benefits {
-        list-style: none;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .nav {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    display: inline-block;
+    max-width: $toggle-size + $toggle-margin;
+    max-height: $toggle-size + $toggle-margin;
+    overflow: visible;
+    outline: none;
 
-        li {
-          &:before {
-            content: '';
-            display: inline-block;
-            width: 0.75rem;
-            height: 0.5rem;
-            background: url('/assets/images/shared/desktop/icon-check.svg') no-repeat center center /
-              contain;
-            margin-right: 1.5rem;
-            stroke-width: 2px;
-          }
+    &.is-active {
+      .nav__toggle {
+        &:before,
+        &:after {
+          box-shadow: none;
+          background-color: $white-color;
+        }
 
-          // checkmark color
-          &.benefits__active:before {
-            fill: $dark-pink;
-          }
-          // checkmark color
-          &:not(.benefits__active):before {
-            opacity: 0.01;
-          }
-          // text color
-          &.benefits__active {
-            color: #36536b;
-            font-family: Public Sans;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.75rem;
-          }
-          // text color
-          &:not(.benefits__active) {
-            color: #36536b;
-            font-family: Public Sans;
-            font-size: 1rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 1.75rem; /* 175% */
-            opacity: 0.5;
-          }
+        &:before {
+          transform: rotate(-45deg);
+        }
+
+        &:after {
+          transform: rotate(45deg);
         }
       }
+
+      .nav__menu {
+        transform: translate(0, 0);
+      }
+    }
+
+    .nav__toggle {
+      $offset: $toggle-size * 0.5;
+      position: relative;
+      width: 1.75rem;
+      height: 1.4375rem;
+      flex-shrink: 0;
+      z-index: 2;
+      transform: translate(1.5rem, -0.44rem);
+      padding-bottom: 2rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 2rem;
+        top: 5rem;
+        bottom: 0rem;
+        width: 50%;
+        height: 0.18rem;
+        background-color: $white-color;
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: #{$offset - calc($toggle-line / 2)};
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        height: 0.2rem;
+        background: $san-juan-blue;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      &:before {
+        box-shadow: 0 0.5rem 0 0 $san-juan-blue;
+      }
+
+      &:after {
+        box-shadow: 0 -0.5rem 0 0 $san-juan-blue;
+      }
+    }
+
+    .nav__menu {
+      position: absolute;
+      top: -3rem;
+      right: -3rem;
+      left: auto;
+      min-width: 18.75rem;
+      max-width: 40vw;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      padding: 5rem 1.25rem 1.25rem 0.625rem;
+      transition: transform 0.3s ease;
+      transform: translate(calc(100% + 3.125rem), 0);
+      background-color: rgba($mirage-blue, 1);
+      display: grid;
+      grid-template-columns: 1fr;
+      align-self: center;
+      grid-gap: 0.3125rem 0;
+      align-content: start;
+      box-shadow: 0 0 3.125rem #0000004d;
+      text-align: center;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 48.75rem;
+        height: 48.75rem;
+        z-index: -1;
+      }
+    }
+
+    .nav__link {
+      text-align: center;
+      color: $link-water-white;
+      width: 15.5625rem;
+      padding: 0.8rem;
+      font-size: 1.25rem;
+      transition: background-color 0.3s ease;
+      transform: translate(0.75rem, 3rem);
+    }
+
+    .nav__link:first-child {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0.2rem;
+        text-align: center;
+        top: -2.05rem;
+        bottom: 0rem;
+        width: 100%;
+        height: 0.0625rem;
+        background-color: rgba($link-water-white, 1);
+        opacity: 0.15;
+      }
+    }
+
+    .nav__menu {
+      button {
+        position: absolute;
+        transform: translate(1.6rem, 19.215rem);
+        width: 15.75rem;
+        height: 3rem;
+        font-family: $body-font;
+        box-shadow: 10px 10px 25px -10px rgba($san-juan-blue, 0.25);
+      }
+    }
+  }
+
+  .nav__logo {
+    margin-top: 2.5rem;
+    margin-left: 0.64rem;
+  }
+
+  .nav__header {
+    margin: 1rem 1.5rem 1.5rem 1rem;
+  }
+}
+
+.main__container {
+  .pricing__container {
+    margin-top: 17rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+
+    .pricing__container__title {
+      margin-bottom: 3rem;
+    }
+
+    .pricing__text__price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      > :nth-child(2) {
+        width: 20.4375rem;
+        color: rgba($san-juan-blue, 1);
+        text-align: center;
+        font-family: $body-font;
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 1.75rem;
+      }
+    }
+
+    .pricing__plan__title {
+      width: 20.4375rem;
+      color: rgba($dark-pink, 1);
+      text-align: center;
+      font-family: $body-second-font;
+      font-size: $h4-regular-size;
+      font-style: normal;
+      font-weight: $font-regular;
+      line-height: $h4-regular-line-height;
+      letter-spacing: -0.01156rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing__plans__container {
+      text-align: center;
+    }
+
+    .pricing__value {
+      width: 20.4375rem;
+      color: $san-juan-blue;
+      text-align: center;
+      font-family: $body-second-font;
+      font-size: $h1-small-size;
+      font-style: normal;
+      font-weight: $font-regular;
+      line-height: $h1-large-line-height;
+      letter-spacing: -0.02694rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing__benefits {
+      list-style: none;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > hr {
+        margin-right: 1rem;
+      }
+      
+      // ul {
+      //   &::before {
+      //     content: "";
+      //     position: absolute;
+      //     width: 20.4375rem;
+      //     height: 0.0625rem;
+      //     background-color: rgba($san-juan-blue, 0.25);
+      //     text-align: center;
+      //     left: 2rem;
+      //   }
+
+      //   &::after {
+      //     content: "";
+      //     position: absolute;
+      //     width: 20.4375rem;
+      //     height: 0.0625rem;
+      //     background-color: rgba($san-juan-blue, 0.25);
+      //     text-align: center;
+      //     left: 2rem;
+      //   }
+      // }
+      li {
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 0.75rem;
+          height: 0.5rem;
+          background: url("/assets/images/shared/desktop/icon-check.svg") no-repeat center center /
+            contain;
+          margin-right: 1.5rem;
+          stroke-width: 2px;
+        }
+
+        // checkmark color
+        &.benefits__active:before {
+          fill: rgba($dark-pink, 1);
+        }
+        // checkmark color
+        &:not(.benefits__active):before {
+          opacity: 0.01;
+        }
+        // text color
+        &.benefits__active {
+          color: #36536b;
+          font-family: Public Sans;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.75rem;
+        }
+        // text color
+        &:not(.benefits__active) {
+          color: #36536b;
+          font-family: Public Sans;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.75rem;
+          opacity: 0.5;
+        }
+      }
+    }
+    .pricing__benefits {
+      ul > li {
+        &:first-child {
+          margin-top: 1rem;
+        }
+        &:last-child {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .secondary__submit--normal {
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .demo__container {
+    .demo__title {
+      margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pricing__container {
+    .pricing__plans__container {
+      display: grid;
+      grid-template-columns: 1fr !important;
     }
   }
 }
@@ -123,11 +379,71 @@
   // }
 
   .header__container__pricing {
-  }
+    .header__circle {
+      position: absolute;
+      width: 59.3125rem;
+      height: 59.3125rem;
+      top: -41.5rem;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: -1;
+      display: none;
+    }
 
-  .main__container {
+    .header__half__circle {
+      display: none;
+    }
+
+    .nav__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.4rem;
+      margin-top: 2.7rem;
+
+      .nav__toggle {
+        display: none;
+      }
+
+      .nav__logo {
+        margin-right: 1rem;
+      }
+
+      .nav__menu {
+        display: flex;
+        gap: 2.5rem;
+
+        > :first-child {
+          margin-left: -0.6rem;
+        }
+
+        > :last-child {
+          margin-left: 3.1rem;
+        }
+      }
+
+      .nav__link {
+        display: grid;
+        align-self: center;
+      }
+    }
   }
 }
+
+.main__container {
+  .pricing__container {
+    .pricing__plans__container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .demo__container {
+    .demo__title {
+      margin-top: 2rem;
+    }
+  }
+}
+
 @media screen and (min-width: 1440px) {
   // body {
   //     width: 100%;
@@ -135,7 +451,11 @@
   // }
 
   .header__container__pricing {
-    s .nav__header {
+    .header__half__circle {
+      display: none;
+    }
+
+    .nav__header {
       margin-right: 0.3rem !important;
     }
 
@@ -151,3 +471,157 @@
   .main__container {
   }
 }
+
+// // $toggle-size: 2.5rem;
+// // $toggle-margin: 0.625rem;
+// // $toggle-line: 0.25rem;
+
+// .resize-animation-stopper * {
+//   animation: none !important;
+//   transition: none !important;
+// }
+
+// @media screen and (max-width: 767px) {
+//   // .header__container__pricing {
+//   // }
+
+//   .main__container {
+//     .pricing__container {
+//       display: grid;
+//       grid-template-columns: 1fr;
+//       justify-items: center;
+//       align-items: center;
+
+//       .pricing__text__price {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         // border-bottom: 2px solid red;
+//       }
+
+//       .pricing__text__price::after {
+//         content: '';
+//         position: absolute;
+//         bottom: 0;
+//         text-align: center;
+//         width: 20.4375rem;
+//         height: 0.0625rem;
+//         background-color: $san-juan-blue;
+//         opacity: 0.25;
+//       }
+
+//       .pricing__plan__title {
+//         width: 20.4375rem;
+//         color: rgba($dark-pink, 1);
+//         text-align: center;
+//         font-family: $body-second-font;
+//         font-size: $h4-regular-size;
+//         font-style: normal;
+//         font-weight: $font-regular;
+//         line-height: $h4-regular-line-height;
+//         letter-spacing: -0.01156rem;
+//       }
+
+//       .pricing__plans__container {
+//         text-align: center;
+//       }
+
+//       .pricing__value {
+//         width: 20.4375rem;
+//         color: $san-juan-blue;
+//         text-align: center;
+//         font-family: $body-second-font;
+//         font-size: $h1-small-size;
+//         font-style: normal;
+//         font-weight: $font-regular;
+//         line-height: $h1-large-line-height;
+//         letter-spacing: -0.02694rem;
+//       }
+
+//       .pricing__benefits {
+//         list-style: none;
+//         text-align: left;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+
+//         li {
+//           &:before {
+//             content: '';
+//             display: inline-block;
+//             width: 0.75rem;
+//             height: 0.5rem;
+//             background: url('/assets/images/shared/desktop/icon-check.svg') no-repeat center center /
+//               contain;
+//             margin-right: 1.5rem;
+//             stroke-width: 2px;
+//           }
+
+//           // checkmark color
+//           &.benefits__active:before {
+//             fill: $dark-pink;
+//           }
+//           // checkmark color
+//           &:not(.benefits__active):before {
+//             opacity: 0.01;
+//           }
+//           // text color
+//           &.benefits__active {
+//             color: #36536b;
+//             font-family: Public Sans;
+//             font-size: 1rem;
+//             font-style: normal;
+//             font-weight: 400;
+//             line-height: 1.75rem;
+//           }
+//           // text color
+//           &:not(.benefits__active) {
+//             color: #36536b;
+//             font-family: Public Sans;
+//             font-size: 1rem;
+//             font-style: normal;
+//             font-weight: 400;
+//             line-height: 1.75rem; /* 175% */
+//             opacity: 0.5;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   // body {
+//   //     background: url('/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg') no-repeat -5rem -16rem;
+//   // }
+
+//   .header__container__pricing {
+//   }
+
+//   .main__container {
+//   }
+// }
+// @media screen and (min-width: 1440px) {
+//   // body {
+//   //     width: 100%;
+//   //     background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat 50rem -11rem;
+//   // }
+
+//   .header__container__pricing {
+//     s .nav__header {
+//       margin-right: 0.3rem !important;
+//     }
+
+//     .nav__menu {
+//       margin-right: -0.7rem;
+
+//       > :last-child {
+//         margin-left: 29.3rem !important;
+//       }
+//     }
+//   }
+
+//   .main__container {
+//   }
+// }
