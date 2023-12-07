@@ -131,3 +131,5 @@ dist
 
 .DS_Store
 
+# Ignore style.css.map files
+*.css.map
