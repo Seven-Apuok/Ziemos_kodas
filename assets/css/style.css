@@ -619,8 +619,8 @@ a {
     transform: scale(1.21);
   }
   .main__container .companies__container .companies__logos svg:nth-child(1) {
-    margin-top: 0.5rem;
-    margin-left: -4.3rem;
+    margin-top: 0.2rem;
+    margin-left: -4.6rem;
   }
   .main__container .companies__container .companies__logos svg:nth-child(2) {
     margin-top: 0.2rem;
@@ -633,6 +633,10 @@ a {
   .main__container .companies__container .companies__logos svg:nth-child(4) {
     margin-left: -4rem;
     margin-top: -0.2rem;
+  }
+  .main__container .companies__container .companies__logos svg:nth-child(5) {
+    margin-left: -0.9rem;
+    margin-top: -0.1rem;
   }
   .main__container .companies__container .companies__logos svg:nth-child(6) {
     margin-top: -0.2rem;
