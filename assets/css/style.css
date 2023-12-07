@@ -554,7 +554,7 @@ a {
   }
   .footer__container .api__logo {
     margin-top: 2.56rem;
-    margin-bottom: 0.56rem;
+    margin-bottom: 5px;
   }
   .footer__container .footer__nav {
     display: flex;
@@ -569,14 +569,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.38rem;
+    margin-top: 42px;
   }
 }
 /* For medium devices */
 @media screen and (min-width: 768px) {
-  body {
-    /*background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;*/
-  }
   .header__container .nav__header {
     display: flex;
     align-items: center;
@@ -1284,12 +1281,24 @@ span.checkbox-custom {
   background-repeat: no-repeat;
   font-size: 0.9375rem;
 }
-.footer__container svg {
-  margin-left: 0.65rem;
-  margin-right: 0.65rem;
-}
 .footer__container svg:hover path {
   fill: #da6d97;
+}
+.footer__container svg:nth-child(1) {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 768px) {
+  .footer__container svg:nth-child(1) {
+    margin-left: 12px;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer__container svg:nth-child(1) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .footer__nav a {
@@ -1300,33 +1309,47 @@ span.checkbox-custom {
   opacity: 1;
 }
 
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 375px) {
   .subcontainer__contacts {
+    margin-bottom: -25px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subcontainer__contacts {
+    margin-bottom: 0px;
     display: flex;
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .registration__container {
     padding-left: 137px;
     margin-top: -2.5px;
   }
 }
-@media screen and (min-width: 1439px) {
+@media screen and (min-width: 1440px) {
   .registration__container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-left: 0px;
+    margin-left: 76px;
   }
 }
 
 #contacts__companies__logos {
   margin-top: 31px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #contacts__companies__logos {
     margin-top: 40px;
+    padding-top: 0px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #contacts__companies__logos {
+    margin-top: 0px;
     padding-top: 0px;
   }
 }
@@ -1388,7 +1411,16 @@ span.checkbox-custom {
     width: 445px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 767px) and (min-width: 1440px) {
+  #contacts__color__light {
+    align-content: flex-start;
+    margin-left: 83px;
+    margin-top: -120px;
+    z-index: -1;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 767px) and (min-width: 1440px) {
   #contacts__color__light .h4__contacts {
     text-align: left;
   }
@@ -1413,6 +1445,11 @@ span.checkbox-custom {
 }
 .subcontainer__contacts form button {
   margin-top: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .subcontainer__contacts form button {
+    margin-left: 68px;
+  }
 }
 .subcontainer__contacts input,
 .subcontainer__contacts textarea {
@@ -1465,6 +1502,11 @@ span.checkbox-custom {
   align-items: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 1440px) {
+  .subcontainer__contacts .form__checkbox {
+    padding-left: 65px;
+  }
+}
 .subcontainer__contacts .form__checkbox input[type=checkbox] {
   display: none;
 }
@@ -1489,7 +1531,7 @@ span.checkbox-custom {
   border: 1px solid #36536b;
   opacity: 0.25;
   margin-top: 13px;
-  cursor: pointer;
+  cursor: url(/assets/images/shared/desktop/pointer.svg), pointer;
 }
 .subcontainer__contacts .form__checkbox .contact__checkbox__text {
   position: relative;
@@ -1512,6 +1554,7 @@ span.checkbox-custom {
   font-weight: 400;
   line-height: 36px; /* 112.5% */
   letter-spacing: -0.246px;
+  z-index: 1;
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 125px;
@@ -1531,9 +1574,12 @@ span.checkbox-custom {
 @media screen and (min-width: 1440px) {
   .help__container {
     font-size: 3.5rem;
+    text-align: left;
     letter-spacing: -0.431px;
-    margin-left: 165px;
-    margin-right: 545px;
+    padding-left: 23px;
+    margin-top: 80px;
+    margin-left: 141px;
+    margin-right: 610px;
   }
 }
 
@@ -1544,11 +1590,108 @@ span.checkbox-custom {
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 57px;
+    gap: 58px;
   }
   #contacts__companies__logos svg {
     transform: scale(1.21);
     margin-bottom: -11px;
+  }
+  #contacts__companies__logos svg:nth-child(1) {
+    transform: scale(1.22);
+    margin-top: 5px;
+    margin-left: -56px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #contacts__companies__logos {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px;
+  }
+  #contacts__companies__logos svg {
+    transform: scale(1.45);
+    margin-bottom: -11px;
+    padding-left: 24px;
+  }
+  #contacts__companies__logos svg:nth-child(1) {
+    transform: scale(1.58);
+    margin-top: 4px;
+    margin-left: -129px;
+  }
+  #contacts__companies__logos svg:nth-child(2) {
+    transform: scale(1.57);
+    margin-top: 2px;
+    margin-left: -5px;
+  }
+  #contacts__companies__logos svg:nth-child(3) {
+    transform: scale(1.56);
+    margin-top: 5px;
+    margin-right: 0px;
+    position: relative;
+    left: -15px;
+  }
+  #contacts__companies__logos svg:nth-child(4) {
+    transform: scale(1.6);
+    position: relative;
+    left: -33px;
+  }
+  #contacts__companies__logos svg:nth-child(5) {
+    transform: scale(1.7);
+    margin-top: 0px;
+    margin-right: 62px;
+  }
+  #contacts__companies__logos svg:nth-child(6) {
+    transform: scale(1.54);
+    position: relative;
+    left: -45px;
+    top: 2px;
+  }
+}
+
+@media screen and (min-width: 375) {
+  #demo__contacts {
+    margin-top: 100px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #demo__contacts {
+    margin-top: 111px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #demo__contacts {
+    margin-top: 31px;
+    margin-left: 9px;
+    margin-right: 0px;
+    position: relative;
+    left: -4px;
+    top: -5px;
+    justify-content: space-around;
+    gap: 437px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #input__contacts {
+    margin-bottom: -17px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #input__contacts {
+    margin-top: 65px;
+    margin-left: -98px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #input__contacts__button {
+    margin-top: 35px;
+    margin-right: 153px;
   }
 }
 
