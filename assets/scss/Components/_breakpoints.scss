@@ -32,6 +32,7 @@ $toggle-line: 0.25rem;
   .header__container {
     position: fixed;
     width: 100%;
+    z-index: 1;
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
@@ -90,7 +91,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -102,7 +103,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -146,8 +147,8 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: "";
-          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+          content: '';
+          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -169,7 +170,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: 0.2rem;
           text-align: center;
@@ -242,7 +243,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -437,7 +438,7 @@ $toggle-line: 0.25rem;
         margin-top: 0.5rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -730,7 +731,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -831,7 +832,7 @@ $toggle-line: 0.25rem;
       margin-bottom: 5.2rem;
     }
 
-    input[type="email"] {
+    input[type='email'] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -1082,7 +1083,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type="email"] {
+        input[type='email'] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;
@@ -1219,7 +1220,7 @@ $toggle-line: 0.25rem;
         margin-bottom: -4rem;
       }
 
-      input[type="email"] {
+      input[type='email'] {
         width: 27.8125rem;
         height: 3rem;
         border-radius: 1.5rem;

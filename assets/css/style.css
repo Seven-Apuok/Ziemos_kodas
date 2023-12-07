@@ -194,6 +194,7 @@ a {
   .header__container {
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
   .header__container.is-scrolling {
     background-color: #edf3f8;
