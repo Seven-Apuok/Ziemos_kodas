@@ -291,7 +291,7 @@ a {
   }
   .header__container .nav .nav__menu::before {
     content: "";
-    /*background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;*/
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.46rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1223,6 +1223,10 @@ div.nav__toggle,
   cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer;
 }
 
+span.checkbox-custom {
+  cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer !important;
+}
+
 .companies__container {
   background-color: #1b262f;
   text-align: center;
@@ -1832,6 +1836,7 @@ div.nav__toggle,
   font-style: normal;
   font-weight: 100;
   line-height: 1.75rem;
+  margin-bottom: 0.1rem;
 }
 .pricing__container .pricing__plan__title {
   color: #ba4270;
@@ -1858,7 +1863,7 @@ div.nav__toggle,
   line-height: 4.5rem;
   letter-spacing: -0.02694rem;
   margin-top: -1.1rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.8rem;
 }
 .pricing__container .pricing__benefits {
   list-style: none;
@@ -1870,7 +1875,7 @@ div.nav__toggle,
 .pricing__container .pricing__benefits > hr {
   width: 88%;
   z-index: -1;
-  margin-top: -0.4rem;
+  margin-top: -0.5rem;
 }
 .pricing__container .pricing__benefits li:before {
   content: "";
@@ -1908,15 +1913,19 @@ div.nav__toggle,
   margin-bottom: 0.5rem;
 }
 .pricing__container .pricing__benefits ul > li:first-child {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
 }
 .pricing__container .pricing__benefits ul > li:last-child {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.9rem;
 }
 .pricing__container .secondary__submit--normal {
   margin-top: 0.6rem;
   margin-bottom: 3rem;
   width: 45%;
+}
+
+.demo__container {
+  margin-top: 2.45rem !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -1929,6 +1938,11 @@ div.nav__toggle,
 @media screen and (min-width: 768px) {
   .pricing__container .pricing__plans__container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pricing__container .pricing__container__title {
+    margin-top: 0.1rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
   }
   .pricing__container .pricing__text__price > :nth-child(2) {
     width: 90%;
