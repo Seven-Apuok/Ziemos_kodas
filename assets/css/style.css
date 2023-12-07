@@ -1532,9 +1532,10 @@ div.nav__toggle,
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 .pricing__container .pricing__text__price > :nth-child(2) {
+  height: 80%;
+  width: 60%;
   color: #36536b;
   text-align: center;
   font-family: "Public Sans", sans-serif;
@@ -1556,11 +1557,9 @@ div.nav__toggle,
 }
 .pricing__container .pricing__plans__container {
   display: grid;
-  gap: 1%;
   text-align: center;
 }
 .pricing__container .pricing__value {
-  width: 20.4375rem;
   color: #36536b;
   text-align: center;
   font-family: "DM Serif Display", serif;
@@ -1580,7 +1579,7 @@ div.nav__toggle,
   align-items: center;
 }
 .pricing__container .pricing__benefits > hr {
-  margin-right: 1rem;
+  width: 80%;
 }
 .pricing__container .pricing__benefits li:before {
   content: "";
@@ -1627,13 +1626,46 @@ div.nav__toggle,
 
 @media screen and (max-width: 767px) {
   .pricing__text__price > :nth-child(2) {
-    width: 13.9375rem;
+    width: 70%;
     font-weight: 100;
   }
 }
 @media screen and (min-width: 768px) {
   .pricing__container .pricing__plans__container {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pricing__container .pricing__text__price > :nth-child(2) {
+    width: 90%;
+    height: 80%;
+    font-weight: 100;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .pricing__container .pricing__text__price {
+    align-items: flex-start;
+    margin-left: 2.5rem;
+  }
+  .pricing__container .pricing__text__price > :nth-child(2) {
+    text-align: left;
+    width: 80%;
+    font-weight: 100;
+  }
+  .pricing__container .pricing__value {
+    text-align: left;
+    width: 80%;
+  }
+  .pricing__container .pricing__benefits > ul {
+    width: 80%;
+    align-items: flex-start;
+  }
+  .pricing__container .secondary__submit--normal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+  }
+  .pricing__container .pricing__hr {
+    width: 80%;
   }
 }
 

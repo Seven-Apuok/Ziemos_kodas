@@ -20,9 +20,11 @@ $toggle-line: 0.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    // position: relative;
     > :nth-child(2) {
       // width: 20.4375rem;
+      height: 80%;
+      width: 60%;
       color: rgba($san-juan-blue, 1);
       text-align: center;
       font-family: $body-font;
@@ -48,7 +50,7 @@ $toggle-line: 0.25rem;
 
   .pricing__plans__container {
     display: grid;
-    gap: 1%;
+    // gap: 1%;
     text-align: center;
   }
   // .pricing__free,
@@ -59,7 +61,8 @@ $toggle-line: 0.25rem;
   // }
 
   .pricing__value {
-    width: 20.4375rem;
+    // width: 20.4375rem;
+    // width: 127%;
     color: $san-juan-blue;
     text-align: center;
     font-family: $body-second-font;
@@ -79,7 +82,7 @@ $toggle-line: 0.25rem;
     flex-direction: column;
     align-items: center;
     > hr {
-      margin-right: 1rem;
+      width: 80%;
     }
 
     li {
@@ -148,22 +151,9 @@ $toggle-line: 0.25rem;
   // }
 
   .pricing__text__price {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // position: relative;
     > :nth-child(2) {
-      width: 13.9375rem;
+      width: 70%;
       font-weight: 100;
-      //   width: 20.4375rem;
-      //   color: rgba($san-juan-blue, 1);
-      //   text-align: center;
-      //   font-family: $body-font;
-      //   font-size: 0.9375rem;
-      //   font-style: normal;
-      //   font-weight: 100;
-      //   line-height: 1.75rem;
-      // }
     }
   }
 }
@@ -175,13 +165,43 @@ $toggle-line: 0.25rem;
       // grid-template-columns: 223px 223px 223px !important;
       // display: grid;
     }
+    .pricing__text__price {
+      > :nth-child(2) {
+        width: 90%;
+        height: 80%;
+        font-weight: 100;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .header__container__pricing {
-  }
-
   .pricing__container {
+    .pricing__text__price {
+      align-items: flex-start;
+      margin-left: 2.5rem;
+      > :nth-child(2) {
+        text-align: left;
+        width: 80%;
+        font-weight: 100;
+      }
+    }
+    .pricing__value {
+      text-align: left;
+      width: 80%;
+    }
+    .pricing__benefits > ul {
+      width: 80%;
+      align-items: flex-start;
+    }
+    .secondary__submit--normal {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 3rem;
+    }
+    .pricing__hr {
+      width: 80%;
+    }
   }
 }
