@@ -482,6 +482,7 @@ $toggle-line: 0.25rem;
     // }
 
     .culture__container {
+      
       text-align: center;
     }
 
@@ -617,8 +618,8 @@ $toggle-line: 0.25rem;
         }
 
         svg:nth-child(1) {
-          margin-top: 0.5rem;
-          margin-left: -4.3rem;
+          margin-top: 0.2rem;
+          margin-left: -4.6rem;
         }
 
         svg:nth-child(2) {
@@ -634,6 +635,11 @@ $toggle-line: 0.25rem;
         svg:nth-child(4) {
           margin-left: -4rem;
           margin-top: -0.2rem;
+        }
+
+        svg:nth-child(5) {
+          margin-left: -0.9rem;
+          margin-top: -0.1rem;
         }
 
         svg:nth-child(6) {
@@ -873,8 +879,8 @@ $toggle-line: 0.25rem;
       display: flex;
       flex-direction: row;
       margin-top: 1.63rem;
-      gap: 40px;
-      margin-left: 32px;
+      gap: 42.5px;
+      margin-left: 33px;
 
       a {
         color: $link-water-white;
@@ -884,8 +890,8 @@ $toggle-line: 0.25rem;
     }
 
     .api__media {
-      margin-top: 2.18rem;
-      margin-left: 6.33rem;
+      margin-top: 2.43rem;
+      margin-left: 6rem;
     }
   }
 
@@ -928,14 +934,10 @@ $toggle-line: 0.25rem;
       //companies big screens
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
-        //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
-
-        //margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
 
         width: 100%;
 
         padding: 0;
-        //padding-right: 163px;
 
         background-position: bottom 51px right 895px;
         display: flex;
@@ -953,15 +955,11 @@ $toggle-line: 0.25rem;
           width: calc(32% - 10px);
           gap: 2.6rem;
 
-          // &:nth-child(n + 3) {
-          //   //margin-left: 39px;
-          // }
-
           &:nth-child(even) {
             margin-left: 131px;
           }
 
-          // gap: 0;
+
           padding: 0;
 
           // svg {
