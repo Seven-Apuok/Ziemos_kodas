@@ -6,7 +6,8 @@
 }
 .registration__container {
   @media screen and (min-width: 767px) {
-    padding-left: 127px;
+    padding-left: 137px;
+    margin-top: -2.5px;
   }
   @media screen and (min-width: 1439px) {
     display: flex;
@@ -32,7 +33,7 @@
 }
 #demo__contacts {
   @media screen and (min-width: 767px) {
-    margin-top: 100px;
+    margin-top: 124px;
     margin-bottom: 30px;
   }
 }
@@ -73,6 +74,8 @@
     .h4__contacts {
       margin-top: 0px;
       margin-top: 64px;
+      //margin-left: 10px;
+      letter-spacing: -0.185px;
       width: 445px;
     }
   }
@@ -117,7 +120,8 @@
     padding-left: 20px;
     background-color: #edf3f8;
     margin-bottom: 17px;
- 
+    opacity: 0.5;
+
     &::placeholder {
       color: $san-juan-blue;
       font-family: "Public Sans", sans-serif;
@@ -126,7 +130,13 @@
       font-weight: 400;
       line-height: 25px; /* 166.667% */
       letter-spacing: -0.115px;
-      opacity: 0.5;
+      //opacity: 0.5;
+    }
+    &:hover,
+    &:active {
+      &::placeholder {
+        opacity: 1; // Texto spalva uzvedus zymekli
+      }
     }
     @media screen and (min-width: 767px) {
       width: 445px;
@@ -137,13 +147,10 @@
   }
   textarea {
     height: 96px;
-    resize: none; // Kad nebūtų galima keisti teksto lauko dydžio
+    resize: none;
     padding-top: 7px;
-    margin-bottom:24px;
-
+    margin-bottom: 24px;
   }
-
-  //testai su formos checkbox
 
   .form__checkbox {
     display: flex;
@@ -175,6 +182,7 @@
       border: 1px solid $san-juan-blue;
       opacity: 0.25;
       margin-top: 13px;
+      cursor: pointer;
     }
 
     .contact__checkbox__text {
@@ -183,10 +191,12 @@
       @media screen and (min-width: 767px) {
         width: 395px;
         display: block;
+        margin-bottom: -3px;
       }
     }
   }
 }
+
 .help__container {
   color: $san-juan-blue;
   text-align: center;
@@ -206,10 +216,12 @@
   @media screen and (min-width: 767px) {
     font-size: $h2-regular-size;
     line-height: $h1-small-line-height; /* 116.667% */
-    letter-spacing: -0.369px;
+    letter-spacing: -0.7px;
 
-    margin-left: 97px;
+    margin-left: 90px;
     margin-right: 98px;
+    margin-top: 74px;
+    margin-bottom: 58px;
   }
   @media screen and (min-width: 1440px) {
     font-size: $h1-small-size;
@@ -217,5 +229,51 @@
 
     margin-left: 165px;
     margin-right: 545px;
+  }
+}
+
+#contacts__companies__logos {
+
+  @media screen and (min-width: 767px) {
+    padding-top: 0px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 57px;
+
+    svg {
+      transform: scale(1.21);
+      margin-bottom: -11px;
+    }
+
+    // svg:nth-child(1) {
+    //   margin-top: 0rem;
+    //   margin-left: -4.3rem;
+    // }
+
+    // svg:nth-child(2) {
+    //   margin-top: 50px;
+    //   margin-left: 50px;
+    // }
+
+    // svg:nth-child(3) {
+    //   margin-top: 0.4rem;
+    //   margin-right: -3.8rem;
+    // }
+
+    // svg:nth-child(4) {
+    //   margin-left: -4.3rem;
+    //   margin-top: -0.6rem;
+    // }
+    // svg:nth-child(5) {
+    //   margin-top: -0.5rem;
+    //   margin-right: 0.4rem;
+    // }
+    // svg:nth-child(6) {
+    //   margin-top: -0.2rem;
+    //   margin-right: -4rem;
+    // }
   }
 }
