@@ -10,30 +10,28 @@ $toggle-line: 0.25rem;
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  // body {
-  //   background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -12rem -33rem;
-  // }
-  // .header__image {
-  //   display: flex;
-  //   justify-content: center;
-  //   position: absolute;
-  //   width: 100vw;
-  //   height: 100vh;
-  //   overflow: hidden;
-  // }
+  .header__image {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-  // .header__circle {
-  //   position: absolute;
-  //   width: 48.75rem;
-  //   height: 48.75rem;
-  //   border-radius: 48.75rem;
-  //   top: -34rem;
-  //   z-index: -99;
-  //   background-color: #d2dbe3;
-  // }
+  .header__circle {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    top: -34rem;
+    z-index: -99;
+    background-color: #d2dbe3;
+  }
 
   .header__container {
     position: fixed;
+    width: 100%;
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);
@@ -465,38 +463,25 @@ $toggle-line: 0.25rem;
     }
 
     //about.html
-    .innovators__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
-    }
+    // .innovators__container {
+    //   height: 200px;
+    //   font-size: 1.3rem;
+    //   text-align: center;
+    // }
 
-    .vision__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
-    }
+    // .vision__container {
+    //   height: 200px;
+    //   text-align: center;
+    // }
 
-    .picture__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
-    }
-
-    .statistics__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
-      text-align: center;
-    }
+    // .picture__container {
+    //   background: red;
+    //   width: 23.2rem;
+    //   height: 18.75rem;
+    //   text-align: center;
+    // }
 
     .culture__container {
-      height: 200px;
-      border: 1px solid #000;
-      font-size: 1.3rem;
       text-align: center;
     }
 
@@ -547,6 +532,10 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
+  body {
+    background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;
+  }
+
   .header__container {
     // .header__circle {
     //   position: absolute;
