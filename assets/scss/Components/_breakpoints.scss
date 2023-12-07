@@ -30,6 +30,8 @@ $toggle-line: 0.25rem;
   }
 
   .header__container {
+    position: fixed;
+    width: 100%;
     &.is-scrolling {
       background-color: $body-color;
       box-shadow: 0 0.2rem 0.5rem rgba($san-juan-blue, 0.1);

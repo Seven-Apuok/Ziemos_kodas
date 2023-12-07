@@ -65,6 +65,14 @@ p {
   line-height: 1.75rem;
 }
 
+.pricing__hr {
+  width: 100%;
+  height: 0.0625rem;
+  background: $san-juan-blue;
+  opacity: 0.25;
+  margin-bottom: 1rem;
+}
+
 ul {
   list-style: none;
 }
@@ -75,7 +83,7 @@ a {
 
 /*---------mobile shadow----------*/
 .app__mobile,
-.api__mobile{
+.api__mobile {
   filter: drop-shadow(25px 25px 80px #36536b4d);
 }
 
