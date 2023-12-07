@@ -927,14 +927,10 @@ $toggle-line: 0.25rem;
       //companies big screens
       .companies__container {
         margin-top: 75.57px; //tarpai iki kito box elementu (iki svg)
-        //margin-top: 152px; //tarpai iki kito box elementu (iki teksto)
-
-        //margin-bottom: 150px; //tarpai iki kito box elementu(iki svg)
 
         width: 100%;
 
         padding: 0;
-        //padding-right: 163px;
 
         background-position: bottom 51px right 895px;
         display: flex;
@@ -952,15 +948,11 @@ $toggle-line: 0.25rem;
           width: calc(32% - 10px);
           gap: 2.6rem;
 
-          // &:nth-child(n + 3) {
-          //   //margin-left: 39px;
-          // }
-
           &:nth-child(even) {
             margin-left: 131px;
           }
 
-          // gap: 0;
+
           padding: 0;
 
           // svg {
