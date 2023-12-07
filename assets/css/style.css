@@ -1521,12 +1521,13 @@ div.nav__toggle,
 }
 
 .pricing__container {
-  margin-top: 17rem;
+  margin-top: 3.9rem;
 }
 .pricing__container .pricing__container__title {
   text-align: center;
-  margin-bottom: 3rem;
-  font-size: 3.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.7rem;
+  font-size: 2rem;
 }
 .pricing__container .pricing__text__price {
   display: flex;
@@ -1568,8 +1569,8 @@ div.nav__toggle,
   font-weight: 400;
   line-height: 4.5rem;
   letter-spacing: -0.02694rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: -1.1rem;
+  margin-bottom: 1.4rem;
 }
 .pricing__container .pricing__benefits {
   list-style: none;
@@ -1579,7 +1580,9 @@ div.nav__toggle,
   align-items: center;
 }
 .pricing__container .pricing__benefits > hr {
-  width: 80%;
+  width: 88%;
+  z-index: -1;
+  margin-top: -0.4rem;
 }
 .pricing__container .pricing__benefits li:before {
   content: "";
@@ -1613,21 +1616,26 @@ div.nav__toggle,
   line-height: 1.75rem;
   opacity: 0.5;
 }
+.pricing__container .pricing__benefits ul > li {
+  margin-bottom: 0.5rem;
+}
 .pricing__container .pricing__benefits ul > li:first-child {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .pricing__container .pricing__benefits ul > li:last-child {
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
 }
 .pricing__container .secondary__submit--normal {
-  margin-top: 1.5rem;
+  margin-top: 0.6rem;
   margin-bottom: 3rem;
+  width: 45%;
 }
 
 @media screen and (max-width: 767px) {
   .pricing__text__price > :nth-child(2) {
     width: 70%;
     font-weight: 100;
+    margin-bottom: 0.5rem;
   }
 }
 @media screen and (min-width: 768px) {

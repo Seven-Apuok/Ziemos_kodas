@@ -8,12 +8,13 @@ $toggle-line: 0.25rem;
 }
 
 .pricing__container {
-  margin-top: 17rem;
+  margin-top: 3.9rem;
 
   .pricing__container__title {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: $h1-small-size;
+    margin-top: 3rem;
+    margin-bottom: 1.7rem;
+    font-size: $h3-big-size;
   }
 
   .pricing__text__price {
@@ -50,19 +51,10 @@ $toggle-line: 0.25rem;
 
   .pricing__plans__container {
     display: grid;
-    // gap: 1%;
     text-align: center;
   }
-  // .pricing__free,
-  // .pricing__basic,
-  // .pricing__premium {
-  //   width: 13.9375rem;
-  //   height: 38.4375rem;
-  // }
 
   .pricing__value {
-    // width: 20.4375rem;
-    // width: 127%;
     color: $san-juan-blue;
     text-align: center;
     font-family: $body-second-font;
@@ -71,8 +63,8 @@ $toggle-line: 0.25rem;
     font-weight: $font-regular;
     line-height: $h1-large-line-height;
     letter-spacing: -0.02694rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: -1.1rem;
+    margin-bottom: 1.4rem;
   }
 
   .pricing__benefits {
@@ -82,7 +74,9 @@ $toggle-line: 0.25rem;
     flex-direction: column;
     align-items: center;
     > hr {
-      width: 80%;
+      width: 88%;
+      z-index: -1;
+      margin-top: -0.4rem;
     }
 
     li {
@@ -128,18 +122,20 @@ $toggle-line: 0.25rem;
   }
   .pricing__benefits {
     ul > li {
+      margin-bottom: 0.5rem;
       &:first-child {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
       }
       &:last-child {
-        margin-bottom: 1rem;
+        margin-bottom: 1.7rem;
       }
     }
   }
 
   .secondary__submit--normal {
-    margin-top: 1.5rem;
+    margin-top: 0.6rem;
     margin-bottom: 3rem;
+    width: 45%;
   }
 }
 
@@ -154,6 +150,7 @@ $toggle-line: 0.25rem;
     > :nth-child(2) {
       width: 70%;
       font-weight: 100;
+      margin-bottom: 0.5rem;
     }
   }
 }
