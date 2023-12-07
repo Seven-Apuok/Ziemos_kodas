@@ -835,8 +835,8 @@ a {
     display: flex;
     flex-direction: row;
     margin-top: 1.63rem;
-    gap: 40px;
-    margin-left: 32px;
+    gap: 42.5px;
+    margin-left: 33px;
   }
   .footer__container .footer__nav a {
     color: #fbfcfe;
@@ -844,8 +844,8 @@ a {
     opacity: 0.7;
   }
   .footer__container .api__media {
-    margin-top: 2.18rem;
-    margin-left: 6.33rem;
+    margin-top: 2.43rem;
+    margin-left: 6rem;
   }
   /* For large devices */
 }
@@ -1202,6 +1202,8 @@ body {
 a,
 button,
 input[type=email],
+input[type=text],
+textarea,
 div.nav__toggle,
 .nav__toggle,
 .nav__toggle::before,
@@ -1267,8 +1269,8 @@ div.nav__toggle,
   font-size: 0.9375rem;
 }
 .footer__container svg {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: 0.65rem;
+  margin-right: 0.65rem;
 }
 .footer__container svg:hover path {
   fill: #da6d97;
@@ -1291,7 +1293,8 @@ div.nav__toggle,
 
 @media screen and (min-width: 767px) {
   .registration__container {
-    padding-left: 127px;
+    padding-left: 137px;
+    margin-top: -2.5px;
   }
 }
 @media screen and (min-width: 1439px) {
@@ -1319,7 +1322,7 @@ div.nav__toggle,
 }
 @media screen and (min-width: 767px) {
   #demo__contacts {
-    margin-top: 100px;
+    margin-top: 124px;
     margin-bottom: 30px;
   }
 }
@@ -1365,6 +1368,7 @@ div.nav__toggle,
   #contacts__color__light .h4__contacts {
     margin-top: 0px;
     margin-top: 64px;
+    letter-spacing: -0.185px;
     width: 445px;
   }
 }
@@ -1404,6 +1408,7 @@ div.nav__toggle,
   padding-left: 20px;
   background-color: #edf3f8;
   margin-bottom: 17px;
+  opacity: 0.5;
 }
 .subcontainer__contacts input::placeholder,
 .subcontainer__contacts textarea::placeholder {
@@ -1414,7 +1419,11 @@ div.nav__toggle,
   font-weight: 400;
   line-height: 25px; /* 166.667% */
   letter-spacing: -0.115px;
-  opacity: 0.5;
+}
+.subcontainer__contacts input:hover::placeholder, .subcontainer__contacts input:active::placeholder,
+.subcontainer__contacts textarea:hover::placeholder,
+.subcontainer__contacts textarea:active::placeholder {
+  opacity: 1;
 }
 @media screen and (min-width: 767px) {
   .subcontainer__contacts input,
@@ -1463,6 +1472,7 @@ div.nav__toggle,
   border: 1px solid #36536b;
   opacity: 0.25;
   margin-top: 13px;
+  cursor: pointer;
 }
 .subcontainer__contacts .form__checkbox .contact__checkbox__text {
   position: relative;
@@ -1472,6 +1482,7 @@ div.nav__toggle,
   .subcontainer__contacts .form__checkbox .contact__checkbox__text {
     width: 395px;
     display: block;
+    margin-bottom: -3px;
   }
 }
 
@@ -1493,9 +1504,11 @@ div.nav__toggle,
   .help__container {
     font-size: 3rem;
     line-height: 3.5rem; /* 116.667% */
-    letter-spacing: -0.369px;
-    margin-left: 97px;
+    letter-spacing: -0.7px;
+    margin-left: 90px;
     margin-right: 98px;
+    margin-top: 74px;
+    margin-bottom: 58px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1504,6 +1517,21 @@ div.nav__toggle,
     letter-spacing: -0.431px;
     margin-left: 165px;
     margin-right: 545px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #contacts__companies__logos {
+    padding-top: 0px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 57px;
+  }
+  #contacts__companies__logos svg {
+    transform: scale(1.21);
+    margin-bottom: -11px;
   }
 }
 
