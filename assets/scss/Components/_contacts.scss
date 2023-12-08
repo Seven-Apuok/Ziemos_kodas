@@ -1,26 +1,36 @@
 .subcontainer__contacts {
-  @media screen and (min-width: 1439px) {
+  @media screen and (min-width: 375px) {
+    margin-bottom:-25px
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom:0px;
     display: flex;
     flex-direction: row;
   }
 }
 .registration__container {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     padding-left: 137px;
     margin-top: -2.5px;
   }
-  @media screen and (min-width: 1439px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding-left: 0px;
+    margin-left: 76px;
   }
 }
 
 #contacts__companies__logos {
   margin-top: 31px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     margin-top: 40px;
+    padding-top: 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 0px;
     padding-top: 0px;
   }
 }
@@ -28,7 +38,7 @@
   text-align: center;
   width: 300px;
   margin-top: 80px;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
   }
 }
 #demo__contacts {
@@ -78,10 +88,19 @@
       letter-spacing: -0.185px;
       width: 445px;
     }
-  }
-  @media screen and (min-width: 1440px) {
-    .h4__contacts {
-      text-align: left;
+    @media screen and (min-width: 1440px) {
+      align-content: flex-start;
+      margin-left: 83px;
+      margin-top: -120px;
+
+      z-index: -1;
+      gap: 40px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      .h4__contacts {
+        text-align: left;
+      }
     }
   }
 }
@@ -102,11 +121,12 @@
   form {
     display: flex;
     flex-direction: column;
-    //padding-bottom: 80px;
     padding-left: 24.5px;
     button {
       margin-top: 16px;
-      //margin-left: 18.5px;
+      @media screen and (min-width: 1440px) {
+        margin-left: 68px;
+      }
     }
   }
 
@@ -157,6 +177,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 1440px) {
+      padding-left: 65px;
+    }
     input[type="checkbox"] {
       display: none;
     }
@@ -183,7 +207,7 @@
       border: 1px solid $san-juan-blue;
       opacity: 0.25;
       margin-top: 13px;
-      cursor: pointer;
+      cursor: url(/assets/images/shared/desktop/pointer.svg), pointer;
     }
 
     .contact__checkbox__text {
@@ -208,6 +232,8 @@
   line-height: 36px; /* 112.5% */
   letter-spacing: -0.246px;
 
+  z-index: 1;
+
   padding-left: 24px;
   padding-right: 24px;
 
@@ -226,10 +252,12 @@
   }
   @media screen and (min-width: 1440px) {
     font-size: $h1-small-size;
+    text-align: left;
     letter-spacing: -0.431px;
-
-    margin-left: 165px;
-    margin-right: 545px;
+    padding-left: 23px;
+    margin-top: 80px;
+    margin-left: 141px;
+    margin-right: 610px;
   }
 }
 
@@ -240,40 +268,105 @@
     align-items: center;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 57px;
+    gap: 58px;
 
     svg {
       transform: scale(1.21);
       margin-bottom: -11px;
     }
+    svg:nth-child(1) {
+      transform: scale(1.22);
+      margin-top: 5px;
+      margin-left: -56px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
 
-    // svg:nth-child(1) {
-    //   margin-top: 0rem;
-    //   margin-left: -4.3rem;
-    // }
+    gap: 58px;
+    svg {
+      transform: scale(1.45);
+      margin-bottom: -11px;
+      padding-left: 24px;
+    }
 
-    // svg:nth-child(2) {
-    //   margin-top: 50px;
-    //   margin-left: 50px;
-    // }
+    svg:nth-child(1) {
+      transform: scale(1.58);
+      margin-top: 4px;
+      margin-left: -129px;
+      // posision:relative;
+      // top:4px;
+    }
 
-    // svg:nth-child(3) {
-    //   margin-top: 0.4rem;
-    //   margin-right: -3.8rem;
-    // }
+    svg:nth-child(2) {
+      transform: scale(1.57);
+      margin-top: 2px;
+      margin-left: -5px;
+    }
 
-    // svg:nth-child(4) {
-    //   margin-left: -4.3rem;
-    //   margin-top: -0.6rem;
-    // }
-    // svg:nth-child(5) {
-    //   margin-top: -0.5rem;
-    //   margin-right: 0.4rem;
-    // }
-    // svg:nth-child(6) {
-    //   margin-top: -0.2rem;
-    //   margin-right: -4rem;
-    // }
+    svg:nth-child(3) {
+      transform: scale(1.56);
+      margin-top: 5px;
+      margin-right: 0px;
+      position: relative;
+      left: -15px;
+    }
+
+    svg:nth-child(4) {
+      transform: scale(1.6);
+      position: relative;
+      left: -33px;
+    }
+    svg:nth-child(5) {
+      transform: scale(1.7);
+      margin-top: 0px;
+      margin-right: 62px;
+    }
+    svg:nth-child(6) {
+      transform: scale(1.54);
+      position: relative;
+      left: -45px;
+      top: 2px;
+    }
+  }
+}
+#demo__contacts {
+  @media screen and (min-width: 375) {
+    margin-top: 100px;
+    padding-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 111px;
+    padding-bottom: 0px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 31px;
+    margin-left: 9px;
+    margin-right: 0px;
+    position: relative;
+    left: -4px;
+    top: -5px;
+    justify-content: space-around;
+    gap: 437px;
+
+    margin-bottom: 25px;
+  }
+}
+#input__contacts {
+  @media screen and (min-width: 768px) {
+    margin-bottom: -17px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 65px;
+    margin-left: -98px;
+  }
+}
+#input__contacts__button {
+  @media screen and (min-width: 1440px) {
+    margin-top: 35px;
+    margin-right: 153px;
   }
 }

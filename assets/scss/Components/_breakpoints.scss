@@ -449,9 +449,6 @@ $toggle-line: 0.25rem;
       text-align: center;
     }
 
-    // .registration__container {
-    //   //text-align: center;
-    // }
   }
 
   .footer__container {
@@ -462,8 +459,8 @@ $toggle-line: 0.25rem;
     margin-top: 5rem; //iki mygtuko mobile ekrane
 
     .api__logo {
-      margin-top: 2.56rem;
-      margin-bottom: 0.56rem;
+      margin-top: 2.56rem;//
+      margin-bottom: 5px;
     }
 
     .footer__nav {
@@ -483,7 +480,7 @@ $toggle-line: 0.25rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 2.38rem;
+      margin-top: 42px;
     }
   }
 }
@@ -491,9 +488,9 @@ $toggle-line: 0.25rem;
 /* For medium devices */
 
 @media screen and (min-width: 768px) {
-  body {
-    /*background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;*/
-  }
+  // body {
+  //   /*background: url("/assets/images/shared/desktop/bg-pattern-half-circle-tablet.svg") no-repeat -5rem -16rem;*/
+  // }
 
   .header__container {
     // .header__circle {
