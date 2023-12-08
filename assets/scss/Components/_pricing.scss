@@ -82,11 +82,11 @@ $toggle-line: 0.25rem;
 
     li {
       &:before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 0.75rem;
         height: 0.5rem;
-        background: url("/assets/images/shared/desktop/icon-check.svg") no-repeat center center /
+        background: url('/assets/images/shared/desktop/icon-check.svg') no-repeat center center /
           contain;
         margin-right: 1.5rem;
         stroke-width: 2px;
@@ -141,7 +141,7 @@ $toggle-line: 0.25rem;
 }
 
 .demo__container {
-  margin-top: 2.45rem !important;
+  margin-top: 2.45rem !important;  
 }
 
 @media screen and (max-width: 767px) {
