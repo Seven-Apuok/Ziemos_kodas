@@ -194,6 +194,7 @@ a {
   .header__container {
     position: fixed;
     width: 100%;
+    z-index: 1;
   }
   .header__container.is-scrolling {
     background-color: #edf3f8;
@@ -345,7 +346,7 @@ a {
   }
   .main__container .api__container {
     text-align: center;
-    z-index: -1;
+    z-index: 0;
   }
   .main__container .api__container .api__mobile {
     width: 34%;
@@ -502,42 +503,6 @@ a {
   .main__container .finances__container .finances__box__text p {
     margin-bottom: 2.8rem;
     letter-spacing: -0.138px;
-  }
-  .main__container .demo__container {
-    margin-top: 0.7rem;
-  }
-  .main__container .demo__container .demo__title {
-    text-align: center;
-    line-height: 2.25rem;
-    letter-spacing: -0.01538rem;
-    font-style: normal;
-    margin-top: -0.5rem;
-  }
-  .main__container .demo__container .demo__form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-  }
-  .main__container .demo__container input[type=email] {
-    width: 20.4375rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
-    border: none;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    text-indent: 1.69rem;
-  }
-  .main__container .demo__container input[type=email]::placeholder {
-    color: rgba(54, 83, 107, 0.5);
-    font-weight: 700;
-    font-family: "Public Sans", sans-serif;
-    font-size: 0.9375rem;
-    line-height: normal;
-  }
-  .main__container .demo__container .primary__button--normal {
-    width: 20.4375rem;
-    height: 3rem;
   }
   .main__container .culture__container {
     text-align: center;
@@ -779,53 +744,6 @@ a {
     color: #6c8294;
     margin: 0 auto;
     margin-top: 1.6rem;
-  }
-  .demo__container {
-    margin-left: -0.8rem;
-  }
-  .demo__container .demo__title {
-    text-align: center;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.25rem;
-    letter-spacing: -0.02306rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-top: 7rem;
-  }
-  .demo__container .demo__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-    margin-bottom: 5.2rem;
-  }
-  .demo__container input[type=email] {
-    width: 27.8125rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
-    border: none;
-    margin-top: 1.3rem;
-    margin-right: -0.9rem;
-    margin-bottom: 1rem;
-    text-indent: 1.69rem;
-  }
-  .demo__container input[type=email]::placeholder {
-    color: rgba(54, 83, 107, 0.5);
-    font-weight: 700;
-    font-family: "Public Sans", sans-serif;
-    font-size: 0.9375rem;
-    line-height: normal;
-  }
-  .demo__container .primary__button--normal {
-    position: absolute;
-    width: 10.81rem;
-    height: 3rem;
-    transform: translateX(9.1rem);
-    top: 1.3rem;
   }
   .footer__container {
     width: 100%;
@@ -1093,51 +1011,6 @@ a {
     color: #6c8294;
     margin: 0;
     margin-top: 1.6rem;
-  }
-  .demo__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 77.7%;
-    margin: -1rem auto 3.5rem auto;
-  }
-  .demo__container .demo__title {
-    text-align: center;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3.5rem;
-    letter-spacing: -0.02306rem;
-    margin-bottom: 2.5rem;
-    margin-left: 0.2rem;
-  }
-  .demo__container .demo__form {
-    margin-bottom: -4rem;
-  }
-  .demo__container input[type=email] {
-    width: 27.8125rem;
-    height: 3rem;
-    border-radius: 1.5rem;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
-    border: none;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    text-indent: 1.69rem;
-    margin-right: 0.4rem;
-  }
-  .demo__container input[type=email]::placeholder {
-    color: rgba(54, 83, 107, 0.5);
-    font-weight: 700;
-    font-family: "Public Sans", sans-serif;
-    font-size: 0.9375rem;
-    line-height: normal;
-  }
-  .demo__container .primary__button--normal {
-    position: absolute;
-    width: 10.81rem;
-    height: 3rem;
-    transform: translateX(8.375rem);
-    top: 1.5rem;
   }
   .footer__container {
     width: 100%;
@@ -1566,7 +1439,7 @@ span.checkbox-custom {
   font-weight: 400;
   line-height: 36px; /* 112.5% */
   letter-spacing: -0.246px;
-  z-index: 1;
+  z-index: -1;
   padding-left: 24px;
   padding-right: 24px;
   margin-top: 125px;
@@ -2091,6 +1964,9 @@ span.checkbox-custom {
   }
 }
 @media screen and (min-width: 768px) {
+  .pricing__container {
+    margin-bottom: -5.6rem;
+  }
   .pricing__container .pricing__plans__container {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -2100,37 +1976,165 @@ span.checkbox-custom {
     font-size: 3rem;
   }
   .pricing__container .pricing__text__price > :nth-child(2) {
-    width: 90%;
+    width: 88%;
     height: 80%;
     font-weight: 100;
   }
+  .pricing__container .pricing__plan__title {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .pricing__container .pricing__benefits > ul {
+    margin-top: 0.1rem;
+  }
+  .pricing__container .secondary__submit--normal {
+    margin-top: 0.4rem;
+  }
+  .pricing__container .pricing__free .pricing__plan__title {
+    margin-left: 2.1rem;
+  }
+  .pricing__container .pricing__free .pricing__value {
+    margin-left: 2rem;
+  }
+  .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
+    margin-left: 2.2rem;
+  }
+  .pricing__container .pricing__free .pricing__benefits > ul {
+    margin-left: 2rem;
+  }
+  .pricing__container .pricing__free .pricing__benefits > hr {
+    margin-left: 1rem;
+  }
+  .pricing__container .pricing__free .secondary__submit--normal {
+    margin-left: 2.2rem;
+    width: 68%;
+  }
+  .pricing__container .pricing__basic .secondary__submit--normal {
+    width: 68%;
+  }
+  .pricing__container .pricing__premium .pricing__plan__title {
+    margin-left: -2.3rem;
+  }
+  .pricing__container .pricing__premium .pricing__text__price > :nth-child(2) {
+    margin-right: 2.3rem;
+  }
+  .pricing__container .pricing__premium .pricing__value {
+    margin-right: 2.1rem;
+  }
+  .pricing__container .pricing__premium .pricing__benefits > ul {
+    margin-right: 2.3rem;
+  }
+  .pricing__container .pricing__premium .pricing__benefits > hr {
+    margin-right: 1rem;
+  }
+  .pricing__container .pricing__premium .secondary__submit--normal {
+    margin-right: 2.1rem;
+    width: 69%;
+  }
+  .pricing__container .pricing__value {
+    font-size: 3rem;
+    margin-top: 1.1rem;
+  }
+  .pricing__container .pricing__benefits > hr {
+    width: 85%;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .pricing__container {
+    margin-bottom: -6.5rem;
+  }
+  .pricing__container .pricing__container__title {
+    text-align: left;
+    font-size: 3.5rem;
+    margin-left: 9.7rem;
+    margin-top: 0.6rem;
+  }
+  .pricing__container .pricing__plan__title {
+    font-size: 2rem;
+  }
   .pricing__container .pricing__text__price {
     align-items: flex-start;
-    margin-left: 2.5rem;
+    margin-left: 7.5rem;
   }
   .pricing__container .pricing__text__price > :nth-child(2) {
     text-align: left;
-    width: 80%;
+    width: 100%;
     font-weight: 100;
   }
   .pricing__container .pricing__value {
     text-align: left;
     width: 80%;
+    font-size: 3.5rem;
   }
   .pricing__container .pricing__benefits > ul {
     width: 80%;
     align-items: flex-start;
   }
-  .pricing__container .secondary__submit--normal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3rem;
+  .pricing__container .pricing__benefits .pricing__hr {
+    width: 70%;
   }
-  .pricing__container .pricing__hr {
-    width: 80%;
+  .pricing__container .secondary__submit--normal {
+    width: 36% !important;
+  }
+  .pricing__container .pricing__free .pricing__plan__title {
+    margin-left: 2.3rem;
+  }
+  .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
+    margin-top: 0.3rem;
+  }
+  .pricing__container .pricing__free .pricing__text__price > :nth-child(3) {
+    margin-top: 0.5rem;
+    margin-left: 2.2rem;
+  }
+  .pricing__container .pricing__free .pricing__benefits > ul {
+    margin-left: 13.6rem;
+    margin-bottom: 0.1rem;
+  }
+  .pricing__container .pricing__free .pricing__benefits > hr {
+    margin-left: 10rem;
+  }
+  .pricing__container .pricing__free .secondary__submit--normal {
+    margin-top: 0.45rem;
+    margin-left: 0.6rem;
+  }
+  .pricing__container .pricing__basic .pricing__plan__title {
+    margin-left: -3.6rem;
+  }
+  .pricing__container .pricing__basic .pricing__text__price > :nth-child(2) {
+    margin-left: -3.7rem;
+    margin-top: 0.3rem;
+  }
+  .pricing__container .pricing__basic .pricing__text__price > :nth-child(3) {
+    margin-left: -3.5rem;
+    margin-top: 0.5rem;
+  }
+  .pricing__container .pricing__basic .pricing__benefits > ul {
+    margin-left: 2rem;
+    margin-bottom: 0.1rem;
+  }
+  .pricing__container .pricing__basic .secondary__submit--normal {
+    margin-left: -11.3rem;
+  }
+  .pricing__container .pricing__premium .pricing__plan__title {
+    margin-left: -9.5rem;
+  }
+  .pricing__container .pricing__premium .pricing__text__price > :nth-child(2) {
+    margin-top: 0.3rem;
+    margin-left: -9.4rem;
+  }
+  .pricing__container .pricing__premium .pricing__text__price > :nth-child(3) {
+    margin-top: 0.5rem;
+    margin-left: -9.4rem;
+  }
+  .pricing__container .pricing__premium .pricing__benefits > hr {
+    margin-top: -0.4rem;
+    margin-right: 11rem;
+  }
+  .pricing__container .pricing__premium .pricing__benefits > ul {
+    margin-left: -7.7rem;
+  }
+  .pricing__container .pricing__premium .secondary__submit--normal {
+    margin-left: -21rem;
   }
 }
 .inovation__container {
@@ -2243,6 +2247,140 @@ span.checkbox-custom {
 @media screen and (max-width: 767px) {
   .circle__container {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .demo__container {
+    margin-top: 0.7rem;
+  }
+  .demo__container .demo__title {
+    text-align: center;
+    line-height: 2.25rem;
+    letter-spacing: -0.01538rem;
+    font-style: normal;
+    margin-top: -0.5rem;
+  }
+  .demo__container .demo__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+  .demo__container input[type=email] {
+    width: 20.4375rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-indent: 1.69rem;
+  }
+  .demo__container input[type=email]::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: normal;
+  }
+  .demo__container .primary__button--normal {
+    width: 20.4375rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .demo__container {
+    margin-left: -0.8rem;
+  }
+  .demo__container .demo__title {
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+    letter-spacing: -0.02306rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-top: 7rem;
+  }
+  .demo__container .demo__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 5.2rem;
+  }
+  .demo__container input[type=email] {
+    width: 27.8125rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
+    border: none;
+    margin-top: 1.3rem;
+    margin-right: -0.9rem;
+    margin-bottom: 1rem;
+    text-indent: 1.69rem;
+  }
+  .demo__container input[type=email]::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: normal;
+  }
+  .demo__container .primary__button--normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(9.1rem);
+    top: 1.3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .demo__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77.7%;
+    margin: -1rem auto 3.5rem auto;
+  }
+  .demo__container .demo__title {
+    text-align: center;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.5rem;
+    letter-spacing: -0.02306rem;
+    margin-bottom: 2.5rem;
+    margin-left: 0.2rem;
+  }
+  .demo__container .demo__form {
+    margin-bottom: -4rem;
+  }
+  .demo__container input[type=email] {
+    width: 27.8125rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.251);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-indent: 1.69rem;
+    margin-right: 0.4rem;
+  }
+  .demo__container input[type=email]::placeholder {
+    color: rgba(54, 83, 107, 0.5);
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.9375rem;
+    line-height: normal;
+  }
+  .demo__container .primary__button--normal {
+    position: absolute;
+    width: 10.81rem;
+    height: 3rem;
+    transform: translateX(8.375rem);
+    top: 1.5rem;
   }
 }
 

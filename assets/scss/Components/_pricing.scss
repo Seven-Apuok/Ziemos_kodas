@@ -156,6 +156,7 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 768px) {
   .pricing__container {
+    margin-bottom: -5.6rem;
     .pricing__plans__container {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -166,9 +167,87 @@ $toggle-line: 0.25rem;
     }
     .pricing__text__price {
       > :nth-child(2) {
-        width: 90%;
+        width: 88%;
         height: 80%;
         font-weight: 100;
+      }
+    }
+    .pricing__plan__title {
+      margin-top: 0.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing__benefits {
+      > ul {
+        margin-top: 0.1rem;
+      }
+    }
+    .secondary__submit--normal {
+      margin-top: 0.4rem;
+    }
+    .pricing__free {
+      .pricing__plan__title {
+        margin-left: 2.1rem;
+      }
+      .pricing__value {
+        margin-left: 2rem;
+      }
+      .pricing__text__price {
+        > :nth-child(2) {
+          margin-left: 2.2rem;
+        }
+      }
+      .pricing__benefits {
+        > ul {
+          margin-left: 2rem;
+        }
+        > hr {
+          margin-left: 1rem;
+        }
+      }
+      .secondary__submit--normal {
+        margin-left: 2.2rem;
+        width: 68%;
+      }
+    }
+
+    .pricing__basic {
+      .secondary__submit--normal {
+        width: 68%;
+      }
+    }
+    .pricing__premium {
+      .pricing__plan__title {
+        margin-left: -2.3rem;
+      }
+      .pricing__text__price {
+        > :nth-child(2) {
+          margin-right: 2.3rem;
+        }
+      }
+      .pricing__value {
+        margin-right: 2.1rem;
+      }
+      .pricing__benefits {
+        > ul {
+          margin-right: 2.3rem;
+        }
+        > hr {
+          margin-right: 1rem;
+        }
+      }
+      .secondary__submit--normal {
+        margin-right: 2.1rem;
+        width: 69%;
+      }
+    }
+    .pricing__value {
+      font-size: $h2-regular-size;
+      margin-top: 1.1rem;
+    }
+    .pricing__benefits {
+      > hr {
+        width: 85%;
       }
     }
   }
@@ -176,31 +255,119 @@ $toggle-line: 0.25rem;
 
 @media screen and (min-width: 1440px) {
   .pricing__container {
+    margin-bottom: -6.5rem;
+    .pricing__container__title {
+      text-align: left;
+      font-size: $h1-small-size;
+      margin-left: 9.7rem;
+      margin-top: 0.6rem;
+    }
+    .pricing__plan__title {
+      font-size: $h3-big-size;
+    }
     .pricing__text__price {
       align-items: flex-start;
-      margin-left: 2.5rem;
+      margin-left: 7.5rem;
       > :nth-child(2) {
         text-align: left;
-        width: 80%;
+        width: 100%;
         font-weight: 100;
       }
     }
     .pricing__value {
       text-align: left;
       width: 80%;
+      font-size: $h1-small-size;
     }
     .pricing__benefits > ul {
       width: 80%;
       align-items: flex-start;
     }
-    .secondary__submit--normal {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 3rem;
+    .pricing__benefits {
+      .pricing__hr {
+        width: 70%;
+      }
     }
-    .pricing__hr {
-      width: 80%;
+    .secondary__submit--normal {
+      width: 36% !important;
+    }
+    .pricing__free {
+      .pricing__plan__title {
+        margin-left: 2.3rem;
+      }
+      .pricing__text__price {
+        > :nth-child(2) {
+          margin-top: 0.3rem;
+        }
+        > :nth-child(3) {
+          margin-top: 0.5rem;
+          margin-left: 2.2rem;
+        }
+      }
+      .pricing__benefits {
+        > ul {
+          margin-left: 13.6rem;
+          margin-bottom: 0.1rem;
+        }
+        > hr {
+          margin-left: 10rem;
+        }
+      }
+      .secondary__submit--normal {
+        margin-top: 0.45rem;
+        margin-left: 0.6rem;
+      }
+    }
+    .pricing__basic {
+      .pricing__plan__title {
+        margin-left: -3.6rem;
+      }
+      .pricing__text__price {
+        > :nth-child(2) {
+          margin-left: -3.7rem;
+          margin-top: 0.3rem;
+        }
+        > :nth-child(3) {
+          margin-left: -3.5rem;
+          margin-top: 0.5rem;
+        }
+      }
+      .pricing__benefits {
+        > ul {
+          margin-left: 2rem;
+          margin-bottom: 0.1rem;
+        }
+      }
+      .secondary__submit--normal {
+        margin-left: -11.3rem;
+      }
+    }
+    .pricing__premium {
+      .pricing__plan__title {
+        margin-left: -9.5rem;
+      }
+      .pricing__text__price {
+        > :nth-child(2) {
+          margin-top: 0.3rem;
+          margin-left: -9.4rem;
+        }
+        > :nth-child(3) {
+          margin-top: 0.5rem;
+          margin-left: -9.4rem;
+        }
+      }
+      .pricing__benefits {
+        > hr {
+          margin-top: -0.4rem;
+          margin-right: 11rem;
+        }
+        > ul {
+          margin-left: -7.7rem;
+        }
+      }
+      .secondary__submit--normal {
+        margin-left: -21rem;
+      }
     }
   }
 }
