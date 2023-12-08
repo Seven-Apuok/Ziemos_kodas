@@ -1,17 +1,14 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const checkboxCustom = document.getElementById('checkboxCustom');
-    const Checkbox = document.getElementById('subscribe');
-
-    const SvgCode = '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="1 1 15 13" fill="none"><rect width="100%" height="100%" fill="#BA4270" /><path d="M2 6.97348L5.17296 10.1464L13.3194 2" stroke="white" stroke-width="3"/></svg>';
-
-    Checkbox.addEventListener('change', function () {
-
-        checkboxCustom.innerHTML = Checkbox.checked ? SvgCode : '';
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const styleElement = document.createElement("style");
+  styleElement.textContent = `
+      #subscribe:checked + label .checkbox-custom {
+        background-color: #ba4270;
+        border: 1px solid #ba4270;
+        opacity: 0.9;
+      }
+      #subscribe:checked + label .checkbox-custom::before {
+        opacity: 0.9;
+      }
+    `;
+  document.head.appendChild(styleElement);
 });
-
-
-// let box = document.getElementById('subscribe');
-
-// box.setAttribute('class',"checked__box");
-// box.setAttribute('disabled',"");

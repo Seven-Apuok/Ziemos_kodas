@@ -12,10 +12,8 @@
     />
     <script src="/js/script.js" defer></script>
     <script src="/js/resizeAnimationStopper.js" defer></script>
-    <script defer src="/js/contactCheckBox.js"></script>
-    <!-- palikti viena is dvieju -->
-    <script defer src="/js/checkFields.js"></script>
-    <script defer src="/js/formValid.js"></script>
+    <script src="/js/contactCheckBox.js" defer></script>
+
   </head>
   <body>
     <div class="circle__container-always">
@@ -94,13 +92,19 @@
             ></textarea>
 
             <div class="form__checkbox">
-              <input type="checkbox" id="subscribe" name="subscribe" onclick="document.getElementById('checkboxCustom').style.color='#fff'"/>
+              <input
+                type="checkbox"
+                id="subscribe"
+                name="subscribe"
+
+              />
+              <!-- onchange="changeCheckbox()" -->
               <label for="subscribe">
                 <span class="checkbox-custom" id="checkboxCustom"></span>
-                <span class="contact__checkbox__text"
-                  >Stay up-to-date with company announcements and updates to our
-                  API</span
-                >
+                <span class="contact__checkbox__text">
+                  Stay up-to-date with company announcements and updates to our
+                  API
+                </span>
               </label>
             </div>
             <button class="secondary__submit--normal">Submit</button>
@@ -209,11 +213,12 @@
         >
           <input
             id="input__contacts"
+            class="validEmail"
             type="email"
             placeholder="Enter email address"
             required="required"
           />
-          
+
           <button
             id="input__contacts__button"
             type="submit"
@@ -221,9 +226,7 @@
           >
             Schedule a Demo
           </button>
-          
         </form>
-        
       </section>
     </main>
     <footer class="footer__container">
