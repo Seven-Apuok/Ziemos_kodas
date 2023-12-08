@@ -16,6 +16,7 @@
     <!-- palikti viena is dvieju -->
     <script defer src="/js/checkFields.js"></script>
     <script defer src="/js/formValid.js"></script>
+    <script src="/js/emailValidationContacts.js" defer></script>
   </head>
   <body>
     <div class="circle__container-always">
@@ -206,6 +207,7 @@
           action="mailto:recipient@example.com"
           method="post"
           enctype="text/plain"
+         
         >
           <input
             id="input__contacts"
@@ -222,8 +224,8 @@
             Schedule a Demo
           </button>
           
+          <p class="error__contacts"></p>
         </form>
-        
       </section>
     </main>
     <footer class="footer__container">

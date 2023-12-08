@@ -8,6 +8,7 @@
     <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/x-icon" />
     <script src="/js/script.js" defer></script>
     <script src="/js/resizeAnimationStopper.js" defer></script>
+    <script src="/js/emailValidationPricing.js" defer></script>
   </head>
   <div class="header__image__pricing">
     <div class="header__circle__pricing"></div>
@@ -114,9 +115,11 @@
           action="mailto:recipient@example.com"
           method="post"
           enctype="text/plain"
+          id="form__pricing"
         >
-          <input type="email" placeholder="Enter email address" required="required" />
+          <input id="pricing" type="email" placeholder="Enter email address" required="required" />
           <button type="submit" class="primary__button--normal">Schedule a Demo</button>
+          <p class="error__pricing"></p>
         </form>
       </section>
     </main>
