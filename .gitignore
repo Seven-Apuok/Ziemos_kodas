@@ -133,3 +133,5 @@ dist
 
 # Ignore style.css.map files
 *.css.map
+*.sass.map
+*.scss.map
