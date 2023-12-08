@@ -2017,23 +2017,24 @@ span.checkbox-custom {
     margin-left: 2.2rem;
   }
   .pricing__container .pricing__free .pricing__value {
-    margin-left: 2.4rem;
+    margin-left: 2.8rem;
   }
   .pricing__container .pricing__free .pricing__text__price > :nth-child(1) {
-    margin-left: 2.5rem;
+    margin-left: 2.9rem;
   }
   .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
     margin-left: 2.2rem;
   }
   .pricing__container .pricing__free .pricing__benefits > ul {
-    margin-left: 2.5rem;
+    margin-top: 0.1rem;
+    margin-left: 2.6rem;
   }
   .pricing__container .pricing__free .pricing__benefits > hr {
     margin-left: 1rem;
   }
   .pricing__container .pricing__free .secondary__submit--normal {
     margin-top: 0.5rem;
-    margin-left: 2.8rem;
+    margin-left: 2.9rem;
     width: 65%;
   }
   .pricing__container .pricing__basic .pricing__benefits > ul {
@@ -2060,8 +2061,8 @@ span.checkbox-custom {
     margin-right: 1rem;
   }
   .pricing__container .pricing__premium .secondary__submit--normal {
-    margin-top: 0.6rem;
-    margin-right: 3rem;
+    margin-top: 0.4rem;
+    margin-right: 2.9rem;
     width: 65%;
   }
   .pricing__container .pricing__value {

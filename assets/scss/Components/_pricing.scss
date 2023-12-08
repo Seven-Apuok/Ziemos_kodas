@@ -187,11 +187,11 @@ $toggle-line: 0.25rem;
         margin-left: 2.2rem;
       }
       .pricing__value {
-        margin-left: 2.4rem;
+        margin-left: 2.8rem;
       }
       .pricing__text__price {
         > :nth-child(1) {
-          margin-left: 2.5rem;
+          margin-left: 2.9rem;
         }
         > :nth-child(2) {
           margin-left: 2.2rem;
@@ -199,7 +199,8 @@ $toggle-line: 0.25rem;
       }
       .pricing__benefits {
         > ul {
-          margin-left: 2.5rem;
+          margin-top: 0.1rem;
+          margin-left: 2.6rem;
         }
         > hr {
           margin-left: 1rem;
@@ -207,7 +208,7 @@ $toggle-line: 0.25rem;
       }
       .secondary__submit--normal {
         margin-top: 0.5rem;
-        margin-left: 2.8rem;
+        margin-left: 2.9rem;
         width: 65%;
       }
     }
@@ -245,8 +246,8 @@ $toggle-line: 0.25rem;
         }
       }
       .secondary__submit--normal {
-        margin-top: 0.6rem;
-        margin-right: 3rem;
+        margin-top: 0.4rem;
+        margin-right: 2.9rem;
         width: 65%;
       }
     }
