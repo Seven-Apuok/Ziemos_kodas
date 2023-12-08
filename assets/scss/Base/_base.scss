@@ -57,7 +57,6 @@ h3.small {
   color: $san-juan-blue;
 }
 
-/* Body copy 1 */
 p {
   font-family: $body-font;
   font-size: $p-regular-size;
@@ -87,7 +86,7 @@ a {
   filter: drop-shadow(25px 25px 80px #36536b4d);
 }
 
-input[type="email"] {
+input[type="email"] {    
   color: $san-juan-blue;
   font-family: $body-font;
   font-size: 0.9375rem;

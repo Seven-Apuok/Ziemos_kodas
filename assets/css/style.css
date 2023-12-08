@@ -63,7 +63,6 @@ h3.small {
   color: #36536b;
 }
 
-/* Body copy 1 */
 p {
   font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
@@ -93,15 +92,18 @@ a {
   filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3019607843));
 }
 
+
 input[type=email] {
   color: #36536b;
   font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
   font-weight: 700;
 }
+
 input[type=email]:focus {
   outline: none;
 }
+
 
 /*---------------BUTTONS------------------*/
 .primary__button--normal {
@@ -2287,6 +2289,99 @@ span.checkbox-custom {
     display: none;
   }
 }
+.error {
+  border: none;
+  animation: shake 0.1s ease-in-out 0s 2;
+}
+.error__msg {
+  color: red;
+}
+.error__msgs {
+  color: red;
+}
+.error__about {
+  color: red;
+}
+.error__pricing {
+  color: red;
+}
+.error__contacts {
+  color: red;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.2rem;
+  }
+  75% {
+    margin-left: -0.2rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .error {
+    transform: translateY(1rem);
+  }
+  .error__msgs {
+    text-align: center;
+  }
+  .error__about {
+    position: absolute;
+    transform: translate(5rem, 9.6rem);
+  }
+  .error__pricing {
+    position: absolute;
+    transform: translate(5rem, 9.6rem);
+  }
+  .error__contacts {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .error {
+    transform: translateY(-0.7rem);
+  }
+  .error__about {
+    position: absolute;
+    transform: translateY(3.6rem);
+  }
+  .error__pricing {
+    position: absolute;
+    transform: translateY(3.6rem);
+  }
+  .error__contacts {
+    position: absolute;
+    transform: translateY(3.6rem);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .error {
+    transform: translateY(-0.3rem);
+  }
+  .error__msg {
+    margin-left: 3.6rem;
+  }
+  .error__msgs {
+    position: absolute;
+    transform: translate(43rem, 5rem);
+  }
+  .error__about {
+    position: absolute;
+    transform: translateY(3.6rem);
+  }
+  .error__pricing {
+    position: absolute;
+    transform: translateY(3.6rem);
+  }
+  .error__contacts {
+    position: absolute;
+    transform: translateY(7.8rem);
+    
 @media screen and (max-width: 767px) {
   .demo__container {
     margin-top: 0.7rem;
