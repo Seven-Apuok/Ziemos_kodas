@@ -34,7 +34,7 @@
             <a class="nav__link" href="/pricing.html" aria-label="Pricing">Pricing</a>
             <a class="nav__link" href="/about.html" aria-label="About">About</a>
             <a class="nav__link" href="/contacts.html" aria-label="Contact">Contact</a>
-            <button class="primary__button--normal nav__button" data-section="input__contacts">
+            <button class="primary__button--normal nav__button" data-section="schedule">
               Schedule a Demo
             </button>
           </nav>
@@ -50,15 +50,48 @@
         <section class="registration__container">
           <!-- formos pradzia -->
           <form id="main__contact__form" action="/submit" method="post">
-            <input type="text" id="userName" name="userName" placeholder="Name" onblur="isEmpty('userName')" required />
+            <input
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="Name"
+              onblur="isEmpty('userName')"
+              required
+            />
             <p id="errorMsg_userName" class="errorMsg"></p>
-            <input type="email" id="userEmail" name="email" placeholder="Email Address" onblur="isEmpty('userEmail')" required />
+            <input
+              type="email"
+              id="userEmail"
+              name="email"
+              placeholder="Email Address"
+              onblur="isEmpty('userEmail')"
+              required
+            />
             <p id="errorMsg_userEmail" class="errorMsg"></p>
-            <input type="text" id="company" name="company" placeholder="Company Name" onblur="isEmpty('company')" />
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Company Name"
+              onblur="isEmpty('company')"
+            />
             <p id="errorMsg_company" class="errorMsg"></p>
-            <input type="text" id="title" name="title" placeholder="Title" onblur="isEmpty('title')" required />
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+              onblur="isEmpty('title')"
+              required
+            />
             <p id="errorMsg_title" class="errorMsg"></p>
-            <textarea id="message" name="message" placeholder="Message" onblur="isEmpty('message')" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              onblur="isEmpty('message')"
+              required
+            ></textarea>
             <p id="errorMsg_message" class="errorMsg"></p>
             <div class="form__checkbox">
               <input
@@ -175,7 +208,6 @@
           action="mailto:recipient@example.com"
           method="post"
           enctype="text/plain"
-         
         >
           <input
             id="input__contacts"
@@ -192,7 +224,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer__container">
+    <footer class="footer__container" id="schedule">
       <div>
         <a href="/index.html" aria-label="Index/Home">
           <img
