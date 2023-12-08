@@ -91,7 +91,7 @@ $toggle-line: 0.25rem;
         padding-bottom: 2rem;
 
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           left: 2rem;
           top: 5rem;
@@ -103,7 +103,7 @@ $toggle-line: 0.25rem;
 
         &:before,
         &:after {
-          content: '';
+          content: "";
           position: absolute;
           top: #{$offset - calc($toggle-line / 2)};
           left: 0;
@@ -147,8 +147,8 @@ $toggle-line: 0.25rem;
         overflow: hidden;
 
         &::before {
-          content: '';
-          background: url('/assets/images/shared/desktop/bg-pattern-circle.svg') no-repeat -17.8rem -34.1rem;
+          content: "";
+          background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
           position: absolute;
           top: 0;
           left: 0;
@@ -170,7 +170,7 @@ $toggle-line: 0.25rem;
 
       .nav__link:first-child {
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           left: 0.2rem;
           text-align: center;
@@ -243,7 +243,7 @@ $toggle-line: 0.25rem;
         height: 3rem;
       }
 
-      input[type='email'] {
+      input[type="email"] {
         width: 20.4375rem;
         height: 3rem;
         border-radius: 1.5rem;
@@ -391,7 +391,7 @@ $toggle-line: 0.25rem;
 
     .finances__container {
       width: 328px;
-      // margin-bottom: 32px; //iki ready to start texto
+      margin-bottom: 32px; //iki ready to start texto
 
       // width: 328px;
       //margin-bottom: 32px;
@@ -448,7 +448,6 @@ $toggle-line: 0.25rem;
     .help__container {
       text-align: center;
     }
-
   }
 
   .footer__container {
@@ -459,7 +458,7 @@ $toggle-line: 0.25rem;
     margin-top: 5rem; //iki mygtuko mobile ekrane
 
     .api__logo {
-      margin-top: 2.56rem;//
+      margin-top: 2.56rem; //
       margin-bottom: 5px;
     }
 
@@ -634,7 +633,6 @@ $toggle-line: 0.25rem;
       gap: 0.62rem;
       display: flex;
       flex-direction: row;
-      margin-bottom: -2.5rem;
 
       svg {
         margin-bottom: 2rem;
@@ -687,7 +685,7 @@ $toggle-line: 0.25rem;
       top: 2.1rem;
     }
 
-    input[type='email'] {
+    input[type="email"] {
       width: 27.8125rem;
       height: 3rem;
       border-radius: 1.5rem;
@@ -928,7 +926,6 @@ $toggle-line: 0.25rem;
         margin-top: -0.6rem;
         padding-right: 10.31rem;
         padding-left: 10.31rem;
-        margin-bottom: 0rem;
 
         gap: 1.88rem;
         display: flex;
@@ -987,7 +984,7 @@ $toggle-line: 0.25rem;
           top: 24px;
         }
 
-        input[type='email'] {
+        input[type="email"] {
           width: 27.8125rem;
           height: 3rem;
           border-radius: 1.5rem;

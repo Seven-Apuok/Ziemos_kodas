@@ -486,6 +486,7 @@ a {
   }
   .main__container .finances__container {
     width: 328px;
+    margin-bottom: 32px;
   }
   .main__container .finances__container > .finances__box:nth-of-type(1) {
     margin-top: -0.2rem;
@@ -638,7 +639,6 @@ a {
     gap: 0.62rem;
     display: flex;
     flex-direction: row;
-    margin-bottom: -2.5rem;
   }
   .main__container .finances__container svg {
     margin-bottom: 2rem;
@@ -867,7 +867,6 @@ a {
     margin-top: -0.6rem;
     padding-right: 10.31rem;
     padding-left: 10.31rem;
-    margin-bottom: 0rem;
     gap: 1.88rem;
     display: flex;
     flex-direction: row;
@@ -1942,7 +1941,7 @@ span.checkbox-custom {
 }
 
 .demo__container {
-  margin-top: 2.45rem;
+  margin-top: 2.45rem !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -2108,6 +2107,9 @@ span.checkbox-custom {
   }
 }
 @media screen and (max-width: 767px) {
+  .demo__container {
+    margin-top: 0.7rem;
+  }
   .demo__container .demo__title {
     text-align: center;
     line-height: 2.25rem;
