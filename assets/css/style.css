@@ -2001,45 +2001,55 @@ span.checkbox-custom {
     margin-top: 0.4rem;
   }
   .pricing__container .pricing__free .pricing__plan__title {
-    margin-left: 2.1rem;
+    margin-left: 2.2rem;
   }
   .pricing__container .pricing__free .pricing__value {
-    margin-left: 2rem;
+    margin-left: 2.4rem;
+  }
+  .pricing__container .pricing__free .pricing__text__price > :nth-child(1) {
+    margin-left: 2.5rem;
   }
   .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
     margin-left: 2.2rem;
   }
   .pricing__container .pricing__free .pricing__benefits > ul {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
   }
   .pricing__container .pricing__free .pricing__benefits > hr {
     margin-left: 1rem;
   }
   .pricing__container .pricing__free .secondary__submit--normal {
-    margin-left: 2.2rem;
-    width: 68%;
+    margin-top: 0.5rem;
+    margin-left: 2.8rem;
+    width: 65%;
+  }
+  .pricing__container .pricing__basic .pricing__benefits > ul {
+    margin-left: -0.5rem;
   }
   .pricing__container .pricing__basic .secondary__submit--normal {
-    width: 68%;
+    width: 65%;
+    margin-top: 0.5rem;
+    margin-left: -0.2rem;
   }
   .pricing__container .pricing__premium .pricing__plan__title {
-    margin-left: -2.3rem;
+    margin-left: -2.9rem;
   }
   .pricing__container .pricing__premium .pricing__text__price > :nth-child(2) {
-    margin-right: 2.3rem;
+    margin-right: 2.9rem;
   }
   .pricing__container .pricing__premium .pricing__value {
-    margin-right: 2.1rem;
+    margin-right: 2.9rem;
   }
   .pricing__container .pricing__premium .pricing__benefits > ul {
-    margin-right: 2.3rem;
+    margin-right: 3rem;
   }
   .pricing__container .pricing__premium .pricing__benefits > hr {
     margin-right: 1rem;
   }
   .pricing__container .pricing__premium .secondary__submit--normal {
-    margin-right: 2.1rem;
-    width: 69%;
+    margin-top: 0.6rem;
+    margin-right: 3rem;
+    width: 65%;
   }
   .pricing__container .pricing__value {
     font-size: 3rem;
@@ -2087,7 +2097,8 @@ span.checkbox-custom {
     width: 35% !important;
   }
   .pricing__container .pricing__free .pricing__plan__title {
-    margin-left: 2.8rem;
+    margin-top: 0.1rem;
+    margin-left: 2.9rem;
   }
   .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
     margin-left: 2.8rem;
@@ -2106,47 +2117,48 @@ span.checkbox-custom {
     margin-left: 12rem;
   }
   .pricing__container .pricing__free .secondary__submit--normal {
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
     margin-left: 1rem;
   }
   .pricing__container .pricing__basic .pricing__plan__title {
-    margin-left: -3.5rem;
+    margin-left: -3.6rem;
   }
   .pricing__container .pricing__basic .pricing__text__price > :nth-child(2) {
-    margin-left: -3.4rem;
+    margin-left: -3.6rem;
     margin-top: 0.3rem;
   }
   .pricing__container .pricing__basic .pricing__text__price > :nth-child(3) {
-    margin-left: -3.5rem;
+    margin-left: -3.6rem;
     margin-top: 0.5rem;
   }
   .pricing__container .pricing__basic .pricing__benefits > ul {
-    margin-left: 2rem;
-    margin-bottom: 0.1rem;
+    margin-left: 1.7rem;
+    margin-top: 0.15rem;
   }
   .pricing__container .pricing__basic .secondary__submit--normal {
-    margin-left: -11.3rem;
+    margin-left: -11.6rem;
   }
   .pricing__container .pricing__premium .pricing__plan__title {
-    margin-left: -9.7rem;
+    margin-left: -9.9rem;
   }
   .pricing__container .pricing__premium .pricing__text__price > :nth-child(2) {
     margin-top: 0.3rem;
-    margin-left: -9.6rem;
+    margin-left: -9.8rem;
   }
   .pricing__container .pricing__premium .pricing__text__price > :nth-child(3) {
     margin-top: 0.5rem;
-    margin-left: -9.6rem;
+    margin-left: -9.8rem;
   }
   .pricing__container .pricing__premium .pricing__benefits > hr {
     margin-top: -0.4rem;
     margin-right: 11rem;
   }
   .pricing__container .pricing__premium .pricing__benefits > ul {
-    margin-left: -8.3rem;
+    margin-left: -7.6rem;
   }
   .pricing__container .pricing__premium .secondary__submit--normal {
-    margin-left: -22rem;
+    margin-top: 0.4rem;
+    margin-left: -21.2rem;
   }
 }
 .inovation__container {
