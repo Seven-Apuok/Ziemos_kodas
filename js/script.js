@@ -3,6 +3,13 @@ navEl.addEventListener("click", () => {
   navEl.classList.toggle("is-active");
 });
 
+// close nav menu on body click
+document.body.addEventListener("click", (event) => {
+  if (!navEl.contains(event.target)) {
+    navEl.classList.remove("is-active");
+  }
+});
+
 const headerEl = document.querySelector(".header__container");
 
 window.addEventListener("scroll", () => {
