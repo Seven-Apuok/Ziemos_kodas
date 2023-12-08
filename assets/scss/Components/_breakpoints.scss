@@ -305,7 +305,15 @@ $toggle-line: 0.25rem;
       .companies__texts {
         width: 327px;
 
-        h3 {
+        h2 {
+          color: #FBFCFE;
+          text-align: center;
+          font-family: $body-second-font;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 2.25rem;
+          letter-spacing: -0.01538rem;
           margin-top: 18.73px;
           margin-bottom: 16px;
         }
@@ -605,7 +613,12 @@ $toggle-line: 0.25rem;
       .companies__texts {
         margin-top: 23px;
 
-        h3 {
+        h2 {
+          color: #FBFCFE;
+          text-align: center;
+          font-family: $body-second-font;
+          font-style: normal;
+          font-weight: 400;
           margin-top: 67px;
           margin-bottom: 24px;
 
@@ -892,10 +905,9 @@ $toggle-line: 0.25rem;
           // margin-left: 8.71rem;
           margin-left: 9.71rem;
 
-          h3 {
+          h2 {
             margin-right: 2.1rem;
             margin-top: 0;
-
             font-style: normal;
             font-weight: 400;
             letter-spacing: -0.02306rem;
