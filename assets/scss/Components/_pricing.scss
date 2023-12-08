@@ -20,8 +20,8 @@ $toggle-line: 0.25rem;
   .pricing__text__price {
     display: flex;
     flex-direction: column;
-    align-items: center;    
-    > :nth-child(2) {      
+    align-items: center;
+    > :nth-child(2) {
       height: 80%;
       width: 60%;
       color: rgba($san-juan-blue, 1);
@@ -35,7 +35,7 @@ $toggle-line: 0.25rem;
     }
   }
 
-  .pricing__plan__title {    
+  .pricing__plan__title {
     color: rgba($dark-pink, 1);
     text-align: center;
     font-family: $body-second-font;
@@ -256,7 +256,7 @@ $toggle-line: 0.25rem;
     .pricing__container__title {
       text-align: left;
       font-size: $h1-small-size;
-      margin-left: 9.7rem;
+      margin-left: 10rem;
       margin-top: 0.6rem;
     }
     .pricing__plan__title {
@@ -286,42 +286,44 @@ $toggle-line: 0.25rem;
       }
     }
     .secondary__submit--normal {
-      width: 36% !important;
+      width: 35% !important;
     }
     .pricing__free {
       .pricing__plan__title {
-        margin-left: 2.3rem;
+        margin-left: 2.8rem;
       }
       .pricing__text__price {
         > :nth-child(2) {
+          margin-left: 2.8rem;
           margin-top: 0.3rem;
         }
         > :nth-child(3) {
           margin-top: 0.5rem;
-          margin-left: 2.2rem;
+          margin-left: 2.7rem;
         }
       }
       .pricing__benefits {
         > ul {
-          margin-left: 13.6rem;
+          margin-left: 14.5rem;
           margin-bottom: 0.1rem;
         }
         > hr {
-          margin-left: 10rem;
+          margin-top: -0.45rem;
+          margin-left: 12rem;
         }
       }
       .secondary__submit--normal {
-        margin-top: 0.45rem;
-        margin-left: 0.6rem;
+        margin-top: 0.3rem;
+        margin-left: 1rem;
       }
     }
     .pricing__basic {
       .pricing__plan__title {
-        margin-left: -3.6rem;
+        margin-left: -3.5rem;
       }
       .pricing__text__price {
         > :nth-child(2) {
-          margin-left: -3.7rem;
+          margin-left: -3.4rem;
           margin-top: 0.3rem;
         }
         > :nth-child(3) {
@@ -341,16 +343,16 @@ $toggle-line: 0.25rem;
     }
     .pricing__premium {
       .pricing__plan__title {
-        margin-left: -9.5rem;
+        margin-left: -9.7rem;
       }
       .pricing__text__price {
         > :nth-child(2) {
           margin-top: 0.3rem;
-          margin-left: -9.4rem;
+          margin-left: -9.6rem;
         }
         > :nth-child(3) {
           margin-top: 0.5rem;
-          margin-left: -9.4rem;
+          margin-left: -9.6rem;
         }
       }
       .pricing__benefits {
@@ -359,11 +361,11 @@ $toggle-line: 0.25rem;
           margin-right: 11rem;
         }
         > ul {
-          margin-left: -7.7rem;
+          margin-left: -8.3rem;
         }
       }
       .secondary__submit--normal {
-        margin-left: -21rem;
+        margin-left: -22rem;
       }
     }
   }

@@ -2056,7 +2056,7 @@ span.checkbox-custom {
   .pricing__container .pricing__container__title {
     text-align: left;
     font-size: 3.5rem;
-    margin-left: 9.7rem;
+    margin-left: 10rem;
     margin-top: 0.6rem;
   }
   .pricing__container .pricing__plan__title {
@@ -2084,34 +2084,36 @@ span.checkbox-custom {
     width: 70%;
   }
   .pricing__container .secondary__submit--normal {
-    width: 36% !important;
+    width: 35% !important;
   }
   .pricing__container .pricing__free .pricing__plan__title {
-    margin-left: 2.3rem;
+    margin-left: 2.8rem;
   }
   .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
+    margin-left: 2.8rem;
     margin-top: 0.3rem;
   }
   .pricing__container .pricing__free .pricing__text__price > :nth-child(3) {
     margin-top: 0.5rem;
-    margin-left: 2.2rem;
+    margin-left: 2.7rem;
   }
   .pricing__container .pricing__free .pricing__benefits > ul {
-    margin-left: 13.6rem;
+    margin-left: 14.5rem;
     margin-bottom: 0.1rem;
   }
   .pricing__container .pricing__free .pricing__benefits > hr {
-    margin-left: 10rem;
+    margin-top: -0.45rem;
+    margin-left: 12rem;
   }
   .pricing__container .pricing__free .secondary__submit--normal {
-    margin-top: 0.45rem;
-    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+    margin-left: 1rem;
   }
   .pricing__container .pricing__basic .pricing__plan__title {
-    margin-left: -3.6rem;
+    margin-left: -3.5rem;
   }
   .pricing__container .pricing__basic .pricing__text__price > :nth-child(2) {
-    margin-left: -3.7rem;
+    margin-left: -3.4rem;
     margin-top: 0.3rem;
   }
   .pricing__container .pricing__basic .pricing__text__price > :nth-child(3) {
@@ -2126,25 +2128,25 @@ span.checkbox-custom {
     margin-left: -11.3rem;
   }
   .pricing__container .pricing__premium .pricing__plan__title {
-    margin-left: -9.5rem;
+    margin-left: -9.7rem;
   }
   .pricing__container .pricing__premium .pricing__text__price > :nth-child(2) {
     margin-top: 0.3rem;
-    margin-left: -9.4rem;
+    margin-left: -9.6rem;
   }
   .pricing__container .pricing__premium .pricing__text__price > :nth-child(3) {
     margin-top: 0.5rem;
-    margin-left: -9.4rem;
+    margin-left: -9.6rem;
   }
   .pricing__container .pricing__premium .pricing__benefits > hr {
     margin-top: -0.4rem;
     margin-right: 11rem;
   }
   .pricing__container .pricing__premium .pricing__benefits > ul {
-    margin-left: -7.7rem;
+    margin-left: -8.3rem;
   }
   .pricing__container .pricing__premium .secondary__submit--normal {
-    margin-left: -21rem;
+    margin-left: -22rem;
   }
 }
 .inovation__container {
