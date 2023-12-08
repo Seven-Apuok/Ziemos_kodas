@@ -1952,6 +1952,9 @@ span.checkbox-custom {
   }
 }
 @media screen and (min-width: 768px) {
+  .pricing__container {
+    margin-bottom: -5.6rem;
+  }
   .pricing__container .pricing__plans__container {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -1961,9 +1964,64 @@ span.checkbox-custom {
     font-size: 3rem;
   }
   .pricing__container .pricing__text__price > :nth-child(2) {
-    width: 90%;
+    width: 88%;
     height: 80%;
     font-weight: 100;
+  }
+  .pricing__container .pricing__plan__title {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  .pricing__container .pricing__benefits > ul {
+    margin-top: 0.1rem;
+  }
+  .pricing__container .secondary__submit--normal {
+    margin-top: 0.4rem;
+  }
+  .pricing__container .pricing__free .pricing__plan__title {
+    margin-left: 2.1rem;
+  }
+  .pricing__container .pricing__free .pricing__value {
+    margin-left: 2rem;
+  }
+  .pricing__container .pricing__free .pricing__text__price > :nth-child(2) {
+    margin-left: 2.2rem;
+  }
+  .pricing__container .pricing__free .pricing__benefits > ul {
+    margin-left: 2rem;
+  }
+  .pricing__container .pricing__free .pricing__benefits > hr {
+    margin-left: 1rem;
+  }
+  .pricing__container .pricing__free .secondary__submit--normal {
+    margin-left: 2.2rem;
+    width: 68%;
+  }
+  .pricing__container .pricing__basic .secondary__submit--normal {
+    width: 68%;
+  }
+  .pricing__container .pricing__premium .pricing__plan__title {
+    margin-left: -2.3rem;
+  }
+  .pricing__container .pricing__premium .pricing__text__price > :nth-child(2) {
+    margin-right: 2.3rem;
+  }
+  .pricing__container .pricing__premium .pricing__value {
+    margin-right: 2.1rem;
+  }
+  .pricing__container .pricing__premium .pricing__benefits > ul {
+    margin-right: 2.3rem;
+  }
+  .pricing__container .pricing__premium .secondary__submit--normal {
+    margin-right: 2.1rem;
+    width: 69%;
+  }
+  .pricing__container .pricing__value {
+    font-size: 3rem;
+    margin-top: 1.1rem;
+  }
+  .pricing__container .pricing__benefits > hr {
+    width: 13.9375rem;
   }
 }
 @media screen and (min-width: 1440px) {
