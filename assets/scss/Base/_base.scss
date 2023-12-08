@@ -87,12 +87,13 @@ a {
   filter: drop-shadow(25px 25px 80px #36536b4d);
 }
 
-// .api__bold {
-//   color: $san-juan-blue-light;
-//   font-weight: $font-bold;
-//   &:hover {
-//     opacity: 0.7;
-//     color: $san-juan-blue;
-//     text-decoration-line: underline;
-//   }
-// }
+input[type="email"] {
+  &:focus {
+    color: $san-juan-blue;
+    font-family: $body-font;
+    font-size: 0.9375rem;
+    font-weight: $font-bold;
+   
+  }
+}
+

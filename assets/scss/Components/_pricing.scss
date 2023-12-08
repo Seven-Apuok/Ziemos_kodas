@@ -20,10 +20,8 @@ $toggle-line: 0.25rem;
   .pricing__text__price {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    // position: relative;
-    > :nth-child(2) {
-      // width: 20.4375rem;
+    align-items: center;    
+    > :nth-child(2) {      
       height: 80%;
       width: 60%;
       color: rgba($san-juan-blue, 1);
@@ -37,8 +35,7 @@ $toggle-line: 0.25rem;
     }
   }
 
-  .pricing__plan__title {
-    // width: 20.4375rem;
+  .pricing__plan__title {    
     color: rgba($dark-pink, 1);
     text-align: center;
     font-family: $body-second-font;
