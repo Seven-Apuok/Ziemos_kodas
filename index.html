@@ -8,6 +8,7 @@
     <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/x-icon" />
     <script src="/js/script.js" defer></script>
     <script src="/js/resizeAnimationStopper.js" defer></script>
+    <script src="/js/emailValidation.js" defer></script>
   </head>
   <body>
     <div class="circle__container">
@@ -32,7 +33,7 @@
             <a class="nav__link" href="/pricing.html" aria-label="Pricing">Pricing</a>
             <a class="nav__link" href="/about.html" aria-label="About">About</a>
             <a class="nav__link" href="/contacts.html" aria-label="Contact">Contact</a>
-            <button class="primary__button--normal nav__button" data-section="schedule">
+            <button class="primary__button--normal nav__button" data-section="emails">
               Schedule a Demo
             </button>
           </nav>
@@ -51,10 +52,12 @@
             action="mailto:recipient@example.com"
             method="post"
             enctype="text/plain"
+            id="form__email"
           >
-            <input type="email" placeholder="Enter email address" required="required" />
+            <input type="email" id="email" placeholder="Enter email address" required="required" />
             <button type="submit" class="primary__button--normal">Schedule a Demo</button>
           </form>
+          <p class="error__msg"></p>
           <p class="api__paragraph">
             Have any questions?
             <a
@@ -265,10 +268,12 @@
           action="mailto:recipient@example.com"
           method="post"
           enctype="text/plain"
+          id="form__emails"
         >
-          <input id="schedule" type="email" placeholder="Enter email address" required="required" />
+          <input id="emails" type="email" placeholder="Enter email address" required="required" />
           <button type="submit" class="primary__button--normal">Schedule a Demo</button>
         </form>
+        <p class="error__msgs"></p>
       </section>
     </main>
     <footer class="footer__container">

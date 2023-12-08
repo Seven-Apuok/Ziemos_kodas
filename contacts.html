@@ -8,8 +8,12 @@
     <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/x-icon" />
     <script src="/js/script.js" defer></script>
     <script src="/js/resizeAnimationStopper.js" defer></script>
+    <!-- palikti viena is dvieju -->
+    <script defer src="/js/checkFields.js"></script>
+    <script defer src="/js/formValid.js"></script>
+    <script src="/js/emailValidationContacts.js" defer></script>
     <script src="/js/contactCheckBox.js" defer></script>
-    <script src="js/isEmpty.js"defer></script>
+    <script src="js/isEmpty.js" defer></script>
   </head>
   <body>
     <div class="circle__container-always">
@@ -171,6 +175,7 @@
           action="mailto:recipient@example.com"
           method="post"
           enctype="text/plain"
+         
         >
           <input
             id="input__contacts"
@@ -183,6 +188,7 @@
           <button id="input__contacts__button" type="submit" class="primary__button--normal">
             Schedule a Demo
           </button>
+          <p class="error__contacts"></p>
         </form>
       </section>
     </main>
