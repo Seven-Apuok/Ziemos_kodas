@@ -93,14 +93,11 @@ a {
   filter: drop-shadow(25px 25px 80px rgba(54, 83, 107, 0.3019607843));
 }
 
-input[type=email] {
+input[type=email]:focus {
   color: #36536b;
   font-family: "Public Sans", sans-serif;
   font-size: 0.9375rem;
   font-weight: 700;
-}
-input[type=email]:focus {
-  outline: none;
 }
 
 /*---------------BUTTONS------------------*/
