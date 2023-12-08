@@ -1384,6 +1384,7 @@ span.checkbox-custom {
   .subcontainer__contacts input,
   .subcontainer__contacts textarea {
     margin-left: 65px;
+    padding-top: 6px;
   }
 }
 .subcontainer__contacts textarea {
@@ -1600,6 +1601,28 @@ span.checkbox-custom {
     margin-top: 41px;
     margin-right: 153px;
   }
+}
+
+.errorMsg {
+  color: #f00;
+  font-family: "Public Sans", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.085px;
+  opacity: 0.5;
+  padding-left: 82px;
+  margin-top: -13px;
+}
+
+.notEmpty {
+  opacity: 0.9 !important;
+}
+
+.isEmpty {
+  border-bottom: 1px solid red;
+  padding-top: 4px;
 }
 
 .statictics__title {
