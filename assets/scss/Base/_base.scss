@@ -86,12 +86,26 @@ a {
   filter: drop-shadow(25px 25px 80px #36536b4d);
 }
 
-input[type="email"] {    
+input[type='email'] {
   color: $san-juan-blue;
   font-family: $body-font;
-  font-size: 0.9375rem;
+  font-size: $p-regular-size;
+  font-style: normal;
   font-weight: $font-bold;
   &:focus {
     outline: none;
+  }
+}
+
+#main__contact__form {
+  input,
+  textarea {
+    color: $san-juan-blue;
+    font-family: $body-font;
+    font-size: $p-regular-size;
+    font-size: normal;
+    font-weight: $font-regular;
+    line-height: $h3-small-line-height;
+    letter-spacing: -0.00719rem;
   }
 }
