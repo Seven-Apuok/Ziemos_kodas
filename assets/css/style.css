@@ -2259,7 +2259,7 @@ span.checkbox-custom {
 
 @media screen and (max-width: 767px) {
   .header__circle__home {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
@@ -2268,7 +2268,7 @@ span.checkbox-custom {
     z-index: -1;
   }
   .header__circle__pricing {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
@@ -2277,7 +2277,7 @@ span.checkbox-custom {
     z-index: -1;
   }
   .header__circle__about {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
@@ -2286,7 +2286,7 @@ span.checkbox-custom {
     z-index: -1;
   }
   .header__circle__contacts {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
@@ -2306,7 +2306,7 @@ span.checkbox-custom {
     z-index: -1;
   }
   .header__circle__pricing {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
@@ -2315,7 +2315,7 @@ span.checkbox-custom {
     z-index: -1;
   }
   .header__circle__about {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
@@ -2324,7 +2324,7 @@ span.checkbox-custom {
     z-index: -1;
   }
   .header__circle__contacts {
-    position: absolute;
+    position: relative;
     width: 48.75rem;
     height: 48.75rem;
     border-radius: 48.75rem;
