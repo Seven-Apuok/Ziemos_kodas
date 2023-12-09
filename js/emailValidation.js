@@ -25,7 +25,7 @@ formEl.addEventListener('submit', (e) => {
     console.log('First form submitted successfully');
     emailInput.value = '';
   } catch (error) {
-    console.error(error.message);
+  
   }
 });
 
@@ -38,6 +38,6 @@ formElSecond.addEventListener('submit', (e) => { // Įvykio klausytojas antrai f
     console.log('Second form submitted successfully');
     emailInputSecond.value = '';
   } catch (error) {
-    console.error(error.message);
+    
   }
 });

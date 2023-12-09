@@ -976,7 +976,7 @@ input[type=email]:focus {
     background-color: #d2dbe3;
     right: 0;
     z-index: -1;
-    transform: translate(0.2rem, -1.5rem);
+    transform: translateY(-9.7rem);
   }
   .main__container .app__container .app__mobile-flex {
     display: flex;
@@ -2550,9 +2550,13 @@ span.checkbox-custom {
   .error {
     transform: translateY(-0.7rem);
   }
+  .error__msgs {
+    position: absolute;
+    transform: translate(-0.8rem, 3.7rem);
+  }
   .error__about {
     position: absolute;
-    transform: translateY(3.6rem);
+    transform: translate(-1.8rem, 3.5rem);
   }
   .error__pricing {
     position: absolute;
@@ -2560,7 +2564,7 @@ span.checkbox-custom {
   }
   .error__contacts {
     position: absolute;
-    transform: translateY(3.6rem);
+    transform: translate(-1.5rem, 4.5rem);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -2572,19 +2576,19 @@ span.checkbox-custom {
   }
   .error__msgs {
     position: absolute;
-    transform: translate(43rem, 5rem);
+    transform: translate(-2.7rem, 3.9rem);
   }
   .error__about {
     position: absolute;
-    transform: translateY(3.6rem);
+    transform: translate(-2.9rem, 3.6rem);
   }
   .error__pricing {
     position: absolute;
-    transform: translateY(3.6rem);
+    transform: translate(-2.3rem, 3.5rem);
   }
   .error__contacts {
     position: absolute;
-    transform: translateY(7.8rem);
+    transform: translate(-5.5rem, 6rem);
   }
 }
 
