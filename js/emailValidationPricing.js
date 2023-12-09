@@ -22,6 +22,5 @@ formEl.addEventListener('submit', (e) => {
     console.log('Form submitted successfully');
     emailInput.value = '';
   } catch (error) {
-    console.error(error.message);
   }
 });
