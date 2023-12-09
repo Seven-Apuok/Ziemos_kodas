@@ -183,23 +183,6 @@ input[type=email]:focus {
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-  .header__image {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .header__circle {
-    position: absolute;
-    width: 48.75rem;
-    height: 48.75rem;
-    border-radius: 48.75rem;
-    top: -34rem;
-    z-index: -99;
-    background-color: #d2dbe3;
-  }
   .header__container {
     position: fixed;
     width: 100%;
@@ -210,12 +193,6 @@ input[type=email]:focus {
     box-shadow: 0 0.2rem 0.5rem rgba(54, 83, 107, 0.1);
     z-index: 1;
     margin-top: 0;
-  }
-  .header__container .header__circle {
-    display: none;
-  }
-  .header__container .circle {
-    display: none;
   }
   .header__container .nav {
     position: fixed;
@@ -301,7 +278,7 @@ input[type=email]:focus {
   }
   .header__container .nav .nav__menu::before {
     content: "";
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.8rem -34.1rem;
+    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.5rem -34.45rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -428,7 +405,7 @@ input[type=email]:focus {
     width: 327px;
   }
   .main__container .companies__container .companies__texts h2 {
-    color: #FBFCFE;
+    color: #fbfcfe;
     text-align: center;
     font-family: "DM Serif Display", serif;
     font-size: 2rem;
@@ -637,7 +614,7 @@ input[type=email]:focus {
     margin-top: 23px;
   }
   .main__container .companies__container .companies__texts h2 {
-    color: #FBFCFE;
+    color: #fbfcfe;
     text-align: center;
     font-family: "DM Serif Display", serif;
     font-style: normal;
@@ -799,10 +776,6 @@ input[type=email]:focus {
   /* For large devices */
 }
 @media screen and (min-width: 768px) and (min-width: 1440px) {
-  body {
-    width: 100%;
-    /*background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat 50rem -11rem;*/
-  }
   .header__container .nav__header {
     margin-right: 0.3rem !important;
   }
@@ -1062,6 +1035,7 @@ body {
   font-family: "Public Sans", sans-serif;
   background-color: #edf3f8;
   min-width: 375px;
+  overflow-x: hidden;
 }
 
 .finances__container {
@@ -2262,51 +2236,127 @@ span.checkbox-custom {
     letter-spacing: -0.531px;
   }
 }
-.circle__container {
+.header__image__container {
   position: absolute;
   width: 100%;
-  top: 0px;
-  left: 0px;
   height: 100%;
   overflow: hidden;
   pointer-events: none;
-}
-
-.circle__container-always {
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.circle__design {
-  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
-}
-
-.circle__display-main {
-  position: relative;
-  z-index: -1;
-  width: 780px;
-  height: 780px;
-  top: -20em;
-  left: 60%;
-}
-
-.circle__display-smaller {
-  position: relative;
-  z-index: -1;
-  width: 780px;
-  height: 780px;
-  top: -30em;
-  left: 60%;
+  inset: 0;
 }
 
 @media screen and (max-width: 767px) {
-  .circle__container {
-    display: none;
+  .header__circle__home {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(-12.5rem, -34.4rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__pricing {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(4.8rem, -40rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__about {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(4.8rem, -40rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__contacts {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(4.8rem, -40rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__circle__home {
+    position: relative;
+    width: 59.3125rem;
+    height: 59.3125rem;
+    border-radius: 59.3125rem;
+    transform: translate(-5.5rem, -41.5rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__pricing {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(31.5rem, -29rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__about {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(31.5rem, -29rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__contacts {
+    position: absolute;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(31.5rem, -29rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__circle__home {
+    position: relative;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(50rem, -10.6rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__pricing {
+    position: relative;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(50rem, -33rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__about {
+    position: relative;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(50rem, -33rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
+  }
+  .header__circle__contacts {
+    position: relative;
+    width: 48.75rem;
+    height: 48.75rem;
+    border-radius: 48.75rem;
+    transform: translate(50rem, -33rem);
+    background-color: rgba(54, 83, 107, 0.15);
+    z-index: -1;
   }
 }
 @media screen and (max-width: 767px) {

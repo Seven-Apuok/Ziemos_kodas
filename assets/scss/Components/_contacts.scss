@@ -145,7 +145,7 @@
 
     &::placeholder {
       color: $san-juan-blue;
-      font-family: "Public Sans", sans-serif;
+      font-family: 'Public Sans', sans-serif;
       font-size: 15px;
       font-style: normal;
       font-weight: 400;
@@ -182,7 +182,7 @@
     @media screen and (min-width: 1440px) {
       padding-left: 65px;
     }
-    input[type="checkbox"] {
+    input[type='checkbox'] {
       display: none;
     }
 
@@ -191,7 +191,7 @@
       padding-left: 35px;
 
       color: $san-juan-blue;
-      font-family: "Public Sans", sans-serif;
+      font-family: 'Public Sans', sans-serif;
       font-size: 15px;
       font-style: normal;
       font-weight: 400;
@@ -214,7 +214,7 @@
       cursor: url(/assets/images/shared/desktop/pointer.svg), pointer;
 
       &::before {
-        content: "";
+        content: '';
         display: inline-block;
         width: 24px;
         height: 24px;
@@ -223,7 +223,6 @@
         background-position: 5px 4px;
         opacity: 0;
         transition: opacity 0.3s ease;
-
       }
     }
 
@@ -402,14 +401,13 @@
   opacity: 0.5;
   padding-left: 82px;
   margin-top: -13px;
-
 }
-.notEmpty{
+.notEmpty {
   //sia klase gauna kai laukas netuscias
-  opacity: 0.9!important;
+  opacity: 0.9 !important;
 }
 
-.isEmpty{
+.isEmpty {
   //sia klase gauna kai laukas tuscias
   border-bottom: 1px solid red;
   padding-top: 4px;
