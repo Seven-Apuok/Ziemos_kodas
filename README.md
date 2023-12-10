@@ -33,13 +33,13 @@ http://127.0.0.1:5502/index.html
 
 ```
 ## Team:
-Dev Darius Mlečka: https://github.com/TechinDarius
-QA Julija Valaikienė:
-Dev Ovidijus Eitminavičius: https://github.com/Ovii2
-Dev Bernardas Kondratavičius: https://github.com/Bernardasko
+Dev Darius Mlečka
+QA Julija Valaikienė
+Dev Ovidijus Eitminavičius
+Dev Bernardas Kondratavičius
 QA Goda Šuminaitė:
-QA Ingrida Zadorožnienė: https://github.com/ingridagz
-QA Robertas Butylkinas:
-Dev Almantas Vorobjovas: https://github.com/Almantassv
-Dev Patrik Švabovič: https://github.com/PatrikSvabovic
-Dev Gabija Savanevičiūtė: https://github.com/Gabiux8
+QA Ingrida Zadorožnienė
+QA Robertas Butylkinas
+Dev Almantas Vorobjovas
+Dev Patrik Švabovič
+Dev Gabija Savanevičiūtė
