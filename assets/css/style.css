@@ -1471,7 +1471,7 @@ span.checkbox-custom {
   margin-bottom: 1.8rem;
 }
 .subcontainer__contacts #main__contact__form #message {
-  margin-bottom: 3.3rem;
+  margin-bottom: 4.3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1502,7 +1502,10 @@ span.checkbox-custom {
   }
   #main__contact__form #message {
     margin-top: 0.1rem;
-    margin-bottom: 4.5rem !important;
+    margin-bottom: 5.5rem !important;
+  }
+  .companies__container {
+    margin-bottom: -0.2rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1528,7 +1531,7 @@ span.checkbox-custom {
     margin-top: 0.4rem;
   }
   #main__contact__form .form__checkbox {
-    margin-top: 0.8rem;
+    margin-top: -0.2rem;
   }
 }
 .help__container {
