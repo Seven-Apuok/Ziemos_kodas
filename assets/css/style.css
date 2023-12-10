@@ -1352,7 +1352,7 @@ span.checkbox-custom {
   padding-top: 13px;
   padding-bottom: 20px;
   padding-left: 20px;
-  background-color: #edf3f8;
+  background-color: transparent;
   margin-bottom: 17px;
   opacity: 0.5;
 }
@@ -1449,6 +1449,12 @@ span.checkbox-custom {
     margin-bottom: -3px;
   }
 }
+.subcontainer__contacts #main__contact__form .errorMsg {
+  margin-left: -4.6rem;
+}
+.subcontainer__contacts #main__contact__form > :nth-child(10) {
+  margin-top: -2.8rem;
+}
 .subcontainer__contacts #main__contact__form #userName {
   margin-top: -0.1rem;
   margin-bottom: 1.5rem;
@@ -1458,19 +1464,25 @@ span.checkbox-custom {
   margin-bottom: 1.4rem;
 }
 .subcontainer__contacts #main__contact__form #company {
-  margin-top: -0.2rem;
-  margin-bottom: 1.4rem;
+  margin-top: -0.15rem;
+  margin-bottom: 1.2rem;
 }
 .subcontainer__contacts #main__contact__form #title {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.8rem;
 }
 .subcontainer__contacts #main__contact__form #message {
-  margin-bottom: 2.3rem;
+  margin-bottom: 3.3rem;
 }
 
 @media screen and (min-width: 768px) {
   #main__contact__form {
     margin-top: -0.5rem;
+  }
+  #main__contact__form .errorMsg {
+    margin-left: -4.6rem;
+  }
+  #main__contact__form > :nth-child(10) {
+    margin-top: -3.8rem !important;
   }
   #main__contact__form #userName {
     margin-top: -0.1rem;
@@ -1482,7 +1494,7 @@ span.checkbox-custom {
   }
   #main__contact__form #company {
     margin-top: -0.2rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.4rem;
   }
   #main__contact__form #title {
     margin-top: -0.1rem;
@@ -1490,12 +1502,15 @@ span.checkbox-custom {
   }
   #main__contact__form #message {
     margin-top: 0.1rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 4.5rem !important;
   }
 }
 @media screen and (min-width: 1440px) {
   #main__contact__form {
     margin-top: 2.5rem;
+  }
+  #main__contact__form .errorMsg {
+    margin-left: -0.7rem !important;
   }
   #main__contact__form #userName {
     margin-top: -2.5rem !important;
@@ -1510,12 +1525,10 @@ span.checkbox-custom {
     margin-bottom: 1.3rem;
   }
   #main__contact__form #title {
-    margin-top: 0.2rem;
-    margin-bottom: 1.7rem;
+    margin-top: 0.4rem;
   }
-  #main__contact__form #message {
-    margin-top: 0.1rem;
-    margin-bottom: 2.4rem;
+  #main__contact__form .form__checkbox {
+    margin-top: 0.8rem;
   }
 }
 .help__container {
