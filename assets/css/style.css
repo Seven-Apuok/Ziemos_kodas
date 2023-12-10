@@ -1333,6 +1333,7 @@ span.checkbox-custom {
   display: flex;
   flex-direction: column;
   padding-left: 24.5px;
+  margin-top: -0.4rem;
 }
 .subcontainer__contacts form button {
   margin-top: 16px;
@@ -1448,7 +1449,75 @@ span.checkbox-custom {
     margin-bottom: -3px;
   }
 }
+.subcontainer__contacts #main__contact__form #userName {
+  margin-top: -0.1rem;
+  margin-bottom: 1.5rem;
+}
+.subcontainer__contacts #main__contact__form #userEmail {
+  margin-top: -0.2rem;
+  margin-bottom: 1.4rem;
+}
+.subcontainer__contacts #main__contact__form #company {
+  margin-top: -0.2rem;
+  margin-bottom: 1.4rem;
+}
+.subcontainer__contacts #main__contact__form #title {
+  margin-bottom: 1.7rem;
+}
+.subcontainer__contacts #main__contact__form #message {
+  margin-bottom: 2.3rem;
+}
 
+@media screen and (min-width: 768px) {
+  #main__contact__form {
+    margin-top: -0.5rem;
+  }
+  #main__contact__form #userName {
+    margin-top: -0.1rem;
+    margin-bottom: 1.5rem;
+  }
+  #main__contact__form #userEmail {
+    margin-top: -0.2rem;
+    margin-bottom: 1.4rem;
+  }
+  #main__contact__form #company {
+    margin-top: -0.2rem;
+    margin-bottom: 1.3rem;
+  }
+  #main__contact__form #title {
+    margin-top: -0.1rem;
+    margin-bottom: 1.7rem;
+  }
+  #main__contact__form #message {
+    margin-top: 0.1rem;
+    margin-bottom: 2.4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #main__contact__form {
+    margin-top: 2.5rem;
+  }
+  #main__contact__form #userName {
+    margin-top: -2.5rem !important;
+    margin-bottom: 1.5rem;
+  }
+  #main__contact__form #userEmail {
+    margin-top: 0.3rem !important;
+    margin-bottom: 1.4rem;
+  }
+  #main__contact__form #company {
+    margin-top: 0.3rem !important;
+    margin-bottom: 1.3rem;
+  }
+  #main__contact__form #title {
+    margin-top: 0.2rem;
+    margin-bottom: 1.7rem;
+  }
+  #main__contact__form #message {
+    margin-top: 0.1rem;
+    margin-bottom: 2.4rem;
+  }
+}
 .help__container {
   color: #36536b;
   text-align: center;
