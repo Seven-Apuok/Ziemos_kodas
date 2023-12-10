@@ -357,7 +357,7 @@ $toggle-line: 0.25rem;
         font-size: 2.25rem;
         line-height: 2.25rem;
         letter-spacing: -0.01731rem;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1.4rem;
       }
 
       .app__paragraph {
@@ -370,7 +370,7 @@ $toggle-line: 0.25rem;
 
     .finances__container {
       width: 328px;
-      margin-bottom: 32px; //iki ready to start texto
+      margin-bottom: 6px; //iki ready to start texto
 
       // width: 328px;
       //margin-bottom: 32px;
@@ -399,31 +399,10 @@ $toggle-line: 0.25rem;
         }
       }
     }
-
-    //about.html
-    // .innovators__container {
-    //   height: 200px;
-    //   font-size: 1.3rem;
-    //   text-align: center;
-    // }
-
-    // .vision__container {
-    //   height: 200px;
-    //   text-align: center;
-    // }
-
-    // .picture__container {
-    //   background: red;
-    //   width: 23.2rem;
-    //   height: 18.75rem;
-    //   text-align: center;
-    // }
-
     .culture__container {
       text-align: center;
     }
 
-    //contacts.html
     .help__container {
       text-align: center;
     }
@@ -472,14 +451,15 @@ $toggle-line: 0.25rem;
       align-items: center;
       justify-content: center;
       gap: 3.4rem;
-      margin-top: 2.7rem;
+      margin-top: 2.5rem;
+      margin-left: 0rem;
 
       .nav__toggle {
         display: none;
       }
 
       .nav__logo {
-        margin-right: 1rem;
+        margin-right: 1.2rem;
       }
 
       .nav__menu {
@@ -491,7 +471,7 @@ $toggle-line: 0.25rem;
         }
 
         > :last-child {
-          margin-left: 3.1rem;
+          margin-left: 2.8rem;
         }
       }
 
@@ -551,17 +531,17 @@ $toggle-line: 0.25rem;
         }
 
         svg:nth-child(4) {
-          margin-left: -4rem;
-          margin-top: -0.2rem;
-        }
-
-        svg:nth-child(5) {
-          margin-left: -0.9rem;
+          margin-left: -4.3rem;
           margin-top: -0.1rem;
         }
 
+        svg:nth-child(5) {
+          margin-left: -0.7rem;
+          margin-top: 0rem;
+        }
+
         svg:nth-child(6) {
-          margin-top: -0.2rem;
+          margin-top: 0.1rem;
           margin-right: -4rem;
         }
       }
@@ -596,9 +576,10 @@ $toggle-line: 0.25rem;
     .finances__container {
       //margin-top: 100px;
       //margin-bottom: 100px;
-      margin-top: 1rem;
+      margin-top: 0.7rem;
       margin-right: 2.5rem;
       margin-left: 2.64rem;
+      margin-bottom: -2.5rem;
       gap: 0.62rem;
       display: flex;
       flex-direction: row;
@@ -720,7 +701,7 @@ $toggle-line: 0.25rem;
       font-size: $h2-regular-size;
       line-height: $h2-regular-line-height;
       letter-spacing: -0.02306rem;
-      margin-top: 2rem;
+      margin-top: 2.4rem;
     }
 
     .app__paragraph {
@@ -854,10 +835,10 @@ $toggle-line: 0.25rem;
           margin-top: 6.25rem;
           margin-bottom: 6.25rem;
           // margin-left: 8.71rem;
-          margin-left: 9.71rem;
+          margin-left: 9.51rem;
 
           h2 {
-            margin-right: 2.1rem;
+            margin-right: 2.6rem;
             margin-top: 0;
             font-style: normal;
             font-weight: 400;
@@ -872,6 +853,7 @@ $toggle-line: 0.25rem;
             line-height: 1.75rem;
             /* 186.667% */
             opacity: 0.7;
+            margin-left: 0.6rem;
 
             width: 445px;
           }
@@ -885,14 +867,17 @@ $toggle-line: 0.25rem;
       .finances__container {
         width: 100%;
         //margin-top: 146.57px;
-        //margin-bottom: 100px;
+        margin-bottom: -3.3rem;
         margin-top: -0.6rem;
         padding-right: 10.31rem;
         padding-left: 10.31rem;
 
-        gap: 1.88rem;
+        gap: 2.98rem;
         display: flex;
         flex-direction: row;
+        > :nth-child(2) {
+          margin-left: 0.6rem;
+        }
       }
 
       /* Mobile Home api*/
@@ -907,7 +892,7 @@ $toggle-line: 0.25rem;
 
         .api__mobile {
           width: 23.5%;
-          transform: translate(-5.7rem, -0.5rem);
+          transform: translate(-5.7rem, -0.3rem);
         }
 
         .api__title {
@@ -918,15 +903,16 @@ $toggle-line: 0.25rem;
           font-weight: $font-regular;
           line-height: $h1-large-line-height;
           letter-spacing: -0.03463rem;
-          margin-bottom: 1.4rem;
+          margin-bottom: 1.6rem;
         }
 
         .api__paragraph {
           color: $san-juan-blue-light;
-          transform: translate(-0.5rem, -0.4rem);
+          transform: translate(-0.5rem, -0.1rem);
         }
 
         .api__inside {
+          margin-bottom: -0.3rem;
           display: flex;
           justify-self: start;
           align-items: center;
@@ -955,7 +941,7 @@ $toggle-line: 0.25rem;
           border: none;
           margin-top: 1.5rem;
           margin-bottom: 1rem;
-          text-indent: 2rem;
+          text-indent: 1.69rem;
           margin-right: 0.2rem;
 
           &::placeholder {
@@ -985,6 +971,7 @@ $toggle-line: 0.25rem;
           height: 10.25rem;
           margin-top: 13.12rem;
           margin-left: 7.73rem;
+          margin-right: 5.6rem;
         }
 
         .implement__h2__text {
@@ -1010,6 +997,7 @@ $toggle-line: 0.25rem;
         align-items: center;
         gap: 5.2rem;
         margin-bottom: 8.3rem;
+        margin-top: 0.2rem;
         position: relative;
 
         .app__circle {
