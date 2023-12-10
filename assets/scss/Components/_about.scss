@@ -26,7 +26,7 @@
 
 /* For small devices */
 @media screen and (max-width: 767px) {
-    .vision__container {
+  .vision__container {
     text-align: center;
     margin-bottom: 1.6rem;
   }
@@ -37,7 +37,6 @@
     line-height: $h4-regular-line-height;
     letter-spacing: -0.01156rem;
     margin-bottom: 0.9rem;
-    // margin-top: 1rem;
   }
 
   .vision__subtitle,
@@ -87,7 +86,11 @@
   }
 
   .culture__container {
-    margin-bottom: -0.4rem;
+    margin-bottom: -2rem;
+  }
+  .statistics__number:nth-of-type(1) {
+    transform: translateY(-1.5rem);
+    margin-bottom: 1rem;
   }
 }
 
@@ -121,7 +124,7 @@
   }
 
   .culture__container {
-    margin-bottom: -7.6rem;
+    margin-bottom: -10.1rem;
     margin-top: 4rem;
   }
 
@@ -142,7 +145,7 @@
     font-size: $h1-small-size;
     letter-spacing: -0.02694rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .statistics__border {
@@ -157,6 +160,7 @@
 
   .statictics__title {
     margin-top: -2.2rem;
+    margin-bottom: 1.5rem;
   }
 
   .statistics__info {
@@ -188,7 +192,7 @@
     margin-left: 3.6rem;
   }
 
-  .culture__people{
+  .culture__people {
     margin-top: 0.2rem;
   }
 
@@ -205,7 +209,7 @@
     width: 39.6875rem;
   }
 
-  .culture__subtitle{
+  .culture__subtitle {
     width: 39.6875rem;
   }
 
@@ -242,16 +246,16 @@
     gap: 1.9rem;
   }
 
-  .statictics__title{
+  .statictics__title {
     transform: translateY(1rem);
   }
 
-  .statistics__container{
+  .statistics__container {
     margin-bottom: 0.6rem;
   }
 
-  .culture__container{
-    margin-bottom: -5.8rem;
+  .culture__container {
+    margin-bottom: -9.2rem;
   }
 }
 
@@ -285,6 +289,7 @@
 @media screen and (min-width: 1440px) {
   .picture__container {
     width: 100%;
+    margin-top: 0.1rem;
   }
   .picture__team3 {
     width: 100%;

@@ -1699,7 +1699,11 @@ span.checkbox-custom {
     margin-bottom: -0.1rem;
   }
   .culture__container {
-    margin-bottom: -0.4rem;
+    margin-bottom: -2rem;
+  }
+  .statistics__number:nth-of-type(1) {
+    transform: translateY(-1.5rem);
+    margin-bottom: 1rem;
   }
 }
 /* For medium devices */
@@ -1727,7 +1731,7 @@ span.checkbox-custom {
     width: 91.1%;
   }
   .culture__container {
-    margin-bottom: -7.6rem;
+    margin-bottom: -10.1rem;
     margin-top: 4rem;
   }
   .culture__subtitle {
@@ -1744,7 +1748,7 @@ span.checkbox-custom {
     font-size: 3.5rem;
     letter-spacing: -0.02694rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .statistics__border {
     width: 13.9375rem;
@@ -1756,6 +1760,7 @@ span.checkbox-custom {
   }
   .statictics__title {
     margin-top: -2.2rem;
+    margin-bottom: 1.5rem;
   }
   .statistics__info {
     display: flex;
@@ -1834,7 +1839,7 @@ span.checkbox-custom {
     margin-bottom: 0.6rem;
   }
   .culture__container {
-    margin-bottom: -5.8rem;
+    margin-bottom: -9.2rem;
   }
 }
 /*-------------PICTURE-------------------*/
@@ -1867,6 +1872,7 @@ span.checkbox-custom {
 @media screen and (min-width: 1440px) {
   .picture__container {
     width: 100%;
+    margin-top: 0.1rem;
   }
   .picture__team3 {
     width: 100%;
@@ -2239,7 +2245,7 @@ span.checkbox-custom {
     width: 573px;
     height: 178px;
     margin-bottom: 8.4rem;
-    margin-top: -0.5rem;
+    margin-top: -0.3rem;
   }
   .inovation__title {
     text-align: center;
@@ -2256,7 +2262,7 @@ span.checkbox-custom {
     margin-right: 190px;
     width: 730px;
     height: 189px;
-    margin-top: 0rem;
+    margin-top: 0.1rem;
   }
   .inovation__title {
     text-align: left;
