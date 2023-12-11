@@ -7,9 +7,9 @@ div.nav__toggle,
 .nav__toggle,
 .nav__toggle::before,
 .nav__toggle::after {
-  cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer;
+  cursor: url("assets/images/shared/desktop/pointer.svg"), pointer;
 }
 
 span.checkbox-custom {
-  cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer !important;
+  cursor: url("assets/images/shared/desktop/pointer.svg"), pointer !important;
 }
