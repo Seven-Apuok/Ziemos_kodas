@@ -290,7 +290,7 @@ input[type=email]:focus {
   }
   .header__container .nav .nav__menu::before {
     content: "";
-    background: url("/assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.5rem -34.45rem;
+    background: url("assets/images/shared/desktop/bg-pattern-circle.svg") no-repeat -17.5rem -34.45rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1108,17 +1108,17 @@ div.nav__toggle,
 .nav__toggle,
 .nav__toggle::before,
 .nav__toggle::after {
-  cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer;
+  cursor: url("assets/images/shared/desktop/pointer.svg"), pointer;
 }
 
 span.checkbox-custom {
-  cursor: url("/assets/images/shared/desktop/pointer.svg"), pointer !important;
+  cursor: url("assets/images/shared/desktop/pointer.svg"), pointer !important;
 }
 
 .companies__container {
   background-color: #1b262f;
   text-align: center;
-  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  background-image: url("assets/images/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
 }
 .companies__container .companies__logos svg path {
@@ -1168,7 +1168,7 @@ span.checkbox-custom {
   text-align: center;
   color: #fbfcfe;
   background-color: #1b262f;
-  background-image: url("/assets/images/shared/desktop/bg-pattern-circle.svg");
+  background-image: url("assets/images/shared/desktop/bg-pattern-circle.svg");
   background-repeat: no-repeat;
   font-size: 0.9375rem;
 }
@@ -1425,7 +1425,6 @@ span.checkbox-custom {
   /* padding-bottom: 1px; */
   margin-top: 13px;
   opacity: 0.25;
-  cursor: url(/assets/images/shared/desktop/pointer.svg), pointer;
 }
 .subcontainer__contacts .form__checkbox .checkbox-custom::before {
   content: "";
@@ -2042,7 +2041,7 @@ span.checkbox-custom {
   display: inline-block;
   width: 0.75rem;
   height: 0.5rem;
-  background: url("/assets/images/shared/desktop/icon-check.svg") no-repeat center center/contain;
+  background: url("assets/images/shared/desktop/icon-check.svg") no-repeat center center/contain;
   margin-right: 1.5rem;
   stroke-width: 2px;
 }

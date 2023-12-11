@@ -147,7 +147,7 @@
 
     &::placeholder {
       color: $san-juan-blue;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 15px;
       font-style: normal;
       font-weight: 400;
@@ -184,7 +184,7 @@
     @media screen and (min-width: 1440px) {
       padding-left: 65px;
     }
-    input[type='checkbox'] {
+    input[type="checkbox"] {
       display: none;
     }
 
@@ -193,7 +193,7 @@
       padding-left: 35px;
 
       color: $san-juan-blue;
-      font-family: 'Public Sans', sans-serif;
+      font-family: "Public Sans", sans-serif;
       font-size: 15px;
       font-style: normal;
       font-weight: 400;
@@ -213,10 +213,10 @@
       /* padding-bottom: 1px; */
       margin-top: 13px;
       opacity: 0.25;
-      cursor: url(/assets/images/shared/desktop/pointer.svg), pointer;
+      // cursor: url(/assets/images/shared/desktop/pointer.svg), pointer;
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         width: 24px;
         height: 24px;
