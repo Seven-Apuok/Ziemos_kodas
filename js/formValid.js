@@ -5,9 +5,7 @@ const title = document.getElementById("title");
 const message = document.getElementById("message");
 
 const demoForm = document.getElementById("demo__form__contacts");
-const demotextfield =document.getElementById("input__contact")
-
-
+const demotextfield = document.getElementById("input__contact");
 
 // const testValidity = (element, pattern) => {
 //   let errorMsg = element.nextElementSibling.innerHTML;
@@ -33,4 +31,3 @@ const demotextfield =document.getElementById("input__contact")
 //     console.log(error.message);
 //   }
 // });
-console.log(demoForm);
